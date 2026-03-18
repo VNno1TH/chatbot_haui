@@ -1,0 +1,54 @@
+{
+  "nam": 2026,
+  "nguon": "Quy chế tuyển sinh đại học năm 2026",
+  "ghi_chu": "Điểm ưu tiên tương ứng với tổng điểm 3 môn thang 30. Khi tổng điểm >= 22.5 áp dụng công thức giảm dần thay vì cộng thẳng.",
+
+  "uu_tien_khu_vuc": [
+    {
+      "ma": "KV1",
+      "ten": "Khu vực 1",
+      "diem": 0.75
+    },
+    {
+      "ma": "KV2-NT",
+      "ten": "Khu vực 2 nông thôn",
+      "diem": 0.50
+    },
+    {
+      "ma": "KV2",
+      "ten": "Khu vực 2",
+      "diem": 0.25
+    },
+    {
+      "ma": "KV3",
+      "ten": "Khu vực 3",
+      "diem": 0.0
+    }
+  ],
+
+  "uu_tien_doi_tuong": [
+    {
+      "nhom": "UT1",
+      "doi_tuong": ["01", "02", "03"],
+      "diem": 2.0
+    },
+    {
+      "nhom": "UT2",
+      "doi_tuong": ["04", "05", "06"],
+      "diem": 1.0
+    }
+  ],
+
+  "cong_thuc_giam_dan": {
+    "nguong_ap_dung": 22.5,
+    "mo_ta": "Khi tổng điểm >= 22.5: Điểm ưu tiên = [(30 - Tổng điểm) / 7.5] x Mức điểm ưu tiên",
+    "lam_tron": "Đến hàng phần trăm"
+  },
+
+  "quy_tac_chung": [
+    "Thí sinh thuộc nhiều diện đối tượng chỉ được hưởng một mức điểm ưu tiên cao nhất",
+    "Điểm ưu tiên khu vực và đối tượng được cộng vào tổng điểm xét tuyển",
+    "Thí sinh được hưởng ưu tiên khu vực trong năm tốt nghiệp THPT và một năm kế tiếp",
+    "Khu vực xác định theo trường THPT học lâu nhất, nếu bằng nhau thì theo trường học sau cùng"
+  ]
+}

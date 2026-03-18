@@ -1,0 +1,22 @@
+[
+  {"ma": "A00", "mon": ["Toán", "Vật lý", "Hóa học"]},
+  {"ma": "A01", "mon": ["Toán", "Vật lý", "Tiếng Anh"]},
+  {"ma": "A02", "mon": ["Toán", "Vật lý", "Sinh học"]},
+  {"ma": "B00", "mon": ["Toán", "Hóa học", "Sinh học"]},
+  {"ma": "C01", "mon": ["Ngữ văn", "Toán", "Vật lý"]},
+  {"ma": "C02", "mon": ["Ngữ văn", "Toán", "Hóa học"]},
+  {"ma": "C03", "mon": ["Ngữ văn", "Toán", "Lịch sử"]},
+  {"ma": "C04", "mon": ["Ngữ văn", "Toán", "Địa lý"]},
+  {"ma": "D01", "mon": ["Toán", "Ngữ văn", "Tiếng Anh"]},
+  {"ma": "D04", "mon": ["Toán", "Ngữ văn", "Tiếng Trung"]},
+  {"ma": "D06", "mon": ["Toán", "Ngữ văn", "Tiếng Nhật"]},
+  {"ma": "D07", "mon": ["Toán", "Hóa học", "Tiếng Anh"]},
+  {"ma": "D14", "mon": ["Ngữ văn", "Lịch sử", "Tiếng Anh"]},
+  {"ma": "D15", "mon": ["Ngữ văn", "Địa lý", "Tiếng Anh"]},
+  {"ma": "DD2", "mon": ["Toán", "Ngữ văn", "Tiếng Hàn"]},
+  {"ma": "X05", "mon": ["Toán", "Vật lý", "GDKT pháp luật"]},
+  {"ma": "X06", "mon": ["Toán", "Tin học", "Công nghệ"]},
+  {"ma": "X07", "mon": ["Toán", "Vật lý", "Công nghệ (Công nghiệp)"]},
+  {"ma": "X25", "mon": ["Toán", "Tiếng Anh", "GDKT pháp luật"]},
+  {"ma": "X27", "mon": ["Toán", "Ngữ văn", "GDKT pháp luật"]}
+]

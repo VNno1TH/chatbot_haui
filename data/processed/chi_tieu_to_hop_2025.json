@@ -1,0 +1,1134 @@
+[
+  {
+    "ma_nganh": "7210404",
+    "ten_nganh": "Thiết kế thời trang",
+    "nhom": "Dệt may",
+    "chi_tieu": 60,
+    "to_hop": [
+      "D01",
+      "D14"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7220201",
+    "ten_nganh": "Ngôn ngữ Anh",
+    "nhom": "Ngôn ngữ",
+    "chi_tieu": 200,
+    "to_hop": [
+      "D01"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7220204",
+    "ten_nganh": "Ngôn ngữ Trung Quốc",
+    "nhom": "Ngôn ngữ",
+    "chi_tieu": 100,
+    "to_hop": [
+      "D01",
+      "D04"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7220204LK",
+    "ten_nganh": "Ngôn ngữ Trung Quốc (LK 2+2 Quảng Tây)",
+    "nhom": "Ngôn ngữ",
+    "chi_tieu": 30,
+    "to_hop": [
+      "D01",
+      "D04"
+    ],
+    "phuong_thuc": [
+      "PT2",
+      "PT3"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7220209",
+    "ten_nganh": "Ngôn ngữ Nhật",
+    "nhom": "Ngôn ngữ",
+    "chi_tieu": 70,
+    "to_hop": [
+      "D01",
+      "D06"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7220210",
+    "ten_nganh": "Ngôn ngữ Hàn Quốc",
+    "nhom": "Ngôn ngữ",
+    "chi_tieu": 70,
+    "to_hop": [
+      "D01",
+      "DD2"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7229020",
+    "ten_nganh": "Ngôn ngữ học",
+    "nhom": "Ngôn ngữ",
+    "chi_tieu": 50,
+    "to_hop": [
+      "D01",
+      "D14"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7310104",
+    "ten_nganh": "Kinh tế đầu tư",
+    "nhom": "Kinh tế",
+    "chi_tieu": 60,
+    "to_hop": [
+      "A01",
+      "D01",
+      "X25"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7310612",
+    "ten_nganh": "Trung Quốc học",
+    "nhom": "Ngôn ngữ",
+    "chi_tieu": 50,
+    "to_hop": [
+      "D01",
+      "D04"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7340101",
+    "ten_nganh": "Quản trị kinh doanh",
+    "nhom": "Kinh tế",
+    "chi_tieu": 300,
+    "to_hop": [
+      "A01",
+      "D01",
+      "X25"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "73401012",
+    "ten_nganh": "Phân tích dữ liệu kinh doanh",
+    "nhom": "Kinh tế",
+    "chi_tieu": 120,
+    "to_hop": [
+      "A01",
+      "D01",
+      "X25"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7340115",
+    "ten_nganh": "Marketing",
+    "nhom": "Kinh tế",
+    "chi_tieu": 120,
+    "to_hop": [
+      "A01",
+      "D01",
+      "X25"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7340201",
+    "ten_nganh": "Tài chính - Ngân hàng",
+    "nhom": "Kinh tế",
+    "chi_tieu": 180,
+    "to_hop": [
+      "A01",
+      "D01",
+      "X25"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7340301",
+    "ten_nganh": "Kế toán",
+    "nhom": "Kinh tế",
+    "chi_tieu": 600,
+    "to_hop": [
+      "A01",
+      "D01",
+      "X25"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7340301TA",
+    "ten_nganh": "Kế toán (Tiếng Anh)",
+    "nhom": "Kinh tế",
+    "chi_tieu": 40,
+    "to_hop": [
+      "A01",
+      "D01",
+      "X25"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7340302",
+    "ten_nganh": "Kiểm toán",
+    "nhom": "Kinh tế",
+    "chi_tieu": 120,
+    "to_hop": [
+      "A01",
+      "D01",
+      "X25"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7340404",
+    "ten_nganh": "Quản trị nhân lực",
+    "nhom": "Kinh tế",
+    "chi_tieu": 120,
+    "to_hop": [
+      "A01",
+      "D01",
+      "X25"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7340406",
+    "ten_nganh": "Quản trị văn phòng",
+    "nhom": "Kinh tế",
+    "chi_tieu": 120,
+    "to_hop": [
+      "A01",
+      "D01",
+      "X25"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7480101",
+    "ten_nganh": "Khoa học máy tính",
+    "nhom": "CNTT",
+    "chi_tieu": 120,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7480101TA",
+    "ten_nganh": "Khoa học máy tính (Tiếng Anh)",
+    "nhom": "CNTT",
+    "chi_tieu": 40,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7480102",
+    "ten_nganh": "Mạng máy tính và truyền thông dữ liệu",
+    "nhom": "CNTT",
+    "chi_tieu": 70,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7480103",
+    "ten_nganh": "Kỹ thuật phần mềm",
+    "nhom": "CNTT",
+    "chi_tieu": 240,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7480104",
+    "ten_nganh": "Hệ thống thông tin",
+    "nhom": "CNTT",
+    "chi_tieu": 120,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7480108",
+    "ten_nganh": "Công nghệ kỹ thuật máy tính",
+    "nhom": "CNTT",
+    "chi_tieu": 140,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7480201",
+    "ten_nganh": "Công nghệ thông tin",
+    "nhom": "CNTT",
+    "chi_tieu": 360,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "74802012",
+    "ten_nganh": "Công nghệ đa phương tiện",
+    "nhom": "CNTT",
+    "chi_tieu": 60,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "74802021",
+    "ten_nganh": "An toàn thông tin",
+    "nhom": "CNTT",
+    "chi_tieu": 40,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510201",
+    "ten_nganh": "Công nghệ kỹ thuật cơ khí",
+    "nhom": "Cơ khí",
+    "chi_tieu": 360,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510201TA",
+    "ten_nganh": "Công nghệ kỹ thuật cơ khí (Tiếng Anh)",
+    "nhom": "Cơ khí",
+    "chi_tieu": 40,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "75102012",
+    "ten_nganh": "Công nghệ kỹ thuật khuôn mẫu",
+    "nhom": "Cơ khí",
+    "chi_tieu": 60,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "75102013",
+    "ten_nganh": "Thiết kế cơ khí và kiểu dáng công nghiệp",
+    "nhom": "Cơ khí",
+    "chi_tieu": 60,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510203",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử",
+    "nhom": "Cơ khí",
+    "chi_tieu": 300,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "75102032",
+    "ten_nganh": "Robot và trí tuệ nhân tạo",
+    "nhom": "Cơ khí",
+    "chi_tieu": 60,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "75102033",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử ô tô",
+    "nhom": "Cơ khí",
+    "chi_tieu": 60,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510205",
+    "ten_nganh": "Công nghệ kỹ thuật ô tô",
+    "nhom": "Cơ khí",
+    "chi_tieu": 360,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510205TA",
+    "ten_nganh": "Công nghệ kỹ thuật ô tô (Tiếng Anh)",
+    "nhom": "Cơ khí",
+    "chi_tieu": 40,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510206",
+    "ten_nganh": "Công nghệ kỹ thuật nhiệt",
+    "nhom": "Cơ khí",
+    "chi_tieu": 120,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510301",
+    "ten_nganh": "Công nghệ kỹ thuật điện, điện tử",
+    "nhom": "Cơ khí",
+    "chi_tieu": 420,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510301TA",
+    "ten_nganh": "Công nghệ kỹ thuật điện, điện tử (Tiếng Anh)",
+    "nhom": "Cơ khí",
+    "chi_tieu": 40,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "75190071",
+    "ten_nganh": "Năng lượng tái tạo",
+    "nhom": "Cơ khí",
+    "chi_tieu": 60,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510302",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử - viễn thông",
+    "nhom": "Cơ khí",
+    "chi_tieu": 480,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510302TA",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử - viễn thông (Tiếng Anh)",
+    "nhom": "Cơ khí",
+    "chi_tieu": 40,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "75103021",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử y sinh",
+    "nhom": "Cơ khí",
+    "chi_tieu": 60,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510303",
+    "ten_nganh": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+    "nhom": "Cơ khí",
+    "chi_tieu": 300,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "75103031",
+    "ten_nganh": "Kỹ thuật sản xuất thông minh",
+    "nhom": "Cơ khí",
+    "chi_tieu": 60,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510401",
+    "ten_nganh": "Công nghệ kỹ thuật hóa học",
+    "nhom": "Cơ khí",
+    "chi_tieu": 210,
+    "to_hop": [
+      "A00",
+      "B00",
+      "C02",
+      "D07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510406",
+    "ten_nganh": "Công nghệ kỹ thuật môi trường",
+    "nhom": "Cơ khí",
+    "chi_tieu": 50,
+    "to_hop": [
+      "A00",
+      "B00",
+      "C02",
+      "D07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7510605",
+    "ten_nganh": "Logistics và quản lý chuỗi cung ứng",
+    "nhom": "Kinh tế",
+    "chi_tieu": 60,
+    "to_hop": [
+      "A01",
+      "D01",
+      "X25"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7520116",
+    "ten_nganh": "Kỹ thuật cơ khí động lực",
+    "nhom": "Cơ khí",
+    "chi_tieu": 60,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7520118",
+    "ten_nganh": "Kỹ thuật hệ thống công nghiệp",
+    "nhom": "Cơ khí",
+    "chi_tieu": 60,
+    "to_hop": [
+      "A00",
+      "A01",
+      "X06",
+      "X07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7540101",
+    "ten_nganh": "Công nghệ thực phẩm",
+    "nhom": "Thực phẩm",
+    "chi_tieu": 120,
+    "to_hop": [
+      "A00",
+      "B00",
+      "C02",
+      "D07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7540203",
+    "ten_nganh": "Công nghệ vật liệu dệt, may",
+    "nhom": "Dệt may",
+    "chi_tieu": 50,
+    "to_hop": [
+      "A01",
+      "D01",
+      "X27"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7540204",
+    "ten_nganh": "Công nghệ dệt, may",
+    "nhom": "Dệt may",
+    "chi_tieu": 180,
+    "to_hop": [
+      "A01",
+      "D01",
+      "X27"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7720203",
+    "ten_nganh": "Hóa dược",
+    "nhom": "Thực phẩm",
+    "chi_tieu": 60,
+    "to_hop": [
+      "A00",
+      "B00",
+      "C02",
+      "D07"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT5"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7810101",
+    "ten_nganh": "Du lịch",
+    "nhom": "Du lịch",
+    "chi_tieu": 140,
+    "to_hop": [
+      "D01",
+      "D14",
+      "D15"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7810101TA",
+    "ten_nganh": "Du lịch (Tiếng Anh)",
+    "nhom": "Du lịch",
+    "chi_tieu": 40,
+    "to_hop": [
+      "D01",
+      "D14",
+      "D15"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7810103",
+    "ten_nganh": "Quản trị dịch vụ du lịch và lữ hành",
+    "nhom": "Du lịch",
+    "chi_tieu": 130,
+    "to_hop": [
+      "D01",
+      "D14",
+      "D15"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7810103TA",
+    "ten_nganh": "Quản trị dịch vụ du lịch và lữ hành (Tiếng Anh)",
+    "nhom": "Du lịch",
+    "chi_tieu": 40,
+    "to_hop": [
+      "D01",
+      "D14",
+      "D15"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7810201",
+    "ten_nganh": "Quản trị khách sạn",
+    "nhom": "Du lịch",
+    "chi_tieu": 130,
+    "to_hop": [
+      "D01",
+      "D14",
+      "D15"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7810201TA",
+    "ten_nganh": "Quản trị khách sạn (Tiếng Anh)",
+    "nhom": "Du lịch",
+    "chi_tieu": 40,
+    "to_hop": [
+      "D01",
+      "D14",
+      "D15"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7810202",
+    "ten_nganh": "Quản trị nhà hàng và dịch vụ ăn uống",
+    "nhom": "Du lịch",
+    "chi_tieu": 60,
+    "to_hop": [
+      "D01",
+      "D14",
+      "D15"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  },
+  {
+    "ma_nganh": "7810202TA",
+    "ten_nganh": "Quản trị nhà hàng và dịch vụ ăn uống (Tiếng Anh)",
+    "nhom": "Du lịch",
+    "chi_tieu": 40,
+    "to_hop": [
+      "D01",
+      "D14",
+      "D15"
+    ],
+    "phuong_thuc": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "PT4"
+    ],
+    "nam": 2025
+  }
+]

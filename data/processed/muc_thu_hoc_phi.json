@@ -1,0 +1,104 @@
+{
+  "truong": "Đại học Công nghiệp Hà Nội (HaUI)",
+  "nam_hoc": "2025-2026",
+  "hoc_phi_theo_chuong_trinh": [
+    {
+      "nhom": "Đại học chính quy",
+      "chuong_trinh": "Cử nhân K20 (CTĐT bằng tiếng Anh)",
+      "don_vi": "đồng/tín chỉ",
+      "gia_tri": 1000000,
+      "nam_hoc": "2025-2026"
+    },
+    {
+      "nhom": "Đại học chính quy",
+      "chuong_trinh": "Cử nhân K20 (CTĐT đại trà)",
+      "don_vi": "đồng/tín chỉ",
+      "gia_tri": 700000,
+      "nam_hoc": "2025-2026"
+    },
+    {
+      "nhom": "Đại học chính quy",
+      "chuong_trinh": "Cử nhân K19",
+      "don_vi": "đồng/tín chỉ",
+      "gia_tri": 550000,
+      "nam_hoc": "2025-2026"
+    },
+    {
+      "nhom": "Đại học chính quy",
+      "chuong_trinh": "Cử nhân K18 trở về trước",
+      "don_vi": "đồng/tín chỉ",
+      "gia_tri": 495000,
+      "nam_hoc": "2025-2026"
+    },
+    {
+      "nhom": "Kỹ sư",
+      "chuong_trinh": "Kỹ sư K3 (CTĐT bằng tiếng Anh)",
+      "don_vi": "đồng/tín chỉ",
+      "gia_tri": 1000000,
+      "nam_hoc": "2025-2026"
+    },
+    {
+      "nhom": "Kỹ sư",
+      "chuong_trinh": "Kỹ sư K3 (CTĐT đại trà)",
+      "don_vi": "đồng/tín chỉ",
+      "gia_tri": 700000,
+      "nam_hoc": "2025-2026"
+    },
+    {
+      "nhom": "Kỹ sư",
+      "chuong_trinh": "Kỹ sư K2",
+      "don_vi": "đồng/tín chỉ",
+      "gia_tri": 550000,
+      "nam_hoc": "2025-2026"
+    },
+    {
+      "nhom": "Kỹ sư",
+      "chuong_trinh": "Kỹ sư K1",
+      "don_vi": "đồng/tín chỉ",
+      "gia_tri": 495000,
+      "nam_hoc": "2025-2026"
+    },
+    {
+      "nhom": "Sau đại học",
+      "chuong_trinh": "Tiến sĩ",
+      "don_vi": "đồng/năm",
+      "gia_tri": 35000000,
+      "nam_hoc": "2025-2026"
+    },
+    {
+      "nhom": "Sau đại học",
+      "chuong_trinh": "Thạc sĩ",
+      "don_vi": "đồng/tín chỉ",
+      "gia_tri": 900000,
+      "nam_hoc": "2025-2026"
+    },
+    {
+      "nhom": "Đại học từ xa",
+      "chuong_trinh": "Đại học đào tạo từ xa",
+      "don_vi": "đồng/tín chỉ",
+      "gia_tri": 495000,
+      "nam_hoc": "2025-2026"
+    },
+    {
+      "nhom": "Khác",
+      "chuong_trinh": "Liên thông lên đại học vừa làm vừa học",
+      "don_vi": "đồng/tháng",
+      "gia_tri": 2400000,
+      "nam_hoc": "2025-2026"
+    },
+    {
+      "nhom": "Khác",
+      "chuong_trinh": "Cao đẳng chính quy",
+      "don_vi": "đồng/tín chỉ",
+      "gia_tri": 370000,
+      "nam_hoc": "2025-2026"
+    },
+    {
+      "nhom": "Khác",
+      "chuong_trinh": "Học tiếng Việt tại HaUI (01 năm)",
+      "don_vi": "đồng/khóa",
+      "gia_tri": 16000000,
+      "nam_hoc": "2025-2026"
+    }
+  ]
+}

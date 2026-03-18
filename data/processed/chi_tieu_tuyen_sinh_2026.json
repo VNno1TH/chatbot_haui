@@ -1,0 +1,30 @@
+{
+  "truong": "Đại học Công nghiệp Hà Nội (HaUI)",
+  "nam": 2026,
+  "nguon": "https://www.haui.edu.vn/vn/thong-bao/tuyen-sinh-dai-hoc-nam-2026/67155",
+  "ghi_chu": "Số liệu dự kiến, có thể thay đổi khi có thông báo chính thức",
+
+  "chi_tieu": [
+    {
+      "nam": 2026,
+      "he_dao_tao": "Đại học chính quy",
+      "chi_tieu": 8300
+    },
+    {
+      "nam": 2026,
+      "he_dao_tao": "Đại học từ xa",
+      "chi_tieu": 750
+    },
+    {
+      "nam": 2026,
+      "he_dao_tao": "Liên thông lên Đại học chính quy",
+      "chi_tieu": 250
+    },
+    {
+      "nam": 2026,
+      "he_dao_tao": "Đại học chuyên sâu đặc thù bậc 7 - Kỹ sư",
+      "chi_tieu": 120
+    }
+  ],
+  "tong_chi_tieu": 9420
+}

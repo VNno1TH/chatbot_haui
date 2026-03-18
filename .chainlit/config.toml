@@ -1,0 +1,31 @@
+[project]
+enable_telemetry = false
+name             = "HaUI Tư vấn Tuyển sinh"
+
+[UI]
+name          = "HaUI Chatbot"
+description   = "Tư vấn tuyển sinh Đại học Công nghiệp Hà Nội"
+default_theme = "light"
+
+# Logo: đặt file tên đúng là "logo_dark.png" và "logo_light.png" trong public/
+# Chainlit tự tìm public/logo_dark.png (dark mode) và public/logo_light.png (light mode)
+
+[UI.theme]
+[UI.theme.light]
+background = "#FFFFFF"
+paper      = "#F8F9FA"
+
+    [UI.theme.light.primary]
+    main  = "#C8102E"
+    dark  = "#A00D25"
+    light = "#E8253F"
+
+[features]
+prompt_playground = false
+multi_modal       = false
+
+    [features.spontaneous_file_upload]
+    enabled = false
+
+[meta]
+generated_by = "chainlit"

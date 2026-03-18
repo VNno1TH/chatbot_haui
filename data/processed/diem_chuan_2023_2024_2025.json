@@ -1,0 +1,4415 @@
+[
+  {
+    "ma_nganh": "7480201",
+    "ten_nganh": "Công nghệ thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 25.19,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480201",
+    "ten_nganh": "Công nghệ thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 29.23,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480201",
+    "ten_nganh": "Công nghệ thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 28.93,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480201",
+    "ten_nganh": "Công nghệ thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 15.43,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480103",
+    "ten_nganh": "Kỹ thuật phần mềm",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.54,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480103",
+    "ten_nganh": "Kỹ thuật phần mềm",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.43,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480103",
+    "ten_nganh": "Kỹ thuật phần mềm",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 28.45,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480103",
+    "ten_nganh": "Kỹ thuật phần mềm",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 15.77,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480101",
+    "ten_nganh": "Khoa học máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 25.05,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480101",
+    "ten_nganh": "Khoa học máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.76,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480101",
+    "ten_nganh": "Khoa học máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 15.16,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480102",
+    "ten_nganh": "Mạng máy tính và truyền thông dữ liệu",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.17,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480102",
+    "ten_nganh": "Mạng máy tính và truyền thông dữ liệu",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.04,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480104",
+    "ten_nganh": "Hệ thống thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.31,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480104",
+    "ten_nganh": "Hệ thống thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.27,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480104",
+    "ten_nganh": "Hệ thống thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 16.51,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480108",
+    "ten_nganh": "Công nghệ kỹ thuật máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.3,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480108",
+    "ten_nganh": "Công nghệ kỹ thuật máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.13,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480108",
+    "ten_nganh": "Công nghệ kỹ thuật máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 28.45,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480108",
+    "ten_nganh": "Công nghệ kỹ thuật máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 16.58,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7320113",
+    "ten_nganh": "Công nghệ đa phương tiện",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.63,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7320113",
+    "ten_nganh": "Công nghệ đa phương tiện",
+    "nhom_nganh": "CNTT",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 16.82,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340101",
+    "ten_nganh": "Quản trị kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.21,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340101",
+    "ten_nganh": "Quản trị kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.7,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340101",
+    "ten_nganh": "Quản trị kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.2,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340101",
+    "ten_nganh": "Quản trị kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 19.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340115",
+    "ten_nganh": "Marketing",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 25.24,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340115",
+    "ten_nganh": "Marketing",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.1,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340115",
+    "ten_nganh": "Marketing",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.94,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340115",
+    "ten_nganh": "Marketing",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 19.75,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340201",
+    "ten_nganh": "Tài chính – Ngân hàng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.4,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340201",
+    "ten_nganh": "Tài chính – Ngân hàng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.61,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340201",
+    "ten_nganh": "Tài chính – Ngân hàng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.09,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340201",
+    "ten_nganh": "Tài chính – Ngân hàng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 18.95,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340301",
+    "ten_nganh": "Kế toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.8,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340301",
+    "ten_nganh": "Kế toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.6,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340301",
+    "ten_nganh": "Kế toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.57,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340301",
+    "ten_nganh": "Kế toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 17.95,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340302",
+    "ten_nganh": "Kiểm toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.03,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340302",
+    "ten_nganh": "Kiểm toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.78,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340302",
+    "ten_nganh": "Kiểm toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.95,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340404",
+    "ten_nganh": "Quản trị nhân lực",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.59,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340404",
+    "ten_nganh": "Quản trị nhân lực",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.57,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340404",
+    "ten_nganh": "Quản trị nhân lực",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.77,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340404",
+    "ten_nganh": "Quản trị nhân lực",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 18.2,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340406",
+    "ten_nganh": "Quản trị văn phòng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.09,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340406",
+    "ten_nganh": "Quản trị văn phòng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.29,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340406",
+    "ten_nganh": "Quản trị văn phòng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.08,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340406",
+    "ten_nganh": "Quản trị văn phòng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 17.45,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340125",
+    "ten_nganh": "Phân tích dữ liệu kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.67,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340125",
+    "ten_nganh": "Phân tích dữ liệu kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.36,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340125",
+    "ten_nganh": "Phân tích dữ liệu kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 18.9,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7310104",
+    "ten_nganh": "Kinh tế đầu tư",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.45,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7310104",
+    "ten_nganh": "Kinh tế đầu tư",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.95,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7310104",
+    "ten_nganh": "Kinh tế đầu tư",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.41,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510605",
+    "ten_nganh": "Logistics và quản lý chuỗi cung ứng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 25.52,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510605",
+    "ten_nganh": "Logistics và quản lý chuỗi cung ứng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.6,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510605",
+    "ten_nganh": "Logistics và quản lý chuỗi cung ứng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2023,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 20.75,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220201",
+    "ten_nganh": "Ngôn ngữ Anh",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.3,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220201",
+    "ten_nganh": "Ngôn ngữ Anh",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.09,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220201",
+    "ten_nganh": "Ngôn ngữ Anh",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.73,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220204",
+    "ten_nganh": "Ngôn ngữ Trung Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.86,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220204",
+    "ten_nganh": "Ngôn ngữ Trung Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.34,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220204",
+    "ten_nganh": "Ngôn ngữ Trung Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.47,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220209",
+    "ten_nganh": "Ngôn ngữ Nhật",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.02,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220209",
+    "ten_nganh": "Ngôn ngữ Nhật",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.68,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220209",
+    "ten_nganh": "Ngôn ngữ Nhật",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.2,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220210",
+    "ten_nganh": "Ngôn ngữ Hàn Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.92,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220210",
+    "ten_nganh": "Ngôn ngữ Hàn Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.2,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220210",
+    "ten_nganh": "Ngôn ngữ Hàn Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.15,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7229020",
+    "ten_nganh": "Ngôn ngữ học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 22.25,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7229020",
+    "ten_nganh": "Ngôn ngữ học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.59,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7229020",
+    "ten_nganh": "Ngôn ngữ học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.54,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7310612",
+    "ten_nganh": "Trung Quốc học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.77,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7310612",
+    "ten_nganh": "Trung Quốc học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.27,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7310612",
+    "ten_nganh": "Trung Quốc học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.82,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510201",
+    "ten_nganh": "Công nghệ kỹ thuật cơ khí",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.42,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510201",
+    "ten_nganh": "Công nghệ kỹ thuật cơ khí",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.63,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510201",
+    "ten_nganh": "Công nghệ kỹ thuật cơ khí",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.73,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510201",
+    "ten_nganh": "Công nghệ kỹ thuật cơ khí",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 20.19,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510203",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.63,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510203",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.55,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510203",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.9,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510203",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 15.12,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510205",
+    "ten_nganh": "Công nghệ kỹ thuật ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.26,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510205",
+    "ten_nganh": "Công nghệ kỹ thuật ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.99,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510205",
+    "ten_nganh": "Công nghệ kỹ thuật ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.76,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510205",
+    "ten_nganh": "Công nghệ kỹ thuật ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 15.15,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510206",
+    "ten_nganh": "Công nghệ kỹ thuật nhiệt",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 22.15,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510206",
+    "ten_nganh": "Công nghệ kỹ thuật nhiệt",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.07,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510209",
+    "ten_nganh": "Robot và trí tuệ nhân tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.54,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510209",
+    "ten_nganh": "Robot và trí tuệ nhân tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.6,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510209",
+    "ten_nganh": "Robot và trí tuệ nhân tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 15.2,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510301",
+    "ten_nganh": "Công nghệ kỹ thuật điện, điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.81,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510301",
+    "ten_nganh": "Công nghệ kỹ thuật điện, điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.52,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510301",
+    "ten_nganh": "Công nghệ kỹ thuật điện, điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.42,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510301",
+    "ten_nganh": "Công nghệ kỹ thuật điện, điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 15.84,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7519007",
+    "ten_nganh": "Năng lượng tái tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 19.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7519007",
+    "ten_nganh": "Năng lượng tái tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.3,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510302",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử - viễn thông",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.65,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510302",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử - viễn thông",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.6,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510302",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử - viễn thông",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 28.24,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510302",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử - viễn thông",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 16.2,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75103021",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử y sinh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 19.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75103021",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử y sinh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.68,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75103021",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử y sinh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 15.54,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510303",
+    "ten_nganh": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 25.47,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510303",
+    "ten_nganh": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.94,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510303",
+    "ten_nganh": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 28.71,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510303",
+    "ten_nganh": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 15.16,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75103031",
+    "ten_nganh": "Kỹ thuật sản xuất thông minh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 20.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75103031",
+    "ten_nganh": "Kỹ thuật sản xuất thông minh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.76,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510401",
+    "ten_nganh": "Công nghệ kỹ thuật hoá học",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 20.35,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510401",
+    "ten_nganh": "Công nghệ kỹ thuật hoá học",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.8,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510401",
+    "ten_nganh": "Công nghệ kỹ thuật hoá học",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.79,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510401",
+    "ten_nganh": "Công nghệ kỹ thuật hoá học",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 16.65,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510406",
+    "ten_nganh": "Công nghệ kỹ thuật môi trường",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 19.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510406",
+    "ten_nganh": "Công nghệ kỹ thuật môi trường",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.83,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7520118",
+    "ten_nganh": "Kỹ thuật hệ thống công nghiệp",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 22.65,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7520118",
+    "ten_nganh": "Kỹ thuật hệ thống công nghiệp",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.17,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7520116",
+    "ten_nganh": "Kỹ thuật cơ khí động lực",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 21.55,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7520116",
+    "ten_nganh": "Kỹ thuật cơ khí động lực",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.81,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510204",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.17,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510204",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.65,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510204",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 16.66,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510213",
+    "ten_nganh": "Thiết kế cơ khí và kiểu dáng công nghiệp",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 20.75,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510213",
+    "ten_nganh": "Thiết kế cơ khí và kiểu dáng công nghiệp",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.16,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510213",
+    "ten_nganh": "Thiết kế cơ khí và kiểu dáng công nghiệp",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.37,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7519003",
+    "ten_nganh": "Công nghệ kỹ thuật khuôn mẫu",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 21.9,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7519003",
+    "ten_nganh": "Công nghệ kỹ thuật khuôn mẫu",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.4,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7210404",
+    "ten_nganh": "Thiết kế thời trang",
+    "nhom_nganh": "Dệt may",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.84,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7210404",
+    "ten_nganh": "Thiết kế thời trang",
+    "nhom_nganh": "Dệt may",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.23,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540203",
+    "ten_nganh": "Công nghệ vật liệu dệt may",
+    "nhom_nganh": "Dệt may",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 20.1,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540203",
+    "ten_nganh": "Công nghệ vật liệu dệt may",
+    "nhom_nganh": "Dệt may",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 25.78,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540204",
+    "ten_nganh": "Công nghệ dệt may",
+    "nhom_nganh": "Dệt may",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 21.8,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540204",
+    "ten_nganh": "Công nghệ dệt may",
+    "nhom_nganh": "Dệt may",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 25.1,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540204",
+    "ten_nganh": "Công nghệ dệt may",
+    "nhom_nganh": "Dệt may",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.52,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540101",
+    "ten_nganh": "Công nghệ thực phẩm",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.51,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540101",
+    "ten_nganh": "Công nghệ thực phẩm",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.68,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540101",
+    "ten_nganh": "Công nghệ thực phẩm",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 15.85,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7720203",
+    "ten_nganh": "Hóa dược",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 19.45,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7720203",
+    "ten_nganh": "Hóa dược",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2023,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 16.73,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810101",
+    "ten_nganh": "Du lịch",
+    "nhom_nganh": "Du lịch",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.2,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810101",
+    "ten_nganh": "Du lịch",
+    "nhom_nganh": "Du lịch",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 25.92,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810101",
+    "ten_nganh": "Du lịch",
+    "nhom_nganh": "Du lịch",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.69,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810103",
+    "ten_nganh": "Quản trị dịch vụ du lịch và lữ hành",
+    "nhom_nganh": "Du lịch",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.62,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810103",
+    "ten_nganh": "Quản trị dịch vụ du lịch và lữ hành",
+    "nhom_nganh": "Du lịch",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.26,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810103",
+    "ten_nganh": "Quản trị dịch vụ du lịch và lữ hành",
+    "nhom_nganh": "Du lịch",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.33,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810201",
+    "ten_nganh": "Quản trị khách sạn",
+    "nhom_nganh": "Du lịch",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.56,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810201",
+    "ten_nganh": "Quản trị khách sạn",
+    "nhom_nganh": "Du lịch",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.07,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810201",
+    "ten_nganh": "Quản trị khách sạn",
+    "nhom_nganh": "Du lịch",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.42,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810202",
+    "ten_nganh": "Quản trị nhà hàng và dịch vụ ăn uống",
+    "nhom_nganh": "Du lịch",
+    "nam": 2023,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 22.8,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810202",
+    "ten_nganh": "Quản trị nhà hàng và dịch vụ ăn uống",
+    "nhom_nganh": "Du lịch",
+    "nam": 2023,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.27,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810202",
+    "ten_nganh": "Quản trị nhà hàng và dịch vụ ăn uống",
+    "nhom_nganh": "Du lịch",
+    "nam": 2023,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.48,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480201",
+    "ten_nganh": "Công nghệ thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 25.22,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480201",
+    "ten_nganh": "Công nghệ thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.89,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480201",
+    "ten_nganh": "Công nghệ thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480201",
+    "ten_nganh": "Công nghệ thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 18.5,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480103",
+    "ten_nganh": "Kỹ thuật phần mềm",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.68,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480103",
+    "ten_nganh": "Kỹ thuật phần mềm",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.42,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480103",
+    "ten_nganh": "Kỹ thuật phần mềm",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.67,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480103",
+    "ten_nganh": "Kỹ thuật phần mềm",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.01,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480101",
+    "ten_nganh": "Khoa học máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 25.32,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480101",
+    "ten_nganh": "Khoa học máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.77,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480101",
+    "ten_nganh": "Khoa học máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.15,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480101",
+    "ten_nganh": "Khoa học máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 18.01,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480102",
+    "ten_nganh": "Mạng máy tính và truyền thông dữ liệu",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.35,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480102",
+    "ten_nganh": "Mạng máy tính và truyền thông dữ liệu",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.16,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480102",
+    "ten_nganh": "Mạng máy tính và truyền thông dữ liệu",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.76,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480102",
+    "ten_nganh": "Mạng máy tính và truyền thông dữ liệu",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.04,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480104",
+    "ten_nganh": "Hệ thống thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.44,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480104",
+    "ten_nganh": "Hệ thống thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.01,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480104",
+    "ten_nganh": "Hệ thống thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.2,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480104",
+    "ten_nganh": "Hệ thống thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.07,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480108",
+    "ten_nganh": "Công nghệ kỹ thuật máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.55,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480108",
+    "ten_nganh": "Công nghệ kỹ thuật máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.01,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480108",
+    "ten_nganh": "Công nghệ kỹ thuật máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.76,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480108",
+    "ten_nganh": "Công nghệ kỹ thuật máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.29,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "74802021",
+    "ten_nganh": "An toàn thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.39,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "74802021",
+    "ten_nganh": "An toàn thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.29,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "74802021",
+    "ten_nganh": "An toàn thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.5,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7320113",
+    "ten_nganh": "Công nghệ đa phương tiện",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.91,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7320113",
+    "ten_nganh": "Công nghệ đa phương tiện",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.95,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7320113",
+    "ten_nganh": "Công nghệ đa phương tiện",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.46,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7320113",
+    "ten_nganh": "Công nghệ đa phương tiện",
+    "nhom_nganh": "CNTT",
+    "nam": 2024,
+    "phuong_thuc_code": "PT6",
+    "phuong_thuc_ten": "danh_gia_tu_duy",
+    "diem_chuan": 16.61,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340101",
+    "ten_nganh": "Quản trị kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.31,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340101",
+    "ten_nganh": "Quản trị kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.87,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340101",
+    "ten_nganh": "Quản trị kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340101",
+    "ten_nganh": "Quản trị kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.5,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340115",
+    "ten_nganh": "Marketing",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 25.33,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340115",
+    "ten_nganh": "Marketing",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.55,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340115",
+    "ten_nganh": "Marketing",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.3,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340115",
+    "ten_nganh": "Marketing",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 18.05,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340201",
+    "ten_nganh": "Tài chính – Ngân hàng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.74,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340201",
+    "ten_nganh": "Tài chính – Ngân hàng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.01,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340201",
+    "ten_nganh": "Tài chính – Ngân hàng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.04,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340201",
+    "ten_nganh": "Tài chính – Ngân hàng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.5,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340301",
+    "ten_nganh": "Kế toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.01,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340301",
+    "ten_nganh": "Kế toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.69,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340301",
+    "ten_nganh": "Kế toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.17,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340301",
+    "ten_nganh": "Kế toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340302",
+    "ten_nganh": "Kiểm toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.45,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340302",
+    "ten_nganh": "Kiểm toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.11,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340302",
+    "ten_nganh": "Kiểm toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.81,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340302",
+    "ten_nganh": "Kiểm toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340404",
+    "ten_nganh": "Quản trị nhân lực",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.8,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340404",
+    "ten_nganh": "Quản trị nhân lực",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.84,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340404",
+    "ten_nganh": "Quản trị nhân lực",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.74,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340404",
+    "ten_nganh": "Quản trị nhân lực",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340406",
+    "ten_nganh": "Quản trị văn phòng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.01,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340406",
+    "ten_nganh": "Quản trị văn phòng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.49,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340406",
+    "ten_nganh": "Quản trị văn phòng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 24.73,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340406",
+    "ten_nganh": "Quản trị văn phòng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 15.5,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340125",
+    "ten_nganh": "Phân tích dữ liệu kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.25,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340125",
+    "ten_nganh": "Phân tích dữ liệu kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.58,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340125",
+    "ten_nganh": "Phân tích dữ liệu kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.77,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7340125",
+    "ten_nganh": "Phân tích dữ liệu kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7310104",
+    "ten_nganh": "Kinh tế đầu tư",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.64,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7310104",
+    "ten_nganh": "Kinh tế đầu tư",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.64,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7310104",
+    "ten_nganh": "Kinh tế đầu tư",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.67,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7310104",
+    "ten_nganh": "Kinh tế đầu tư",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510605",
+    "ten_nganh": "Logistics và quản lý chuỗi cung ứng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 25.89,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510605",
+    "ten_nganh": "Logistics và quản lý chuỗi cung ứng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.91,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510605",
+    "ten_nganh": "Logistics và quản lý chuỗi cung ứng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510605",
+    "ten_nganh": "Logistics và quản lý chuỗi cung ứng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 19.5,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220201",
+    "ten_nganh": "Ngôn ngữ Anh",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.68,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220201",
+    "ten_nganh": "Ngôn ngữ Anh",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.37,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220201",
+    "ten_nganh": "Ngôn ngữ Anh",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.19,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220204",
+    "ten_nganh": "Ngôn ngữ Trung Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 25.58,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220204",
+    "ten_nganh": "Ngôn ngữ Trung Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.62,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220204",
+    "ten_nganh": "Ngôn ngữ Trung Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220204LK",
+    "ten_nganh": "Ngôn ngữ Trung Quốc chương trình liên kết đào tạo 2+2 với ĐH Khoa học Kỹ thuật Quảng Tây - Trung Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.91,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220204LK",
+    "ten_nganh": "Ngôn ngữ Trung Quốc chương trình liên kết đào tạo 2+2 với ĐH Khoa học Kỹ thuật Quảng Tây - Trung Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.85,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220204LK",
+    "ten_nganh": "Ngôn ngữ Trung Quốc chương trình liên kết đào tạo 2+2 với ĐH Khoa học Kỹ thuật Quảng Tây - Trung Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.01,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220209",
+    "ten_nganh": "Ngôn ngữ Nhật",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220209",
+    "ten_nganh": "Ngôn ngữ Nhật",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220209",
+    "ten_nganh": "Ngôn ngữ Nhật",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 24.99,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220210",
+    "ten_nganh": "Ngôn ngữ Hàn Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.86,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220210",
+    "ten_nganh": "Ngôn ngữ Hàn Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.22,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7220210",
+    "ten_nganh": "Ngôn ngữ Hàn Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 24.74,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7229020",
+    "ten_nganh": "Ngôn ngữ học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 25.25,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7229020",
+    "ten_nganh": "Ngôn ngữ học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.75,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7229020",
+    "ten_nganh": "Ngôn ngữ học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.68,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7229020",
+    "ten_nganh": "Ngôn ngữ học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7310612",
+    "ten_nganh": "Trung Quốc học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.51,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7310612",
+    "ten_nganh": "Trung Quốc học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.6,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7310612",
+    "ten_nganh": "Trung Quốc học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 24.9,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510201",
+    "ten_nganh": "Công nghệ kỹ thuật cơ khí",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.35,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510201",
+    "ten_nganh": "Công nghệ kỹ thuật cơ khí",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.75,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510201",
+    "ten_nganh": "Công nghệ kỹ thuật cơ khí",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 24.91,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510201",
+    "ten_nganh": "Công nghệ kỹ thuật cơ khí",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.02,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510203",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 25.41,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510203",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.71,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510203",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.01,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510203",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 17.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510204",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.97,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510204",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.84,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510204",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.92,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510204",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.23,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510205",
+    "ten_nganh": "Công nghệ kỹ thuật ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.82,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510205",
+    "ten_nganh": "Công nghệ kỹ thuật ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.11,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510205",
+    "ten_nganh": "Công nghệ kỹ thuật ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 24.21,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510205",
+    "ten_nganh": "Công nghệ kỹ thuật ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510206",
+    "ten_nganh": "Công nghệ kỹ thuật nhiệt",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.57,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510206",
+    "ten_nganh": "Công nghệ kỹ thuật nhiệt",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.36,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510206",
+    "ten_nganh": "Công nghệ kỹ thuật nhiệt",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.38,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510206",
+    "ten_nganh": "Công nghệ kỹ thuật nhiệt",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 15.22,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510209",
+    "ten_nganh": "Robot và trí tuệ nhân tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 25.01,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510209",
+    "ten_nganh": "Robot và trí tuệ nhân tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.44,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510209",
+    "ten_nganh": "Robot và trí tuệ nhân tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.77,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510209",
+    "ten_nganh": "Robot và trí tuệ nhân tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.5,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510213",
+    "ten_nganh": "Thiết kế cơ khí và kiểu dáng công nghiệp",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 22.3,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510213",
+    "ten_nganh": "Thiết kế cơ khí và kiểu dáng công nghiệp",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.62,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510213",
+    "ten_nganh": "Thiết kế cơ khí và kiểu dáng công nghiệp",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.71,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510301",
+    "ten_nganh": "Công nghệ kỹ thuật điện, điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.51,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510301",
+    "ten_nganh": "Công nghệ kỹ thuật điện, điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.8,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510301",
+    "ten_nganh": "Công nghệ kỹ thuật điện, điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.82,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510301",
+    "ten_nganh": "Công nghệ kỹ thuật điện, điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.05,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75190071",
+    "ten_nganh": "Năng lượng tái tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 20.65,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75190071",
+    "ten_nganh": "Năng lượng tái tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75190071",
+    "ten_nganh": "Năng lượng tái tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.56,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75190071",
+    "ten_nganh": "Năng lượng tái tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 15.36,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510302",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử - viễn thông",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 24.4,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510302",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử - viễn thông",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.92,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510302",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử - viễn thông",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.28,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510302",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử - viễn thông",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.06,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75103021",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử y sinh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 21.4,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75103021",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử y sinh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.2,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75103021",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử y sinh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.99,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75103021",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử y sinh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 15.07,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510303",
+    "ten_nganh": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 26.05,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510303",
+    "ten_nganh": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 28.97,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510303",
+    "ten_nganh": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510303",
+    "ten_nganh": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 19.01,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75103031",
+    "ten_nganh": "Kỹ thuật sản xuất thông minh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 22.6,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75103031",
+    "ten_nganh": "Kỹ thuật sản xuất thông minh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.99,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75103031",
+    "ten_nganh": "Kỹ thuật sản xuất thông minh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.58,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "75103031",
+    "ten_nganh": "Kỹ thuật sản xuất thông minh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 15.57,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510401",
+    "ten_nganh": "Công nghệ kỹ thuật hoá học",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 19.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510401",
+    "ten_nganh": "Công nghệ kỹ thuật hoá học",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.91,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510401",
+    "ten_nganh": "Công nghệ kỹ thuật hoá học",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.99,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510401",
+    "ten_nganh": "Công nghệ kỹ thuật hoá học",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.53,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510406",
+    "ten_nganh": "Công nghệ kỹ thuật môi trường",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 19.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510406",
+    "ten_nganh": "Công nghệ kỹ thuật môi trường",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.55,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7510406",
+    "ten_nganh": "Công nghệ kỹ thuật môi trường",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.62,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7519003",
+    "ten_nganh": "Công nghệ kỹ thuật khuôn mẫu",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.19,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7519003",
+    "ten_nganh": "Công nghệ kỹ thuật khuôn mẫu",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.73,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7519003",
+    "ten_nganh": "Công nghệ kỹ thuật khuôn mẫu",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.73,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7519003",
+    "ten_nganh": "Công nghệ kỹ thuật khuôn mẫu",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 15.16,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7520116",
+    "ten_nganh": "Kỹ thuật cơ khí động lực",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.93,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7520116",
+    "ten_nganh": "Kỹ thuật cơ khí động lực",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.49,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7520116",
+    "ten_nganh": "Kỹ thuật cơ khí động lực",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 28.32,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7520116",
+    "ten_nganh": "Kỹ thuật cơ khí động lực",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 15.53,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7520118",
+    "ten_nganh": "Kỹ thuật hệ thống công nghiệp",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.61,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7520118",
+    "ten_nganh": "Kỹ thuật hệ thống công nghiệp",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.4,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7520118",
+    "ten_nganh": "Kỹ thuật hệ thống công nghiệp",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 15.41,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7210404",
+    "ten_nganh": "Thiết kế thời trang",
+    "nhom_nganh": "Dệt may",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.56,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7210404",
+    "ten_nganh": "Thiết kế thời trang",
+    "nhom_nganh": "Dệt may",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.17,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7210404",
+    "ten_nganh": "Thiết kế thời trang",
+    "nhom_nganh": "Dệt may",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540203",
+    "ten_nganh": "Công nghệ vật liệu dệt, may",
+    "nhom_nganh": "Dệt may",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 20.9,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540203",
+    "ten_nganh": "Công nghệ vật liệu dệt, may",
+    "nhom_nganh": "Dệt may",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.25,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540203",
+    "ten_nganh": "Công nghệ vật liệu dệt, may",
+    "nhom_nganh": "Dệt may",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 27.12,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540204",
+    "ten_nganh": "Công nghệ dệt, may",
+    "nhom_nganh": "Dệt may",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 21.9,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540204",
+    "ten_nganh": "Công nghệ dệt, may",
+    "nhom_nganh": "Dệt may",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 25.74,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540204",
+    "ten_nganh": "Công nghệ dệt, may",
+    "nhom_nganh": "Dệt may",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.5,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540101",
+    "ten_nganh": "Công nghệ thực phẩm",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 22.65,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540101",
+    "ten_nganh": "Công nghệ thực phẩm",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.7,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540101",
+    "ten_nganh": "Công nghệ thực phẩm",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.78,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7540101",
+    "ten_nganh": "Công nghệ thực phẩm",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 15.6,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7720203",
+    "ten_nganh": "Hóa dược",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 21.55,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7720203",
+    "ten_nganh": "Hóa dược",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.94,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7720203",
+    "ten_nganh": "Hóa dược",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.91,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7720203",
+    "ten_nganh": "Hóa dược",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 16.26,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810101",
+    "ten_nganh": "Du lịch",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 22.4,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810101",
+    "ten_nganh": "Du lịch",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 26.16,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810101",
+    "ten_nganh": "Du lịch",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.79,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810101",
+    "ten_nganh": "Du lịch",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 15.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810103",
+    "ten_nganh": "Quản trị dịch vụ du lịch và lữ hành",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.77,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810103",
+    "ten_nganh": "Quản trị dịch vụ du lịch và lữ hành",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.26,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810103",
+    "ten_nganh": "Quản trị dịch vụ du lịch và lữ hành",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.38,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810103",
+    "ten_nganh": "Quản trị dịch vụ du lịch và lữ hành",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 15.25,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810201",
+    "ten_nganh": "Quản trị khách sạn",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.56,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810201",
+    "ten_nganh": "Quản trị khách sạn",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.45,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810201",
+    "ten_nganh": "Quản trị khách sạn",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 25.76,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810201",
+    "ten_nganh": "Quản trị khách sạn",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 15.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810202",
+    "ten_nganh": "Quản trị nhà hàng và dịch vụ ăn uống",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT3",
+    "phuong_thuc_ten": "thpt",
+    "diem_chuan": 23.19,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810202",
+    "ten_nganh": "Quản trị nhà hàng và dịch vụ ăn uống",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT4",
+    "phuong_thuc_ten": "hoc_ba",
+    "diem_chuan": 27.03,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810202",
+    "ten_nganh": "Quản trị nhà hàng và dịch vụ ăn uống",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT2",
+    "phuong_thuc_ten": "chung_chi_hsg",
+    "diem_chuan": 26.73,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7810202",
+    "ten_nganh": "Quản trị nhà hàng và dịch vụ ăn uống",
+    "nhom_nganh": "Du lịch",
+    "nam": 2024,
+    "phuong_thuc_code": "PT5",
+    "phuong_thuc_ten": "danh_gia_nl",
+    "diem_chuan": 15.0,
+    "thang_diem": 30
+  },
+  {
+    "ma_nganh": "7480201",
+    "ten_nganh": "Công nghệ thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 23.09,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "74802012",
+    "ten_nganh": "Công nghệ đa phương tiện",
+    "nhom_nganh": "CNTT",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 22.25,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "74802021",
+    "ten_nganh": "An toàn thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 23.43,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7480101",
+    "ten_nganh": "Khoa học máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 23.72,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7480101TA",
+    "ten_nganh": "Khoa học máy tính chương trình đào tạo bằng Tiếng Anh",
+    "nhom_nganh": "CNTT",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.45,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7480102",
+    "ten_nganh": "Mạng máy tính và truyền thông dữ liệu",
+    "nhom_nganh": "CNTT",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.7,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7480103",
+    "ten_nganh": "Kỹ thuật phần mềm",
+    "nhom_nganh": "CNTT",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.75,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7480104",
+    "ten_nganh": "Hệ thống thông tin",
+    "nhom_nganh": "CNTT",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.1,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7480108",
+    "ten_nganh": "Công nghệ kỹ thuật máy tính",
+    "nhom_nganh": "CNTT",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.85,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7340101",
+    "ten_nganh": "Quản trị kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.25,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "73401012",
+    "ten_nganh": "Phân tích dữ liệu kinh doanh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.0,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7340115",
+    "ten_nganh": "Marketing",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 22.5,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7340201",
+    "ten_nganh": "Tài chính - Ngân hàng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.75,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7340301",
+    "ten_nganh": "Kế toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.0,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7340301TA",
+    "ten_nganh": "Kế toán chương trình đào tạo bằng Tiếng Anh",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.25,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7340302",
+    "ten_nganh": "Kiểm toán",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.0,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7340404",
+    "ten_nganh": "Quản trị nhân lực",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.25,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7340406",
+    "ten_nganh": "Quản trị văn phòng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.0,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7310104",
+    "ten_nganh": "Kinh tế đầu tư",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.25,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7510605",
+    "ten_nganh": "Logistics và quản lý chuỗi cung ứng",
+    "nhom_nganh": "Kinh tế",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 22.76,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7220201",
+    "ten_nganh": "Ngôn ngữ Anh",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.35,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3"
+    ]
+  },
+  {
+    "ma_nganh": "7220204",
+    "ten_nganh": "Ngôn ngữ Trung Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 23.0,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3"
+    ]
+  },
+  {
+    "ma_nganh": "7220204LK",
+    "ten_nganh": "Ngôn ngữ Trung Quốc chương trình liên kết đào tạo 2+2 với ĐH Khoa học kỹ thuật Quảng Tây - Trung Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 22.5,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3"
+    ]
+  },
+  {
+    "ma_nganh": "7220209",
+    "ten_nganh": "Ngôn ngữ Nhật",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.0,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3"
+    ]
+  },
+  {
+    "ma_nganh": "7220210",
+    "ten_nganh": "Ngôn ngữ Hàn Quốc",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.5,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3"
+    ]
+  },
+  {
+    "ma_nganh": "7229020",
+    "ten_nganh": "Ngôn ngữ học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.0,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7310612",
+    "ten_nganh": "Trung Quốc học",
+    "nhom_nganh": "Ngôn ngữ",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.55,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3"
+    ]
+  },
+  {
+    "ma_nganh": "7510201",
+    "ten_nganh": "Công nghệ kỹ thuật cơ khí",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 23.72,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7510201TA",
+    "ten_nganh": "Công nghệ kỹ thuật cơ khí chương trình đào tạo bằng Tiếng Anh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.45,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "75102012",
+    "ten_nganh": "Công nghệ kỹ thuật khuôn mẫu",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 22.5,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "75102013",
+    "ten_nganh": "Thiết kế cơ khí và kiểu dáng công nghiệp",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.35,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7510203",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 25.17,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "75102032",
+    "ten_nganh": "Robot và trí tuệ nhân tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 24.3,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "75102033",
+    "ten_nganh": "Công nghệ kỹ thuật cơ điện tử ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 23.93,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7510205",
+    "ten_nganh": "Công nghệ kỹ thuật ô tô",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 22.5,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7510205TA",
+    "ten_nganh": "Công nghệ kỹ thuật ô tô chương trình đào tạo bằng Tiếng Anh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.0,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7510206",
+    "ten_nganh": "Công nghệ kỹ thuật nhiệt",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.85,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7510301",
+    "ten_nganh": "Công nghệ kỹ thuật điện, điện tử",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 23.93,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7510301TA",
+    "ten_nganh": "Công nghệ kỹ thuật điện, điện tử chương trình đào tạo bằng Tiếng Anh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.1,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "75190071",
+    "ten_nganh": "Năng lượng tái tạo",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.75,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7510302",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử - viễn thông",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 22.75,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7510302TA",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử - viễn thông chương trình đào tạo bằng Tiếng Anh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.0,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "75103021",
+    "ten_nganh": "Công nghệ kỹ thuật điện tử y sinh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.6,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7510303",
+    "ten_nganh": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 26.27,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "75103031",
+    "ten_nganh": "Kỹ thuật sản xuất thông minh",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 22.5,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7510401",
+    "ten_nganh": "Công nghệ kỹ thuật hoá học",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.25,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7510406",
+    "ten_nganh": "Công nghệ kỹ thuật môi trường",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 18.75,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7520116",
+    "ten_nganh": "Kỹ thuật cơ khí động lực",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 22.5,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7520118",
+    "ten_nganh": "Kỹ thuật hệ thống công nghiệp",
+    "nhom_nganh": "Cơ khí",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.75,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7210404",
+    "ten_nganh": "Thiết kế thời trang",
+    "nhom_nganh": "Dệt may",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.75,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3"
+    ]
+  },
+  {
+    "ma_nganh": "7540203",
+    "ten_nganh": "Công nghệ vật liệu dệt, may",
+    "nhom_nganh": "Dệt may",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 18.25,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7540204",
+    "ten_nganh": "Công nghệ dệt, may",
+    "nhom_nganh": "Dệt may",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 18.0,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7540101",
+    "ten_nganh": "Công nghệ thực phẩm",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.6,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7720203",
+    "ten_nganh": "Hóa dược",
+    "nhom_nganh": "Thực phẩm",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.35,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT5"
+    ]
+  },
+  {
+    "ma_nganh": "7810101",
+    "ten_nganh": "Du lịch",
+    "nhom_nganh": "Du lịch",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.85,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7810101TA",
+    "ten_nganh": "Du lịch chương trình đào tạo bằng Tiếng Anh",
+    "nhom_nganh": "Du lịch",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 18.0,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7810103",
+    "ten_nganh": "Quản trị dịch vụ du lịch và lữ hành",
+    "nhom_nganh": "Du lịch",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 22.25,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7810103TA",
+    "ten_nganh": "Quản trị dịch vụ du lịch và lữ hành chương trình đào tạo bằng Tiếng Anh",
+    "nhom_nganh": "Du lịch",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 18.1,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7810201",
+    "ten_nganh": "Quản trị khách sạn",
+    "nhom_nganh": "Du lịch",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 21.75,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7810201TA",
+    "ten_nganh": "Quản trị khách sạn chương trình đào tạo bằng Tiếng Anh",
+    "nhom_nganh": "Du lịch",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 18.25,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7810202",
+    "ten_nganh": "Quản trị nhà hàng và dịch vụ ăn uống",
+    "nhom_nganh": "Du lịch",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 20.85,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  },
+  {
+    "ma_nganh": "7810202TA",
+    "ten_nganh": "Quản trị nhà hàng và dịch vụ ăn uống chương trình đào tạo bằng Tiếng Anh",
+    "nhom_nganh": "Du lịch",
+    "nam": 2025,
+    "phuong_thuc_code": "chung",
+    "phuong_thuc_ten": "chung",
+    "diem_chuan": 18.6,
+    "thang_diem": 30,
+    "cac_phuong_thuc_ap_dung": [
+      "PT2",
+      "PT3",
+      "PT4"
+    ]
+  }
+]
