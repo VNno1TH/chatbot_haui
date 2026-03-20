@@ -1,36 +1,109 @@
 """
-embedder.py  (v2 — model nhẹ hơn)
-Thay bge-m3 (570MB, dim=1024) → multilingual-e5-small (118MB, dim=384).
+embedder.py  (v3 — hỗ trợ Ollama embedding trên GPU cloud)
 
-Lý do:
-  - Nhanh hơn ~4x khi encode trên CPU
-  - RAM giảm ~450MB → còn nhiều hơn cho Qwen LLM
-  - Chất lượng tiếng Việt vẫn tốt (trained trên 100 ngôn ngữ)
-  - Prefix giống bge-m3: "query: " / "passage: "
+Hai chế độ, tự động chọn qua biến môi trường:
 
-LƯU Ý: Phải rebuild ChromaDB sau khi đổi model.
-  python src/indexing/build_index.py --reset
+  Chế độ 1 — Local CPU (mặc định, không cần cấu hình thêm):
+      EMBEDDING_MODEL=intfloat/multilingual-e5-small
+      → SentenceTransformer load model về máy, encode trên CPU
+
+  Chế độ 2 — Ollama GPU cloud (khuyến nghị, CPU máy nhàn hơn):
+      OLLAMA_BASE_URL=http://localhost:11435
+      OLLAMA_EMBED_MODEL=bge-m3
+      → Gọi HTTP đến Ollama /v1/embeddings, encode trên GPU cloud
+
+Khi dùng chế độ 2, phải rebuild ChromaDB một lần:
+    ollama pull bge-m3           # trên GPU cloud
+    python src/indexing/build_index.py --reset
 """
 
 import os
+import json
 import hashlib
+import urllib.request
+import urllib.error
 from pathlib import Path
 from typing import Any
 
 import chromadb
 from chromadb.config import Settings
-from sentence_transformers import SentenceTransformer
 
 # ── Cấu hình ─────────────────────────────────────────────────────────────────
 
-# Model mới — nhẹ hơn 5x, hỗ trợ tiếng Việt tốt
-DEFAULT_MODEL_NAME = "intfloat/multilingual-e5-small"
 DEFAULT_COLLECTION = "haui_tuyen_sinh"
-EMBED_BATCH_SIZE   = 64     # tăng batch size vì model nhẹ hơn
+EMBED_BATCH_SIZE   = 64
+
+# Chế độ Ollama: bật khi có OLLAMA_EMBED_MODEL trong env
+OLLAMA_BASE_URL   = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
+OLLAMA_EMBED_MODEL = os.environ.get("OLLAMA_EMBED_MODEL", "")   # rỗng = dùng local
+
+# Chế độ local: model HuggingFace
+DEFAULT_MODEL_NAME = os.environ.get("EMBEDDING_MODEL", "intfloat/multilingual-e5-small")
 
 # Tắt HuggingFace online check khi đã có local
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
+
+
+# ── Ollama Embedding Backend ──────────────────────────────────────────────────
+
+class _OllamaEmbedder:
+    """
+    Gọi Ollama /v1/embeddings qua HTTP — encode trên GPU cloud.
+    Dùng OpenAI-compatible endpoint (Ollama >= 0.1.24).
+    """
+
+    def __init__(self, base_url: str, model: str):
+        self._url   = base_url.rstrip("/") + "/v1/embeddings"
+        self._model = model
+        self._dim   = self._detect_dim()
+        print(f"  Ollama embedding endpoint: {self._url}")
+
+    def _detect_dim(self) -> int:
+        vec = self._call(["test"])[0]
+        return len(vec)
+
+    def _call(self, texts: list[str]) -> list[list[float]]:
+        payload = json.dumps({
+            "model": self._model,
+            "input": texts,
+        }).encode("utf-8")
+        req = urllib.request.Request(
+            self._url,
+            data    = payload,
+            headers = {"Content-Type": "application/json"},
+            method  = "POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                data = json.loads(resp.read().decode())
+                return [item["embedding"] for item in data["data"]]
+        except urllib.error.HTTPError as e:
+            body = e.read().decode() if hasattr(e, "read") else ""
+            raise RuntimeError(
+                f"Ollama embedding lỗi HTTP {e.code} tại {self._url}\n"
+                f"Response: {body}\n"
+                f"Kiểm tra: ollama list | grep {self._model}"
+            )
+        except urllib.error.URLError as e:
+            raise RuntimeError(
+                f"Không kết nối Ollama tại {self._url}: {e}\n"
+                f"Kiểm tra SSH tunnel đang chạy."
+            )
+
+    def encode_passages(self, texts: list[str]) -> list[list[float]]:
+        all_vecs = []
+        for i in range(0, len(texts), EMBED_BATCH_SIZE):
+            batch = texts[i : i + EMBED_BATCH_SIZE]
+            all_vecs.extend(self._call(batch))
+        return all_vecs
+
+    def encode_query(self, query: str) -> list[float]:
+        return self._call([query])[0]
+
+    @property
+    def dimension(self) -> int:
+        return self._dim
 
 
 # ── Embedder ──────────────────────────────────────────────────────────────────
@@ -38,6 +111,10 @@ os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
 class Embedder:
     """
     Quản lý embedding model và ChromaDB collection.
+
+    Tự động chọn backend:
+      - Có OLLAMA_EMBED_MODEL trong .env → dùng Ollama GPU cloud
+      - Không có → load SentenceTransformer local trên CPU
 
     Cách dùng:
         embedder = Embedder()
@@ -54,46 +131,67 @@ class Embedder:
     ):
         self.collection_name = collection_name
 
-        # Load embedding model
-        print(f"Đang load model: {model_name}")
-        self.model = SentenceTransformer(model_name, device=device)
-        dim = self.model.get_sentence_embedding_dimension()
-        print(f"  ✓ Model loaded — dimension: {dim}")
+        # ── Chọn backend embedding ────────────────────────────────────────────
+        if OLLAMA_EMBED_MODEL:
+            # Chế độ Ollama — encode trên GPU cloud, không tốn CPU local
+            print(f"Embedding backend: Ollama GPU cloud")
+            print(f"  URL  : {OLLAMA_BASE_URL}/v1/embeddings")
+            print(f"  Model: {OLLAMA_EMBED_MODEL}")
+            self._backend = _OllamaEmbedder(OLLAMA_BASE_URL, OLLAMA_EMBED_MODEL)
+            self.model    = None   # không dùng SentenceTransformer
+            print(f"  ✓ Ollama embedder OK — dimension: {self._backend.dimension}")
+        else:
+            # Chế độ local — load SentenceTransformer trên CPU
+            from sentence_transformers import SentenceTransformer
+            print(f"Embedding backend: local CPU")
+            print(f"  Model: {model_name}")
+            self._st      = SentenceTransformer(model_name, device=device)
+            self._backend = None
+            self.model    = self._st   # giữ để tương thích với router.py
+            dim = self._st.get_sentence_embedding_dimension()
+            print(f"  ✓ Model loaded — dimension: {dim}")
 
-        # Khởi tạo ChromaDB
+        # ── Khởi tạo ChromaDB ─────────────────────────────────────────────────
         vectorstore_dir = Path(vectorstore_dir)
         vectorstore_dir.mkdir(parents=True, exist_ok=True)
-
         self.chroma_client = chromadb.PersistentClient(
-            path    = str(vectorstore_dir),
-            settings= Settings(anonymized_telemetry=False),
+            path     = str(vectorstore_dir),
+            settings = Settings(anonymized_telemetry=False),
         )
         self.collection = self.chroma_client.get_or_create_collection(
-            name    = collection_name,
-            metadata= {"hnsw:space": "cosine"},
+            name     = collection_name,
+            metadata = {"hnsw:space": "cosine"},
         )
         print(f"  ✓ ChromaDB '{collection_name}' — {self.collection.count()} docs")
 
     # ── Embedding ─────────────────────────────────────────────────────────────
 
     def _embed_passages(self, texts: list[str]) -> list[list[float]]:
-        """Embed văn bản (chunks) — dùng prefix 'passage: '."""
-        prefixed = [f"passage: {t}" for t in texts]
-        vectors  = self.model.encode(
-            prefixed,
-            batch_size          = EMBED_BATCH_SIZE,
-            show_progress_bar   = True,
-            normalize_embeddings= True,
-        )
-        return vectors.tolist()
+        """Embed văn bản (chunks)."""
+        if self._backend:
+            # Ollama: gửi text thẳng, không cần prefix
+            return self._backend.encode_passages(texts)
+        else:
+            # Local SentenceTransformer: dùng prefix 'passage: '
+            prefixed = [f"passage: {t}" for t in texts]
+            vectors  = self._st.encode(
+                prefixed,
+                batch_size           = EMBED_BATCH_SIZE,
+                show_progress_bar    = True,
+                normalize_embeddings = True,
+            )
+            return vectors.tolist()
 
     def embed_query(self, query: str) -> list[float]:
-        """Embed câu hỏi của user — dùng prefix 'query: '."""
-        vector = self.model.encode(
-            f"query: {query}",
-            normalize_embeddings= True,
-        )
-        return vector.tolist()
+        """Embed câu hỏi của user."""
+        if self._backend:
+            return self._backend.encode_query(query)
+        else:
+            vector = self._st.encode(
+                f"query: {query}",
+                normalize_embeddings = True,
+            )
+            return vector.tolist()
 
     # ── CRUD ChromaDB ─────────────────────────────────────────────────────────
 

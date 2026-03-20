@@ -9,12 +9,16 @@ Cách dùng:
 """
 
 import argparse
+import os
 import sys
 import time
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT_DIR))
+
+from dotenv import load_dotenv
+load_dotenv(ROOT_DIR / ".env")
 
 from src.indexing.chunker  import MarkdownChunker
 from src.indexing.embedder import Embedder
@@ -25,8 +29,9 @@ BASE_DIR        = ROOT_DIR
 PROCESSED_DIR   = BASE_DIR / "data" / "processed"
 VECTORSTORE_DIR = BASE_DIR / "data" / "vectorstore" / "chroma_db"
 
-# Model mới — tự động tải nếu chưa có (~118MB)
-EMBEDDING_MODEL = "intfloat/multilingual-e5-small"
+# Đọc từ env — mặc định multilingual-e5-small (local CPU)
+# Để dùng bge-m3 trên GPU cloud: thêm EMBEDDING_MODEL=BAAI/bge-m3 vào .env
+EMBEDDING_MODEL = os.environ.get("EMBEDDING_MODEL", "intfloat/multilingual-e5-small")
 
 MD_DIRS = [
     PROCESSED_DIR / "nganh",

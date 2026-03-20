@@ -17,8 +17,11 @@ YÊU CẦU:
 
 from __future__ import annotations
 
+import os
 import json
 import re
+from dotenv import load_dotenv
+load_dotenv()
 import random
 import logging
 import requests
@@ -45,22 +48,33 @@ logger = logging.getLogger("haui.chatbot")
 
 # ── Cấu hình ─────────────────────────────────────────────────────────────────
 
-OLLAMA_BASE_URL = "http://localhost:11434"
-OLLAMA_MODEL    = "qwen2.5:1.5b"   # model nhẹ hơn, nhanh hơn ~2x
-MAX_NEW_TOKENS  = 256               # giảm token tối đa
-MAX_HISTORY     = 4  
-TEMPERATURE     = 0.3             # thấp → ít hallucinate
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+OLLAMA_MODEL    = os.getenv("OLLAMA_MODEL", "qwen2.5:3b")
+MAX_HISTORY     = 6
+MAX_NEW_TOKENS  = 512
+TEMPERATURE     = 0.3
+
+# ── Groq config (thay thế Ollama khi có internet) ─────────────────────────────
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
+GROQ_MODEL   = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
+USE_GROQ     = bool(GROQ_API_KEY)   # tự động dùng Groq nếu có API key
 
 SYSTEM_PROMPT = """Bạn là trợ lý tư vấn tuyển sinh của Đại học Công nghiệp Hà Nội (HaUI).
 
 NGUYÊN TẮC BẮT BUỘC:
-1. LUÔN dùng số liệu cụ thể từ THÔNG TIN THAM KHẢO — điểm, tiền, năm, tên.
-2. Nếu context có số liệu → PHẢI trích dẫn, KHÔNG được nói "chưa có thông tin".
-3. Nếu context THỰC SỰ không có → nói "Tôi chưa có dữ liệu về vấn đề này."
-4. KHÔNG bịa số liệu ngoài context.
-5. Trả lời ngắn gọn, đúng trọng tâm, không dùng emoji.
-6. KHÔNG thêm câu hỏi ngược hay số điện thoại khi không được hỏi.
-7. Trả lời bằng tiếng Việt."""
+1. CHỈ trả lời đúng điều người dùng hỏi — KHÔNG lan man sang chủ đề khác.
+2. LUÔN dùng số liệu cụ thể từ THÔNG TIN THAM KHẢO — điểm, tiền, năm, tên.
+3. Nếu context có số liệu → PHẢI trích dẫn, KHÔNG được nói "chưa có thông tin".
+4. Nếu context THỰC SỰ không có → nói "Tôi chưa có dữ liệu về vấn đề này."
+5. KHÔNG bịa số liệu ngoài context.
+6. Trả lời ngắn gọn, đúng trọng tâm, tối đa 5 câu, không dùng emoji.
+7. KHÔNG thêm câu hỏi ngược, không thêm thông tin ngoài phạm vi câu hỏi.
+8. Trả lời bằng tiếng Việt.
+
+VÍ DỤ:
+- Hỏi học phí → CHỈ trả lời học phí, KHÔNG đề cập ký túc xá hay học bổng.
+- Hỏi điểm chuẩn → CHỈ trả lời điểm chuẩn, KHÔNG đề cập học phí hay ngành học.
+- Hỏi ngành học → CHỈ trả lời về ngành đó, KHÔNG liệt kê các ngành khác."""
 
 
 # ── Data classes ──────────────────────────────────────────────────────────────
@@ -206,6 +220,69 @@ class OllamaLLM:
             yield "\n[Lỗi kết nối Ollama]"
 
 
+# ── Groq LLM wrapper ─────────────────────────────────────────────────────────
+
+class GroqLLM:
+    """
+    Wrapper gọi LLM qua Groq API — nhanh ~1-2s, miễn phí.
+    Tự động dùng khi có GROQ_API_KEY trong .env.
+
+    Cài: pip install groq
+    Key: https://console.groq.com
+    """
+
+    def __init__(self, model: str = GROQ_MODEL, api_key: str = GROQ_API_KEY):
+        try:
+            from groq import Groq
+        except ImportError:
+            raise RuntimeError("Chạy: pip install groq")
+        if not api_key:
+            raise RuntimeError("Thiếu GROQ_API_KEY — thêm vào file .env")
+        self._client = Groq(api_key=api_key)
+        self._model  = model
+        logger.info(f"GroqLLM OK — model: {self._model}")
+
+    def _build_messages(self, system, history, user_msg):
+        messages = [{"role": "system", "content": system}]
+        for m in history:
+            messages.append({"role": m.role, "content": m.content})
+        messages.append({"role": "user", "content": user_msg})
+        return messages
+
+    def generate(self, system, history, user_msg) -> str:
+        messages = self._build_messages(system, history, user_msg)
+        try:
+            resp = self._client.chat.completions.create(
+                model       = self._model,
+                messages    = messages,
+                max_tokens  = MAX_NEW_TOKENS,
+                temperature = TEMPERATURE,
+                stream      = False,
+            )
+            return resp.choices[0].message.content.strip()
+        except Exception as e:
+            logger.error(f"Groq error: {e}")
+            return "Xin lỗi, có lỗi xảy ra khi xử lý câu hỏi."
+
+    def generate_stream(self, system, history, user_msg) -> Iterator[str]:
+        messages = self._build_messages(system, history, user_msg)
+        try:
+            stream = self._client.chat.completions.create(
+                model       = self._model,
+                messages    = messages,
+                max_tokens  = MAX_NEW_TOKENS,
+                temperature = TEMPERATURE,
+                stream      = True,
+            )
+            for chunk in stream:
+                token = chunk.choices[0].delta.content
+                if token:
+                    yield token
+        except Exception as e:
+            logger.error(f"Groq stream error: {e}")
+            yield "\n[Lỗi kết nối Groq]"
+
+
 # ── Normalize nhẹ (không dùng LLM) ───────────────────────────────────────────
 
 def _light_normalize(query: str) -> str:
@@ -286,11 +363,19 @@ class ContextBuilder:
 
     def _ctx_hoc_phi(self, query: str, intent: Intent) -> str:
         nganh  = intent.entities.get("nganh", "")
-        result = get_hoc_phi(nganh or query)
-        ctx    = fmt_hoc_phi(result)
-        if not result["found"]:
-            ctx += "\n\n" + self._retriever.retrieve_as_context(query)
-        return ctx
+
+        # Thử theo ngành trước
+        result = get_hoc_phi(nganh) if nganh else {"found": False}
+
+        # Nếu không có ngành → thử match theo query
+        if not result.get("found"):
+            result = get_hoc_phi(query)
+
+        # Nếu vẫn không match → lấy toàn bộ bảng học phí (đại học chính quy)
+        if not result.get("found"):
+            result = get_hoc_phi("")   # lấy tất cả
+
+        return fmt_hoc_phi(result)
 
     def _ctx_chi_tieu_to_hop(self, query: str, intent: Intent) -> str:
         e        = intent.entities
@@ -590,17 +675,22 @@ class Chatbot:
         retriever: Optional[Retriever] = None,
         use_hybrid: bool = True,
     ):
-        # 1. Khởi tạo Ollama LLM
-        self._llm = OllamaLLM(model=model, base_url=base_url)
+        # 1. Khởi tạo LLM — ưu tiên Groq nếu có API key, fallback Ollama
+        if USE_GROQ:
+            logger.info("Backend: Groq API")
+            self._llm = GroqLLM()
+        else:
+            logger.info("Backend: Ollama local")
+            self._llm = OllamaLLM(model=model, base_url=base_url)
 
         # 2. Khởi tạo Retriever
         if retriever:
             self._retriever = retriever
         else:
             self._retriever = (
-                Retriever(use_reranker=False, use_bm25=True)
+                Retriever(use_reranker=True, use_bm25=True)
                 if use_hybrid
-                else Retriever(use_reranker=False, use_bm25=False)
+                else Retriever(use_reranker=True, use_bm25=False)
             )
 
         # 3. Router — dùng lại embedder của Retriever, không load thêm model

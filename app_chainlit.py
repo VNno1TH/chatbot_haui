@@ -13,6 +13,10 @@ import sys
 import time
 import uuid
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load .env trước khi import bất kỳ thứ gì
+load_dotenv()
 
 # Thêm thư mục gốc project vào sys.path để import src.*
 sys.path.insert(0, str(Path(__file__).resolve().parent))

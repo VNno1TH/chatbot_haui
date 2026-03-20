@@ -49,8 +49,9 @@ logger = logging.getLogger("haui.retriever")
 BASE_DIR        = Path(__file__).resolve().parent.parent.parent
 VECTORSTORE_DIR = BASE_DIR / "data" / "vectorstore" / "chroma_db"
 
-# Model embedding mới — nhẹ hơn, tự động tải nếu chưa có
-EMBEDDING_MODEL = "intfloat/multilingual-e5-small"
+# Đọc từ env — mặc định multilingual-e5-small (local CPU)
+# Để dùng bge-m3 trên GPU cloud: thêm EMBEDDING_MODEL=BAAI/bge-m3 vào .env
+EMBEDDING_MODEL = os.environ.get("EMBEDDING_MODEL", "intfloat/multilingual-e5-small")
 
 # Tăng top_k so với v1 vì model nhẹ hơn có recall thấp hơn một chút
 VECTOR_TOP_K     = 10   # v1: 7
