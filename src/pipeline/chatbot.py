@@ -51,7 +51,7 @@ logger = logging.getLogger("haui.chatbot")
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 OLLAMA_MODEL    = os.getenv("OLLAMA_MODEL", "qwen2.5:3b")
 MAX_HISTORY     = 6
-MAX_NEW_TOKENS  = 512
+MAX_NEW_TOKENS  = 1000
 TEMPERATURE     = 0.3
 
 # ── Groq config (thay thế Ollama khi có internet) ─────────────────────────────

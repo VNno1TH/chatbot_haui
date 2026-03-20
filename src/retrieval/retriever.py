@@ -1,24 +1,12 @@
 """
-retriever.py  (v2 — model nhẹ hơn)
-Hybrid Search = Vector (multilingual-e5-small) + BM25 → Reranking (cross-encoder).
+retriever.py  (v3 — hỗ trợ Remote Reranker qua HTTP)
 
-THAY ĐỔI so với v1:
-  - Embedding model: bge-m3 (570MB) → multilingual-e5-small (118MB)
-  - Tắt reranker mặc định (use_reranker=False) — RRF đã đủ tốt, tiết kiệm ~500ms
-  - Tăng VECTOR_TOP_K và BM25_TOP_K một chút để bù cho embedding model nhẹ hơn
-  - Giữ nguyên: BM25, RRF, parallel search, retrieve cache
-
-Luồng xử lý:
-    Query
-      ↓
-  ┌──────────────────────┐  ┌────────────────────────┐  (SONG SONG)
-  │ Vector (e5-small)    │  │ BM25 (rank_bm25)       │
-  └──────────────────────┘  └────────────────────────┘
-      ↓ Reciprocal Rank Fusion (RRF) — merge + loại trùng
-  ┌──────────────────────────────────────┐
-  │ [Tuỳ chọn] Cross-encoder Reranker   │
-  └──────────────────────────────────────┘
-      ↓ Top-k → Context cho LLM
+Thay đổi so với v2:
+  - Thêm RemoteReranker: gọi HTTP đến TEI/reranker service trên GPU cloud
+  - Đọc USE_REMOTE_RERANKER và RERANKER_URL từ .env
+  - Nếu USE_REMOTE_RERANKER=1 → dùng RemoteReranker (nhanh, GPU cloud)
+  - Nếu không → fallback CrossEncoderReranker local (CPU, chậm hơn)
+  - Giữ nguyên toàn bộ: BM25, RRF, parallel search, retrieve cache
 """
 
 from __future__ import annotations
@@ -29,6 +17,9 @@ import time
 import hashlib
 import logging
 import os
+import json
+import urllib.request
+import urllib.error
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from dataclasses import dataclass, field
@@ -49,21 +40,22 @@ logger = logging.getLogger("haui.retriever")
 BASE_DIR        = Path(__file__).resolve().parent.parent.parent
 VECTORSTORE_DIR = BASE_DIR / "data" / "vectorstore" / "chroma_db"
 
-# Đọc từ env — mặc định multilingual-e5-small (local CPU)
-# Để dùng bge-m3 trên GPU cloud: thêm EMBEDDING_MODEL=BAAI/bge-m3 vào .env
 EMBEDDING_MODEL = os.environ.get("EMBEDDING_MODEL", "intfloat/multilingual-e5-small")
 
-# Tăng top_k so với v1 vì model nhẹ hơn có recall thấp hơn một chút
-VECTOR_TOP_K     = 10   # v1: 7
-BM25_TOP_K       = 7    # v1: 5
-FINAL_TOP_K      = 4    # giữ nguyên — context cho LLM
-RERANKER_INPUT_K = 12   # v1: 10
+# Remote reranker config — đọc từ .env
+USE_REMOTE_RERANKER = os.environ.get("USE_REMOTE_RERANKER", "0") == "1"
+RERANKER_URL        = os.environ.get("RERANKER_URL", "http://localhost:8080")
+
+VECTOR_TOP_K     = 10
+BM25_TOP_K       = 7
+FINAL_TOP_K      = 4
+RERANKER_INPUT_K = 12
 MIN_RERANK_SCORE = 0.01
 RRF_K            = 30
 
-# Reranker — dùng khi cần chất lượng cao hơn, nhưng tốn ~500ms-2s trên CPU
+# Local reranker fallback
 RERANKER_MODEL   = "BAAI/bge-reranker-v2-m3"
-RERANK_CACHE_TTL = 600  # 10 phút
+RERANK_CACHE_TTL = 600
 
 INTENT_FILTERS: dict[IntentType, dict | None] = {
     IntentType.RAG_MO_TA_NGANH    : None,
@@ -119,15 +111,15 @@ class BM25Index:
             {"text": doc, "metadata": meta, "id": str(i)}
             for i, (doc, meta) in enumerate(zip(results["documents"], results["metadatas"]))
         ]
-        tokenized    = [self._tokenizer(c["text"]) for c in self._chunks]
-        self._bm25   = BM25Okapi(tokenized)
+        tokenized  = [self._tokenizer(c["text"]) for c in self._chunks]
+        self._bm25 = BM25Okapi(tokenized)
         logger.info(f"BM25 index: {len(self._chunks)} chunks")
 
     def search(self, query: str, top_k: int = BM25_TOP_K) -> list[dict]:
         if self._bm25 is None or not self._chunks:
             return []
-        tokens     = self._tokenizer(query)
-        scores     = self._bm25.get_scores(tokens)
+        tokens      = self._tokenizer(query)
+        scores      = self._bm25.get_scores(tokens)
         top_indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:top_k]
         return [
             {"text": self._chunks[i]["text"], "metadata": self._chunks[i]["metadata"], "score": float(scores[i])}
@@ -174,16 +166,138 @@ def reciprocal_rank_fusion(
     return merged
 
 
-# ── Cross-encoder Reranker (tuỳ chọn) ────────────────────────────────────────
+# ── Remote Reranker (TEI / HTTP) ──────────────────────────────────────────────
+
+class RemoteReranker:
+    """
+    Gọi reranker service trên GPU cloud qua HTTP.
+
+    Tương thích với:
+      - HuggingFace Text Embeddings Inference (TEI): POST /rerank
+      - Các service khác trả về [{index, score}] hoặc [score]
+
+    Config trong .env:
+        RERANKER_URL=http://localhost:8080
+        USE_REMOTE_RERANKER=1
+
+    Chạy TEI trên GPU cloud (ví dụ):
+        docker run --gpus all -p 8080:80 ghcr.io/huggingface/text-embeddings-inference:latest \
+          --model-id BAAI/bge-reranker-v2-m3
+    """
+
+    def __init__(self, base_url: str = RERANKER_URL):
+        self._base_url = base_url.rstrip("/")
+        self._rerank_url = f"{self._base_url}/rerank"
+        self._cache: dict[str, tuple[float, list[dict]]] = {}
+        self._check_connection()
+
+    def _check_connection(self) -> None:
+        """Kiểm tra service có sẵn sàng không."""
+        try:
+            req = urllib.request.Request(
+                f"{self._base_url}/health",
+                method="GET",
+            )
+            with urllib.request.urlopen(req, timeout=5):
+                pass
+            logger.info(f"RemoteReranker OK — {self._base_url}")
+        except urllib.error.URLError as e:
+            logger.warning(
+                f"RemoteReranker không kết nối được tại {self._base_url}: {e}\n"
+                f"  → Kiểm tra SSH tunnel và TEI service đang chạy.\n"
+                f"  → Fallback về RRF (không rerank)."
+            )
+            raise RuntimeError(f"RemoteReranker unavailable: {e}")
+
+    def _cache_key(self, query: str, chunks: list[dict]) -> str:
+        raw = query + "||".join(c["text"][:80] for c in chunks)
+        return hashlib.md5(raw.encode("utf-8", errors="ignore")).hexdigest()
+
+    def rerank(self, query: str, chunks: list[dict], top_k: int = FINAL_TOP_K) -> list[dict]:
+        if not chunks:
+            return []
+
+        key = self._cache_key(query, chunks)
+        now = time.monotonic()
+        if key in self._cache:
+            ts, cached = self._cache[key]
+            if now - ts < RERANK_CACHE_TTL:
+                logger.debug("RemoteReranker cache HIT")
+                return cached[:top_k]
+
+        # Gọi TEI /rerank endpoint
+        payload = json.dumps({
+            "query"    : query,
+            "texts"    : [c["text"] for c in chunks],
+            "truncate" : True,
+        }).encode("utf-8")
+
+        try:
+            req = urllib.request.Request(
+                self._rerank_url,
+                data    = payload,
+                headers = {"Content-Type": "application/json"},
+                method  = "POST",
+            )
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                data = json.loads(resp.read().decode())
+        except urllib.error.HTTPError as e:
+            body = e.read().decode() if hasattr(e, "read") else ""
+            logger.error(f"RemoteReranker HTTP {e.code}: {body[:200]}")
+            return chunks[:top_k]   # fallback: trả RRF order
+        except urllib.error.URLError as e:
+            logger.error(f"RemoteReranker URLError: {e}")
+            return chunks[:top_k]
+
+        # Parse response — TEI trả về list of {index, score}
+        # Một số service trả về list of score trực tiếp
+        try:
+            if isinstance(data, list) and data and isinstance(data[0], dict):
+                # TEI format: [{"index": 0, "score": 0.95}, ...]
+                scored = [(item["index"], item["score"]) for item in data]
+            elif isinstance(data, list) and data and isinstance(data[0], (int, float)):
+                # Raw scores format: [0.95, 0.3, ...]
+                scored = [(i, s) for i, s in enumerate(data)]
+            else:
+                logger.warning(f"RemoteReranker unexpected response format: {type(data)}")
+                return chunks[:top_k]
+        except (KeyError, TypeError) as e:
+            logger.error(f"RemoteReranker parse error: {e}, data={str(data)[:200]}")
+            return chunks[:top_k]
+
+        # Gắn score vào chunks và sort
+        for idx, score in scored:
+            if idx < len(chunks):
+                chunks[idx]["rerank_score"] = float(score)
+
+        reranked = sorted(
+            [c for c in chunks if "rerank_score" in c],
+            key=lambda x: x["rerank_score"],
+            reverse=True,
+        )
+
+        # Cache
+        self._cache[key] = (now, reranked)
+
+        # Dọn cache cũ định kỳ
+        if len(self._cache) % 50 == 0:
+            expired = [k for k, (ts, _) in self._cache.items() if now - ts >= RERANK_CACHE_TTL]
+            for k in expired:
+                del self._cache[k]
+
+        return reranked[:top_k]
+
+
+# ── Cross-encoder Reranker (local CPU fallback) ───────────────────────────────
 
 class CrossEncoderReranker:
     """
-    Dùng khi cần chất lượng cao hơn RRF thuần.
-    Mặc định TẮT (use_reranker=False trong Retriever) vì tốn ~500ms-2s trên CPU.
+    Dùng khi USE_REMOTE_RERANKER=0 hoặc remote service không khả dụng.
+    Load model local trên CPU — chậm hơn ~500ms-2s.
     """
 
     def __init__(self, model_name: str = RERANKER_MODEL):
-        logger.info(f"Loading reranker: {model_name}")
+        logger.info(f"Loading local reranker: {model_name}")
         try:
             from FlagEmbedding import FlagReranker
             self._model    = FlagReranker(model_name, use_fp16=True)
@@ -203,9 +317,9 @@ class CrossEncoderReranker:
                 self._model.compute_score(dummy, normalize=True)
             else:
                 self._model.predict(dummy)
-            logger.info("Reranker warm-up xong")
+            logger.info("Local reranker warm-up xong")
         except Exception as e:
-            logger.warning(f"Reranker warm-up thất bại: {e}")
+            logger.warning(f"Local reranker warm-up thất bại: {e}")
 
     def _cache_key(self, query: str, chunks: list[dict]) -> str:
         raw = query + "||".join(c["text"][:80] for c in chunks)
@@ -246,10 +360,12 @@ class CrossEncoderReranker:
 
 class Retriever:
     """
-    Hybrid retrieval: Vector + BM25 → RRF → (Reranker tuỳ chọn) → top-k.
+    Hybrid retrieval: Vector + BM25 → RRF → Reranker → top-k.
 
-    Mặc định use_reranker=False vì trên CPU yếu, RRF đã đủ tốt.
-    Bật reranker khi cần chất lượng cao hơn và chấp nhận chậm hơn ~500ms.
+    Reranker ưu tiên:
+      1. USE_REMOTE_RERANKER=1 → RemoteReranker (GPU cloud, nhanh)
+      2. use_reranker=True + remote không khả dụng → CrossEncoderReranker (CPU local)
+      3. use_reranker=False → chỉ dùng RRF (không rerank)
     """
 
     _executor = ThreadPoolExecutor(max_workers=2, thread_name_prefix="retriever")
@@ -257,7 +373,7 @@ class Retriever:
     def __init__(
         self,
         embedder    : Embedder | None = None,
-        use_reranker: bool = False,   # v2: TẮT mặc định
+        use_reranker: bool = True,
         use_bm25    : bool = True,
     ):
         if embedder:
@@ -276,11 +392,7 @@ class Retriever:
         def _load_reranker():
             if not use_reranker:
                 return None
-            try:
-                return CrossEncoderReranker()
-            except Exception as e:
-                logger.warning(f"Reranker không khả dụng: {e}")
-                return None
+            return self._build_reranker()
 
         fut_embedder = self._executor.submit(_load_embedder)
         fut_reranker = self._executor.submit(_load_reranker)
@@ -302,10 +414,29 @@ class Retriever:
 
         self._reranker = None
         if use_reranker:
+            self._reranker = self._build_reranker()
+
+    def _build_reranker(self):
+        """
+        Ưu tiên RemoteReranker nếu USE_REMOTE_RERANKER=1.
+        Fallback CrossEncoderReranker nếu remote không khả dụng.
+        """
+        if USE_REMOTE_RERANKER:
+            logger.info(f"Reranker: remote GPU cloud → {RERANKER_URL}")
             try:
-                self._reranker = CrossEncoderReranker()
-            except Exception as e:
-                logger.warning(f"Reranker không khả dụng: {e}")
+                return RemoteReranker(base_url=RERANKER_URL)
+            except RuntimeError as e:
+                logger.warning(f"Remote reranker không khả dụng: {e}")
+                logger.warning("Fallback → CrossEncoderReranker (CPU local)")
+
+        # Fallback: local CPU
+        try:
+            logger.info("Reranker: local CPU (CrossEncoder)")
+            return CrossEncoderReranker()
+        except Exception as e:
+            logger.warning(f"Local reranker cũng không khả dụng: {e}")
+            logger.warning("Chỉ dùng RRF (không rerank)")
+            return None
 
     # ── Public API ────────────────────────────────────────────────────────────
 
@@ -316,7 +447,6 @@ class Retriever:
         intent_type: IntentType | None = None,
         where      : dict | None       = None,
     ) -> list[RetrievedChunk]:
-        # Cache 5 phút
         cache_key = f"{query}||{intent_type}"
         now = time.monotonic()
         if not hasattr(self, "_retrieve_cache"):
@@ -426,21 +556,36 @@ class Retriever:
                     return False
         return True
 
+    @property
+    def reranker_type(self) -> str:
+        """Trả về loại reranker đang dùng — dùng để debug/log."""
+        if self._reranker is None:
+            return "none (RRF only)"
+        if isinstance(self._reranker, RemoteReranker):
+            return f"remote ({RERANKER_URL})"
+        return "local CPU"
+
 
 # ── Quick test ────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     import time as _time
-    print("Khởi tạo Retriever (e5-small + BM25, không reranker)...")
+    from dotenv import load_dotenv
+    load_dotenv()
+
+    print(f"USE_REMOTE_RERANKER = {USE_REMOTE_RERANKER}")
+    print(f"RERANKER_URL        = {RERANKER_URL}")
+    print("Khởi tạo Retriever...")
+
     t0 = _time.perf_counter()
-    retriever = Retriever(use_reranker=False, use_bm25=True)
-    print(f"✓ Khởi tạo xong ({(_time.perf_counter()-t0)*1000:.0f}ms)\n")
+    retriever = Retriever(use_reranker=True, use_bm25=True)
+    print(f"✓ Khởi tạo xong ({(_time.perf_counter()-t0)*1000:.0f}ms)")
+    print(f"  Reranker type: {retriever.reranker_type}\n")
 
     tests = [
         ("Ngành CNTT học gì?",              IntentType.RAG_MO_TA_NGANH),
         ("học bổng HaUI như thế nào?",      IntentType.RAG_TRUONG_HOC_BONG),
         ("hướng dẫn đăng ký xét tuyển",     IntentType.RAG_FAQ),
-        ("Ngành CNTT học gì?",              IntentType.RAG_MO_TA_NGANH),  # test cache
     ]
 
     for query, intent in tests:
@@ -451,10 +596,7 @@ if __name__ == "__main__":
         elapsed = (_time.perf_counter() - t) * 1000
         print(f"  ⏱ {elapsed:.0f}ms  ({len(chunks)} chunks)")
         for i, c in enumerate(chunks, 1):
-            print(
-                f"  {i}. rrf={c.rrf_score:.4f} "
-                f"(vec={c.vector_score:.3f} bm25={c.bm25_score:.2f})"
-            )
+            print(f"  {i}. score={c.score:.4f} (vec={c.vector_score:.3f} bm25={c.bm25_score:.2f})")
             print(f"     [{c.source} — {c.section}]")
             print(f"     {c.text[:90].strip()}...")
         print()
