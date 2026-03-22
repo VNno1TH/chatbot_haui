@@ -1,0 +1,24 @@
+﻿id,category,question,kw_hit_rate,keywords_miss,latency_ms,faithfulness,answer_relevancy,context_recall,answer
+TRUONG_001,truong,Trường Đại học Công nghiệp Hà Nội trực thuộc bộ nào?,1.0,[],3829,1.0,1.0,1.0,Đại học Công nghiệp Hà Nội trực thuộc Bộ Công Thương.
+TRUONG_002,truong,Mã trường HaUI là gì?,1.0,[],1014,1.0,1.0,1.0,Mã trường của Đại học Công nghiệp Hà Nội (HaUI) là DCN.
+TRUONG_003,truong,Địa chỉ cơ sở 1 của HaUI ở đâu?,1.0,[],1680,1.0,1.0,1.0,"Địa chỉ cơ sở 1 của Đại học Công nghiệp Hà Nội (HaUI) là số 298, Đường Cầu Diễn, Phường Minh Khai, Quận Bắc Từ Liêm, Hà Nội."
+TRUONG_004,truong,HaUI có bao nhiêu cơ sở đào tạo?,0.0,"['3', 'cơ sở', 'Hà Nam']",2475,1.0,1.0,0.0,"Đại học Công nghiệp Hà Nội (HaUI) có 5 Trường và 4 Khoa chuyên môn, cùng với đó là 11 Trung tâm (6 Trung tâm đào tạo + 5 Trung tâm dịch vụ), 1 Viện Công nghệ HaUI và 1 Công ty TNHH Đào tạo và Cung ứng nhân lực HaUI (LETCO)."
+TRUONG_005,truong,Năm nào Trường Đại học Công nghiệp Hà Nội chính thức trở thành Đại học?,0.67,['thứ 12'],1548,1.0,1.0,1.0,Trường Đại học Công nghiệp Hà Nội chính thức chuyển thành Đại học vào ngày 20/11/2025 theo Quyết định số 2536/QĐ-TTg.
+TRUONG_006,truong,Tỷ lệ sinh viên HaUI có việc làm sau tốt nghiệp 1 năm là bao nhiêu?,0.0,['95%'],3053,1.0,0.333,1.0,"Tỷ lệ sinh viên chính quy ra trường có việc làm sau 12 tháng kể từ ngày tốt nghiệp của Đại học Công nghiệp Hà Nội (HaUI) là 92,14%. Đối với sinh viên đại học chính quy, tỷ lệ này là 92,78%, và đối với sinh viên cao đẳng chính quy là 90,61%."
+TRUONG_007,truong,HaUI có bao nhiêu giảng viên và tỷ lệ tiến sĩ là bao nhiêu?,1.0,[],1657,1.0,1.0,1.0,"HaUI có gần 1.100 giảng viên và tỷ lệ giảng viên có trình độ Phó Giáo sư, Tiến sĩ chiếm trên 41%."
+TRUONG_008,truong,HaUI có bao nhiêu chương trình đào tạo đạt chuẩn ABET?,1.0,[],1373,0.0,0.5,1.0,HaUI có 5 chương trình đào tạo đạt chuẩn kiểm định chất lượng ABET (Hoa Kỳ).
+TRUONG_009,truong,HaUI có những trường và khoa nào thuộc cơ cấu tổ chức?,1.0,[],2381,1.0,1.0,1.0,"Đại học Công nghiệp Hà Nội (HaUI) bao gồm:
+- **5 Trường:** Ngoại ngữ - Du lịch; Kinh tế; Cơ khí - Ô tô; CNTT & Truyền thông; Điện - Điện tử.
+- **4 Khoa:** Công nghệ Hóa; Công nghệ May & Thiết kế thời trang; Lý luận Chính trị & Pháp luật; Khoa học cơ bản."
+TRUONG_010,truong,Website đăng ký xét tuyển của HaUI là gì? Lệ phí bao nhiêu?,1.0,[],2342,1.0,1.0,1.0,"Website đăng ký xét tuyển của Đại học Công nghiệp Hà Nội (HaUI) là https://xettuyen.haui.edu.vn. Lệ phí đăng ký xét tuyển là 50.000 đồng/hồ sơ, nộp qua mã QR ngân hàng (BIDV hoặc Ngân hàng Lộc Phát)."
+KTX_001,ktx,Giá phòng ký túc xá chất lượng cao HaUI 4 người bao nhiêu?,0.5,['600.000'],1734,1.0,1.0,0.0,Giá phòng ký túc xá chất lượng cao cho 4 người tại Đại học Công nghiệp Hà Nội là 465.000 VNĐ/sinh viên/tháng tại Cơ sở 1 và 420.000 VNĐ/sinh viên/tháng tại Cơ sở 2.
+KTX_002,ktx,Phòng ký túc xá tiêu chuẩn 6 người tại cơ sở 2 HaUI giá bao nhiêu?,1.0,[],1337,1.0,1.0,1.0,Giá phòng ký túc xá tiêu chuẩn 6 người tại Cơ sở 2 của Đại học Công nghiệp Hà Nội là **280.000 VNĐ / sinh viên / tháng**.
+KTX_003,ktx,Ký túc xá HaUI có điều hòa không?,1.0,[],1119,1.0,1.0,1.0,"Ký túc xá HaUI có điều hòa ở các phòng chất lượng cao, nhưng không có điều hòa trong các phòng tiêu chuẩn."
+KTX_004,ktx,Tiền điện nước ký túc xá HaUI tính như thế nào?,0.0,"['chỉ số đồng hồ', 'nhà nước']",1012,1.0,0.0,0.0,Tôi chưa có dữ liệu về vấn đề này.
+KTX_005,ktx,Ký túc xá HaUI có những tiện ích gì?,1.0,[],1541,1.0,1.0,1.0,"Ký túc xá Đại học Công nghiệp Hà Nội (HaUI) cung cấp các tiện ích sau cho sinh viên:
+
+- Nhà ăn  
+- Nhà xe  
+- Siêu thị mini  
+- Quán café  
+- Sân thể thao"

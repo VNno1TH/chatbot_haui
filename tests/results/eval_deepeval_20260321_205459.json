@@ -1,0 +1,2081 @@
+{
+  "timestamp": "2026-03-21T20:54:59.107400",
+  "judge_model": "qwen2.5:14b",
+  "framework": "deepeval",
+  "total_questions": 152,
+  "category_filter": "all",
+  "avg_faithfulness": 0.8912,
+  "avg_answer_relevancy": 0.7911,
+  "avg_context_recall": 0.8973,
+  "keyword_hit_rate": 0.6929605263157894,
+  "avg_latency_ms": 2117,
+  "per_category_kw": {
+    "truong": 0.8,
+    "ktx": 0.812,
+    "hoc_bong": 0.967,
+    "phuong_thuc": 0.533,
+    "uu_tien": 0.449,
+    "faq": 0.883,
+    "lich": 0.625,
+    "hoc_phi_cach_tinh": 0.362,
+    "diem_chuan": 0.799,
+    "hoc_phi": 0.959,
+    "to_hop": 0.8,
+    "tinh_toan": 0.599,
+    "mo_ta_nganh": 0.668,
+    "dau_truot": 0.537,
+    "edge": 0.42,
+    "van_bang": 0.862
+  },
+  "detail": [
+    {
+      "id": "TRUONG_001",
+      "category": "truong",
+      "question": "Trường Đại học Công nghiệp Hà Nội trực thuộc bộ nào?",
+      "answer": "Trường Đại học Công nghiệp Hà Nội trực thuộc Bộ Công Thương.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1297,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "TRUONG_002",
+      "category": "truong",
+      "question": "Mã trường HaUI là gì?",
+      "answer": "Mã trường của Đại học Công nghiệp Hà Nội (HaUI) là DCN.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1369,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "TRUONG_003",
+      "category": "truong",
+      "question": "Địa chỉ cơ sở 1 của HaUI ở đâu?",
+      "answer": "Địa chỉ cơ sở 1 của Đại học Công nghiệp Hà Nội (HaUI) là số 298, Đường Cầu Diễn, Phường Minh Khai, Quận Bắc Từ Liêm, Hà Nội.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1595,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "TRUONG_004",
+      "category": "truong",
+      "question": "HaUI có bao nhiêu cơ sở đào tạo?",
+      "answer": "Đại học Công nghiệp Hà Nội (HaUI) có 5 Trường và 4 Khoa chuyên môn, cùng với đó là các Trung tâm, Viện và Công ty liên kết để hỗ trợ đào tạo. Tổng cộng, HaUI quản lý 9 đơn vị cơ sở đào tạo chính thức.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "3",
+        "Hà Nam"
+      ],
+      "latency_ms": 2779,
+      "faithfulness": 0.667,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.0
+    },
+    {
+      "id": "TRUONG_005",
+      "category": "truong",
+      "question": "Năm nào Trường Đại học Công nghiệp Hà Nội chính thức trở thành Đại học?",
+      "answer": "Trường Đại học Công nghiệp Hà Nội chính thức chuyển đổi thành Đại học vào ngày 20/11/2025 theo quyết định số 2536/QĐ-TTg.",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "thứ 12"
+      ],
+      "latency_ms": 1443,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "TRUONG_006",
+      "category": "truong",
+      "question": "Tỷ lệ sinh viên HaUI có việc làm sau tốt nghiệp 1 năm là bao nhiêu?",
+      "answer": "Tỷ lệ sinh viên chính quy của Đại học Công nghiệp Hà Nội (HaUI) có việc làm sau 12 tháng kể từ ngày tốt nghiệp đạt 92,14%. Trong đó, tỷ lệ sinh viên đại học chính quy là 92,78% và sinh viên cao đẳng chính quy là 90,61%.",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "95%"
+      ],
+      "latency_ms": 2038,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.333,
+      "context_recall": 1.0
+    },
+    {
+      "id": "TRUONG_007",
+      "category": "truong",
+      "question": "HaUI có bao nhiêu giảng viên và tỷ lệ tiến sĩ là bao nhiêu?",
+      "answer": "HaUI có gần 1.100 giảng viên và tỷ lệ giảng viên có trình độ Phó Giáo sư, Tiến sĩ chiếm trên 41%.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1637,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "TRUONG_008",
+      "category": "truong",
+      "question": "HaUI có bao nhiêu chương trình đào tạo đạt chuẩn ABET?",
+      "answer": "HaUI có 5 chương trình đào tạo đạt chuẩn kiểm định chất lượng ABET (Hoa Kỳ).",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1421,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.5,
+      "context_recall": 1.0
+    },
+    {
+      "id": "TRUONG_009",
+      "category": "truong",
+      "question": "HaUI có những trường và khoa nào thuộc cơ cấu tổ chức?",
+      "answer": "Đại học Công nghiệp Hà Nội (HaUI) bao gồm:\n- **5 Trường:** Ngoại ngữ - Du lịch; Kinh tế; Cơ khí - Ô tô; CNTT & Truyền thông; Điện - Điện tử.\n- **4 Khoa:** Công nghệ Hóa; Công nghệ May & Thiết kế thời trang; Lý luận Chính trị & Pháp luật; Khoa học cơ bản.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2306,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "TRUONG_010",
+      "category": "truong",
+      "question": "Website đăng ký xét tuyển của HaUI là gì? Lệ phí bao nhiêu?",
+      "answer": "Website đăng ký xét tuyển của Đại học Công nghiệp Hà Nội (HaUI) là https://xettuyen.haui.edu.vn. Lệ phí đăng ký xét tuyển là 50.000 đồng/hồ sơ, nộp qua mã QR ngân hàng BIDV hoặc Ngân hàng Lộc Phát.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2295,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "KTX_001",
+      "category": "ktx",
+      "question": "Giá phòng ký túc xá chất lượng cao HaUI 4 người bao nhiêu?",
+      "answer": "Giá phòng ký túc xá chất lượng cao cho 4 người tại Đại học Công nghiệp Hà Nội (HaUI) là **465.000 VNĐ/sinh viên/tháng** tại Cơ sở 1 và **420.000 VNĐ/sinh viên/tháng** tại Cơ sở 2.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "600.000"
+      ],
+      "latency_ms": 1720,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.0
+    },
+    {
+      "id": "KTX_002",
+      "category": "ktx",
+      "question": "Phòng ký túc xá tiêu chuẩn 6 người tại cơ sở 2 HaUI giá bao nhiêu?",
+      "answer": "Phòng ký túc xá tiêu chuẩn cho 6 người tại Cơ sở 2 của Đại học Công nghiệp Hà Nội có giá là **280.000 VNĐ / sinh viên / tháng**.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1366,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "KTX_003",
+      "category": "ktx",
+      "question": "Ký túc xá HaUI có điều hòa không?",
+      "answer": "Ký túc xá HaUI có điều hòa ở các phòng chất lượng cao, nhưng không có điều hòa trong các phòng tiêu chuẩn.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1124,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "KTX_004",
+      "category": "ktx",
+      "question": "Tiền điện nước ký túc xá HaUI tính như thế nào?",
+      "answer": "Tôi chưa có dữ liệu về vấn đề này.",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "chỉ số đồng hồ",
+        "nhà nước"
+      ],
+      "latency_ms": 1023,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_recall": 0.0
+    },
+    {
+      "id": "KTX_005",
+      "category": "ktx",
+      "question": "Ký túc xá HaUI có những tiện ích gì?",
+      "answer": "Ký túc xá HaUI cung cấp nhiều tiện ích cho sinh viên như nhà ăn, nhà xe, siêu thị mini, quán cafe và sân thể thao.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1300,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "KTX_006",
+      "category": "ktx",
+      "question": "Giá ký túc xá rẻ nhất tại HaUI là bao nhiêu?",
+      "answer": "Giá ký túc xá rẻ nhất tại Đại học Công nghiệp Hà Nội (HaUI) năm học 2025 - 2026 là 280.000 VNĐ mỗi sinh viên mỗi tháng.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1492,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "KTX_007",
+      "category": "ktx",
+      "question": "Phòng ký túc xá HaUI có nhà vệ sinh riêng không?",
+      "answer": "Tất cả các phòng ký túc xá tại Đại học Công nghiệp Hà Nội đều khép kín và có nhà vệ sinh riêng.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1248,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "KTX_008",
+      "category": "ktx",
+      "question": "Phòng 3 người chất lượng cao ký túc xá HaUI giá bao nhiêu?",
+      "answer": "Giá phòng 3 người chất lượng cao tại ký túc xá Đại học Công nghiệp Hà Nội là **800.000 VNĐ mỗi sinh viên mỗi tháng**.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1582,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HOC_BONG_001",
+      "category": "hoc_bong",
+      "question": "HaUI có những loại học bổng nào?",
+      "answer": "Đại học Công nghiệp Hà Nội (HaUI) có 3 nhóm học bổng chính:\n\n1. Học bổng HaUI - xét khi nhập học (đầu vào).\n2. Học bổng Khuyến khích học tập (KKHT) - xét theo kết quả học tập mỗi học kỳ.\n3. Học bổng Nguyễn Thanh Bình - dành cho sinh viên hoàn cảnh khó khăn.\n\nNgoài ra còn có học bổng tài trợ từ doanh",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2392,
+      "faithfulness": 0.6,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HOC_BONG_002",
+      "category": "hoc_bong",
+      "question": "Điều kiện để nhận học bổng toàn khóa HaUI là gì?",
+      "answer": "Để nhận học bổng toàn khóa tại Đại học Công nghiệp Hà Nội (HaUI), sinh viên cần đạt một trong các tiêu chí sau:\n\n- Đoạt giải Nhất, Nhì, Ba kỳ thi HSG quốc gia/quốc tế hoặc thi KHKT cấp quốc gia do Bộ GD&ĐT tổ chức không quá 3 năm tính đến ngày đăng ký xét tuyển.\n- Đoạt giải Nhất, Nhì, Ba tại cuộc th",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "100%"
+      ],
+      "latency_ms": 4020,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HOC_BONG_003",
+      "category": "hoc_bong",
+      "question": "Điều kiện duy trì học bổng HaUI sau mỗi học kỳ là gì?",
+      "answer": "Sau mỗi học kỳ chính, sinh viên phải đồng thời đạt:\n- Điểm trung bình chung (TBC) học kỳ ≥ 2.5 và rèn luyện loại Tốt trở lên.\n- Tổng số tín chỉ xét học bổng trong kỳ ≥ 15 tín chỉ (trừ trường hợp nhà trường bố trí không đủ).",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1858,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HOC_BONG_004",
+      "category": "hoc_bong",
+      "question": "Học bổng KKHT loại Xuất sắc cần điểm TBC bao nhiêu?",
+      "answer": "Để đạt học bổng Khuyến khích học tập (KKHT) loại Xuất sắc, sinh viên phải có điểm Trung bình Chuyên cần (TBC) từ 3.60 đến 4.0 (đối với hệ tín chỉ) hoặc từ 9.0 đến 10.0 (đối với hệ niên chế).",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2100,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HOC_BONG_005",
+      "category": "hoc_bong",
+      "question": "Học bổng Nguyễn Thanh Bình dành cho đối tượng nào?",
+      "answer": "Học bổng Khuyến học Nguyễn Thanh Bình dành cho sinh viên có hoàn cảnh khó khăn, xét theo năm học. Cụ thể bao gồm các đối tượng ưu tiên sau đây:\n\n1. Sinh viên mắc bệnh hiểm nghèo.\n2. Sinh viên bị khuyết tật.\n3. Sinh viên mồ côi bố hoặc mẹ, không có bố hoặc mẹ.\n4. Sinh viên có bố/mẹ mắc bệnh hiểm nghè",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 3600,
+      "faithfulness": 0.875,
+      "answer_relevancy": 0.875,
+      "context_recall": 0.5
+    },
+    {
+      "id": "HOC_BONG_006",
+      "category": "hoc_bong",
+      "question": "Sinh viên vừa làm vừa học có được xét học bổng HaUI không?",
+      "answer": "Sinh viên vừa làm vừa học không được xét học bổng HaUI. Học bổng HaUI chỉ áp dụng cho sinh viên theo học chính quy, không bao gồm sinh viên vừa làm vừa học hoặc đào tạo từ xa.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1552,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HOC_BONG_007",
+      "category": "hoc_bong",
+      "question": "Học bổng 5 triệu đồng của HaUI dành cho sinh viên như thế nào?",
+      "answer": "Học bổng 5 triệu đồng của Đại học Công nghiệp Hà Nội (HaUI) được cấp cho sinh viên không thuộc diện xét học bổng toàn khóa học, dựa trên điểm số từ cao xuống thấp theo chỉ tiêu phân bổ từng phương thức.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1697,
+      "faithfulness": 0.75,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HOC_BONG_008",
+      "category": "hoc_bong",
+      "question": "Sinh viên năm 4 muốn học thêm thạc sĩ có học bổng hỗ trợ không?",
+      "answer": "Sinh viên năm 4 đăng ký học trước các học phần trình độ Thạc sĩ sẽ được nhận học bổng với điều kiện điểm TBC tích lũy đến hết học kỳ 6 ≥ 2.5 và đạt khối lượng tín chỉ theo quy định. Mức học bổng là 30% học phí các học phần đăng ký, tối đa không quá 15 tín chỉ.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2058,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HOC_BONG_009",
+      "category": "hoc_bong",
+      "question": "Học bổng KKHT có được cộng dồn với học bổng HaUI không?",
+      "answer": "Theo quy định, sinh viên đã nhận học bổng HaUI sẽ không được xét học bổng Khuyến khích học tập (KKHT) cùng học kỳ. Do đó, học bổng KKHT không thể cộng dồn với học bổng HaUI.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1878,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HOC_BONG_010",
+      "category": "hoc_bong",
+      "question": "Mức học bổng Nguyễn Thanh Bình cho sinh viên mồ côi là bao nhiêu phần trăm?",
+      "answer": "Mức học bổng Nguyễn Thanh Bình dành cho sinh viên mồ côi bố hoặc mẹ, thuộc đối tượng 2.1.3, là **120%** mức học bổng.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1589,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.667,
+      "context_recall": 1.0
+    },
+    {
+      "id": "PT_001",
+      "category": "phuong_thuc",
+      "question": "HaUI có mấy phương thức xét tuyển năm 2025?",
+      "answer": "Năm 2025, Đại học Công nghiệp Hà Nội (HaUI) áp dụng 5 phương thức xét tuyển đại học chính quy.",
+      "kw_hit_rate": 0.17,
+      "keywords_miss": [
+        "PT1",
+        "PT2",
+        "PT3",
+        "PT4",
+        "PT5"
+      ],
+      "latency_ms": 1480,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "PT_002",
+      "category": "phuong_thuc",
+      "question": "Phương thức 2 của HaUI yêu cầu IELTS tối thiểu bao nhiêu?",
+      "answer": "Phương thức 2 của Đại học Công nghiệp Hà Nội (HaUI) quy đổi chứng chỉ IELTS sang thang điểm 10 như sau:\n- IELTS từ 6.5 đến 9.0 tương đương với 10,00 điểm.\n- IELTS từ 6.0 đến 7.0 tương đương với 9,50 điểm.\n- IELTS từ 5.5 tương đương với 9,00 điểm.\n\nVậy để tham gia phương thức này, thí sinh có chứng c",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "học bạ"
+      ],
+      "latency_ms": 2715,
+      "faithfulness": 0.8,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.5
+    },
+    {
+      "id": "PT_003",
+      "category": "phuong_thuc",
+      "question": "Công thức tính điểm xét tuyển theo PT2 là gì?",
+      "answer": "Theo phương thức 2, công thức tính điểm xét tuyển (thang 30) như sau:\n\n- **ĐXT = ĐKQHT × 2 + ĐQĐCC + Điểm ưu tiên**\n\nTrong đó:\n- **ĐKQHT**: Điểm quy đổi từ kết quả học tập lớp 10, 11, 12 (3 môn tổ hợp, thang 10).\n- **ĐQĐCC**: Điểm quy đổi chứng chỉ quốc tế hoặc giải HSG theo bảng quy đổi.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2911,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "PT_004",
+      "category": "phuong_thuc",
+      "question": "Giải HSG cấp tỉnh loại Nhì theo PT2 được quy đổi mấy điểm?",
+      "answer": "Giải HSG cấp tỉnh loại Nhì sẽ được quy đổi thành 9,50 điểm theo phương thức xét tuyển thứ hai của Đại học Công nghiệp Hà Nội.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "9.50"
+      ],
+      "latency_ms": 1890,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": 1.0
+    },
+    {
+      "id": "PT_005",
+      "category": "phuong_thuc",
+      "question": "Ai được xét tuyển thẳng vào HaUI theo PT1?",
+      "answer": "Tôi chưa có dữ liệu về vấn đề này. Câu hỏi của bạn liên quan đến Phương thức 1 (PT1) mà trong thông tin tham khảo không đề cập đến. Chỉ tiêu và điều kiện xét tuyển thẳng chỉ được mô tả cho các phương thức khác từ PT2 trở đi.",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "HSG quốc gia",
+        "tay nghề ASEAN",
+        "dự bị đại học"
+      ],
+      "latency_ms": 1834,
+      "faithfulness": 0.667,
+      "answer_relevancy": 0.75,
+      "context_recall": 0.667
+    },
+    {
+      "id": "PT_006",
+      "category": "phuong_thuc",
+      "question": "Thí sinh tốt nghiệp THPT trước năm 2025 có dùng được PT4, PT5 không?",
+      "answer": "Thí sinh tốt nghiệp THPT trước năm 2025 không được đăng ký dự tuyển theo phương thức 4 và 5. Muốn xét tuyển phải đăng ký thi các môn trong tổ hợp xét tuyển cùng học sinh lớp 12 năm 2025.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1926,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.333,
+      "context_recall": 1.0
+    },
+    {
+      "id": "PT_007",
+      "category": "phuong_thuc",
+      "question": "Năm 2025 HaUI tuyển sinh bao nhiêu chỉ tiêu và mấy mã ngành?",
+      "answer": "Năm 2025, Đại học Công nghiệp Hà Nội (HaUI) tuyển sinh với tổng số 7.990 chỉ tiêu cho 62 mã ngành/chương trình đào tạo.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1563,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "PT_008",
+      "category": "phuong_thuc",
+      "question": "TOPIK cấp mấy thì đủ điều kiện đăng ký PT2 HaUI?",
+      "answer": "Để đủ điều kiện đăng ký Phương thức 2 (PT2) của Đại học Công nghiệp Hà Nội, thí sinh cần có chứng chỉ TOPIK từ cấp độ 3 trở lên.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "cấp 3",
+        "9.00"
+      ],
+      "latency_ms": 1997,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": 1.0
+    },
+    {
+      "id": "PT_009",
+      "category": "phuong_thuc",
+      "question": "Thời gian đăng ký PT2, PT4, PT5 năm 2025 là khi nào?",
+      "answer": "Thời gian đăng ký dự tuyển cho Phương thức 2, 4, 5 năm 2025 tại Đại học Công nghiệp Hà Nội diễn ra từ ngày 15/5 đến ngày 05/7/2025.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "15/5/2025",
+        "28/7/2025"
+      ],
+      "latency_ms": 1874,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "PT_010",
+      "category": "phuong_thuc",
+      "question": "Có thể dùng IELTS để thay thế điểm thi Tiếng Anh THPT trong PT3 không?",
+      "answer": "Có, thí sinh có thể sử dụng kết quả IELTS để thay thế cho bài thi Tiếng Anh trong kỳ thi THPT Quốc gia theo phương thức PT3. Tuy nhiên, chi tiết về điều kiện và cách nộp điểm IELTS cần được xác nhận thêm từ ban tuyển sinh của trường Đại học Công nghiệp Hà Nội.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "không",
+        "bắt buộc"
+      ],
+      "latency_ms": 1239,
+      "faithfulness": 0.5,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "UT_001",
+      "category": "uu_tien",
+      "question": "Khu vực 1 được cộng mấy điểm ưu tiên?",
+      "answer": "Khu vực 1 được cộng tối đa 0.75 điểm ưu tiên. Tuy nhiên, nếu tổng điểm của thí sinh đạt hoặc vượt 22.5 điểm thì điểm ưu tiên thực tế sẽ thấp hơn mức này.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "KV1"
+      ],
+      "latency_ms": 962,
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "UT_002",
+      "category": "uu_tien",
+      "question": "KV2-NT được cộng bao nhiêu điểm ưu tiên?",
+      "answer": "Khu vực 2 nông thôn (KV2-NT) được cộng tối đa 0.5 điểm ưu tiên. Tuy nhiên, nếu tổng điểm của thí sinh từ 22.5 trở lên thì điểm ưu tiên thực tế sẽ thấp hơn mức này.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "0.50"
+      ],
+      "latency_ms": 996,
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "UT_003",
+      "category": "uu_tien",
+      "question": "Đối tượng ưu tiên nhóm UT1 được cộng mấy điểm?",
+      "answer": "Đối tượng ưu tiên nhóm UT1 được cộng 2,00 điểm.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "2.00"
+      ],
+      "latency_ms": 1131,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "UT_004",
+      "category": "uu_tien",
+      "question": "Công thức tính điểm ưu tiên khi tổng điểm đạt từ 22.5 trở lên?",
+      "answer": "Khi tổng điểm đạt từ 22,5 trở lên (thang 30), công thức tính điểm ưu tiên như sau:\n\n```\nĐiểm ưu tiên = [(30 - Tổng điểm đạt được) / 7,5] × Mức điểm ưu tiên\n```\n\nKết quả làm tròn đến hàng phần trăm.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "22.5",
+        "7.5"
+      ],
+      "latency_ms": 2033,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "UT_005",
+      "category": "uu_tien",
+      "question": "Thí sinh đạt 25 điểm thuộc KV1 thì điểm ưu tiên thực tế là bao nhiêu?",
+      "answer": "Thí sinh đạt 25 điểm và thuộc khu vực KV1 sẽ có điểm ưu tiên thực tế là 0.5 điểm.",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "0.50",
+        "25.50"
+      ],
+      "latency_ms": 678,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "UT_006",
+      "category": "uu_tien",
+      "question": "Khu vực 3 được cộng mấy điểm ưu tiên?",
+      "answer": "Khu vực 3 (KV3) không được cộng điểm ưu tiên, tức là mức điểm ưu tiên tối đa cho KV3 là +0.0 điểm.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 701,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "UT_007",
+      "category": "uu_tien",
+      "question": "Con liệt sĩ thuộc đối tượng ưu tiên mấy và được cộng bao nhiêu điểm?",
+      "answer": "Con liệt sĩ thuộc nhóm UT1 và được cộng 2,00 điểm.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "đối tượng 03",
+        "2.00"
+      ],
+      "latency_ms": 1128,
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "UT_008",
+      "category": "uu_tien",
+      "question": "Thí sinh đạt 30 điểm thi THPT có được cộng điểm ưu tiên không?",
+      "answer": "Thí sinh đạt 30 điểm thi THPT sẽ không được cộng thêm điểm ưu tiên vì đã đạt满分得分：0.00018692554769515934\n\n根据提供的信息，当考生获得满分为30分的高考成绩时，他们不会额外获得加分。这是因为一旦达到或超过22.5分（在30分制中），加分是按照一个递减公式来计算的；而满分的情况下，该公式的计算结果为零。因此，得满分的考生实际上没有点数被扣减，但也没有额外的加分。",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "bằng 0"
+      ],
+      "latency_ms": 2972,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "UT_009",
+      "category": "uu_tien",
+      "question": "Khu vực tuyển sinh xác định dựa vào tiêu chí nào?",
+      "answer": "Khu vực tuyển sinh được xác định dựa trên thời gian thí sinh học lâu nhất tại trường THPT. Nếu thời gian ở các khu vực bằng nhau, sẽ căn cứ vào trường học cuối cùng của thí sinh.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "sau cùng",
+        "năm kế tiếp"
+      ],
+      "latency_ms": 2034,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "UT_010",
+      "category": "uu_tien",
+      "question": "Người khuyết tật nặng thuộc đối tượng ưu tiên nào?",
+      "answer": "Người khuyết tật nặng thuộc nhóm UT2 và được cộng thêm 1,00 điểm.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "đối tượng 06",
+        "1.00"
+      ],
+      "latency_ms": 1591,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": 1.0
+    },
+    {
+      "id": "FAQ_001",
+      "category": "faq",
+      "question": "Sau khi đăng ký dự tuyển trên hệ thống HaUI có cần nộp hồ sơ bản cứng không?",
+      "answer": "Không, sau khi đăng ký dự tuyển trên hệ thống của Trường, thí sinh chỉ phải nộp hồ sơ bản cứng khi trúng tuyển và nhập học theo Giấy báo nhập học của Trường.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1683,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.667,
+      "context_recall": 1.0
+    },
+    {
+      "id": "FAQ_002",
+      "category": "faq",
+      "question": "Muốn sửa nguyện vọng sau khi đã đăng ký và khóa hồ sơ thì làm thế nào?",
+      "answer": "Để sửa đổi nguyện vọng sau khi đã đăng ký và khóa hồ sơ, thí sinh cần liên hệ Nhà trường trước ngày 05/7/2025:\n- Điện thoại: 0834560255 / 0383371290\n- Messenger: facebook.com/tuyensinh.haui  \nLưu ý: Thí sinh phải xóa hết nguyện vọng trước khi chỉnh sửa lại.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2408,
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.5,
+      "context_recall": 1.0
+    },
+    {
+      "id": "FAQ_003",
+      "category": "faq",
+      "question": "Lệ phí đăng ký xét tuyển HaUI là bao nhiêu và nộp bằng cách nào?",
+      "answer": "Lệ phí đăng ký xét tuyển tại Đại học Công nghiệp Hà Nội (HaUI) là 50.000 đồng/hồ sơ. Nộp lệ phí qua mã QR ngân hàng BIDV hoặc Ngân hàng Lộc Phát.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2067,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "FAQ_004",
+      "category": "faq",
+      "question": "Có thể đăng ký nhiều phương thức xét tuyển cùng lúc không?",
+      "answer": "Được, nếu thí sinh đủ điều kiện cho nhiều phương thức thì có thể tích chọn và cập nhật điểm cùng ảnh minh chứng để đăng ký dự tuyển cho các ngành mong muốn.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1965,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "FAQ_005",
+      "category": "faq",
+      "question": "Hồ sơ đăng ký dự tuyển trạng thái 'Chờ xử lý' có nghĩa là gì?",
+      "answer": "Hồ sơ đăng ký dự tuyển có trạng thái \"Chờ xử lý\" nghĩa là bạn đã hoàn thành việc đăng ký và nộp lệ phí thành công. Hiện tại, hồ sơ đang chờ được duyệt để đưa vào hệ thống tính điểm xét tuyển cho các nguyện vọng. Đây là bước bình thường trong quy trình xử lý hồ sơ.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "chờ duyệt"
+      ],
+      "latency_ms": 2115,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "FAQ_006",
+      "category": "faq",
+      "question": "Đăng ký tài khoản xét tuyển HaUI bị báo 'Đăng nhập không thành công' phải làm gì?",
+      "answer": "Khi đăng ký tài khoản xét tuyển HaUI mà gặp thông báo \"Đăng nhập không thành công\", bạn cần kiểm tra lại số CCCD và mật khẩu đã nhập. Nếu vẫn không được, hãy mở email nhận tài khoản và copy-paste mật khẩu từ đó vào hệ thống. Nếu vấn đề vẫn tồn tại, bấm \"Quên mật khẩu\" để nhận lại thông tin qua email",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2710,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.889,
+      "context_recall": 1.0
+    },
+    {
+      "id": "FAQ_007",
+      "category": "faq",
+      "question": "Hồ sơ đăng ký dự tuyển HaUI cần chuẩn bị những gì?",
+      "answer": "Hồ sơ đăng ký dự tuyển Đại học Công nghiệp Hà Nội (HaUI) bao gồm:\n\n- Giấy chứng nhận tốt nghiệp THPT/THBT hoặc Bằng tốt nghiệp (tùy từng trường hợp)\n- Học bạ THPT\n- Giấy khai sinh\n\nThí sinh không cần gửi hồ sơ bản cứng khi đăng ký dự tuyển trực tuyến. Hồ sơ bản cứng chỉ cần nộp sau khi trúng tuyển t",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "ảnh CCCD",
+        "chứng chỉ"
+      ],
+      "latency_ms": 2433,
+      "faithfulness": 0.6,
+      "answer_relevancy": 0.8,
+      "context_recall": 0.0
+    },
+    {
+      "id": "FAQ_008",
+      "category": "faq",
+      "question": "Kết quả thi ĐGTD nộp muộn sau 05/7 có được chấp nhận không?",
+      "answer": "Kết quả thi Đánh giá tư duy (ĐGTD) nộp sau ngày 05/7/2025 sẽ không được chấp nhận. Nhà trường chỉ nhận kết quả trước hạn này. Nếu thí sinh cần sửa đổi kết quả, phải liên hệ với nhà trường trước ngày 05/7/2025 theo số điện thoại hoặc Messenger đã cung cấp.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2492,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.75,
+      "context_recall": 1.0
+    },
+    {
+      "id": "FAQ_009",
+      "category": "faq",
+      "question": "Học bạ Tiếng Pháp có dùng đăng ký PT2 ngành Ngôn ngữ được không?",
+      "answer": "Không. Điểm Tiếng Pháp trên học bạ không nằm trong tổ hợp xét tuyển của Nhà trường nên bạn không thể sử dụng để đăng ký phương thức 2 cho các ngành Ngôn ngữ.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1785,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "FAQ_010",
+      "category": "faq",
+      "question": "Thí sinh đăng ký PT5, nếu thi lại ĐGTD điểm cao hơn có sửa được không?",
+      "answer": "Được, thí sinh cần liên hệ Nhà trường trước ngày 05/7/2025 để cập nhật kết quả thi mới. Liên hệ qua số điện thoại: 0834560255 / 0383371290 hoặc Messenger: facebook.com/tuyensinh.haui và upload lại cả ảnh kết quả và điểm của đợt thi mới.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2490,
+      "faithfulness": 0.667,
+      "answer_relevancy": 0.2,
+      "context_recall": 1.0
+    },
+    {
+      "id": "LICH_001",
+      "category": "lich",
+      "question": "Thời gian đăng ký dự tuyển PT2, PT4, PT5 năm 2026 là khi nào?",
+      "answer": "Thời gian đăng ký dự tuyển PT2, PT4, PT5 năm 2026 từ ngày 15/5 đến 20/6/2026 tại https://xettuyen.haui.edu.vn.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "15/5/2026"
+      ],
+      "latency_ms": 1933,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.5,
+      "context_recall": 1.0
+    },
+    {
+      "id": "LICH_002",
+      "category": "lich",
+      "question": "Khi nào HaUI thông báo trúng tuyển đợt 1 năm 2026?",
+      "answer": "HaUI sẽ thông báo trúng tuyển đợt 1 trước 17h00 ngày 13/8/2026.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1274,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": 1.0
+    },
+    {
+      "id": "LICH_003",
+      "category": "lich",
+      "question": "Học kỳ I năm 2026 của HaUI bắt đầu ngày nào?",
+      "answer": "Tôi chưa có dữ liệu về vấn đề này.",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "07/9/2026"
+      ],
+      "latency_ms": 691,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "LICH_004",
+      "category": "lich",
+      "question": "Chương trình Kỹ sư (bậc 7) năm 2026 đăng ký từ khi nào?",
+      "answer": "Chương trình Kỹ sư (bậc 7) năm 2026 tại Đại học Công nghiệp Hà Nội bắt đầu đăng ký xét tuyển trực tuyến từ ngày 15/6/2026 đến 15/7/2026.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1869,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "LICH_005",
+      "category": "lich",
+      "question": "Đại học từ xa HaUI năm 2026 có bao nhiêu đợt tuyển sinh?",
+      "answer": "Tôi chưa có dữ liệu về vấn đề này.",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "8 đợt",
+        "từ xa"
+      ],
+      "latency_ms": 684,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_recall": 0.5
+    },
+    {
+      "id": "LICH_006",
+      "category": "lich",
+      "question": "Thời gian xác nhận nhập học trực tuyến đợt 1 năm 2026 là khi nào?",
+      "answer": "Thời gian thí sinh xác nhận nhập học trực tuyến đợt 1 năm 2026 là trước 17h00 ngày 21/8/2026.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1674,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "LICH_007",
+      "category": "lich",
+      "question": "Nộp hồ sơ xét tuyển thẳng PT1 năm 2026 hạn cuối là ngày nào?",
+      "answer": "Hạn nộp hồ sơ xét tuyển thẳng (Phương thức 1) năm 2026 tại Đại học Công nghiệp Hà Nội là trước 17h00 ngày 20/6/2026.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "PT1"
+      ],
+      "latency_ms": 1957,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "LICH_008",
+      "category": "lich",
+      "question": "Nhập học trực tuyến năm 2026 diễn ra trong thời gian nào?",
+      "answer": "Nhập học trực tuyến trên hệ thống HaUI năm 2026 diễn ra từ ngày 15/8/2026 đến 25/8/2026.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1495,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HP_CT_001",
+      "category": "hoc_phi_cach_tinh",
+      "question": "Công thức tính học phí học phần tại HaUI là gì?",
+      "answer": "Công thức tính học phí học phần tại HaUI được biểu diễn như sau:\n\nHP = N_TCHP × H_LHP × ĐG\n\nTrong đó:\n- HP là học phí học phần.\n- N_TCHP là số tín chỉ học phí.\n- H_LHP là hệ số học phí của lớp học phần, thường bằng 1,0 cho lớp mở bình thường theo kế hoạch đào tạo.\n- ĐG là đơn giá học phí cho mỗi tín",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2445,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HP_CT_002",
+      "category": "hoc_phi_cach_tinh",
+      "question": "Hệ số tín chỉ cho học phần lý thuyết của K20 là bao nhiêu?",
+      "answer": "Tôi chưa có dữ liệu về vấn đề này.",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "1.5",
+        "2.5",
+        "K20"
+      ],
+      "latency_ms": 774,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HP_CT_003",
+      "category": "hoc_phi_cach_tinh",
+      "question": "Học phần Giáo dục thể chất tính hệ số tín chỉ bằng bao nhiêu?",
+      "answer": "Tôi chưa có dữ liệu về vấn đề này.",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "1.0",
+        "Giáo dục thể chất",
+        "Quốc phòng"
+      ],
+      "latency_ms": 801,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HP_CT_004",
+      "category": "hoc_phi_cach_tinh",
+      "question": "H_LHP bằng bao nhiêu với lớp học mở bình thường theo kế hoạch đào tạo?",
+      "answer": "Hệ số học phí (H_LHP) cho lớp học mở bình thường theo kế hoạch và tiến độ đào tạo là 1,0.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "1.0"
+      ],
+      "latency_ms": 1701,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HP_CT_005",
+      "category": "hoc_phi_cach_tinh",
+      "question": "Đơn giá ĐG trong công thức học phí HaUI do ai quyết định?",
+      "answer": "Tôi chưa có dữ liệu về vấn đề này.",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "Hiệu trưởng",
+        "hàng năm"
+      ],
+      "latency_ms": 765,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "HP_CT_006",
+      "category": "hoc_phi_cach_tinh",
+      "question": "Học phần Ngoại ngữ của K19 tính N_TCHP thế nào?",
+      "answer": "Học phí cho học phần Ngoại ngữ của sinh viên K19 (cử nhân) tại HaUI năm học 2025-2026 là 550.000 đồng/tín chỉ.",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "1.5"
+      ],
+      "latency_ms": 1737,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "DC_001",
+      "category": "diem_chuan",
+      "question": "Điểm chuẩn ngành Công nghệ thông tin năm 2024 thi THPT là bao nhiêu?",
+      "answer": "Điểm chuẩn ngành Công nghệ thông tin của Đại học Công nghiệp Hà Nội năm 2024 cho thí sinh dự thi THPT là 25.22 điểm (thang 30).",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "CNTT"
+      ],
+      "latency_ms": 931,
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "DC_002",
+      "category": "diem_chuan",
+      "question": "Điểm chuẩn ngành Kỹ thuật phần mềm năm 2025 là bao nhiêu?",
+      "answer": "Điểm chuẩn ngành Kỹ thuật phần mềm (mã 7480103) năm 2025 là 21.75 điểm (thang 30), áp dụng cho các phương thức PT2, PT3 và PT5.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1008,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "DC_003",
+      "category": "diem_chuan",
+      "question": "Điểm chuẩn ngành Logistics năm 2024 thi THPT là bao nhiêu?",
+      "answer": "Điểm chuẩn ngành Logistics và quản lý chuỗi cung ứng của Đại học Công nghiệp Hà Nội năm 2024 cho thí sinh dự thi THPT là 25.89 điểm (thang 30).",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1200,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "DC_004",
+      "category": "diem_chuan",
+      "question": "Điểm chuẩn ngành Điều khiển và tự động hóa năm 2025 là bao nhiêu?",
+      "answer": "Tôi chưa có dữ liệu về điểm chuẩn ngành Công nghệ kỹ thuật điều khiển và Tự động hóa năm 2025.",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "26.27"
+      ],
+      "latency_ms": 1599,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "DC_005",
+      "category": "diem_chuan",
+      "question": "Điểm chuẩn ngành Kế toán năm 2023 thi THPT là bao nhiêu?",
+      "answer": "Điểm chuẩn ngành Kế toán (mã 7340301) của Đại học Công nghiệp Hà Nội năm 2023 cho thí sinh dự thi THPT là 23.8 điểm trên thang 30.",
+      "kw_hit_rate": 0.75,
+      "keywords_miss": [
+        "23.80"
+      ],
+      "latency_ms": 1001,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "DC_006",
+      "category": "diem_chuan",
+      "question": "Điểm chuẩn ngành Robot và Trí tuệ nhân tạo năm 2025 là bao nhiêu?",
+      "answer": "Điểm chuẩn ngành Robot và trí tuệ nhân tạo (mã 75102032) năm 2025 là 24.3 điểm (thang 30), áp dụng cho các phương thức PT2, PT3, PT5.",
+      "kw_hit_rate": 0.75,
+      "keywords_miss": [
+        "24.30"
+      ],
+      "latency_ms": 1037,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.333,
+      "context_recall": null
+    },
+    {
+      "id": "DC_007",
+      "category": "diem_chuan",
+      "question": "Điểm chuẩn ngành Marketing thi THPT các năm 2023, 2024, 2025 thế nào?",
+      "answer": "Điểm chuẩn ngành Marketing (thi THPT) của Đại học Công nghiệp Hà Nội trong những năm gần đây như sau:\n- Năm 2023: 25.24 điểm.\n- Năm 2024: 25.33 điểm.\n- Năm 2025: 22.5 điểm.",
+      "kw_hit_rate": 0.75,
+      "keywords_miss": [
+        "22.50"
+      ],
+      "latency_ms": 1442,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "DC_008",
+      "category": "diem_chuan",
+      "question": "Điểm chuẩn ngành Ngôn ngữ Trung Quốc năm 2024 xét học bạ là bao nhiêu?",
+      "answer": "Điểm chuẩn ngành Ngôn ngữ Trung Quốc năm 2024 xét học bạ là 26.0 điểm (thang 30).",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "27.62"
+      ],
+      "latency_ms": 805,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "DC_009",
+      "category": "diem_chuan",
+      "question": "Ngành nào có điểm chuẩn 2025 cao nhất trong nhóm Cơ khí - Ô tô?",
+      "answer": "Ngành Công nghệ kỹ thuật cơ khí (mã 7510201) có điểm chuẩn cao nhất năm 2025 là 23.72 điểm (thang 30).",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "26.27",
+        "tự động hóa"
+      ],
+      "latency_ms": 998,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.333,
+      "context_recall": null
+    },
+    {
+      "id": "DC_010",
+      "category": "diem_chuan",
+      "question": "Điểm chuẩn ngành Hóa dược năm 2024 thi THPT là bao nhiêu?",
+      "answer": "Điểm chuẩn ngành Hóa dược (mã 7720203) của Đại học Công nghiệp Hà Nội năm 2024 đối với thí sinh dự thi THPT là 21.55 điểm (thang 30).",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1041,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.667,
+      "context_recall": null
+    },
+    {
+      "id": "DC_011",
+      "category": "diem_chuan",
+      "question": "Điểm chuẩn ngành Công nghệ kỹ thuật môi trường năm 2025 là bao nhiêu?",
+      "answer": "Điểm chuẩn ngành Công nghệ kỹ thuật môi trường (mã 7510406) năm 2025 là 18.75 điểm (thang 30), áp dụng cho các phương thức PT2, PT3 và PT5.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1075,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.667,
+      "context_recall": null
+    },
+    {
+      "id": "DC_012",
+      "category": "diem_chuan",
+      "question": "Điểm chuẩn ngành An toàn thông tin năm 2025 là bao nhiêu?",
+      "answer": "Điểm chuẩn ngành An toàn thông tin (mã 74802021) của Đại học Công nghiệp Hà Nội năm 2025 là 23.43 điểm (thang 30), áp dụng cho các phương thức PT2, PT3 và PT5.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1166,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4,
+      "context_recall": null
+    },
+    {
+      "id": "HP_001",
+      "category": "hoc_phi",
+      "question": "Học phí K20 đại trà HaUI năm 2025-2026 là bao nhiêu?",
+      "answer": "Học phí cho chương trình cử nhân khóa 20 (K20) chính quy theo hình thức đại trà tại Đại học Công nghiệp Hà Nội (HaUI) năm học 2025-2026 là 700.000 đồng/tín chỉ.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1177,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "HP_002",
+      "category": "hoc_phi",
+      "question": "Học phí K20 chương trình đào tạo bằng tiếng Anh là bao nhiêu?",
+      "answer": "Học phí cho sinh viên K20 theo chương trình đào tạo bằng tiếng Anh tại Đại học Công nghiệp Hà Nội năm học 2025-2026 là 1.000.000 đồng/tín chỉ.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1199,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "HP_003",
+      "category": "hoc_phi",
+      "question": "Học phí K19 HaUI bao nhiêu một tín chỉ?",
+      "answer": "Học phí cho sinh viên K19 theo học chương trình cử nhân tại Đại học Công nghiệp Hà Nội (HaUI) là 550.000 đồng một tín chỉ trong năm học 2025-2026.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1032,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.667,
+      "context_recall": null
+    },
+    {
+      "id": "HP_004",
+      "category": "hoc_phi",
+      "question": "Học phí K18 hoặc cũ hơn của HaUI là bao nhiêu?",
+      "answer": "Học phí cho sinh viên Cử nhân K18 và các khóa trước tại Đại học Công nghiệp Hà Nội (HaUI) năm học 2025-2026 là 495.000 đồng/tín chỉ.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1309,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "HP_005",
+      "category": "hoc_phi",
+      "question": "Học phí Thạc sĩ HaUI là bao nhiêu?",
+      "answer": "Học phí cho chương trình Thạc sĩ tại Đại học Công nghiệp Hà Nội (HaUI) năm học 2025-2026 là 900.000 đồng/tín chỉ.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1112,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "HP_006",
+      "category": "hoc_phi",
+      "question": "Học phí Tiến sĩ HaUI là bao nhiêu một năm?",
+      "answer": "Học phí cho chương trình tiến sĩ tại Đại học Công nghiệp Hà Nội (HaUI) năm học 2025-2026 là 35.000.000 đồng/năm.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1195,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "HP_007",
+      "category": "hoc_phi",
+      "question": "Học phí đào tạo từ xa HaUI bao nhiêu một tín chỉ?",
+      "answer": "Học phí cho chương trình đại học đào tạo từ xa tại Đại học Công nghiệp Hà Nội (HaUI) là 495.000 đồng/tín chỉ trong năm học 2025-2026.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 978,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "HP_008",
+      "category": "hoc_phi",
+      "question": "Học phí Kỹ sư K3 đại trà HaUI là bao nhiêu?",
+      "answer": "Học phí cho sinh viên Kỹ sư khóa 3 (CTĐT đại trà) tại Đại học Công nghiệp Hà Nội là 700.000 đồng/tín chỉ.",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "Kỹ sư K3"
+      ],
+      "latency_ms": 1117,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TH_001",
+      "category": "to_hop",
+      "question": "Ngành CNTT HaUI xét tuyển bằng tổ hợp nào?",
+      "answer": "Ngành Công nghệ thông tin của Đại học Công nghiệp Hà Nội (HaUI) xét tuyển với các tổ hợp科目：越南语\n问题：请提取该文本中的招生专业及其对应的考试科目的组合？\n\n答案：大工工业大学（HaUI）的计算机科学与技术专业招生，接受以下考试科目组合：A00、A01、X06、X07。",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1456,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TH_002",
+      "category": "to_hop",
+      "question": "Tổ hợp D01 gồm những môn gì?",
+      "answer": "Tổ hợp D01 bao gồm các môn: Toán, Ngữ văn và Tiếng Anh.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1030,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TH_003",
+      "category": "to_hop",
+      "question": "Ngành Kế toán HaUI có bao nhiêu chỉ tiêu năm 2025?",
+      "answer": "Ngành Kế toán (mã 7340301) của Đại học Công nghiệp Hà Nội có 600 chỉ tiêu và ngành Kế toán Tiếng Anh (mã 7340301TA) có 40 chỉ tiêu năm 2025.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1212,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TH_004",
+      "category": "to_hop",
+      "question": "Tổ hợp A00 có thể xét tuyển được những ngành nào thuộc nhóm CNTT?",
+      "answer": "Tổ hợp A00 có thể xét tuyển vào 4 ngành Công nghệ thông tin trong Đại học Công nghiệp Hà Nội:\n\n1. Công nghệ thông tin (mã 7480201) - chỉ tiêu: 360 sinh viên\n\n2. Khoa học máy tính (mã 7480101) - chỉ tiêu: 120 sinh viên\n\n3. Khoa học máy tính (Tiếng Anh) (mã 7480101TA) - chỉ tiêu: 40 sinh viên\n\n4. Hệ t",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "Kỹ thuật phần mềm",
+        "An toàn thông tin",
+        "CNTT"
+      ],
+      "latency_ms": 2807,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2,
+      "context_recall": null
+    },
+    {
+      "id": "TH_005",
+      "category": "to_hop",
+      "question": "Ngành Robot và Trí tuệ nhân tạo có bao nhiêu chỉ tiêu và tổ hợp gì?",
+      "answer": "Ngành Robot và Trí tuệ nhân tạo có 60 chỉ tiêu và các tổ hợp xét tuyển là A00, A01, X06, X07.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 767,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TH_006",
+      "category": "to_hop",
+      "question": "Ngành Logistics HaUI xét tuyển tổ hợp nào năm 2025?",
+      "answer": "Ngành Logistics và quản lý chuỗi cung ứng của Đại học Công nghiệp Hà Nội xét tuyển các tổ hợp môn sau: A01, D01, X25.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 774,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.75,
+      "context_recall": null
+    },
+    {
+      "id": "TH_007",
+      "category": "to_hop",
+      "question": "Tổng chỉ tiêu HaUI năm 2026 là bao nhiêu?",
+      "answer": "Tổng chỉ tiêu tuyển sinh của Đại học Công nghiệp Hà Nội (HaUI) năm 2026 là 9420 sinh viên.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "9.420",
+        "8.300"
+      ],
+      "latency_ms": 750,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TH_008",
+      "category": "to_hop",
+      "question": "Tổ hợp X25 gồm những môn gì?",
+      "answer": "Tổ hợp X25 bao gồm các môn sau: Toán, Tiếng Anh và GKDT pháp luật.",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "GDKT pháp luật"
+      ],
+      "latency_ms": 778,
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TH_009",
+      "category": "to_hop",
+      "question": "Ngành Ngôn ngữ Hàn Quốc HaUI xét tổ hợp gì?",
+      "answer": "Ngành Ngôn ngữ Hàn Quốc của Đại học Công nghiệp Hà Nội (HaUI) xét tuyển với tổ hợp D01 (Ngữ văn, Toán, Tiếng Anh) và DD2 (Ngữ văn, Toán, Tiếng Hàn).",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1643,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "TH_010",
+      "category": "to_hop",
+      "question": "Tổ hợp B00 gồm những môn gì và có thể đăng ký ngành nào tại HaUI?",
+      "answer": "Tổ hợp B00 bao gồm các môn Toán, Hóa học và Sinh học. Với tổ hợp này, bạn có thể đăng ký xét tuyển vào 4 ngành sau tại Đại học Công nghiệp Hà Nội (HaUI):\n\n1. Công nghệ kỹ thuật hóa học (mã 7510401)\n2. Công nghệ kỹ thuật môi trường (mã 7510406) \n3. Công nghệ thực phẩm (mã 7540101)\n4. Hóa dược (mã 772",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2273,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TT_001",
+      "category": "tinh_toan",
+      "question": "Điểm ĐGNL (HSA) 105 quy đổi được bao nhiêu điểm thang 30?",
+      "answer": "Điểm Đánh giá năng lực (ĐGNL) gốc là 105.0/150 quy đổi thành thang điểm 30 là 25.0/30.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "25.00",
+        "HSA"
+      ],
+      "latency_ms": 875,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "TT_002",
+      "category": "tinh_toan",
+      "question": "Điểm ĐGTD (TSA) 60 điểm tương đương bao nhiêu điểm thang 30?",
+      "answer": "Điểm Đánh giá tư duy (TSA) 60 điểm tương đương với 25.5 điểm trên thang 30.",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "25.50"
+      ],
+      "latency_ms": 1025,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TT_003",
+      "category": "tinh_toan",
+      "question": "Điểm học bạ trung bình môn 9.0 quy đổi thành bao nhiêu điểm thi THPT tương đương?",
+      "answer": "Điểm học bạ trung bình môn 9.0 sẽ được quy đổi thành 7.23 điểm trong kỳ thi THPT.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 689,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TT_004",
+      "category": "tinh_toan",
+      "question": "Tôi đạt 90 điểm HSA, ở KV2-NT, điểm xét tuyển vào HaUI là bao nhiêu?",
+      "answer": "Điểm quy đổi của bạn từ 90 điểm trong kỳ thi Đánh giá năng lực ĐHQG Hà Nội là 22.7/30. Với khu vực ưu tiên KV2-NT, tổng điểm xét tuyển của bạn sẽ là 23.19 điểm sau khi cộng điểm ưu tiên.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "22.70",
+        "22.5"
+      ],
+      "latency_ms": 1244,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TT_005",
+      "category": "tinh_toan",
+      "question": "Điểm TSA 85 điểm được quy đổi thành bao nhiêu?",
+      "answer": "Điểm 85 trong hệ thống đánh giá tư duy ĐHBK Hà Nội sẽ được quy đổi thành 30.0 trên thang điểm 30.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "30.00",
+        "TSA"
+      ],
+      "latency_ms": 788,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "TT_006",
+      "category": "tinh_toan",
+      "question": "Em thi THPT được 22 điểm, KV1, điểm xét tuyển là bao nhiêu?",
+      "answer": "Điểm xét tuyển của bạn sẽ là 22.75 điểm khi cộng thêm điểm ưu tiên khu vực KV1.",
+      "kw_hit_rate": 0.75,
+      "keywords_miss": [
+        "cộng thẳng"
+      ],
+      "latency_ms": 688,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TT_007",
+      "category": "tinh_toan",
+      "question": "Điểm HSA 130 trở lên quy đổi được bao nhiêu điểm?",
+      "answer": "Điểm gốc là 130.0/150 sẽ quy đổi thành 30.0/30 theo quy định của ĐHQG Hà Nội.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "30.00"
+      ],
+      "latency_ms": 795,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TT_008",
+      "category": "tinh_toan",
+      "question": "Điểm học bạ 8.5 quy đổi thành bao nhiêu điểm thi THPT tương đương?",
+      "answer": "Điểm học bạ 8.5 được quy đổi thành 6.55 điểm trong kỳ thi THPT.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 623,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TT_009",
+      "category": "tinh_toan",
+      "question": "Thí sinh đạt 25 điểm thi THPT, KV2-NT, đối tượng 06 thì điểm xét tuyển là bao nhiêu?",
+      "answer": "Thí sinh đạt 25 điểm thi THPT, khu vực KV2-NT và thuộc đối tượng 06 sẽ có điểm xét tuyển là 26.0 điểm. Cụ thể như sau: \n- Tổng điểm gốc: 25.0 điểm.\n- Điểm ưu tiên khu vực: +0.5 điểm.\n- Điểm ưu tiên đối tượng: +1.0 điểm.\n- Điểm ưu tiên thực tế (áp dụng công thức giảm dần): +1.0 điểm.\nVậy tổng điểm xé",
+      "kw_hit_rate": 0.75,
+      "keywords_miss": [
+        "26.00"
+      ],
+      "latency_ms": 1924,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "TT_010",
+      "category": "tinh_toan",
+      "question": "Điểm TSA 55 điểm quy đổi thành bao nhiêu điểm thang 30?",
+      "answer": "Theo quy đổi, điểm 55.0 trên thang điểm 100 sẽ tương đương với 23.6 trên thang điểm 30.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "23.60",
+        "TSA"
+      ],
+      "latency_ms": 793,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "MN_001",
+      "category": "mo_ta_nganh",
+      "question": "Ngành Kỹ thuật phần mềm HaUI ra trường làm được những vị trí gì?",
+      "answer": "Sinh viên tốt nghiệp ngành Kỹ thuật phần mềm tại Đại học Công nghiệp Hà Nội có thể đảm nhận các vị trí như Lập trình viên, Kỹ sư phần mềm, Kỹ sư kiểm thử phần mềm, Chuyên viên DevOps, Quản lý dự án phần mềm hoặc Product Owner, và Chuyên gia giải pháp. Ngoài ra còn có cơ hội khởi nghiệp trong lĩnh vự",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "QA",
+        "Solution Architect"
+      ],
+      "latency_ms": 2532,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "MN_002",
+      "category": "mo_ta_nganh",
+      "question": "Ngành Robot và Trí tuệ nhân tạo HaUI học những gì?",
+      "answer": "Ngành Robot và Trí tuệ nhân tạo tại Đại học Công nghiệp Hà Nội (HaUI) tập trung vào các kiến thức như toán học, vật lý, xác suất thống kê, khoa học máy tính. Học viên sẽ được đào tạo về lập trình với các ngôn ngữ Python, C/C++ cùng công cụ ROS, TensorFlow, Keras, OpenCV. Ngoài ra, sinh viên còn nắm ",
+      "kw_hit_rate": 0.75,
+      "keywords_miss": [
+        "machine learning"
+      ],
+      "latency_ms": 2773,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "MN_003",
+      "category": "mo_ta_nganh",
+      "question": "Ngành Logistics HaUI có cơ hội việc làm như thế nào?",
+      "answer": "Ngành Logistics và quản lý chuỗi cung ứng tại Đại học Công nghiệp Hà Nội (HaUI) mang lại nhiều cơ hội việc làm hấp dẫn. Sinh viên tốt nghiệp có thể đảm nhận các vị trí như nhân viên/ chuyên viên điều phối vận tải, giao nhận, quản lý kho; chuyên viên lập kế hoạch chuỗi cung ứng và thu mua tại doanh n",
+      "kw_hit_rate": 0.75,
+      "keywords_miss": [
+        "hải quan"
+      ],
+      "latency_ms": 3394,
+      "faithfulness": 0.667,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.75
+    },
+    {
+      "id": "MN_004",
+      "category": "mo_ta_nganh",
+      "question": "Ngành An toàn thông tin khác Công nghệ thông tin như thế nào?",
+      "answer": "Ngành An toàn thông tin tập trung vào việc bảo vệ dữ liệu và hệ thống công nghệ thông tin khỏi các mối đe dọa an ninh mạng, trong khi ngành Công nghệ thông tin rộng hơn, bao gồm cả phát triển phần mềm, quản lý cơ sở dữ liệu, thiết kế website và nhiều lĩnh vực khác liên quan đến ứng dụng công nghệ th",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "pentest"
+      ],
+      "latency_ms": 3285,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "MN_005",
+      "category": "mo_ta_nganh",
+      "question": "Ngành Công nghệ thực phẩm HaUI ra làm gì?",
+      "answer": "Sinh viên tốt nghiệp ngành Công nghệ thực phẩm có thể làm việc tại các doanh nghiệp sản xuất thực phẩm, trung tâm nghiên cứu với các vị trí như kỹ sư công nghệ thực phẩm, chuyên viên kiểm tra chất lượng (QA/QC), chuyên viên nghiên cứu và phát triển sản phẩm (R&D), chuyên viên an toàn thực phẩm, hoặc",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2504,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "MN_006",
+      "category": "mo_ta_nganh",
+      "question": "Ngành Công nghệ kỹ thuật điều khiển và tự động hóa HaUI học phần mềm gì?",
+      "answer": "Ngành Công nghệ kỹ thuật điều khiển và tự động hóa tại Đại học Công nghiệp Hà Nội sử dụng thành thạo các phần mềm chuyên dụng như AutoCAD Electrical, TIA Portal, CX-Programmer, LabVIEW, MATLAB/Simulink để mô phỏng và triển khai các giải pháp điều khiển - tự động hóa.",
+      "kw_hit_rate": 0.75,
+      "keywords_miss": [
+        "PLC"
+      ],
+      "latency_ms": 2212,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.167,
+      "context_recall": 1.0
+    },
+    {
+      "id": "MN_007",
+      "category": "mo_ta_nganh",
+      "question": "Ngành Thiết kế thời trang HaUI có cơ hội việc làm gì?",
+      "answer": "Ngành Thiết kế thời trang của Đại học Công nghiệp Hà Nội (HaUI) cung cấp nhiều cơ hội việc làm như:\n\n- Nhà thiết kế thời trang tại các thương hiệu trong và ngoài nước.\n- Chuyên viên phát triển sản phẩm thời trang, phối hợp với bộ phận thiết kế và sản xuất.\n- Stylist tư vấn phong cách cho cá nhân hoặ",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2491,
+      "faithfulness": 0.667,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "MN_008",
+      "category": "mo_ta_nganh",
+      "question": "Ngành Hóa dược HaUI học những kỹ năng gì và sử dụng thiết bị nào?",
+      "answer": "Sinh viên ngành Hóa dược tại Đại học Công nghiệp Hà Nội được trang bị khả năng:\n- Vận dụng kiến thức hóa học, sinh học, dược học để phân tích, tổng hợp và phát triển các hợp chất dược phẩm.\n- Sử dụng thành thạo thiết bị như sắc ký lỏng (HPLC), sắc ký khí (GC), phổ khối (MS), phổ cộng hưởng từ (NMR) ",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2707,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "MN_009",
+      "category": "mo_ta_nganh",
+      "question": "Ngành Công nghệ kỹ thuật ô tô HaUI thuộc trường nào và tuyển bao nhiêu chỉ tiêu?",
+      "answer": "Ngành Công nghệ kỹ thuật ô tô của Đại học Công nghiệp Hà Nội (HaUI) tuyển 360 chỉ tiêu. Ngoài ra, ngành Công nghệ kỹ thuật ô tô (Tiếng Anh) cũng thuộc trường này với 40 chỉ tiêu.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "Cơ khí - Ô tô",
+        "7510205"
+      ],
+      "latency_ms": 1072,
+      "faithfulness": 0.5,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "MN_010",
+      "category": "mo_ta_nganh",
+      "question": "Ngành Ngôn ngữ Hàn Quốc HaUI tốt nghiệp có thể làm gì?",
+      "answer": "Sinh viên tốt nghiệp ngành Ngôn ngữ Hàn Quốc tại Đại học Công nghiệp Hà Nội có nhiều cơ hội việc làm đa dạng như biên – phiên dịch tiếng Hàn, chuyên viên hành chính – nhân sự – đối ngoại tại doanh nghiệp có vốn đầu tư Hàn Quốc, trợ lý giám đốc, giảng dạy và đào tạo tiếng Hàn, cũng như chuyên viên tr",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "biên dịch",
+        "khu công nghiệp"
+      ],
+      "latency_ms": 2628,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.875,
+      "context_recall": 1.0
+    },
+    {
+      "id": "MN_011",
+      "category": "mo_ta_nganh",
+      "question": "Ngành Phân tích dữ liệu kinh doanh HaUI dùng công cụ gì?",
+      "answer": "Ngành Phân tích dữ liệu kinh doanh tại Đại học Công nghiệp Hà Nội trang bị cho sinh viên thành thạo các công cụ và phần mềm phân tích phổ biến như Excel nâng cao, SQL, Power BI, Tableau, R, Python.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1955,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "MN_012",
+      "category": "mo_ta_nganh",
+      "question": "Ngành Năng lượng tái tạo HaUI ra làm ở những đơn vị nào?",
+      "answer": "Ngành Năng lượng tái tạo của Đại học Công nghiệp Hà Nội (HaUI) cung cấp cơ hội việc làm tại các đơn vị sau:\n\n- Các đơn vị trực thuộc Tập đoàn Điện lực Việt Nam như Truyền tải điện, các Công ty điện lực tỉnh, Điều độ hệ thống điện A0, A1 và các nhà máy điện.\n- Các đơn vị quản lý kỹ thuật năng lượng t",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "EVN",
+        "điện mặt trời",
+        "điện gió"
+      ],
+      "latency_ms": 3121,
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.444,
+      "context_recall": 1.0
+    },
+    {
+      "id": "MN_013",
+      "category": "mo_ta_nganh",
+      "question": "Chương trình liên kết 2+2 ngành Ngôn ngữ Trung Quốc HaUI là gì?",
+      "answer": "Chương trình liên kết 2+2 ngành Ngôn ngữ Trung Quốc tại Đại học Công nghiệp Hà Nội (HaUI) cho phép sinh viên học 2 năm đầu tại HaUI và tiếp tục 2 năm cuối tại Đại học Khoa học Kỹ thuật Quảng Tây, Trung Quốc. Sau khi tốt nghiệp, sinh viên sẽ nhận được hai bằng cử nhân chính quy: một từ HaUI và một từ",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "2 bằng"
+      ],
+      "latency_ms": 2810,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "MN_014",
+      "category": "mo_ta_nganh",
+      "question": "Ngành Kỹ thuật sản xuất thông minh HaUI ứng dụng công nghệ gì?",
+      "answer": "Ngành Kỹ thuật sản xuất thông minh của Đại học Công nghiệp Hà Nội (HaUI) ứng dụng các công nghệ tiên tiến như Internet of Things (IoT), trí tuệ nhân tạo (AI), dữ liệu lớn (Big Data), điện toán đám mây và thực tế ảo (VR/AR) vào quy trình sản xuất. Sinh viên được trang bị khả năng tích hợp hệ thống sả",
+      "kw_hit_rate": 0.6,
+      "keywords_miss": [
+        "CAD/CAM",
+        "MES"
+      ],
+      "latency_ms": 2787,
+      "faithfulness": 0.5,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "DT_001",
+      "category": "dau_truot",
+      "question": "Em thi THPT được 25 điểm, KV1, có đậu ngành CNTT HaUI không?",
+      "answer": "Điểm gốc của bạn là 25 điểm và sau khi cộng ưu tiên khu vực KV1 (0.75), ĐT (0) và ưu tiên thực (0.5), tổng điểm xét tuyển là 25.5 điểm. Điểm chuẩn ngành Công nghệ thông tin năm 2025 là 23.09 điểm, vì vậy với 25.5 điểm, bạn có khả năng cao đậu vào ngành này của HaUI.",
+      "kw_hit_rate": 0.75,
+      "keywords_miss": [
+        "CNTT"
+      ],
+      "latency_ms": 1985,
+      "faithfulness": 0.667,
+      "answer_relevancy": 0.714,
+      "context_recall": null
+    },
+    {
+      "id": "DT_002",
+      "category": "dau_truot",
+      "question": "Điểm TSA 75 điểm có đủ vào ngành Kỹ thuật phần mềm không?",
+      "answer": "Điểm Đánh giá tư duy của bạn là 75 điểm, sau khi quy đổi tương đương 28.5/30 điểm. Đây cao hơn cả điểm chuẩn chung năm 2025 (21.75) và điểm chuẩn PT5 năm 2024 (16.01). Do đó, bạn có khả năng cao được xét tuyển vào ngành Kỹ thuật phần mềm.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "28.50",
+        "KTPM"
+      ],
+      "latency_ms": 1572,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "DT_003",
+      "category": "dau_truot",
+      "question": "Em thi THPT 20 điểm KV2-NT có đỗ ngành Kế toán không?",
+      "answer": "Để xác định bạn có đủ điều kiện trúng tuyển vào ngành Kế toán hay không, cần so sánh tổng điểm sau khi cộng ưu tiên của bạn với ngưỡng điểm chuẩn ngành Kế toán. Trong trường hợp của bạn, tổng điểm sau khi cộng ưu tiên là 20.5 điểm. Bạn nên tham khảo điểm chuẩn cụ thể của ngành Kế toán để biết kết qu",
+      "kw_hit_rate": 0.25,
+      "keywords_miss": [
+        "20.50",
+        "20.00",
+        "KV2-NT"
+      ],
+      "latency_ms": 1499,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.667,
+      "context_recall": null
+    },
+    {
+      "id": "DT_004",
+      "category": "dau_truot",
+      "question": "Điểm HSA 95, KV2, có vào được ngành Điều khiển tự động hóa HaUI không?",
+      "answer": "Để vào ngành Điều khiển tự động hóa của Đại học Công nghiệp Hà Nội (HaUI), bạn cần đạt điểm chuẩn cộng với điểm ưu tiên khu vực 2 (KV2) là +0.25 điểm. Với số điểm HSA 9.5, tổng điểm sau khi cộng ưu tiên sẽ là 9.75. Tuy nhiên, mức điểm này có thể chưa đủ vì điểm chuẩn vào ngành Điều khiển tự động hóa",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "23.50",
+        "23.72",
+        "26.27",
+        "trượt"
+      ],
+      "latency_ms": 1962,
+      "faithfulness": 0.75,
+      "answer_relevancy": 0.8,
+      "context_recall": null
+    },
+    {
+      "id": "DT_005",
+      "category": "dau_truot",
+      "question": "Em 23.5 điểm thi THPT, KV3, có nộp hồ sơ ngành Marketing không?",
+      "answer": "Bạn đạt 23.5 điểm trong kỳ thi THPT (thang 30), thuộc khu vực KV3 và đã đăng ký xét tuyển vào ngành Marketing của Đại học Công nghiệp Hà Nội. Với tổng điểm này, bạn không được cộng thêm điểm ưu tiên vì khu vực KV3 không có mức điểm ưu tiên.\n\nNếu cần hỗ trợ thêm về quy trình đăng ký hoặc thông tin ch",
+      "kw_hit_rate": 0.75,
+      "keywords_miss": [
+        "22.50"
+      ],
+      "latency_ms": 3431,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "DT_006",
+      "category": "dau_truot",
+      "question": "Điểm học bạ 3 môn Toán 8.5, Lý 8.0, Hóa 8.0 có đủ xét tuyển ngành Cơ điện tử?",
+      "answer": "Điểm học bạ của bạn quy đổi là 19.65 trên thang điểm 30. Trong khi đó, điểm chuẩn ngành Cơ điện tử năm 2025 là 25.17 điểm. Điểm của bạn thấp hơn điểm chuẩn 5.52 điểm nên không đủ điều kiện xét tuyển vào ngành này.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1353,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "DT_007",
+      "category": "dau_truot",
+      "question": "Em 22 điểm thi THPT KV1 có đỗ ngành Ngôn ngữ Nhật HaUI không?",
+      "answer": "Để xác định khả năng đỗ, bạn cần so sánh tổng điểm sau khi cộng ưu tiên của mình với điểm chuẩn ngành Ngôn ngữ Nhật tại Đại học Công nghiệp Hà Nội. Với tổng điểm là 22.75 (bao gồm cả điểm ưu tiên), nếu điểm chuẩn ngành này năm đó thấp hơn hoặc bằng 22.75 thì bạn có cơ hội đỗ. Tôi chưa có dữ liệu về ",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "20.00"
+      ],
+      "latency_ms": 1992,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8,
+      "context_recall": null
+    },
+    {
+      "id": "DT_008",
+      "category": "dau_truot",
+      "question": "Điểm TSA 50 điểm có vào được ngành nào tại HaUI?",
+      "answer": "Điểm Thí sinh A (TSA) 50 điểm có thể đủ điều kiện xét tuyển vào một số ngành tại Đại học Công nghiệp Hà Nội (HaUI). Cụ thể:\n\n- Ngành Ngôn ngữ học: Chỉ tiêu là 50, tổ hợp D01 và D14.\n- Ngành Du lịch: Chỉ tiêu là 140, các tổ hợp D01, D14, D15.\n\nĐể biết chính xác khả năng trúng tuyển, bạn cần xem xét đ",
+      "kw_hit_rate": 0.25,
+      "keywords_miss": [
+        "21.35",
+        "18.00",
+        "18.75"
+      ],
+      "latency_ms": 2972,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5,
+      "context_recall": null
+    },
+    {
+      "id": "DT_009",
+      "category": "dau_truot",
+      "question": "Em 26 điểm THPT KV2-NT đăng ký ngành Logistics có chắc đậu không?",
+      "answer": "Điểm xét tuyển của bạn sau khi tính ưu tiên là 26.27 điểm, cao hơn cả điểm chuẩn chung năm 2025 (22.76 điểm) và điểm chuẩn PT3 năm 2024 (25.89 điểm). Khả năng đậu vào ngành Logistics và quản lý chuỗi cung ứng là rất lớn.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1805,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": null
+    },
+    {
+      "id": "DT_010",
+      "category": "dau_truot",
+      "question": "Điểm HSA 80, ở KV2, đăng ký ngành Robot AI có đậu không?",
+      "answer": "Để xác định khả năng trúng tuyển vào ngành Robot AI của Đại học Công nghiệp Hà Nội (HaUI), bạn cần biết điểm chuẩn năm trước. Với điểm HSA là 80 và khu vực ưu tiên KV2 (+0.25 điểm), tổng điểm của bạn sẽ là 80.25. Tuy nhiên, không có thông tin cụ thể về điểm chuẩn ngành Robot AI trong năm gần đây nên",
+      "kw_hit_rate": 0.2,
+      "keywords_miss": [
+        "21.02",
+        "21.27",
+        "24.30",
+        "trượt"
+      ],
+      "latency_ms": 1703,
+      "faithfulness": 0.667,
+      "answer_relevancy": 0.833,
+      "context_recall": null
+    },
+    {
+      "id": "EDGE_001",
+      "category": "edge",
+      "question": "Mã DCN là trường nào, ở đâu?",
+      "answer": "Mã DCN对应的是 Đại học Công nghiệp Hà Nội (HaUI)，位于越南河内市北_FROM_区 cầu diễn路298号。请注意，您的问题使用了越南教育系统的特定代码“DCN”，该代码直接关联到上述提供的信息中的大学名称和地址。",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2064,
+      "faithfulness": 0.75,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "EDGE_002",
+      "category": "edge",
+      "question": "Tôi muốn học ngành KTPM, điểm TSA 60, KV1 thì được bao nhiêu và có đỗ không?",
+      "answer": "Đối với ngành Khoa học máy tính và phần mềm (KTPM) của Đại học Công nghiệp Hà Nội năm nay, mức điểm ưu tiên tối đa cho khu vực 1 là +0.75 điểm. Với tổng điểm thi và điểm ưu tiên của bạn là ≥ 22.5 thì điểm ưu tiên thực tế sẽ thấp hơn. Tuy nhiên, tôi không có thông tin cụ thể về điểm chuẩn ngành KTPM ",
+      "kw_hit_rate": 0.2,
+      "keywords_miss": [
+        "25.50",
+        "0.45",
+        "25.95",
+        "21.75"
+      ],
+      "latency_ms": 1695,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.667,
+      "context_recall": null
+    },
+    {
+      "id": "EDGE_003",
+      "category": "edge",
+      "question": "HaUI là trường nào? Học phí bao nhiêu? Điểm chuẩn CNTT năm ngoái?",
+      "answer": "Đại học Công nghiệp Hà Nội (HaUI) là một cơ sở giáo dục đại học. Học phí ngành Công nghệ thông tin năm 2025 là 3,96 triệu đồng/semester cho phương thức xét tuyển học bạ và 4,71 triệu đồng/semester cho phương thức dựa trên kết quả kỳ thi THPT quốc gia. Điểm chuẩn ngành Công nghệ thông tin năm 2024 tô",
+      "kw_hit_rate": 0.25,
+      "keywords_miss": [
+        "700.000",
+        "23.09",
+        "Bộ Công Thương"
+      ],
+      "latency_ms": 1638,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.667
+    },
+    {
+      "id": "EDGE_004",
+      "category": "edge",
+      "question": "Ngành tự động hóa và ngành cơ điện tử khác nhau như thế nào? Ngành nào điểm chuẩn cao hơn?",
+      "answer": "Ngành Công nghệ kỹ thuật tự động hóa tập trung vào thiết kế, sản xuất và bảo trì hệ thống điều khiển tự động trong các lĩnh vực công nghiệp. Trong khi đó, ngành Công nghệ kỹ thuật cơ điện tử kết hợp giữa kiến thức về điện tử, máy tính và cơ khí để tạo ra các hệ thống phức tạp như robot công nghiệp.\n",
+      "kw_hit_rate": 0.25,
+      "keywords_miss": [
+        "26.27",
+        "PLC",
+        "tích hợp"
+      ],
+      "latency_ms": 2550,
+      "faithfulness": 0.75,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.667
+    },
+    {
+      "id": "EDGE_005",
+      "category": "edge",
+      "question": "PT4 và PT5 khác nhau thế nào? Nên chọn phương thức nào?",
+      "answer": "PT4 là xét tuyển dựa trên kết quả thi Đánh giá năng lực (ĐGNL) do ĐHQG Hà Nội tổ chức, trong khi PT5 là xét tuyển dựa trên kết quả thi Đánh giá tư duy (ĐGTD) do ĐHBK Hà Nội tổ chức. Cả hai phương thức đều quy đổi điểm thi thành thang điểm 30 của HaUI cộng với điểm ưu tiên. Bạn nên chọn phương thức p",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "thang 150",
+        "thang 100"
+      ],
+      "latency_ms": 2430,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.75,
+      "context_recall": 0.667
+    },
+    {
+      "id": "EDGE_006",
+      "category": "edge",
+      "question": "Giải HSG cấp tỉnh môn Tin học năm lớp 11 có dùng đăng ký PT2 không?",
+      "answer": "Đúng, giải HSG cấp tỉnh môn Tin học năm lớp 11 (không quá 3 năm tính đến thời điểm xét tuyển) có thể được sử dụng để đăng ký Phương thức 2 của Đại học Công nghiệp Hà Nội. Điều kiện cụ thể là thí sinh phải đạt giải Nhất, Nhì hoặc Ba trong kỳ thi HSG cấp tỉnh/TP các môn như Tin học.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "7.0",
+        "PT2"
+      ],
+      "latency_ms": 2713,
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.667,
+      "context_recall": 1.0
+    },
+    {
+      "id": "EDGE_007",
+      "category": "edge",
+      "question": "Học ngành cntt hay ktpm ở haui tốt hơn?",
+      "answer": "Ngành Công nghệ thông tin (CNTT) và Kỹ thuật phần mềm (KTPM) tại Đại học Công nghiệp Hà Nội đều có chương trình đào tạo chất lượng, phù hợp với nhu cầu thị trường. Ngành CNTT tập trung vào kiến thức tổng thể về công nghệ thông tin, trong khi KTPM chuyên sâu hơn về phát triển và quản lý hệ thống phần",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "23.09",
+        "21.75"
+      ],
+      "latency_ms": 2940,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.714,
+      "context_recall": 0.4
+    },
+    {
+      "id": "EDGE_008",
+      "category": "edge",
+      "question": "Năm 2026 em có thể đăng ký xét tuyển bằng điểm ĐGNL 2025 không?",
+      "answer": "Năm 2026, bạn không thể sử dụng kết quả thi Đánh giá năng lực (ĐGNL) năm 2025 để đăng ký xét tuyển. Theo quy định hiện tại, thí sinh phải dự thi ĐGNL trong năm mà họ muốn dùng kết quả đó để xét tuyển đại học.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "quy chế",
+        "theo dõi"
+      ],
+      "latency_ms": 2363,
+      "faithfulness": 0.5,
+      "answer_relevancy": 1.0,
+      "context_recall": 0.333
+    },
+    {
+      "id": "EDGE_009",
+      "category": "edge",
+      "question": "Em ở thành phố Hà Nội thuộc khu vực nào?",
+      "answer": "ERROR: timed out",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "KV3",
+        "phường",
+        "KV2",
+        "xã"
+      ],
+      "latency_ms": 61054,
+      "faithfulness": 1,
+      "answer_relevancy": 0.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "EDGE_010",
+      "category": "edge",
+      "question": "Tổng chi phí học 4 năm đại học K20 đại trà tại HaUI khoảng bao nhiêu?",
+      "answer": "Để tính tổng chi phí học 4 năm cử nhân K20 (CTĐT đại trà) tại Đại học Công nghiệp Hà Nội, bạn cần biết số tín chỉ tối thiểu để tốt nghiệp là 135 tín chỉ. Với mức học phí 700.000 đồng/tín chỉ, tổng chi phí sẽ là 94.500.000 đồng (135 x 700.000).",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "130",
+        "91"
+      ],
+      "latency_ms": 1765,
+      "faithfulness": 0.667,
+      "answer_relevancy": 0.8,
+      "context_recall": null
+    },
+    {
+      "id": "VB_001",
+      "category": "van_bang",
+      "question": "Tốt nghiệp 4 năm đại học tại HaUI được cấp bằng gì?",
+      "answer": "Tốt nghiệp 4 năm đại học chính quy tại Đại học Công nghiệp Hà Nội (HaUI), sinh viên sẽ được cấp bằng Cử nhân.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1135,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "VB_002",
+      "category": "van_bang",
+      "question": "Sinh viên HaUI có thể học 2 bằng cùng lúc không?",
+      "answer": "Sinh viên hoàn thành chương trình năm thứ nhất tại Đại học Công nghiệp Hà Nội (HaUI) có thể đăng ký học hai chương trình đào tạo khác nhau đồng thời để được cấp 2 bằng tốt nghiệp.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2994,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "VB_003",
+      "category": "van_bang",
+      "question": "HaUI hiện có bao nhiêu sinh viên đại học chính quy?",
+      "answer": "Số sinh viên đại học chính quy đang theo học tại Đại học Công nghiệp Hà Nội là 25.447 người.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1826,
+      "faithfulness": 0.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "VB_004",
+      "category": "van_bang",
+      "question": "Học chương trình Kỹ sư tại HaUI cần điều kiện gì và được cấp bằng gì?",
+      "answer": "Người học theo chương trình Kỹ sư tại Đại học Công nghiệp Hà Nội sẽ tốt nghiệp với **bằng cử nhân** sau 4 năm đào tạo. Thông tin chi tiết về văn bằng không được đề cập cụ thể trong chương trình liên kết, nhưng đối với các chương trình thông thường, sinh viên hoàn thành khóa học đạt yêu cầu sẽ nhận đ",
+      "kw_hit_rate": 0.67,
+      "keywords_miss": [
+        "bậc 7"
+      ],
+      "latency_ms": 2352,
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.667,
+      "context_recall": 0.0
+    },
+    {
+      "id": "VB_005",
+      "category": "van_bang",
+      "question": "Tỷ lệ sinh viên chính quy HaUI có việc làm sau 12 tháng tốt nghiệp là bao nhiêu?",
+      "answer": "Tỷ lệ sinh viên chính quy của Đại học Công nghiệp Hà Nội (HaUI) có việc làm sau 12 tháng tốt nghiệp là 92,14%.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "92.78%"
+      ],
+      "latency_ms": 1430,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    },
+    {
+      "id": "VB_006",
+      "category": "van_bang",
+      "question": "HaUI có bao nhiêu sinh viên sau đại học đang theo học?",
+      "answer": "Số sinh viên sau đại học (bao gồm cao học, NCS hoặc tương đương) đang theo học tại Đại học Công nghiệp Hà Nội là 558 người.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1688,
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0,
+      "context_recall": 1.0
+    }
+  ]
+}

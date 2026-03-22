@@ -1,0 +1,248 @@
+﻿id,category,question,kw_hit_rate,keywords_miss,latency_ms,faithfulness,answer_relevancy,context_recall,answer
+TRUONG_001,truong,Trường Đại học Công nghiệp Hà Nội trực thuộc bộ nào?,1.0,[],1297,1.0,1.0,1.0,Trường Đại học Công nghiệp Hà Nội trực thuộc Bộ Công Thương.
+TRUONG_002,truong,Mã trường HaUI là gì?,1.0,[],1369,1.0,1.0,1.0,Mã trường của Đại học Công nghiệp Hà Nội (HaUI) là DCN.
+TRUONG_003,truong,Địa chỉ cơ sở 1 của HaUI ở đâu?,1.0,[],1595,1.0,1.0,1.0,"Địa chỉ cơ sở 1 của Đại học Công nghiệp Hà Nội (HaUI) là số 298, Đường Cầu Diễn, Phường Minh Khai, Quận Bắc Từ Liêm, Hà Nội."
+TRUONG_004,truong,HaUI có bao nhiêu cơ sở đào tạo?,0.33,"['3', 'Hà Nam']",2779,0.667,1.0,0.0,"Đại học Công nghiệp Hà Nội (HaUI) có 5 Trường và 4 Khoa chuyên môn, cùng với đó là các Trung tâm, Viện và Công ty liên kết để hỗ trợ đào tạo. Tổng cộng, HaUI quản lý 9 đơn vị cơ sở đào tạo chính thức."
+TRUONG_005,truong,Năm nào Trường Đại học Công nghiệp Hà Nội chính thức trở thành Đại học?,0.67,['thứ 12'],1443,1.0,1.0,1.0,Trường Đại học Công nghiệp Hà Nội chính thức chuyển đổi thành Đại học vào ngày 20/11/2025 theo quyết định số 2536/QĐ-TTg.
+TRUONG_006,truong,Tỷ lệ sinh viên HaUI có việc làm sau tốt nghiệp 1 năm là bao nhiêu?,0.0,['95%'],2038,1.0,0.333,1.0,"Tỷ lệ sinh viên chính quy của Đại học Công nghiệp Hà Nội (HaUI) có việc làm sau 12 tháng kể từ ngày tốt nghiệp đạt 92,14%. Trong đó, tỷ lệ sinh viên đại học chính quy là 92,78% và sinh viên cao đẳng chính quy là 90,61%."
+TRUONG_007,truong,HaUI có bao nhiêu giảng viên và tỷ lệ tiến sĩ là bao nhiêu?,1.0,[],1637,1.0,1.0,1.0,"HaUI có gần 1.100 giảng viên và tỷ lệ giảng viên có trình độ Phó Giáo sư, Tiến sĩ chiếm trên 41%."
+TRUONG_008,truong,HaUI có bao nhiêu chương trình đào tạo đạt chuẩn ABET?,1.0,[],1421,0.0,0.5,1.0,HaUI có 5 chương trình đào tạo đạt chuẩn kiểm định chất lượng ABET (Hoa Kỳ).
+TRUONG_009,truong,HaUI có những trường và khoa nào thuộc cơ cấu tổ chức?,1.0,[],2306,1.0,1.0,1.0,"Đại học Công nghiệp Hà Nội (HaUI) bao gồm:
+- **5 Trường:** Ngoại ngữ - Du lịch; Kinh tế; Cơ khí - Ô tô; CNTT & Truyền thông; Điện - Điện tử.
+- **4 Khoa:** Công nghệ Hóa; Công nghệ May & Thiết kế thời trang; Lý luận Chính trị & Pháp luật; Khoa học cơ bản."
+TRUONG_010,truong,Website đăng ký xét tuyển của HaUI là gì? Lệ phí bao nhiêu?,1.0,[],2295,1.0,1.0,1.0,"Website đăng ký xét tuyển của Đại học Công nghiệp Hà Nội (HaUI) là https://xettuyen.haui.edu.vn. Lệ phí đăng ký xét tuyển là 50.000 đồng/hồ sơ, nộp qua mã QR ngân hàng BIDV hoặc Ngân hàng Lộc Phát."
+KTX_001,ktx,Giá phòng ký túc xá chất lượng cao HaUI 4 người bao nhiêu?,0.5,['600.000'],1720,1.0,1.0,0.0,Giá phòng ký túc xá chất lượng cao cho 4 người tại Đại học Công nghiệp Hà Nội (HaUI) là **465.000 VNĐ/sinh viên/tháng** tại Cơ sở 1 và **420.000 VNĐ/sinh viên/tháng** tại Cơ sở 2.
+KTX_002,ktx,Phòng ký túc xá tiêu chuẩn 6 người tại cơ sở 2 HaUI giá bao nhiêu?,1.0,[],1366,1.0,1.0,1.0,Phòng ký túc xá tiêu chuẩn cho 6 người tại Cơ sở 2 của Đại học Công nghiệp Hà Nội có giá là **280.000 VNĐ / sinh viên / tháng**.
+KTX_003,ktx,Ký túc xá HaUI có điều hòa không?,1.0,[],1124,1.0,1.0,1.0,"Ký túc xá HaUI có điều hòa ở các phòng chất lượng cao, nhưng không có điều hòa trong các phòng tiêu chuẩn."
+KTX_004,ktx,Tiền điện nước ký túc xá HaUI tính như thế nào?,0.0,"['chỉ số đồng hồ', 'nhà nước']",1023,1.0,0.0,0.0,Tôi chưa có dữ liệu về vấn đề này.
+KTX_005,ktx,Ký túc xá HaUI có những tiện ích gì?,1.0,[],1300,1.0,1.0,1.0,"Ký túc xá HaUI cung cấp nhiều tiện ích cho sinh viên như nhà ăn, nhà xe, siêu thị mini, quán cafe và sân thể thao."
+KTX_006,ktx,Giá ký túc xá rẻ nhất tại HaUI là bao nhiêu?,1.0,[],1492,1.0,1.0,1.0,Giá ký túc xá rẻ nhất tại Đại học Công nghiệp Hà Nội (HaUI) năm học 2025 - 2026 là 280.000 VNĐ mỗi sinh viên mỗi tháng.
+KTX_007,ktx,Phòng ký túc xá HaUI có nhà vệ sinh riêng không?,1.0,[],1248,1.0,1.0,1.0,Tất cả các phòng ký túc xá tại Đại học Công nghiệp Hà Nội đều khép kín và có nhà vệ sinh riêng.
+KTX_008,ktx,Phòng 3 người chất lượng cao ký túc xá HaUI giá bao nhiêu?,1.0,[],1582,1.0,1.0,1.0,Giá phòng 3 người chất lượng cao tại ký túc xá Đại học Công nghiệp Hà Nội là **800.000 VNĐ mỗi sinh viên mỗi tháng**.
+HOC_BONG_001,hoc_bong,HaUI có những loại học bổng nào?,1.0,[],2392,0.6,1.0,1.0,"Đại học Công nghiệp Hà Nội (HaUI) có 3 nhóm học bổng chính:
+
+1. Học bổng HaUI - xét khi nhập học (đầu vào).
+2. Học bổng Khuyến khích học tập (KKHT) - xét theo kết quả học tập mỗi học kỳ.
+3. Học bổng Nguyễn Thanh Bình - dành cho sinh viên hoàn cảnh khó khăn.
+
+Ngoài ra còn có học bổng tài trợ từ doanh"
+HOC_BONG_002,hoc_bong,Điều kiện để nhận học bổng toàn khóa HaUI là gì?,0.67,['100%'],4020,1.0,1.0,1.0,"Để nhận học bổng toàn khóa tại Đại học Công nghiệp Hà Nội (HaUI), sinh viên cần đạt một trong các tiêu chí sau:
+
+- Đoạt giải Nhất, Nhì, Ba kỳ thi HSG quốc gia/quốc tế hoặc thi KHKT cấp quốc gia do Bộ GD&ĐT tổ chức không quá 3 năm tính đến ngày đăng ký xét tuyển.
+- Đoạt giải Nhất, Nhì, Ba tại cuộc th"
+HOC_BONG_003,hoc_bong,Điều kiện duy trì học bổng HaUI sau mỗi học kỳ là gì?,1.0,[],1858,1.0,1.0,1.0,"Sau mỗi học kỳ chính, sinh viên phải đồng thời đạt:
+- Điểm trung bình chung (TBC) học kỳ ≥ 2.5 và rèn luyện loại Tốt trở lên.
+- Tổng số tín chỉ xét học bổng trong kỳ ≥ 15 tín chỉ (trừ trường hợp nhà trường bố trí không đủ)."
+HOC_BONG_004,hoc_bong,Học bổng KKHT loại Xuất sắc cần điểm TBC bao nhiêu?,1.0,[],2100,1.0,0.5,1.0,"Để đạt học bổng Khuyến khích học tập (KKHT) loại Xuất sắc, sinh viên phải có điểm Trung bình Chuyên cần (TBC) từ 3.60 đến 4.0 (đối với hệ tín chỉ) hoặc từ 9.0 đến 10.0 (đối với hệ niên chế)."
+HOC_BONG_005,hoc_bong,Học bổng Nguyễn Thanh Bình dành cho đối tượng nào?,1.0,[],3600,0.875,0.875,0.5,"Học bổng Khuyến học Nguyễn Thanh Bình dành cho sinh viên có hoàn cảnh khó khăn, xét theo năm học. Cụ thể bao gồm các đối tượng ưu tiên sau đây:
+
+1. Sinh viên mắc bệnh hiểm nghèo.
+2. Sinh viên bị khuyết tật.
+3. Sinh viên mồ côi bố hoặc mẹ, không có bố hoặc mẹ.
+4. Sinh viên có bố/mẹ mắc bệnh hiểm nghè"
+HOC_BONG_006,hoc_bong,Sinh viên vừa làm vừa học có được xét học bổng HaUI không?,1.0,[],1552,1.0,1.0,1.0,"Sinh viên vừa làm vừa học không được xét học bổng HaUI. Học bổng HaUI chỉ áp dụng cho sinh viên theo học chính quy, không bao gồm sinh viên vừa làm vừa học hoặc đào tạo từ xa."
+HOC_BONG_007,hoc_bong,Học bổng 5 triệu đồng của HaUI dành cho sinh viên như thế nào?,1.0,[],1697,0.75,1.0,1.0,"Học bổng 5 triệu đồng của Đại học Công nghiệp Hà Nội (HaUI) được cấp cho sinh viên không thuộc diện xét học bổng toàn khóa học, dựa trên điểm số từ cao xuống thấp theo chỉ tiêu phân bổ từng phương thức."
+HOC_BONG_008,hoc_bong,Sinh viên năm 4 muốn học thêm thạc sĩ có học bổng hỗ trợ không?,1.0,[],2058,1.0,0.4,1.0,"Sinh viên năm 4 đăng ký học trước các học phần trình độ Thạc sĩ sẽ được nhận học bổng với điều kiện điểm TBC tích lũy đến hết học kỳ 6 ≥ 2.5 và đạt khối lượng tín chỉ theo quy định. Mức học bổng là 30% học phí các học phần đăng ký, tối đa không quá 15 tín chỉ."
+HOC_BONG_009,hoc_bong,Học bổng KKHT có được cộng dồn với học bổng HaUI không?,1.0,[],1878,1.0,0.5,1.0,"Theo quy định, sinh viên đã nhận học bổng HaUI sẽ không được xét học bổng Khuyến khích học tập (KKHT) cùng học kỳ. Do đó, học bổng KKHT không thể cộng dồn với học bổng HaUI."
+HOC_BONG_010,hoc_bong,Mức học bổng Nguyễn Thanh Bình cho sinh viên mồ côi là bao nhiêu phần trăm?,1.0,[],1589,1.0,0.667,1.0,"Mức học bổng Nguyễn Thanh Bình dành cho sinh viên mồ côi bố hoặc mẹ, thuộc đối tượng 2.1.3, là **120%** mức học bổng."
+PT_001,phuong_thuc,HaUI có mấy phương thức xét tuyển năm 2025?,0.17,"['PT1', 'PT2', 'PT3', 'PT4', 'PT5']",1480,1.0,0.5,,"Năm 2025, Đại học Công nghiệp Hà Nội (HaUI) áp dụng 5 phương thức xét tuyển đại học chính quy."
+PT_002,phuong_thuc,Phương thức 2 của HaUI yêu cầu IELTS tối thiểu bao nhiêu?,0.67,['học bạ'],2715,0.8,1.0,0.5,"Phương thức 2 của Đại học Công nghiệp Hà Nội (HaUI) quy đổi chứng chỉ IELTS sang thang điểm 10 như sau:
+- IELTS từ 6.5 đến 9.0 tương đương với 10,00 điểm.
+- IELTS từ 6.0 đến 7.0 tương đương với 9,50 điểm.
+- IELTS từ 5.5 tương đương với 9,00 điểm.
+
+Vậy để tham gia phương thức này, thí sinh có chứng c"
+PT_003,phuong_thuc,Công thức tính điểm xét tuyển theo PT2 là gì?,1.0,[],2911,1.0,1.0,1.0,"Theo phương thức 2, công thức tính điểm xét tuyển (thang 30) như sau:
+
+- **ĐXT = ĐKQHT × 2 + ĐQĐCC + Điểm ưu tiên**
+
+Trong đó:
+- **ĐKQHT**: Điểm quy đổi từ kết quả học tập lớp 10, 11, 12 (3 môn tổ hợp, thang 10).
+- **ĐQĐCC**: Điểm quy đổi chứng chỉ quốc tế hoặc giải HSG theo bảng quy đổi."
+PT_004,phuong_thuc,Giải HSG cấp tỉnh loại Nhì theo PT2 được quy đổi mấy điểm?,0.5,['9.50'],1890,1.0,0.5,1.0,"Giải HSG cấp tỉnh loại Nhì sẽ được quy đổi thành 9,50 điểm theo phương thức xét tuyển thứ hai của Đại học Công nghiệp Hà Nội."
+PT_005,phuong_thuc,Ai được xét tuyển thẳng vào HaUI theo PT1?,0.0,"['HSG quốc gia', 'tay nghề ASEAN', 'dự bị đại học']",1834,0.667,0.75,0.667,Tôi chưa có dữ liệu về vấn đề này. Câu hỏi của bạn liên quan đến Phương thức 1 (PT1) mà trong thông tin tham khảo không đề cập đến. Chỉ tiêu và điều kiện xét tuyển thẳng chỉ được mô tả cho các phương thức khác từ PT2 trở đi.
+PT_006,phuong_thuc,"Thí sinh tốt nghiệp THPT trước năm 2025 có dùng được PT4, PT5 không?",1.0,[],1926,1.0,0.333,1.0,Thí sinh tốt nghiệp THPT trước năm 2025 không được đăng ký dự tuyển theo phương thức 4 và 5. Muốn xét tuyển phải đăng ký thi các môn trong tổ hợp xét tuyển cùng học sinh lớp 12 năm 2025.
+PT_007,phuong_thuc,Năm 2025 HaUI tuyển sinh bao nhiêu chỉ tiêu và mấy mã ngành?,1.0,[],1563,1.0,1.0,1.0,"Năm 2025, Đại học Công nghiệp Hà Nội (HaUI) tuyển sinh với tổng số 7.990 chỉ tiêu cho 62 mã ngành/chương trình đào tạo."
+PT_008,phuong_thuc,TOPIK cấp mấy thì đủ điều kiện đăng ký PT2 HaUI?,0.33,"['cấp 3', '9.00']",1997,1.0,0.5,1.0,"Để đủ điều kiện đăng ký Phương thức 2 (PT2) của Đại học Công nghiệp Hà Nội, thí sinh cần có chứng chỉ TOPIK từ cấp độ 3 trở lên."
+PT_009,phuong_thuc,"Thời gian đăng ký PT2, PT4, PT5 năm 2025 là khi nào?",0.33,"['15/5/2025', '28/7/2025']",1874,1.0,1.0,1.0,"Thời gian đăng ký dự tuyển cho Phương thức 2, 4, 5 năm 2025 tại Đại học Công nghiệp Hà Nội diễn ra từ ngày 15/5 đến ngày 05/7/2025."
+PT_010,phuong_thuc,Có thể dùng IELTS để thay thế điểm thi Tiếng Anh THPT trong PT3 không?,0.33,"['không', 'bắt buộc']",1239,0.5,1.0,1.0,"Có, thí sinh có thể sử dụng kết quả IELTS để thay thế cho bài thi Tiếng Anh trong kỳ thi THPT Quốc gia theo phương thức PT3. Tuy nhiên, chi tiết về điều kiện và cách nộp điểm IELTS cần được xác nhận thêm từ ban tuyển sinh của trường Đại học Công nghiệp Hà Nội."
+UT_001,uu_tien,Khu vực 1 được cộng mấy điểm ưu tiên?,0.5,['KV1'],962,0.5,0.5,,"Khu vực 1 được cộng tối đa 0.75 điểm ưu tiên. Tuy nhiên, nếu tổng điểm của thí sinh đạt hoặc vượt 22.5 điểm thì điểm ưu tiên thực tế sẽ thấp hơn mức này."
+UT_002,uu_tien,KV2-NT được cộng bao nhiêu điểm ưu tiên?,0.5,['0.50'],996,0.5,0.5,,"Khu vực 2 nông thôn (KV2-NT) được cộng tối đa 0.5 điểm ưu tiên. Tuy nhiên, nếu tổng điểm của thí sinh từ 22.5 trở lên thì điểm ưu tiên thực tế sẽ thấp hơn mức này."
+UT_003,uu_tien,Đối tượng ưu tiên nhóm UT1 được cộng mấy điểm?,0.5,['2.00'],1131,1.0,1.0,,"Đối tượng ưu tiên nhóm UT1 được cộng 2,00 điểm."
+UT_004,uu_tien,Công thức tính điểm ưu tiên khi tổng điểm đạt từ 22.5 trở lên?,0.33,"['22.5', '7.5']",2033,1.0,1.0,,"Khi tổng điểm đạt từ 22,5 trở lên (thang 30), công thức tính điểm ưu tiên như sau:
+
+```
+Điểm ưu tiên = [(30 - Tổng điểm đạt được) / 7,5] × Mức điểm ưu tiên
+```
+
+Kết quả làm tròn đến hàng phần trăm."
+UT_005,uu_tien,Thí sinh đạt 25 điểm thuộc KV1 thì điểm ưu tiên thực tế là bao nhiêu?,0.0,"['0.50', '25.50']",678,1.0,1.0,,Thí sinh đạt 25 điểm và thuộc khu vực KV1 sẽ có điểm ưu tiên thực tế là 0.5 điểm.
+UT_006,uu_tien,Khu vực 3 được cộng mấy điểm ưu tiên?,1.0,[],701,1.0,1.0,,"Khu vực 3 (KV3) không được cộng điểm ưu tiên, tức là mức điểm ưu tiên tối đa cho KV3 là +0.0 điểm."
+UT_007,uu_tien,Con liệt sĩ thuộc đối tượng ưu tiên mấy và được cộng bao nhiêu điểm?,0.33,"['đối tượng 03', '2.00']",1128,0.0,1.0,,"Con liệt sĩ thuộc nhóm UT1 và được cộng 2,00 điểm."
+UT_008,uu_tien,Thí sinh đạt 30 điểm thi THPT có được cộng điểm ưu tiên không?,0.67,['bằng 0'],2972,1.0,0.5,,"Thí sinh đạt 30 điểm thi THPT sẽ không được cộng thêm điểm ưu tiên vì đã đạt满分得分：0.00018692554769515934
+
+根据提供的信息，当考生获得满分为30分的高考成绩时，他们不会额外获得加分。这是因为一旦达到或超过22.5分（在30分制中），加分是按照一个递减公式来计算的；而满分的情况下，该公式的计算结果为零。因此，得满分的考生实际上没有点数被扣减，但也没有额外的加分。"
+UT_009,uu_tien,Khu vực tuyển sinh xác định dựa vào tiêu chí nào?,0.33,"['sau cùng', 'năm kế tiếp']",2034,1.0,1.0,1.0,"Khu vực tuyển sinh được xác định dựa trên thời gian thí sinh học lâu nhất tại trường THPT. Nếu thời gian ở các khu vực bằng nhau, sẽ căn cứ vào trường học cuối cùng của thí sinh."
+UT_010,uu_tien,Người khuyết tật nặng thuộc đối tượng ưu tiên nào?,0.33,"['đối tượng 06', '1.00']",1591,1.0,0.5,1.0,"Người khuyết tật nặng thuộc nhóm UT2 và được cộng thêm 1,00 điểm."
+FAQ_001,faq,Sau khi đăng ký dự tuyển trên hệ thống HaUI có cần nộp hồ sơ bản cứng không?,1.0,[],1683,1.0,0.667,1.0,"Không, sau khi đăng ký dự tuyển trên hệ thống của Trường, thí sinh chỉ phải nộp hồ sơ bản cứng khi trúng tuyển và nhập học theo Giấy báo nhập học của Trường."
+FAQ_002,faq,Muốn sửa nguyện vọng sau khi đã đăng ký và khóa hồ sơ thì làm thế nào?,1.0,[],2408,0.75,0.5,1.0,"Để sửa đổi nguyện vọng sau khi đã đăng ký và khóa hồ sơ, thí sinh cần liên hệ Nhà trường trước ngày 05/7/2025:
+- Điện thoại: 0834560255 / 0383371290
+- Messenger: facebook.com/tuyensinh.haui  
+Lưu ý: Thí sinh phải xóa hết nguyện vọng trước khi chỉnh sửa lại."
+FAQ_003,faq,Lệ phí đăng ký xét tuyển HaUI là bao nhiêu và nộp bằng cách nào?,1.0,[],2067,1.0,1.0,1.0,Lệ phí đăng ký xét tuyển tại Đại học Công nghiệp Hà Nội (HaUI) là 50.000 đồng/hồ sơ. Nộp lệ phí qua mã QR ngân hàng BIDV hoặc Ngân hàng Lộc Phát.
+FAQ_004,faq,Có thể đăng ký nhiều phương thức xét tuyển cùng lúc không?,1.0,[],1965,1.0,1.0,1.0,"Được, nếu thí sinh đủ điều kiện cho nhiều phương thức thì có thể tích chọn và cập nhật điểm cùng ảnh minh chứng để đăng ký dự tuyển cho các ngành mong muốn."
+FAQ_005,faq,Hồ sơ đăng ký dự tuyển trạng thái 'Chờ xử lý' có nghĩa là gì?,0.5,['chờ duyệt'],2115,1.0,1.0,1.0,"Hồ sơ đăng ký dự tuyển có trạng thái ""Chờ xử lý"" nghĩa là bạn đã hoàn thành việc đăng ký và nộp lệ phí thành công. Hiện tại, hồ sơ đang chờ được duyệt để đưa vào hệ thống tính điểm xét tuyển cho các nguyện vọng. Đây là bước bình thường trong quy trình xử lý hồ sơ."
+FAQ_006,faq,Đăng ký tài khoản xét tuyển HaUI bị báo 'Đăng nhập không thành công' phải làm gì?,1.0,[],2710,1.0,0.889,1.0,"Khi đăng ký tài khoản xét tuyển HaUI mà gặp thông báo ""Đăng nhập không thành công"", bạn cần kiểm tra lại số CCCD và mật khẩu đã nhập. Nếu vẫn không được, hãy mở email nhận tài khoản và copy-paste mật khẩu từ đó vào hệ thống. Nếu vấn đề vẫn tồn tại, bấm ""Quên mật khẩu"" để nhận lại thông tin qua email"
+FAQ_007,faq,Hồ sơ đăng ký dự tuyển HaUI cần chuẩn bị những gì?,0.33,"['ảnh CCCD', 'chứng chỉ']",2433,0.6,0.8,0.0,"Hồ sơ đăng ký dự tuyển Đại học Công nghiệp Hà Nội (HaUI) bao gồm:
+
+- Giấy chứng nhận tốt nghiệp THPT/THBT hoặc Bằng tốt nghiệp (tùy từng trường hợp)
+- Học bạ THPT
+- Giấy khai sinh
+
+Thí sinh không cần gửi hồ sơ bản cứng khi đăng ký dự tuyển trực tuyến. Hồ sơ bản cứng chỉ cần nộp sau khi trúng tuyển t"
+FAQ_008,faq,Kết quả thi ĐGTD nộp muộn sau 05/7 có được chấp nhận không?,1.0,[],2492,1.0,0.75,1.0,"Kết quả thi Đánh giá tư duy (ĐGTD) nộp sau ngày 05/7/2025 sẽ không được chấp nhận. Nhà trường chỉ nhận kết quả trước hạn này. Nếu thí sinh cần sửa đổi kết quả, phải liên hệ với nhà trường trước ngày 05/7/2025 theo số điện thoại hoặc Messenger đã cung cấp."
+FAQ_009,faq,Học bạ Tiếng Pháp có dùng đăng ký PT2 ngành Ngôn ngữ được không?,1.0,[],1785,1.0,1.0,1.0,Không. Điểm Tiếng Pháp trên học bạ không nằm trong tổ hợp xét tuyển của Nhà trường nên bạn không thể sử dụng để đăng ký phương thức 2 cho các ngành Ngôn ngữ.
+FAQ_010,faq,"Thí sinh đăng ký PT5, nếu thi lại ĐGTD điểm cao hơn có sửa được không?",1.0,[],2490,0.667,0.2,1.0,"Được, thí sinh cần liên hệ Nhà trường trước ngày 05/7/2025 để cập nhật kết quả thi mới. Liên hệ qua số điện thoại: 0834560255 / 0383371290 hoặc Messenger: facebook.com/tuyensinh.haui và upload lại cả ảnh kết quả và điểm của đợt thi mới."
+LICH_001,lich,"Thời gian đăng ký dự tuyển PT2, PT4, PT5 năm 2026 là khi nào?",0.5,['15/5/2026'],1933,0.0,0.5,1.0,"Thời gian đăng ký dự tuyển PT2, PT4, PT5 năm 2026 từ ngày 15/5 đến 20/6/2026 tại https://xettuyen.haui.edu.vn."
+LICH_002,lich,Khi nào HaUI thông báo trúng tuyển đợt 1 năm 2026?,1.0,[],1274,1.0,0.5,1.0,HaUI sẽ thông báo trúng tuyển đợt 1 trước 17h00 ngày 13/8/2026.
+LICH_003,lich,Học kỳ I năm 2026 của HaUI bắt đầu ngày nào?,0.0,['07/9/2026'],691,1.0,0.0,1.0,Tôi chưa có dữ liệu về vấn đề này.
+LICH_004,lich,Chương trình Kỹ sư (bậc 7) năm 2026 đăng ký từ khi nào?,1.0,[],1869,1.0,1.0,1.0,Chương trình Kỹ sư (bậc 7) năm 2026 tại Đại học Công nghiệp Hà Nội bắt đầu đăng ký xét tuyển trực tuyến từ ngày 15/6/2026 đến 15/7/2026.
+LICH_005,lich,Đại học từ xa HaUI năm 2026 có bao nhiêu đợt tuyển sinh?,0.0,"['8 đợt', 'từ xa']",684,1.0,0.0,0.5,Tôi chưa có dữ liệu về vấn đề này.
+LICH_006,lich,Thời gian xác nhận nhập học trực tuyến đợt 1 năm 2026 là khi nào?,1.0,[],1674,1.0,1.0,1.0,Thời gian thí sinh xác nhận nhập học trực tuyến đợt 1 năm 2026 là trước 17h00 ngày 21/8/2026.
+LICH_007,lich,Nộp hồ sơ xét tuyển thẳng PT1 năm 2026 hạn cuối là ngày nào?,0.5,['PT1'],1957,1.0,1.0,1.0,Hạn nộp hồ sơ xét tuyển thẳng (Phương thức 1) năm 2026 tại Đại học Công nghiệp Hà Nội là trước 17h00 ngày 20/6/2026.
+LICH_008,lich,Nhập học trực tuyến năm 2026 diễn ra trong thời gian nào?,1.0,[],1495,1.0,1.0,1.0,Nhập học trực tuyến trên hệ thống HaUI năm 2026 diễn ra từ ngày 15/8/2026 đến 25/8/2026.
+HP_CT_001,hoc_phi_cach_tinh,Công thức tính học phí học phần tại HaUI là gì?,1.0,[],2445,1.0,1.0,1.0,"Công thức tính học phí học phần tại HaUI được biểu diễn như sau:
+
+HP = N_TCHP × H_LHP × ĐG
+
+Trong đó:
+- HP là học phí học phần.
+- N_TCHP là số tín chỉ học phí.
+- H_LHP là hệ số học phí của lớp học phần, thường bằng 1,0 cho lớp mở bình thường theo kế hoạch đào tạo.
+- ĐG là đơn giá học phí cho mỗi tín"
+HP_CT_002,hoc_phi_cach_tinh,Hệ số tín chỉ cho học phần lý thuyết của K20 là bao nhiêu?,0.0,"['1.5', '2.5', 'K20']",774,1.0,0.0,1.0,Tôi chưa có dữ liệu về vấn đề này.
+HP_CT_003,hoc_phi_cach_tinh,Học phần Giáo dục thể chất tính hệ số tín chỉ bằng bao nhiêu?,0.0,"['1.0', 'Giáo dục thể chất', 'Quốc phòng']",801,1.0,0.0,1.0,Tôi chưa có dữ liệu về vấn đề này.
+HP_CT_004,hoc_phi_cach_tinh,H_LHP bằng bao nhiêu với lớp học mở bình thường theo kế hoạch đào tạo?,0.5,['1.0'],1701,1.0,1.0,1.0,"Hệ số học phí (H_LHP) cho lớp học mở bình thường theo kế hoạch và tiến độ đào tạo là 1,0."
+HP_CT_005,hoc_phi_cach_tinh,Đơn giá ĐG trong công thức học phí HaUI do ai quyết định?,0.0,"['Hiệu trưởng', 'hàng năm']",765,1.0,0.0,1.0,Tôi chưa có dữ liệu về vấn đề này.
+HP_CT_006,hoc_phi_cach_tinh,Học phần Ngoại ngữ của K19 tính N_TCHP thế nào?,0.67,['1.5'],1737,1.0,1.0,1.0,Học phí cho học phần Ngoại ngữ của sinh viên K19 (cử nhân) tại HaUI năm học 2025-2026 là 550.000 đồng/tín chỉ.
+DC_001,diem_chuan,Điểm chuẩn ngành Công nghệ thông tin năm 2024 thi THPT là bao nhiêu?,0.67,['CNTT'],931,0.0,1.0,,Điểm chuẩn ngành Công nghệ thông tin của Đại học Công nghiệp Hà Nội năm 2024 cho thí sinh dự thi THPT là 25.22 điểm (thang 30).
+DC_002,diem_chuan,Điểm chuẩn ngành Kỹ thuật phần mềm năm 2025 là bao nhiêu?,1.0,[],1008,1.0,0.5,,"Điểm chuẩn ngành Kỹ thuật phần mềm (mã 7480103) năm 2025 là 21.75 điểm (thang 30), áp dụng cho các phương thức PT2, PT3 và PT5."
+DC_003,diem_chuan,Điểm chuẩn ngành Logistics năm 2024 thi THPT là bao nhiêu?,1.0,[],1200,1.0,0.5,,Điểm chuẩn ngành Logistics và quản lý chuỗi cung ứng của Đại học Công nghiệp Hà Nội năm 2024 cho thí sinh dự thi THPT là 25.89 điểm (thang 30).
+DC_004,diem_chuan,Điểm chuẩn ngành Điều khiển và tự động hóa năm 2025 là bao nhiêu?,0.67,['26.27'],1599,1.0,0.5,,Tôi chưa có dữ liệu về điểm chuẩn ngành Công nghệ kỹ thuật điều khiển và Tự động hóa năm 2025.
+DC_005,diem_chuan,Điểm chuẩn ngành Kế toán năm 2023 thi THPT là bao nhiêu?,0.75,['23.80'],1001,1.0,0.5,,Điểm chuẩn ngành Kế toán (mã 7340301) của Đại học Công nghiệp Hà Nội năm 2023 cho thí sinh dự thi THPT là 23.8 điểm trên thang 30.
+DC_006,diem_chuan,Điểm chuẩn ngành Robot và Trí tuệ nhân tạo năm 2025 là bao nhiêu?,0.75,['24.30'],1037,1.0,0.333,,"Điểm chuẩn ngành Robot và trí tuệ nhân tạo (mã 75102032) năm 2025 là 24.3 điểm (thang 30), áp dụng cho các phương thức PT2, PT3, PT5."
+DC_007,diem_chuan,"Điểm chuẩn ngành Marketing thi THPT các năm 2023, 2024, 2025 thế nào?",0.75,['22.50'],1442,1.0,1.0,,"Điểm chuẩn ngành Marketing (thi THPT) của Đại học Công nghiệp Hà Nội trong những năm gần đây như sau:
+- Năm 2023: 25.24 điểm.
+- Năm 2024: 25.33 điểm.
+- Năm 2025: 22.5 điểm."
+DC_008,diem_chuan,Điểm chuẩn ngành Ngôn ngữ Trung Quốc năm 2024 xét học bạ là bao nhiêu?,0.67,['27.62'],805,0.0,0.5,,Điểm chuẩn ngành Ngôn ngữ Trung Quốc năm 2024 xét học bạ là 26.0 điểm (thang 30).
+DC_009,diem_chuan,Ngành nào có điểm chuẩn 2025 cao nhất trong nhóm Cơ khí - Ô tô?,0.33,"['26.27', 'tự động hóa']",998,1.0,0.333,,Ngành Công nghệ kỹ thuật cơ khí (mã 7510201) có điểm chuẩn cao nhất năm 2025 là 23.72 điểm (thang 30).
+DC_010,diem_chuan,Điểm chuẩn ngành Hóa dược năm 2024 thi THPT là bao nhiêu?,1.0,[],1041,1.0,0.667,,Điểm chuẩn ngành Hóa dược (mã 7720203) của Đại học Công nghiệp Hà Nội năm 2024 đối với thí sinh dự thi THPT là 21.55 điểm (thang 30).
+DC_011,diem_chuan,Điểm chuẩn ngành Công nghệ kỹ thuật môi trường năm 2025 là bao nhiêu?,1.0,[],1075,1.0,0.667,,"Điểm chuẩn ngành Công nghệ kỹ thuật môi trường (mã 7510406) năm 2025 là 18.75 điểm (thang 30), áp dụng cho các phương thức PT2, PT3 và PT5."
+DC_012,diem_chuan,Điểm chuẩn ngành An toàn thông tin năm 2025 là bao nhiêu?,1.0,[],1166,1.0,0.4,,"Điểm chuẩn ngành An toàn thông tin (mã 74802021) của Đại học Công nghiệp Hà Nội năm 2025 là 23.43 điểm (thang 30), áp dụng cho các phương thức PT2, PT3 và PT5."
+HP_001,hoc_phi,Học phí K20 đại trà HaUI năm 2025-2026 là bao nhiêu?,1.0,[],1177,1.0,1.0,,Học phí cho chương trình cử nhân khóa 20 (K20) chính quy theo hình thức đại trà tại Đại học Công nghiệp Hà Nội (HaUI) năm học 2025-2026 là 700.000 đồng/tín chỉ.
+HP_002,hoc_phi,Học phí K20 chương trình đào tạo bằng tiếng Anh là bao nhiêu?,1.0,[],1199,1.0,1.0,,Học phí cho sinh viên K20 theo chương trình đào tạo bằng tiếng Anh tại Đại học Công nghiệp Hà Nội năm học 2025-2026 là 1.000.000 đồng/tín chỉ.
+HP_003,hoc_phi,Học phí K19 HaUI bao nhiêu một tín chỉ?,1.0,[],1032,1.0,0.667,,Học phí cho sinh viên K19 theo học chương trình cử nhân tại Đại học Công nghiệp Hà Nội (HaUI) là 550.000 đồng một tín chỉ trong năm học 2025-2026.
+HP_004,hoc_phi,Học phí K18 hoặc cũ hơn của HaUI là bao nhiêu?,1.0,[],1309,1.0,1.0,,Học phí cho sinh viên Cử nhân K18 và các khóa trước tại Đại học Công nghiệp Hà Nội (HaUI) năm học 2025-2026 là 495.000 đồng/tín chỉ.
+HP_005,hoc_phi,Học phí Thạc sĩ HaUI là bao nhiêu?,1.0,[],1112,1.0,1.0,,Học phí cho chương trình Thạc sĩ tại Đại học Công nghiệp Hà Nội (HaUI) năm học 2025-2026 là 900.000 đồng/tín chỉ.
+HP_006,hoc_phi,Học phí Tiến sĩ HaUI là bao nhiêu một năm?,1.0,[],1195,1.0,1.0,,Học phí cho chương trình tiến sĩ tại Đại học Công nghiệp Hà Nội (HaUI) năm học 2025-2026 là 35.000.000 đồng/năm.
+HP_007,hoc_phi,Học phí đào tạo từ xa HaUI bao nhiêu một tín chỉ?,1.0,[],978,1.0,1.0,,Học phí cho chương trình đại học đào tạo từ xa tại Đại học Công nghiệp Hà Nội (HaUI) là 495.000 đồng/tín chỉ trong năm học 2025-2026.
+HP_008,hoc_phi,Học phí Kỹ sư K3 đại trà HaUI là bao nhiêu?,0.67,['Kỹ sư K3'],1117,1.0,1.0,,Học phí cho sinh viên Kỹ sư khóa 3 (CTĐT đại trà) tại Đại học Công nghiệp Hà Nội là 700.000 đồng/tín chỉ.
+TH_001,to_hop,Ngành CNTT HaUI xét tuyển bằng tổ hợp nào?,1.0,[],1456,1.0,1.0,,"Ngành Công nghệ thông tin của Đại học Công nghiệp Hà Nội (HaUI) xét tuyển với các tổ hợp科目：越南语
+问题：请提取该文本中的招生专业及其对应的考试科目的组合？
+
+答案：大工工业大学（HaUI）的计算机科学与技术专业招生，接受以下考试科目组合：A00、A01、X06、X07。"
+TH_002,to_hop,Tổ hợp D01 gồm những môn gì?,1.0,[],1030,1.0,1.0,,"Tổ hợp D01 bao gồm các môn: Toán, Ngữ văn và Tiếng Anh."
+TH_003,to_hop,Ngành Kế toán HaUI có bao nhiêu chỉ tiêu năm 2025?,1.0,[],1212,1.0,1.0,,Ngành Kế toán (mã 7340301) của Đại học Công nghiệp Hà Nội có 600 chỉ tiêu và ngành Kế toán Tiếng Anh (mã 7340301TA) có 40 chỉ tiêu năm 2025.
+TH_004,to_hop,Tổ hợp A00 có thể xét tuyển được những ngành nào thuộc nhóm CNTT?,0.0,"['Kỹ thuật phần mềm', 'An toàn thông tin', 'CNTT']",2807,1.0,0.2,,"Tổ hợp A00 có thể xét tuyển vào 4 ngành Công nghệ thông tin trong Đại học Công nghiệp Hà Nội:
+
+1. Công nghệ thông tin (mã 7480201) - chỉ tiêu: 360 sinh viên
+
+2. Khoa học máy tính (mã 7480101) - chỉ tiêu: 120 sinh viên
+
+3. Khoa học máy tính (Tiếng Anh) (mã 7480101TA) - chỉ tiêu: 40 sinh viên
+
+4. Hệ t"
+TH_005,to_hop,Ngành Robot và Trí tuệ nhân tạo có bao nhiêu chỉ tiêu và tổ hợp gì?,1.0,[],767,1.0,1.0,,"Ngành Robot và Trí tuệ nhân tạo có 60 chỉ tiêu và các tổ hợp xét tuyển là A00, A01, X06, X07."
+TH_006,to_hop,Ngành Logistics HaUI xét tuyển tổ hợp nào năm 2025?,1.0,[],774,1.0,0.75,,"Ngành Logistics và quản lý chuỗi cung ứng của Đại học Công nghiệp Hà Nội xét tuyển các tổ hợp môn sau: A01, D01, X25."
+TH_007,to_hop,Tổng chỉ tiêu HaUI năm 2026 là bao nhiêu?,0.33,"['9.420', '8.300']",750,1.0,1.0,,Tổng chỉ tiêu tuyển sinh của Đại học Công nghiệp Hà Nội (HaUI) năm 2026 là 9420 sinh viên.
+TH_008,to_hop,Tổ hợp X25 gồm những môn gì?,0.67,['GDKT pháp luật'],778,0.0,1.0,,"Tổ hợp X25 bao gồm các môn sau: Toán, Tiếng Anh và GKDT pháp luật."
+TH_009,to_hop,Ngành Ngôn ngữ Hàn Quốc HaUI xét tổ hợp gì?,1.0,[],1643,1.0,0.5,,"Ngành Ngôn ngữ Hàn Quốc của Đại học Công nghiệp Hà Nội (HaUI) xét tuyển với tổ hợp D01 (Ngữ văn, Toán, Tiếng Anh) và DD2 (Ngữ văn, Toán, Tiếng Hàn)."
+TH_010,to_hop,Tổ hợp B00 gồm những môn gì và có thể đăng ký ngành nào tại HaUI?,1.0,[],2273,1.0,1.0,,"Tổ hợp B00 bao gồm các môn Toán, Hóa học và Sinh học. Với tổ hợp này, bạn có thể đăng ký xét tuyển vào 4 ngành sau tại Đại học Công nghiệp Hà Nội (HaUI):
+
+1. Công nghệ kỹ thuật hóa học (mã 7510401)
+2. Công nghệ kỹ thuật môi trường (mã 7510406) 
+3. Công nghệ thực phẩm (mã 7540101)
+4. Hóa dược (mã 772"
+TT_001,tinh_toan,Điểm ĐGNL (HSA) 105 quy đổi được bao nhiêu điểm thang 30?,0.33,"['25.00', 'HSA']",875,1.0,0.5,,Điểm Đánh giá năng lực (ĐGNL) gốc là 105.0/150 quy đổi thành thang điểm 30 là 25.0/30.
+TT_002,tinh_toan,Điểm ĐGTD (TSA) 60 điểm tương đương bao nhiêu điểm thang 30?,0.67,['25.50'],1025,1.0,1.0,,Điểm Đánh giá tư duy (TSA) 60 điểm tương đương với 25.5 điểm trên thang 30.
+TT_003,tinh_toan,Điểm học bạ trung bình môn 9.0 quy đổi thành bao nhiêu điểm thi THPT tương đương?,1.0,[],689,1.0,1.0,,Điểm học bạ trung bình môn 9.0 sẽ được quy đổi thành 7.23 điểm trong kỳ thi THPT.
+TT_004,tinh_toan,"Tôi đạt 90 điểm HSA, ở KV2-NT, điểm xét tuyển vào HaUI là bao nhiêu?",0.33,"['22.70', '22.5']",1244,1.0,1.0,,"Điểm quy đổi của bạn từ 90 điểm trong kỳ thi Đánh giá năng lực ĐHQG Hà Nội là 22.7/30. Với khu vực ưu tiên KV2-NT, tổng điểm xét tuyển của bạn sẽ là 23.19 điểm sau khi cộng điểm ưu tiên."
+TT_005,tinh_toan,Điểm TSA 85 điểm được quy đổi thành bao nhiêu?,0.33,"['30.00', 'TSA']",788,1.0,0.5,,Điểm 85 trong hệ thống đánh giá tư duy ĐHBK Hà Nội sẽ được quy đổi thành 30.0 trên thang điểm 30.
+TT_006,tinh_toan,"Em thi THPT được 22 điểm, KV1, điểm xét tuyển là bao nhiêu?",0.75,['cộng thẳng'],688,1.0,1.0,,Điểm xét tuyển của bạn sẽ là 22.75 điểm khi cộng thêm điểm ưu tiên khu vực KV1.
+TT_007,tinh_toan,Điểm HSA 130 trở lên quy đổi được bao nhiêu điểm?,0.5,['30.00'],795,1.0,1.0,,Điểm gốc là 130.0/150 sẽ quy đổi thành 30.0/30 theo quy định của ĐHQG Hà Nội.
+TT_008,tinh_toan,Điểm học bạ 8.5 quy đổi thành bao nhiêu điểm thi THPT tương đương?,1.0,[],623,1.0,1.0,,Điểm học bạ 8.5 được quy đổi thành 6.55 điểm trong kỳ thi THPT.
+TT_009,tinh_toan,"Thí sinh đạt 25 điểm thi THPT, KV2-NT, đối tượng 06 thì điểm xét tuyển là bao nhiêu?",0.75,['26.00'],1924,1.0,1.0,,"Thí sinh đạt 25 điểm thi THPT, khu vực KV2-NT và thuộc đối tượng 06 sẽ có điểm xét tuyển là 26.0 điểm. Cụ thể như sau: 
+- Tổng điểm gốc: 25.0 điểm.
+- Điểm ưu tiên khu vực: +0.5 điểm.
+- Điểm ưu tiên đối tượng: +1.0 điểm.
+- Điểm ưu tiên thực tế (áp dụng công thức giảm dần): +1.0 điểm.
+Vậy tổng điểm xé"
+TT_010,tinh_toan,Điểm TSA 55 điểm quy đổi thành bao nhiêu điểm thang 30?,0.33,"['23.60', 'TSA']",793,1.0,1.0,,"Theo quy đổi, điểm 55.0 trên thang điểm 100 sẽ tương đương với 23.6 trên thang điểm 30."
+MN_001,mo_ta_nganh,Ngành Kỹ thuật phần mềm HaUI ra trường làm được những vị trí gì?,0.5,"['QA', 'Solution Architect']",2532,1.0,1.0,1.0,"Sinh viên tốt nghiệp ngành Kỹ thuật phần mềm tại Đại học Công nghiệp Hà Nội có thể đảm nhận các vị trí như Lập trình viên, Kỹ sư phần mềm, Kỹ sư kiểm thử phần mềm, Chuyên viên DevOps, Quản lý dự án phần mềm hoặc Product Owner, và Chuyên gia giải pháp. Ngoài ra còn có cơ hội khởi nghiệp trong lĩnh vự"
+MN_002,mo_ta_nganh,Ngành Robot và Trí tuệ nhân tạo HaUI học những gì?,0.75,['machine learning'],2773,1.0,1.0,1.0,"Ngành Robot và Trí tuệ nhân tạo tại Đại học Công nghiệp Hà Nội (HaUI) tập trung vào các kiến thức như toán học, vật lý, xác suất thống kê, khoa học máy tính. Học viên sẽ được đào tạo về lập trình với các ngôn ngữ Python, C/C++ cùng công cụ ROS, TensorFlow, Keras, OpenCV. Ngoài ra, sinh viên còn nắm "
+MN_003,mo_ta_nganh,Ngành Logistics HaUI có cơ hội việc làm như thế nào?,0.75,['hải quan'],3394,0.667,1.0,0.75,"Ngành Logistics và quản lý chuỗi cung ứng tại Đại học Công nghiệp Hà Nội (HaUI) mang lại nhiều cơ hội việc làm hấp dẫn. Sinh viên tốt nghiệp có thể đảm nhận các vị trí như nhân viên/ chuyên viên điều phối vận tải, giao nhận, quản lý kho; chuyên viên lập kế hoạch chuỗi cung ứng và thu mua tại doanh n"
+MN_004,mo_ta_nganh,Ngành An toàn thông tin khác Công nghệ thông tin như thế nào?,0.67,['pentest'],3285,1.0,1.0,1.0,"Ngành An toàn thông tin tập trung vào việc bảo vệ dữ liệu và hệ thống công nghệ thông tin khỏi các mối đe dọa an ninh mạng, trong khi ngành Công nghệ thông tin rộng hơn, bao gồm cả phát triển phần mềm, quản lý cơ sở dữ liệu, thiết kế website và nhiều lĩnh vực khác liên quan đến ứng dụng công nghệ th"
+MN_005,mo_ta_nganh,Ngành Công nghệ thực phẩm HaUI ra làm gì?,1.0,[],2504,1.0,1.0,1.0,"Sinh viên tốt nghiệp ngành Công nghệ thực phẩm có thể làm việc tại các doanh nghiệp sản xuất thực phẩm, trung tâm nghiên cứu với các vị trí như kỹ sư công nghệ thực phẩm, chuyên viên kiểm tra chất lượng (QA/QC), chuyên viên nghiên cứu và phát triển sản phẩm (R&D), chuyên viên an toàn thực phẩm, hoặc"
+MN_006,mo_ta_nganh,Ngành Công nghệ kỹ thuật điều khiển và tự động hóa HaUI học phần mềm gì?,0.75,['PLC'],2212,1.0,0.167,1.0,"Ngành Công nghệ kỹ thuật điều khiển và tự động hóa tại Đại học Công nghiệp Hà Nội sử dụng thành thạo các phần mềm chuyên dụng như AutoCAD Electrical, TIA Portal, CX-Programmer, LabVIEW, MATLAB/Simulink để mô phỏng và triển khai các giải pháp điều khiển - tự động hóa."
+MN_007,mo_ta_nganh,Ngành Thiết kế thời trang HaUI có cơ hội việc làm gì?,1.0,[],2491,0.667,1.0,1.0,"Ngành Thiết kế thời trang của Đại học Công nghiệp Hà Nội (HaUI) cung cấp nhiều cơ hội việc làm như:
+
+- Nhà thiết kế thời trang tại các thương hiệu trong và ngoài nước.
+- Chuyên viên phát triển sản phẩm thời trang, phối hợp với bộ phận thiết kế và sản xuất.
+- Stylist tư vấn phong cách cho cá nhân hoặ"
+MN_008,mo_ta_nganh,Ngành Hóa dược HaUI học những kỹ năng gì và sử dụng thiết bị nào?,1.0,[],2707,1.0,1.0,1.0,"Sinh viên ngành Hóa dược tại Đại học Công nghiệp Hà Nội được trang bị khả năng:
+- Vận dụng kiến thức hóa học, sinh học, dược học để phân tích, tổng hợp và phát triển các hợp chất dược phẩm.
+- Sử dụng thành thạo thiết bị như sắc ký lỏng (HPLC), sắc ký khí (GC), phổ khối (MS), phổ cộng hưởng từ (NMR) "
+MN_009,mo_ta_nganh,Ngành Công nghệ kỹ thuật ô tô HaUI thuộc trường nào và tuyển bao nhiêu chỉ tiêu?,0.33,"['Cơ khí - Ô tô', '7510205']",1072,0.5,1.0,1.0,"Ngành Công nghệ kỹ thuật ô tô của Đại học Công nghiệp Hà Nội (HaUI) tuyển 360 chỉ tiêu. Ngoài ra, ngành Công nghệ kỹ thuật ô tô (Tiếng Anh) cũng thuộc trường này với 40 chỉ tiêu."
+MN_010,mo_ta_nganh,Ngành Ngôn ngữ Hàn Quốc HaUI tốt nghiệp có thể làm gì?,0.33,"['biên dịch', 'khu công nghiệp']",2628,1.0,0.875,1.0,"Sinh viên tốt nghiệp ngành Ngôn ngữ Hàn Quốc tại Đại học Công nghiệp Hà Nội có nhiều cơ hội việc làm đa dạng như biên – phiên dịch tiếng Hàn, chuyên viên hành chính – nhân sự – đối ngoại tại doanh nghiệp có vốn đầu tư Hàn Quốc, trợ lý giám đốc, giảng dạy và đào tạo tiếng Hàn, cũng như chuyên viên tr"
+MN_011,mo_ta_nganh,Ngành Phân tích dữ liệu kinh doanh HaUI dùng công cụ gì?,1.0,[],1955,1.0,1.0,1.0,"Ngành Phân tích dữ liệu kinh doanh tại Đại học Công nghiệp Hà Nội trang bị cho sinh viên thành thạo các công cụ và phần mềm phân tích phổ biến như Excel nâng cao, SQL, Power BI, Tableau, R, Python."
+MN_012,mo_ta_nganh,Ngành Năng lượng tái tạo HaUI ra làm ở những đơn vị nào?,0.0,"['EVN', 'điện mặt trời', 'điện gió']",3121,0.5,0.444,1.0,"Ngành Năng lượng tái tạo của Đại học Công nghiệp Hà Nội (HaUI) cung cấp cơ hội việc làm tại các đơn vị sau:
+
+- Các đơn vị trực thuộc Tập đoàn Điện lực Việt Nam như Truyền tải điện, các Công ty điện lực tỉnh, Điều độ hệ thống điện A0, A1 và các nhà máy điện.
+- Các đơn vị quản lý kỹ thuật năng lượng t"
+MN_013,mo_ta_nganh,Chương trình liên kết 2+2 ngành Ngôn ngữ Trung Quốc HaUI là gì?,0.67,['2 bằng'],2810,1.0,1.0,1.0,"Chương trình liên kết 2+2 ngành Ngôn ngữ Trung Quốc tại Đại học Công nghiệp Hà Nội (HaUI) cho phép sinh viên học 2 năm đầu tại HaUI và tiếp tục 2 năm cuối tại Đại học Khoa học Kỹ thuật Quảng Tây, Trung Quốc. Sau khi tốt nghiệp, sinh viên sẽ nhận được hai bằng cử nhân chính quy: một từ HaUI và một từ"
+MN_014,mo_ta_nganh,Ngành Kỹ thuật sản xuất thông minh HaUI ứng dụng công nghệ gì?,0.6,"['CAD/CAM', 'MES']",2787,0.5,1.0,1.0,"Ngành Kỹ thuật sản xuất thông minh của Đại học Công nghiệp Hà Nội (HaUI) ứng dụng các công nghệ tiên tiến như Internet of Things (IoT), trí tuệ nhân tạo (AI), dữ liệu lớn (Big Data), điện toán đám mây và thực tế ảo (VR/AR) vào quy trình sản xuất. Sinh viên được trang bị khả năng tích hợp hệ thống sả"
+DT_001,dau_truot,"Em thi THPT được 25 điểm, KV1, có đậu ngành CNTT HaUI không?",0.75,['CNTT'],1985,0.667,0.714,,"Điểm gốc của bạn là 25 điểm và sau khi cộng ưu tiên khu vực KV1 (0.75), ĐT (0) và ưu tiên thực (0.5), tổng điểm xét tuyển là 25.5 điểm. Điểm chuẩn ngành Công nghệ thông tin năm 2025 là 23.09 điểm, vì vậy với 25.5 điểm, bạn có khả năng cao đậu vào ngành này của HaUI."
+DT_002,dau_truot,Điểm TSA 75 điểm có đủ vào ngành Kỹ thuật phần mềm không?,0.5,"['28.50', 'KTPM']",1572,1.0,1.0,,"Điểm Đánh giá tư duy của bạn là 75 điểm, sau khi quy đổi tương đương 28.5/30 điểm. Đây cao hơn cả điểm chuẩn chung năm 2025 (21.75) và điểm chuẩn PT5 năm 2024 (16.01). Do đó, bạn có khả năng cao được xét tuyển vào ngành Kỹ thuật phần mềm."
+DT_003,dau_truot,Em thi THPT 20 điểm KV2-NT có đỗ ngành Kế toán không?,0.25,"['20.50', '20.00', 'KV2-NT']",1499,1.0,0.667,,"Để xác định bạn có đủ điều kiện trúng tuyển vào ngành Kế toán hay không, cần so sánh tổng điểm sau khi cộng ưu tiên của bạn với ngưỡng điểm chuẩn ngành Kế toán. Trong trường hợp của bạn, tổng điểm sau khi cộng ưu tiên là 20.5 điểm. Bạn nên tham khảo điểm chuẩn cụ thể của ngành Kế toán để biết kết qu"
+DT_004,dau_truot,"Điểm HSA 95, KV2, có vào được ngành Điều khiển tự động hóa HaUI không?",0.0,"['23.50', '23.72', '26.27', 'trượt']",1962,0.75,0.8,,"Để vào ngành Điều khiển tự động hóa của Đại học Công nghiệp Hà Nội (HaUI), bạn cần đạt điểm chuẩn cộng với điểm ưu tiên khu vực 2 (KV2) là +0.25 điểm. Với số điểm HSA 9.5, tổng điểm sau khi cộng ưu tiên sẽ là 9.75. Tuy nhiên, mức điểm này có thể chưa đủ vì điểm chuẩn vào ngành Điều khiển tự động hóa"
+DT_005,dau_truot,"Em 23.5 điểm thi THPT, KV3, có nộp hồ sơ ngành Marketing không?",0.75,['22.50'],3431,1.0,0.5,,"Bạn đạt 23.5 điểm trong kỳ thi THPT (thang 30), thuộc khu vực KV3 và đã đăng ký xét tuyển vào ngành Marketing của Đại học Công nghiệp Hà Nội. Với tổng điểm này, bạn không được cộng thêm điểm ưu tiên vì khu vực KV3 không có mức điểm ưu tiên.
+
+Nếu cần hỗ trợ thêm về quy trình đăng ký hoặc thông tin ch"
+DT_006,dau_truot,"Điểm học bạ 3 môn Toán 8.5, Lý 8.0, Hóa 8.0 có đủ xét tuyển ngành Cơ điện tử?",1.0,[],1353,1.0,0.5,,"Điểm học bạ của bạn quy đổi là 19.65 trên thang điểm 30. Trong khi đó, điểm chuẩn ngành Cơ điện tử năm 2025 là 25.17 điểm. Điểm của bạn thấp hơn điểm chuẩn 5.52 điểm nên không đủ điều kiện xét tuyển vào ngành này."
+DT_007,dau_truot,Em 22 điểm thi THPT KV1 có đỗ ngành Ngôn ngữ Nhật HaUI không?,0.67,['20.00'],1992,1.0,0.8,,"Để xác định khả năng đỗ, bạn cần so sánh tổng điểm sau khi cộng ưu tiên của mình với điểm chuẩn ngành Ngôn ngữ Nhật tại Đại học Công nghiệp Hà Nội. Với tổng điểm là 22.75 (bao gồm cả điểm ưu tiên), nếu điểm chuẩn ngành này năm đó thấp hơn hoặc bằng 22.75 thì bạn có cơ hội đỗ. Tôi chưa có dữ liệu về "
+DT_008,dau_truot,Điểm TSA 50 điểm có vào được ngành nào tại HaUI?,0.25,"['21.35', '18.00', '18.75']",2972,1.0,0.5,,"Điểm Thí sinh A (TSA) 50 điểm có thể đủ điều kiện xét tuyển vào một số ngành tại Đại học Công nghiệp Hà Nội (HaUI). Cụ thể:
+
+- Ngành Ngôn ngữ học: Chỉ tiêu là 50, tổ hợp D01 và D14.
+- Ngành Du lịch: Chỉ tiêu là 140, các tổ hợp D01, D14, D15.
+
+Để biết chính xác khả năng trúng tuyển, bạn cần xem xét đ"
+DT_009,dau_truot,Em 26 điểm THPT KV2-NT đăng ký ngành Logistics có chắc đậu không?,1.0,[],1805,1.0,1.0,,"Điểm xét tuyển của bạn sau khi tính ưu tiên là 26.27 điểm, cao hơn cả điểm chuẩn chung năm 2025 (22.76 điểm) và điểm chuẩn PT3 năm 2024 (25.89 điểm). Khả năng đậu vào ngành Logistics và quản lý chuỗi cung ứng là rất lớn."
+DT_010,dau_truot,"Điểm HSA 80, ở KV2, đăng ký ngành Robot AI có đậu không?",0.2,"['21.02', '21.27', '24.30', 'trượt']",1703,0.667,0.833,,"Để xác định khả năng trúng tuyển vào ngành Robot AI của Đại học Công nghiệp Hà Nội (HaUI), bạn cần biết điểm chuẩn năm trước. Với điểm HSA là 80 và khu vực ưu tiên KV2 (+0.25 điểm), tổng điểm của bạn sẽ là 80.25. Tuy nhiên, không có thông tin cụ thể về điểm chuẩn ngành Robot AI trong năm gần đây nên"
+EDGE_001,edge,"Mã DCN là trường nào, ở đâu?",1.0,[],2064,0.75,1.0,1.0,Mã DCN对应的是 Đại học Công nghiệp Hà Nội (HaUI)，位于越南河内市北_FROM_区 cầu diễn路298号。请注意，您的问题使用了越南教育系统的特定代码“DCN”，该代码直接关联到上述提供的信息中的大学名称和地址。
+EDGE_002,edge,"Tôi muốn học ngành KTPM, điểm TSA 60, KV1 thì được bao nhiêu và có đỗ không?",0.2,"['25.50', '0.45', '25.95', '21.75']",1695,1.0,0.667,,"Đối với ngành Khoa học máy tính và phần mềm (KTPM) của Đại học Công nghiệp Hà Nội năm nay, mức điểm ưu tiên tối đa cho khu vực 1 là +0.75 điểm. Với tổng điểm thi và điểm ưu tiên của bạn là ≥ 22.5 thì điểm ưu tiên thực tế sẽ thấp hơn. Tuy nhiên, tôi không có thông tin cụ thể về điểm chuẩn ngành KTPM "
+EDGE_003,edge,HaUI là trường nào? Học phí bao nhiêu? Điểm chuẩn CNTT năm ngoái?,0.25,"['700.000', '23.09', 'Bộ Công Thương']",1638,1.0,1.0,0.667,"Đại học Công nghiệp Hà Nội (HaUI) là một cơ sở giáo dục đại học. Học phí ngành Công nghệ thông tin năm 2025 là 3,96 triệu đồng/semester cho phương thức xét tuyển học bạ và 4,71 triệu đồng/semester cho phương thức dựa trên kết quả kỳ thi THPT quốc gia. Điểm chuẩn ngành Công nghệ thông tin năm 2024 tô"
+EDGE_004,edge,Ngành tự động hóa và ngành cơ điện tử khác nhau như thế nào? Ngành nào điểm chuẩn cao hơn?,0.25,"['26.27', 'PLC', 'tích hợp']",2550,0.75,1.0,0.667,"Ngành Công nghệ kỹ thuật tự động hóa tập trung vào thiết kế, sản xuất và bảo trì hệ thống điều khiển tự động trong các lĩnh vực công nghiệp. Trong khi đó, ngành Công nghệ kỹ thuật cơ điện tử kết hợp giữa kiến thức về điện tử, máy tính và cơ khí để tạo ra các hệ thống phức tạp như robot công nghiệp.
+"
+EDGE_005,edge,PT4 và PT5 khác nhau thế nào? Nên chọn phương thức nào?,0.5,"['thang 150', 'thang 100']",2430,1.0,0.75,0.667,"PT4 là xét tuyển dựa trên kết quả thi Đánh giá năng lực (ĐGNL) do ĐHQG Hà Nội tổ chức, trong khi PT5 là xét tuyển dựa trên kết quả thi Đánh giá tư duy (ĐGTD) do ĐHBK Hà Nội tổ chức. Cả hai phương thức đều quy đổi điểm thi thành thang điểm 30 của HaUI cộng với điểm ưu tiên. Bạn nên chọn phương thức p"
+EDGE_006,edge,Giải HSG cấp tỉnh môn Tin học năm lớp 11 có dùng đăng ký PT2 không?,0.5,"['7.0', 'PT2']",2713,0.5,0.667,1.0,"Đúng, giải HSG cấp tỉnh môn Tin học năm lớp 11 (không quá 3 năm tính đến thời điểm xét tuyển) có thể được sử dụng để đăng ký Phương thức 2 của Đại học Công nghiệp Hà Nội. Điều kiện cụ thể là thí sinh phải đạt giải Nhất, Nhì hoặc Ba trong kỳ thi HSG cấp tỉnh/TP các môn như Tin học."
+EDGE_007,edge,Học ngành cntt hay ktpm ở haui tốt hơn?,0.5,"['23.09', '21.75']",2940,1.0,0.714,0.4,"Ngành Công nghệ thông tin (CNTT) và Kỹ thuật phần mềm (KTPM) tại Đại học Công nghiệp Hà Nội đều có chương trình đào tạo chất lượng, phù hợp với nhu cầu thị trường. Ngành CNTT tập trung vào kiến thức tổng thể về công nghệ thông tin, trong khi KTPM chuyên sâu hơn về phát triển và quản lý hệ thống phần"
+EDGE_008,edge,Năm 2026 em có thể đăng ký xét tuyển bằng điểm ĐGNL 2025 không?,0.5,"['quy chế', 'theo dõi']",2363,0.5,1.0,0.333,"Năm 2026, bạn không thể sử dụng kết quả thi Đánh giá năng lực (ĐGNL) năm 2025 để đăng ký xét tuyển. Theo quy định hiện tại, thí sinh phải dự thi ĐGNL trong năm mà họ muốn dùng kết quả đó để xét tuyển đại học."
+EDGE_009,edge,Em ở thành phố Hà Nội thuộc khu vực nào?,0.0,"['KV3', 'phường', 'KV2', 'xã']",61054,1,0.0,1.0,ERROR: timed out
+EDGE_010,edge,Tổng chi phí học 4 năm đại học K20 đại trà tại HaUI khoảng bao nhiêu?,0.5,"['130', '91']",1765,0.667,0.8,,"Để tính tổng chi phí học 4 năm cử nhân K20 (CTĐT đại trà) tại Đại học Công nghiệp Hà Nội, bạn cần biết số tín chỉ tối thiểu để tốt nghiệp là 135 tín chỉ. Với mức học phí 700.000 đồng/tín chỉ, tổng chi phí sẽ là 94.500.000 đồng (135 x 700.000)."
+VB_001,van_bang,Tốt nghiệp 4 năm đại học tại HaUI được cấp bằng gì?,1.0,[],1135,1.0,1.0,1.0,"Tốt nghiệp 4 năm đại học chính quy tại Đại học Công nghiệp Hà Nội (HaUI), sinh viên sẽ được cấp bằng Cử nhân."
+VB_002,van_bang,Sinh viên HaUI có thể học 2 bằng cùng lúc không?,1.0,[],2994,1.0,1.0,1.0,Sinh viên hoàn thành chương trình năm thứ nhất tại Đại học Công nghiệp Hà Nội (HaUI) có thể đăng ký học hai chương trình đào tạo khác nhau đồng thời để được cấp 2 bằng tốt nghiệp.
+VB_003,van_bang,HaUI hiện có bao nhiêu sinh viên đại học chính quy?,1.0,[],1826,0.0,1.0,1.0,Số sinh viên đại học chính quy đang theo học tại Đại học Công nghiệp Hà Nội là 25.447 người.
+VB_004,van_bang,Học chương trình Kỹ sư tại HaUI cần điều kiện gì và được cấp bằng gì?,0.67,['bậc 7'],2352,0.5,0.667,0.0,"Người học theo chương trình Kỹ sư tại Đại học Công nghiệp Hà Nội sẽ tốt nghiệp với **bằng cử nhân** sau 4 năm đào tạo. Thông tin chi tiết về văn bằng không được đề cập cụ thể trong chương trình liên kết, nhưng đối với các chương trình thông thường, sinh viên hoàn thành khóa học đạt yêu cầu sẽ nhận đ"
+VB_005,van_bang,Tỷ lệ sinh viên chính quy HaUI có việc làm sau 12 tháng tốt nghiệp là bao nhiêu?,0.5,['92.78%'],1430,1.0,1.0,1.0,"Tỷ lệ sinh viên chính quy của Đại học Công nghiệp Hà Nội (HaUI) có việc làm sau 12 tháng tốt nghiệp là 92,14%."
+VB_006,van_bang,HaUI có bao nhiêu sinh viên sau đại học đang theo học?,1.0,[],1688,1.0,1.0,1.0,"Số sinh viên sau đại học (bao gồm cao học, NCS hoặc tương đương) đang theo học tại Đại học Công nghiệp Hà Nội là 558 người."

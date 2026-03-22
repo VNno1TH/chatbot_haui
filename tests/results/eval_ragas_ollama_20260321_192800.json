@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-03-21T19:28:00.829000",
+  "framework": "ragas_direct",
+  "judge_model": "qwen2.5:14b",
+  "total_questions": 15,
+  "category_filter": "all",
+  "avg_faithfulness": null,
+  "avg_context_precision": null,
+  "avg_context_recall": null,
+  "keyword_hit_rate": 0.722,
+  "avg_latency_ms": 1826,
+  "per_category_kw": {
+    "truong": 0.733,
+    "ktx": 0.7
+  },
+  "detail": [
+    {
+      "id": "TRUONG_001",
+      "category": "truong",
+      "question": "Trường Đại học Công nghiệp Hà Nội trực thuộc bộ nào?",
+      "answer": "Trường Đại học Công nghiệp Hà Nội trực thuộc Bộ Công Thương.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 3898,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "TRUONG_002",
+      "category": "truong",
+      "question": "Mã trường HaUI là gì?",
+      "answer": "Mã trường của Đại học Công nghiệp Hà Nội (HaUI) là DCN.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1056,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "TRUONG_003",
+      "category": "truong",
+      "question": "Địa chỉ cơ sở 1 của HaUI ở đâu?",
+      "answer": "Địa chỉ cơ sở 1 của Đại học Công nghiệp Hà Nội (HaUI) là số 298, Đường Cầu Diễn, Phường Minh Khai, Quận Bắc Từ Liêm, Hà Nội.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1658,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "TRUONG_004",
+      "category": "truong",
+      "question": "HaUI có bao nhiêu cơ sở đào tạo?",
+      "answer": "Đại học Công nghiệp Hà Nội (HaUI) có 5 Trường và 4 Khoa chuyên trách trong việc tổ chức đào tạo. Ngoài ra, còn có 11 Trung tâm (trong đó có 6 Trung tâm đào tạo), 1 Viện và 1 Công ty trực thuộc.",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "3",
+        "cơ sở",
+        "Hà Nam"
+      ],
+      "latency_ms": 2082,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "TRUONG_005",
+      "category": "truong",
+      "question": "Năm nào Trường Đại học Công nghiệp Hà Nội chính thức trở thành Đại học?",
+      "answer": "Trường Đại học Công nghiệp Hà Nội chính thức chuyển thành Đại học năm 2025 theo quyết định số 2536/QĐ-TTg.",
+      "kw_hit_rate": 0.33,
+      "keywords_miss": [
+        "20/11/2025",
+        "thứ 12"
+      ],
+      "latency_ms": 1330,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "TRUONG_006",
+      "category": "truong",
+      "question": "Tỷ lệ sinh viên HaUI có việc làm sau tốt nghiệp 1 năm là bao nhiêu?",
+      "answer": "Tỷ lệ sinh viên chính quy của Đại học Công nghiệp Hà Nội (HaUI) có việc làm sau 12 tháng kể từ ngày tốt nghiệp là 92,14%. Đối với sinh viên đại học chính quy, tỷ lệ này là 92,78%, trong khi đó với sinh viên cao đẳng chính quy là 90,61%.",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "95%"
+      ],
+      "latency_ms": 2155,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "TRUONG_007",
+      "category": "truong",
+      "question": "HaUI có bao nhiêu giảng viên và tỷ lệ tiến sĩ là bao nhiêu?",
+      "answer": "HaUI có gần 1.100 giảng viên và tỷ lệ giảng viên có trình độ Phó Giáo sư, Tiến sĩ chiếm trên 41%.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1749,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "TRUONG_008",
+      "category": "truong",
+      "question": "HaUI có bao nhiêu chương trình đào tạo đạt chuẩn ABET?",
+      "answer": "HaUI có 5 chương trình đào tạo đạt chuẩn kiểm định chất lượng ABET (Hoa Kỳ).",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1386,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "TRUONG_009",
+      "category": "truong",
+      "question": "HaUI có những trường và khoa nào thuộc cơ cấu tổ chức?",
+      "answer": "Đại học Công nghiệp Hà Nội (HaUI) bao gồm:\n- **5 Trường:** Ngoại ngữ - Du lịch; Kinh tế; Cơ khí - Ô tô; CNTT & Truyền thông; Điện - Điện tử.\n- **4 Khoa:** Công nghệ Hóa; Công nghệ May & Thiết kế thời trang; Lý luận Chính trị & Pháp luật; Khoa học cơ bản.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2381,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "TRUONG_010",
+      "category": "truong",
+      "question": "Website đăng ký xét tuyển của HaUI là gì? Lệ phí bao nhiêu?",
+      "answer": "Website đăng ký xét tuyển của Đại học Công nghiệp Hà Nội (HaUI) là https://xettuyen.haui.edu.vn. Lệ phí đăng ký xét tuyển là 50.000 đồng/hồ sơ, nộp qua mã QR ngân hàng BIDV hoặc Ngân hàng Lộc Phát.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 2450,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "KTX_001",
+      "category": "ktx",
+      "question": "Giá phòng ký túc xá chất lượng cao HaUI 4 người bao nhiêu?",
+      "answer": "Giá phòng ký túc xá chất lượng cao cho 4 người tại Đại học Công nghiệp Hà Nội (HaUI) là **465.000 VNĐ/sinh viên/tháng** tại Cơ sở 1 và **420.000 VNĐ/sinh viên/tháng** tại Cơ sở 2.",
+      "kw_hit_rate": 0.5,
+      "keywords_miss": [
+        "600.000"
+      ],
+      "latency_ms": 1752,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "KTX_002",
+      "category": "ktx",
+      "question": "Phòng ký túc xá tiêu chuẩn 6 người tại cơ sở 2 HaUI giá bao nhiêu?",
+      "answer": "Giá phòng ký túc xá tiêu chuẩn 6 người tại Cơ sở 2 Đại học Công nghiệp Hà Nội là **280.000 VNĐ / sinh viên / tháng**.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1358,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "KTX_003",
+      "category": "ktx",
+      "question": "Ký túc xá HaUI có điều hòa không?",
+      "answer": "Ký túc xá HaUI có điều hòa ở các phòng chất lượng cao, còn phòng tiêu chuẩn thì không có điều hòa.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1411,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "KTX_004",
+      "category": "ktx",
+      "question": "Tiền điện nước ký túc xá HaUI tính như thế nào?",
+      "answer": "Tôi chưa có dữ liệu về vấn đề này.",
+      "kw_hit_rate": 0.0,
+      "keywords_miss": [
+        "chỉ số đồng hồ",
+        "nhà nước"
+      ],
+      "latency_ms": 1072,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    },
+    {
+      "id": "KTX_005",
+      "category": "ktx",
+      "question": "Ký túc xá HaUI có những tiện ích gì?",
+      "answer": "Ký túc xá của Đại học Công nghiệp Hà Nội (HaUI) cung cấp nhiều tiện ích cho sinh viên như nhà ăn, nhà xe, siêu thị mini, quán cafe và sân thể thao.",
+      "kw_hit_rate": 1.0,
+      "keywords_miss": [],
+      "latency_ms": 1655,
+      "faithfulness": null,
+      "context_precision": null,
+      "context_recall": null
+    }
+  ]
+}
