@@ -72,12 +72,17 @@ def fmt_hoc_phi(result: dict) -> str:
     if not result["found"]:
         return result["thong_bao"]
 
-    lines   = [f"Học phí HaUI năm học {result['nam_hoc']}:"]
+    lines   = [
+        f"Học phí HaUI năm học {result['nam_hoc']}:",
+        f"  ⚠ LƯU Ý: Đơn vị học phí là đồng/tín chỉ (KHÔNG phải /năm hay /học kỳ).",
+        f"  Mỗi năm học khoảng 30-35 tín chỉ → học phí thực tế = (số tín chỉ) × (mức/tín chỉ).",
+        "",
+    ]
     nhom_cur = ""
     for r in result["ket_qua"]:
         if r["nhom"] != nhom_cur:
             nhom_cur = r["nhom"]
-            lines.append(f"\n  [{nhom_cur}]")
+            lines.append(f"  [{nhom_cur}]")
         lines.append(f"    - {r['chuong_trinh']}: {r['hien_thi']}")
     return "\n".join(lines)
 
@@ -206,5 +211,115 @@ def fmt_kiem_tra_dau_truot(result: dict) -> str:
         lines.append(
             f"  - {k['phuong_thuc']} ({k['phuong_thuc_ten']}): "
             f"điểm chuẩn {k['diem_chuan']} → {k['nhan_xet']}"
+        )
+    return "\n".join(lines)
+
+# ── Ngành theo khoa ───────────────────────────────────────────────────────────
+
+def fmt_nganh_theo_khoa_v2(result: dict, diem_xet: float | None = None) -> str:
+    """
+    Format danh sách ngành theo khoa, kèm so sánh điểm chuẩn nếu có diem_xet.
+    Dùng khi đã có dữ liệu điểm chuẩn kèm theo từng ngành.
+
+    Args:
+        result   : Output của get_nganh_theo_khoa()
+        diem_xet : Điểm của thí sinh (tùy chọn) để so sánh trực tiếp
+    """
+    if not result["found"]:
+        return result["thong_bao"]
+
+    lines = [
+        f"Trường/Khoa {result['ten_khoa']} có {result['so_nganh']} ngành:",
+    ]
+    if diem_xet is not None:
+        lines[0] += f" (so sánh với điểm của bạn: {diem_xet})"
+
+    lines.append("")
+
+    for n in result["nganh_list"]:
+        # Lấy điểm chuẩn tốt nhất để hiển thị (ưu tiên PT3 2025, fallback chung 2025, rồi 2024)
+        dc_2025 = n.get("diem_chuan_pt3_2025") or n.get("diem_chuan_chung_2025")
+        dc_2024 = n.get("diem_chuan_pt3_2024")
+
+        dc_str = ""
+        nhan_xet = ""
+        if dc_2025 is not None:
+            dc_str = f"{dc_2025} điểm (2025)"
+            if diem_xet is not None:
+                diff = round(diem_xet - dc_2025, 2)
+                if diff > 0.5:
+                    nhan_xet = f" → Điểm bạn cao hơn {diff} điểm"
+                elif diff >= 0:
+                    nhan_xet = f" → Sát nút (+{diff})"
+                else:
+                    nhan_xet = f" → Thiếu {abs(diff)} điểm"
+        elif dc_2024 is not None:
+            dc_str = f"{dc_2024} điểm (2024, chưa có 2025)"
+
+        ct_str = f", chỉ tiêu {n['chi_tieu']}" if n.get("chi_tieu") else ""
+        to_hop_str = f", tổ hợp: {', '.join(n['to_hop'][:3])}" if n.get("to_hop") else ""
+
+        lines.append(
+            f"  • {n['ten_nganh']} (mã {n['ma_nganh']}){ct_str}"
+        )
+        if dc_str:
+            lines.append(f"    Điểm chuẩn PT3: {dc_str}{nhan_xet}")
+        if to_hop_str:
+            lines.append(f"    Tổ hợp: {', '.join(n['to_hop'][:4])}")
+
+    lines.append("")
+    lines.append(
+        "Lưu ý: Điểm chuẩn 2026 chưa công bố — số liệu trên chỉ mang tính tham khảo."
+    )
+    return "\n".join(lines)
+
+
+# ── Ngành theo khoa ───────────────────────────────────────────────────────────
+
+def fmt_nganh_theo_khoa(result: dict) -> str:
+    if not result["found"]:
+        return result["thong_bao"]
+    lines = [
+        f"Trường/Khoa {result['ten_khoa']} có {result['so_nganh']} ngành:",
+    ]
+    for i, n in enumerate(result["nganh_list"], 1):
+        lines.append(f"  {i:2}. {n['ten_nganh']} (mã {n['ma_nganh']})")
+    return "\n".join(lines)
+
+
+# ── Điểm chuẩn theo khoa ─────────────────────────────────────────────────────
+
+def fmt_diem_chuan_theo_khoa(result: dict, diem_user: float | None = None) -> str:
+    if not result["found"]:
+        return result["thong_bao"]
+
+    lines = [
+        f"Điểm chuẩn năm {result['nam']} — Trường {result['ten_khoa']} "
+        f"({result['so_nganh']} ngành):",
+    ]
+
+    for r in result["ket_qua"]:
+        if diem_user is not None:
+            chenh = round(diem_user - r["diem_chuan"], 2)
+            if chenh > 0.5:
+                nhan = f"✅ +{chenh} điểm"
+            elif chenh >= 0:
+                nhan = f"⚠️ sát nút (+{chenh})"
+            else:
+                nhan = f"❌ thiếu {abs(chenh)} điểm"
+            lines.append(
+                f"  - {r['ten_nganh']}: {r['diem_chuan']} điểm → {nhan}"
+            )
+        else:
+            lines.append(
+                f"  - {r['ten_nganh']} (mã {r['ma_nganh']}): "
+                f"{r['diem_chuan']} điểm"
+            )
+
+    if diem_user is not None:
+        lines.append(
+            f"\nĐiểm tham khảo trên là năm {result['nam']}. "
+            f"Điểm chuẩn 2026 chưa công bố — "
+            f"theo dõi tại tuyensinh.haui.edu.vn."
         )
     return "\n".join(lines)

@@ -12,7 +12,7 @@ truong: HaUI
 
 ## Tổng quan các loại học bổng
 
-HaUI có 3 nhóm học bổng chính:
+HaUI có 4 nhóm học bổng chính:
 1. **Học bổng HaUI** — xét khi nhập học (đầu vào)
 2. **Học bổng Khuyến khích học tập (KKHT)** — xét theo kết quả học tập mỗi học kỳ
 3. **Học bổng Nguyễn Thanh Bình** — dành cho sinh viên hoàn cảnh khó khăn

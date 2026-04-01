@@ -70,16 +70,18 @@ def _normalize_metadata(meta: dict, filepath: Path) -> dict:
     }
 
 
-def _add_section_context(chunks: list[dict], base_meta: dict) -> list[dict]:
+def _add_section_context_v2(chunks: list[dict], base_meta: dict) -> list[dict]:
     """
-    Với mỗi chunk, thêm field 'section' (từ header ## của chunk đó)
-    và 'nganh_context' để tăng chất lượng retrieval.
+    [FIX] Thêm truong_khoa vào context prefix để BM25 có thể match
+    khi user hỏi "Trường X có ngành gì".
+ 
+    Original: "Ngành [ten_nganh] — [section]\n"
+    Fixed:    "Trường [truong_khoa] — Ngành [ten_nganh] — [section]\n"
     """
     result = []
     for i, chunk in enumerate(chunks):
         meta = base_meta.copy()
-
-        # Lấy tên section từ header metadata của LangChain
+ 
         section = (
             chunk["metadata"].get("h2")
             or chunk["metadata"].get("h3")
@@ -88,17 +90,23 @@ def _add_section_context(chunks: list[dict], base_meta: dict) -> list[dict]:
         )
         meta["section"]  = str(section)
         meta["chunk_id"] = i
-
-        # Prefix ngữ cảnh vào text để cải thiện embedding
-        # (kỹ thuật của bge-m3: thêm "passage: " với văn bản cần embed)
-        ten_nganh = base_meta.get("ten_nganh", "")
-        if ten_nganh:
+ 
+        ten_nganh   = base_meta.get("ten_nganh", "")
+        truong_khoa = base_meta.get("truong_khoa", "")
+ 
+        # [FIX] Build context prefix đầy đủ hơn
+        if truong_khoa and ten_nganh:
+            # Ví dụ: "Trường Cơ khí - Ô tô — Ngành Công nghệ kỹ thuật cơ điện tử ô tô — Thông tin tuyển sinh\n"
+            context_prefix = f"{truong_khoa} — Ngành {ten_nganh} — {section}\n"
+        elif ten_nganh:
             context_prefix = f"Ngành {ten_nganh} — {section}\n"
+        elif truong_khoa:
+            context_prefix = f"{truong_khoa} — {section}\n"
         else:
             context_prefix = f"{section}\n"
-
+ 
         full_text = context_prefix + chunk["page_content"].strip()
-
+ 
         result.append({
             "text"    : full_text,
             "metadata": meta,
@@ -149,16 +157,48 @@ class MarkdownChunker:
         header_chunks = self.header_splitter.split_text(content)
 
         # 3. Fallback: chia tiếp chunk nào quá dài
+        # FIX: Không cắt chunk chứa bảng Markdown (có ký tự |)
+        # Bảng bị cắt ngang → mất header cột → LLM đọc số liệu sai
         final_raw_chunks = []
         for hchunk in header_chunks:
-            if len(hchunk.page_content) <= MAX_CHUNK_CHARS:
+            text = hchunk.page_content
+            has_table = "|" in text and re.search(r"^\|[-| :]+\|", text, re.MULTILINE)
+
+            if len(text) <= MAX_CHUNK_CHARS:
                 final_raw_chunks.append({
-                    "page_content": hchunk.page_content,
+                    "page_content": text,
                     "metadata"    : hchunk.metadata,
                 })
+            elif has_table:
+                # FIX: chunk có bảng → tăng giới hạn lên 2.5x thay vì cắt ngang bảng
+                # Nếu vẫn quá dài thì cắt theo dòng trống (giữa các bảng), không cắt trong bảng
+                if len(text) <= MAX_CHUNK_CHARS * 2.5:
+                    final_raw_chunks.append({
+                        "page_content": text,
+                        "metadata"    : hchunk.metadata,
+                    })
+                else:
+                    # Chia theo block ngăn cách bởi dòng trống, giữ block chứa bảng nguyên vẹn
+                    blocks = re.split(r'\n{2,}', text)
+                    current_block = ""
+                    for block in blocks:
+                        if len(current_block) + len(block) + 2 <= MAX_CHUNK_CHARS * 2:
+                            current_block = (current_block + "\n\n" + block).strip()
+                        else:
+                            if current_block:
+                                final_raw_chunks.append({
+                                    "page_content": current_block,
+                                    "metadata"    : hchunk.metadata,
+                                })
+                            current_block = block
+                    if current_block:
+                        final_raw_chunks.append({
+                            "page_content": current_block,
+                            "metadata"    : hchunk.metadata,
+                        })
             else:
                 sub_docs = self.fallback_splitter.create_documents(
-                    [hchunk.page_content],
+                    [text],
                     metadatas=[hchunk.metadata],
                 )
                 for sub in sub_docs:
@@ -168,7 +208,7 @@ class MarkdownChunker:
                     })
 
         # 4. Gắn metadata đầy đủ + context prefix
-        chunks = _add_section_context(final_raw_chunks, base_meta)
+        chunks = _add_section_context_v2(final_raw_chunks, base_meta)
 
         # 5. Lọc chunk rỗng
         chunks = [c for c in chunks if len(c["text"].strip()) > 30]

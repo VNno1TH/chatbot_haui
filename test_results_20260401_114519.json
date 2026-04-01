@@ -1,0 +1,3481 @@
+{
+  "meta": {
+    "run_time": "2026-04-01 11:45:19",
+    "model": "qwen2.5:14b",
+    "version": "run_chatbot_tests_v2.py",
+    "slow_threshold": 10.0,
+    "total_cases": 95,
+    "groups": "all"
+  },
+  "results": [
+    {
+      "id": 1,
+      "group": 1,
+      "group_name": "Thông tin cơ bản",
+      "difficulty": "dễ",
+      "question": "HaUI là viết tắt của trường nào? Trụ sở chính ở đâu?",
+      "hint": "Hanoi University of Industry — Đại học Công nghiệp Hà Nội. Số 298, Đường Cầu Diễn, Phường Minh Khai, Quận Bắc Từ Liêm, Hà Nội.",
+      "tags": [
+        "gioi_thieu",
+        "co_ban"
+      ],
+      "expected_behavior": "Trả lời đúng tên đầy đủ tiếng Việt + tiếng Anh và địa chỉ chính xác.",
+      "check_keywords": [
+        "Công nghiệp Hà Nội",
+        "Cầu Diễn"
+      ],
+      "fail_keywords": [
+        "Bách Khoa",
+        "Kinh tế Quốc dân"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "HaUI là viết tắt của Đại học Công nghiệp Hà Nội. Trụ sở chính của trường nằm tại Hà Nội.",
+      "error": "",
+      "duration_sec": 7.44,
+      "intent_type": "RAG_TRUONG_HOC_BONG",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " [huong_dan_dang_ky_du_tuyen_2025.md — Hướng dẫn đăng ký dự tuyển đại học chính quy HaUI năm 2025] Hướng dẫn đăng ký dự tuyển đại học chính quy HaUI năm 2025 # Hướng dẫn đăng ký dự tuyển đại học chính quy HaUI năm 2025   Áp dụng cho **Phương thức 2, 4, 5** — dành cho thí sinh tốt nghiệp THPT năm 2025 hoặc tương đương.   - **PT2:** Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế kết hợp kết quả học tập THPT - **PT4:** Xét tuyển dựa trên kết quả thi Đánh giá năng lực (ĐGNL) do ĐHQG Hà Nội tổ chức năm 2025 - **PT5:** Xét tuyển dựa trên kết quả thi Đánh giá tư duy (ĐGTD) do ",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 2,
+      "group": 1,
+      "group_name": "Thông tin cơ bản",
+      "difficulty": "dễ",
+      "question": "Năm 2026, HaUI tuyển bao nhiêu chỉ tiêu đại học chính quy?",
+      "hint": "8.300 chỉ tiêu đại học chính quy năm 2026 (tổng tất cả hệ là 9.420).",
+      "tags": [
+        "chi_tieu",
+        "nam_2026"
+      ],
+      "expected_behavior": "Nêu đúng 8.300 chỉ tiêu ĐH chính quy, không nhầm với tổng 9.420.",
+      "check_keywords": [],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "8.300",
+        "8300"
+      ],
+      "answer": "Năm 2026, Đại học Công nghiệp Hà Nội (HaUI) tuyển 8300 chỉ tiêu đại học chính quy.",
+      "error": "",
+      "duration_sec": 1.79,
+      "intent_type": "JSON_CHI_TIEU_TO_HOP",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Chỉ tiêu tuyển sinh HaUI năm 2026:   Tổng: 9420 sinh viên   - Đại học chính quy: 8300   - Đại học từ xa: 750   - Liên thông lên Đại học chính quy: 250   - Đại học chuyên sâu đặc thù bậc 7 - Kỹ sư: 120    Lưu ý: Số liệu dự kiến, có thể thay đổi khi có thông báo chính thức",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 3,
+      "group": 1,
+      "group_name": "Thông tin cơ bản",
+      "difficulty": "dễ",
+      "question": "Ngành Công nghệ thông tin mã 7480201 có bao nhiêu chỉ tiêu năm 2025?",
+      "hint": "360 chỉ tiêu năm 2025.",
+      "tags": [
+        "chi_tieu",
+        "CNTT",
+        "nam_2025"
+      ],
+      "expected_behavior": "Trả lời đúng 360 chỉ tiêu.",
+      "check_keywords": [
+        "360"
+      ],
+      "fail_keywords": [
+        "300",
+        "400",
+        "240"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về số chỉ tiêu ngành Công nghệ thông tin mã 7480201 năm 2025. Vui lòng xem tại tuyensinh.haui.edu.vn hoặc gọi 0243.7655121 để được hỗ trợ thêm.",
+      "error": "",
+      "duration_sec": 2.38,
+      "intent_type": "JSON_CHI_TIEU_TO_HOP",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.9,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Điểm chuẩn năm 2025 — Trường công nghệ thông tin (9 ngành):   - Khoa học máy tính: 23.72 điểm → ✅ +177.28 điểm   - An toàn thông tin: 23.43 điểm → ✅ +177.57 điểm   - Công nghệ thông tin: 23.09 điểm → ✅ +177.91 điểm   - Công nghệ đa phương tiện: 22.25 điểm → ✅ +178.75 điểm   - Công nghệ kỹ thuật máy tính: 21.85 điểm → ✅ +179.15 điểm   - Kỹ thuật phần mềm: 21.75 điểm → ✅ +179.25 điểm   - Mạng máy tính và truyền thông dữ liệu: 21.7 điểm → ✅ +179.3 điểm   - Hệ thống thông tin: 21.1 điểm → ✅ +179.9 điểm   - Khoa học máy tính chương trình đào tạo bằng Tiếng Anh: 20.45 điểm → ✅ +180.55 điểm  Điểm tha",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 4,
+      "group": 1,
+      "group_name": "Thông tin cơ bản",
+      "difficulty": "dễ",
+      "question": "Ngành Kế toán xét những tổ hợp môn nào?",
+      "hint": "A01 (Toán, Vật lí, Tiếng Anh), D01 (Ngữ văn, Toán, Tiếng Anh), D0G (Toán, Tiếng Anh, GDKT pháp luật).",
+      "tags": [
+        "to_hop",
+        "ke_toan"
+      ],
+      "expected_behavior": "Liệt kê đủ 3 tổ hợp A01, D01, D0G với môn thi tương ứng.",
+      "check_keywords": [
+        "A01",
+        "D01",
+        "D0G"
+      ],
+      "fail_keywords": [
+        "A00",
+        "B00"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Ngành Kế toán xét các tổ hợp môn sau: A01, D01, X25.",
+      "error": "",
+      "duration_sec": 2.02,
+      "intent_type": "JSON_CHI_TIEU_TO_HOP",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Ngành Kế toán (mã 7340301):   - Chỉ tiêu        : 600 sinh viên   - Tổ hợp xét tuyển: A01, D01, X25   - Phương thức     : PT1, PT2, PT3, PT4  Ngành Kế toán (Tiếng Anh) (mã 7340301TA):   - Chỉ tiêu        : 40 sinh viên   - Tổ hợp xét tuyển: A01, D01, X25   - Phương thức     : PT1, PT2, PT3, PT4",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 5,
+      "group": 1,
+      "group_name": "Thông tin cơ bản",
+      "difficulty": "dễ",
+      "question": "Tổ hợp A00 gồm những môn gì?",
+      "hint": "Toán, Vật lý, Hóa học.",
+      "tags": [
+        "to_hop"
+      ],
+      "expected_behavior": "Liệt kê đúng 3 môn: Toán, Vật lý, Hóa học.",
+      "check_keywords": [
+        "Toán",
+        "Vật lý",
+        "Hóa học"
+      ],
+      "fail_keywords": [
+        "Tiếng Anh",
+        "Ngữ văn"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Tổ hợp A00 bao gồm các môn: Toán, Vật lý, Hóa học.",
+      "error": "",
+      "duration_sec": 2.04,
+      "intent_type": "JSON_CHI_TIEU_TO_HOP",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Tổ hợp A00 gồm môn: Toán, Vật lý, Hóa học Có 33 ngành xét tuyển bằng tổ hợp này:    1. An toàn thông tin (mã 74802021) — chỉ tiêu: 40    2. Công nghệ kỹ thuật cơ khí (mã 7510201) — chỉ tiêu: 360    3. Công nghệ kỹ thuật cơ khí (Tiếng Anh) (mã 7510201TA) — chỉ tiêu: 40    4. Công nghệ kỹ thuật cơ điện tử (mã 7510203) — chỉ tiêu: 300    5. Công nghệ kỹ thuật cơ điện tử ô tô (mã 75102033) — chỉ tiêu: 60    6. Công nghệ kỹ thuật hóa học (mã 7510401) — chỉ tiêu: 210    7. Công nghệ kỹ thuật khuôn mẫu (mã 75102012) — chỉ tiêu: 60    8. Công nghệ kỹ thuật máy tính (mã 7480108) — chỉ tiêu: 140    9. C",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 6,
+      "group": 1,
+      "group_name": "Thông tin cơ bản",
+      "difficulty": "dễ",
+      "question": "Tổ hợp D07 gồm những môn gì?",
+      "hint": "Toán, Hóa học, Tiếng Anh.",
+      "tags": [
+        "to_hop"
+      ],
+      "expected_behavior": "Liệt kê đúng 3 môn: Toán, Hóa học, Tiếng Anh.",
+      "check_keywords": [
+        "Toán",
+        "Hóa học",
+        "Tiếng Anh"
+      ],
+      "fail_keywords": [
+        "Vật lý",
+        "Ngữ văn",
+        "Sinh học"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Tổ hợp D07 gồm các môn sau: Toán, Hóa học, Tiếng Anh.",
+      "error": "",
+      "duration_sec": 1.66,
+      "intent_type": "JSON_CHI_TIEU_TO_HOP",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Tổ hợp D07 gồm môn: Toán, Hóa học, Tiếng Anh Có 4 ngành xét tuyển bằng tổ hợp này:    1. Công nghệ kỹ thuật hóa học (mã 7510401) — chỉ tiêu: 210    2. Công nghệ kỹ thuật môi trường (mã 7510406) — chỉ tiêu: 50    3. Công nghệ thực phẩm (mã 7540101) — chỉ tiêu: 120    4. Hóa dược (mã 7720203) — chỉ tiêu: 60",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 7,
+      "group": 1,
+      "group_name": "Thông tin cơ bản",
+      "difficulty": "dễ",
+      "question": "Ngành Thiết kế thời trang thuộc khoa/trường nào?",
+      "hint": "Khoa Công nghệ May và Thiết kế Thời trang.",
+      "tags": [
+        "nganh",
+        "khoa"
+      ],
+      "expected_behavior": "Nêu đúng tên khoa: Khoa Công nghệ May và Thiết kế Thời trang.",
+      "check_keywords": [
+        "May",
+        "Thiết kế Thời trang"
+      ],
+      "fail_keywords": [
+        "Điện",
+        "Cơ khí",
+        "Kinh tế"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Ngành Thiết kế thời trang thuộc Khoa Công nghệ May và Thiết kế Thời trang.",
+      "error": "",
+      "duration_sec": 4.06,
+      "intent_type": "RAG_MO_TA_NGANH",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "4 Khoa trực thuộc:   - Khoa Công nghệ Hóa   - Khoa Công nghệ May & Thiết kế thời trang   - Khoa Lý luận Chính trị & Pháp luật   - Khoa Khoa học cơ bản   [...]  [Thiết kế thời trang — Thông tin tuyển sinh] Khoa Công nghệ May và Thiết kế Thời trang — Ngành Thiết kế thời trang — Thông tin tuyển sinh # Thiết kế thời trang — HaUI   ## Thông tin tuyển sinh   - **Mã ngành:** 7210404 - **Khoa:** Khoa Công nghệ May và Thiết kế Thời trang - **Chỉ tiêu:** 60 - **Tổ hợp xét tuyển:** D01 (Ngữ văn, Toán, Tiếng Anh), D14 (Ngữ văn, Lịch sử, Tiếng Anh) - **Phương thức xét tuyển:** PT1, PT2, PT3     [Công nghệ ",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 8,
+      "group": 1,
+      "group_name": "Thông tin cơ bản",
+      "difficulty": "dễ",
+      "question": "Ngành Robot và trí tuệ nhân tạo có mã ngành là gì?",
+      "hint": "Mã ngành 75102032.",
+      "tags": [
+        "ma_nganh"
+      ],
+      "expected_behavior": "Trả lời đúng mã 75102032.",
+      "check_keywords": [
+        "75102032"
+      ],
+      "fail_keywords": [
+        "7510209",
+        "75102033"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Mã ngành của ngành Robot và trí tuệ nhân tạo là 75102032.",
+      "error": "",
+      "duration_sec": 4.63,
+      "intent_type": "RAG_MO_TA_NGANH",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[Robot và trí tuệ nhân tạo — Thông tin tuyển sinh] Trường Cơ khí - Ô tô — Ngành Robot và trí tuệ nhân tạo — Thông tin tuyển sinh # Robot và trí tuệ nhân tạo — HaUI   ## Thông tin tuyển sinh   - **Mã ngành:** 75102032 - **Khoa/Trường:** Trường Cơ khí - Ô tô - **Chỉ tiêu:** 60 - **Tổ hợp xét tuyển:** A00 (Toán, Vật lí, Hóa học), A01 (Toán, Vật lí, Tiếng Anh), A0C (Toán, Vật lý, Công nghệ), A0T (Toán, Vật lý, Tin học) - **Phương thức xét tuyển:** PT1, PT2, PT3, PT5    [Robot và trí tuệ nhân tạo — Cơ hội việc làm] Trường Cơ khí - Ô tô — Ngành Robot và trí tuệ nhân tạo — Cơ hội việc làm - Chuyên vi",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 9,
+      "group": 1,
+      "group_name": "Thông tin cơ bản",
+      "difficulty": "dễ",
+      "question": "HaUI có bao nhiêu cơ sở đào tạo? Ở đâu?",
+      "hint": "3 cơ sở: CS1 tại Minh Khai (Bắc Từ Liêm, HN), CS2 tại Tây Tựu (Bắc Từ Liêm, HN), CS3 tại Phủ Lý (Hà Nam).",
+      "tags": [
+        "co_so",
+        "gioi_thieu"
+      ],
+      "expected_behavior": "Nêu đủ 3 cơ sở với địa chỉ cụ thể.",
+      "check_keywords": [
+        "3",
+        "Minh Khai",
+        "Phủ Lý"
+      ],
+      "fail_keywords": [
+        "2 cơ sở",
+        "4 cơ sở"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Đại học Công nghiệp Hà Nội (HaUI) có 3 cơ sở đào tạo:\n\n- **Cơ sở 1 (chính):** Phường Minh Khai, Quận Bắc Từ Liêm, Hà Nội (trên Quốc lộ 32)\n- **Cơ sở 2:** Phường Tây Tựu, Quận Bắc Từ Liêm, Hà Nội (cách cơ sở 1 khoảng 3 km)\n- **Cơ sở 3:** Phường Lê Hồng Phong, TP. Phủ Lý, Hà Nam",
+      "error": "",
+      "duration_sec": 6.55,
+      "intent_type": "RAG_TRUONG_HOC_BONG",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[gioi_thieu_truong.md — Cơ sở vật chất] Cơ sở vật chất ## Cơ sở vật chất   **3 cơ sở đào tạo, tổng diện tích gần 50 ha:**   - **Cơ sở 1 (chính):** Phường Minh Khai, Quận Bắc Từ Liêm, Hà Nội (trên Quốc lộ 32) - **Cơ sở 2:** Phường Tây Tựu, Quận Bắc Từ Liêm, Hà Nội (cách cơ sở 1 khoảng 3 km) - **Cơ sở 3:** Phường Lê Hồng Phong, TP. Phủ Lý, Hà Nam (38,5 ha)   **Trang thiết bị:** - Gần 500 giảng đường và phòng học lý thuyết - Hơn 200 xưởng thực hành và phòng Lab hiện đại (CNC 5 trục, Robot công nghiệp, PVD, Khuôn mẫu, Công nghệ Ô tô, Hóa học, Mạng & Truyền thông, Điện-Điện tử, May, Kế toán, Ngoại ",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 10,
+      "group": 1,
+      "group_name": "Thông tin cơ bản",
+      "difficulty": "dễ",
+      "question": "Lệ phí đăng ký xét tuyển năm 2025 là bao nhiêu?",
+      "hint": "50.000 đồng/hồ sơ, nộp qua mã QR ngân hàng.",
+      "tags": [
+        "le_phi",
+        "dang_ky"
+      ],
+      "expected_behavior": "Nêu đúng 50.000 đồng và hình thức nộp qua QR.",
+      "check_keywords": [
+        "50.000",
+        "50000"
+      ],
+      "fail_keywords": [
+        "100.000",
+        "200.000",
+        "30.000"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về lệ phí đăng ký xét tuyển năm 2025. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 2.16,
+      "intent_type": "JSON_HOC_PHI",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Học phí HaUI năm học 2025-2026:   ⚠ LƯU Ý: Đơn vị học phí là đồng/tín chỉ (KHÔNG phải /năm hay /học kỳ).   Mỗi năm học khoảng 30-35 tín chỉ → học phí thực tế = (số tín chỉ) × (mức/tín chỉ).    [Đại học chính quy]     - Cử nhân K20 (CTĐT bằng tiếng Anh): 1.000.000 đồng/tín chỉ     - Cử nhân K20 (CTĐT đại trà): 700.000 đồng/tín chỉ     - Cử nhân K19: 550.000 đồng/tín chỉ     - Cử nhân K18 trở về trước: 495.000 đồng/tín chỉ   [Kỹ sư]     - Kỹ sư K3 (CTĐT bằng tiếng Anh): 1.000.000 đồng/tín chỉ     - Kỹ sư K3 (CTĐT đại trà): 700.000 đồng/tín chỉ     - Kỹ sư K2: 550.000 đồng/tín chỉ     - Kỹ sư K1:",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 11,
+      "group": 2,
+      "group_name": "Điểm chuẩn",
+      "difficulty": "trung bình",
+      "question": "Điểm chuẩn ngành Marketing năm 2025 là bao nhiêu?",
+      "hint": "22.5 điểm (áp dụng chung PT2, PT3, PT4 năm 2025, thang 30).",
+      "tags": [
+        "diem_chuan",
+        "marketing",
+        "nam_2025"
+      ],
+      "expected_behavior": "Trả lời đúng 22.5 điểm năm 2025.",
+      "check_keywords": [
+        "22.5",
+        "22,5"
+      ],
+      "fail_keywords": [
+        "25.33",
+        "25.24",
+        "28.55"
+      ],
+      "diagnosis_on_fail": "WRONG_YEAR",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về điểm chuẩn ngành Marketing năm 2025. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 7.48,
+      "intent_type": "JSON_DIEM_CHUAN",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[faq_dang_ky_xet_tuyen.md — Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025] Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025 Được, nhưng phải liên hệ Nhà trường **trước ngày 05/7/2025**: - Điện thoại: 0834560255 / 0383371290 - Messenger: facebook.com/tuyensinh.haui   Lưu ý: Nhà trường chỉ nhận kết quả thi ĐGTD trước ngày 05/7/2025. Khi sửa phải upload lại cả ảnh kết quả và điểm của đợt thi mới.   ---   **Q: Mỗi thí sinh được đăng ký bao nhiêu ngành dự tuyển? Nên sắp xếp thứ tự nguyện vọng như thế nào?**   Thí sinh có thể đăng ký nhiều ngành/chươn",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "WRONG_YEAR"
+    },
+    {
+      "id": 12,
+      "group": 2,
+      "group_name": "Điểm chuẩn",
+      "difficulty": "trung bình",
+      "question": "Ngành Logistics năm 2024 xét học bạ (PT4) điểm chuẩn là bao nhiêu?",
+      "hint": "28.91 điểm (PT4 năm 2024).",
+      "tags": [
+        "diem_chuan",
+        "logistics",
+        "nam_2024",
+        "hoc_ba"
+      ],
+      "expected_behavior": "Trả lời đúng 28.91 điểm.",
+      "check_keywords": [
+        "28.91"
+      ],
+      "fail_keywords": [
+        "28.6",
+        "25.89",
+        "27.0"
+      ],
+      "diagnosis_on_fail": "WRONG_METHOD",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về ngành Logistics năm 2024 xét học bạ (PT4). Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 0.99,
+      "intent_type": "JSON_DIEM_CHUAN",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Điểm chuẩn ngành Logistics và quản lý chuỗi cung ứng (mã 7510605):   - Năm 2024 | Đánh giá năng lực (HSA - ĐHQG HN): 28.91 điểm (thang 30)",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "WRONG_METHOD"
+    },
+    {
+      "id": 13,
+      "group": 2,
+      "group_name": "Điểm chuẩn",
+      "difficulty": "trung bình",
+      "question": "So sánh điểm chuẩn ngành Công nghệ thông tin qua 3 năm 2023, 2024, 2025 theo phương thức thi THPT.",
+      "hint": "2023: 25.19 (PT3), 2024: 25.22 (PT3), 2025: 23.09 (chung PT2/PT3/PT5).",
+      "tags": [
+        "diem_chuan",
+        "CNTT",
+        "so_sanh",
+        "nhieu_nam"
+      ],
+      "expected_behavior": "Liệt kê đủ 3 năm với điểm đúng.",
+      "check_keywords": [
+        "25.19",
+        "25.22",
+        "23.09"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "COMPARISON_FAIL",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về điểm chuẩn ngành Công nghệ thông tin của các năm 2023 và 2024. Vui lòng xem tại tuyensinh.haui.edu.vn hoặc gọi 0243.7655121 để được hỗ trợ thêm.",
+      "error": "",
+      "duration_sec": 1.25,
+      "intent_type": "JSON_DIEM_CHUAN",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Điểm chuẩn năm 2025 — Trường công nghệ thông tin (9 ngành):   - Khoa học máy tính: 23.72 điểm → ✅ +1.28 điểm   - An toàn thông tin: 23.43 điểm → ✅ +1.57 điểm   - Công nghệ thông tin: 23.09 điểm → ✅ +1.91 điểm   - Công nghệ đa phương tiện: 22.25 điểm → ✅ +2.75 điểm   - Công nghệ kỹ thuật máy tính: 21.85 điểm → ✅ +3.15 điểm   - Kỹ thuật phần mềm: 21.75 điểm → ✅ +3.25 điểm   - Mạng máy tính và truyền thông dữ liệu: 21.7 điểm → ✅ +3.3 điểm   - Hệ thống thông tin: 21.1 điểm → ✅ +3.9 điểm   - Khoa học máy tính chương trình đào tạo bằng Tiếng Anh: 20.45 điểm → ✅ +4.55 điểm  Điểm tham khảo trên là năm",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "COMPARISON_FAIL"
+    },
+    {
+      "id": 14,
+      "group": 2,
+      "group_name": "Điểm chuẩn",
+      "difficulty": "trung bình",
+      "question": "Năm 2025, ngành nào có điểm chuẩn cao nhất trong khối kỹ thuật?",
+      "hint": "Công nghệ kỹ thuật điều khiển và tự động hóa: 26.27 điểm.",
+      "tags": [
+        "diem_chuan",
+        "ky_thuat",
+        "cao_nhat",
+        "nam_2025"
+      ],
+      "expected_behavior": "Xác định đúng ngành Điều khiển tự động hóa với điểm 26.27.",
+      "check_keywords": [
+        "26.27"
+      ],
+      "fail_keywords": [
+        "25.17",
+        "24.3"
+      ],
+      "diagnosis_on_fail": "COMPARISON_FAIL",
+      "any_keywords": [
+        "tự động hóa",
+        "điều khiển"
+      ],
+      "answer": "Tôi chưa có thông tin về ngành nào có điểm chuẩn cao nhất trong khối kỹ thuật năm 2025. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 4.15,
+      "intent_type": "JSON_DIEM_CHUAN",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " [phuong_thuc_tuyen_sinh_2025.md — Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế] Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế ## Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế   **Đối tượng:** Thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế, được công nhận tốt nghiệp THPT 2025 hoặc tương đương.   **Điều kiện:** - Điểm TB môn cả năm lớp 10, 11, 12 của từng môn trong tổ hợp xét tuyển ≥ 7,0 điểm - Thỏa mãn một trong hai điều kiện: + Đoạt giải Nhất, Nhì, Ba kỳ thi H",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "COMPARISON_FAIL"
+    },
+    {
+      "id": 15,
+      "group": 2,
+      "group_name": "Điểm chuẩn",
+      "difficulty": "trung bình",
+      "question": "Điểm chuẩn ngành Hóa dược năm 2023 theo phương thức thi THPT là bao nhiêu?",
+      "hint": "19.45 điểm (PT3 năm 2023).",
+      "tags": [
+        "diem_chuan",
+        "hoa_duoc",
+        "nam_2023"
+      ],
+      "expected_behavior": "Trả lời đúng 19.45 điểm.",
+      "check_keywords": [
+        "19.45"
+      ],
+      "fail_keywords": [
+        "21.55",
+        "19.0"
+      ],
+      "diagnosis_on_fail": "WRONG_YEAR",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về điểm chuẩn ngành Hóa dược năm 2023 theo phương thức thi THPT. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 5.19,
+      "intent_type": "JSON_DIEM_CHUAN",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[phuong_thuc_tuyen_sinh_2025.md — Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế] Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế ## Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế   **Đối tượng:** Thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế, được công nhận tốt nghiệp THPT 2025 hoặc tương đương.   **Điều kiện:** - Điểm TB môn cả năm lớp 10, 11, 12 của từng môn trong tổ hợp xét tuyển ≥ 7,0 điểm - Thỏa mãn một trong hai điều kiện: + Đoạt giải Nhất, Nhì, Ba kỳ thi HS",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "WRONG_YEAR"
+    },
+    {
+      "id": 16,
+      "group": 2,
+      "group_name": "Điểm chuẩn",
+      "difficulty": "trung bình",
+      "question": "Năm 2024, ngành Công nghệ kỹ thuật điều khiển và tự động hóa điểm chuẩn PT3 là bao nhiêu?",
+      "hint": "26.05 điểm (PT3 năm 2024).",
+      "tags": [
+        "diem_chuan",
+        "tu_dong_hoa",
+        "nam_2024"
+      ],
+      "expected_behavior": "Trả lời đúng 26.05 điểm.",
+      "check_keywords": [
+        "26.05"
+      ],
+      "fail_keywords": [
+        "26.27",
+        "25.47"
+      ],
+      "diagnosis_on_fail": "WRONG_YEAR",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về năm 2024 ngành Công nghệ kỹ thuật điều khiển và tự động hóa. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 1.04,
+      "intent_type": "JSON_DIEM_CHUAN",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Trường/Khoa hóa có 4 ngành:    1. Công nghệ kỹ thuật hóa học (mã 7510401)    2. Công nghệ kỹ thuật môi trường (mã 7510406)    3. Công nghệ thực phẩm (mã 7540101)    4. Hóa dược (mã 7720203)",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "WRONG_YEAR"
+    },
+    {
+      "id": 17,
+      "group": 2,
+      "group_name": "Điểm chuẩn",
+      "difficulty": "trung bình",
+      "question": "Ngành Ngôn ngữ Trung Quốc chương trình liên kết 2+2 năm 2025 điểm chuẩn là bao nhiêu?",
+      "hint": "22.5 điểm (năm 2025, mã 7220204LK).",
+      "tags": [
+        "diem_chuan",
+        "ngon_ngu_trung",
+        "lien_ket",
+        "nam_2025"
+      ],
+      "expected_behavior": "Nêu đúng 22.5 điểm và phân biệt với chương trình thường (23.0).",
+      "check_keywords": [
+        "22.5"
+      ],
+      "fail_keywords": [
+        "23.0",
+        "24.91"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Điểm chuẩn ngành Ngôn ngữ Trung Quốc chương trình liên kết đào tạo 2+2 với ĐH Khoa học kỹ thuật Quảng Tây - Trung Quốc trong năm 2025 là 22,5 điểm.",
+      "error": "",
+      "duration_sec": 1.06,
+      "intent_type": "JSON_DIEM_CHUAN",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Điểm chuẩn năm 2025 — Trường ngôn ngữ (7 ngành):   - Ngôn ngữ Trung Quốc: 23.0 điểm → ✅ +2.0 điểm   - Ngôn ngữ Trung Quốc chương trình liên kết đào tạo 2+2 với ĐH Khoa học kỹ thuật Quảng Tây - Trung Quốc: 22.5 điểm → ✅ +2.5 điểm   - Trung Quốc học: 21.55 điểm → ✅ +3.45 điểm   - Ngôn ngữ Hàn Quốc: 21.5 điểm → ✅ +3.5 điểm   - Ngôn ngữ Anh: 21.35 điểm → ✅ +3.65 điểm   - Ngôn ngữ Nhật: 20.0 điểm → ✅ +5.0 điểm   - Ngôn ngữ học: 20.0 điểm → ✅ +5.0 điểm  Điểm tham khảo trên là năm 2025. Điểm chuẩn 2026 chưa công bố — theo dõi tại tuyensinh.haui.edu.vn.",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 18,
+      "group": 2,
+      "group_name": "Điểm chuẩn",
+      "difficulty": "trung bình",
+      "question": "Năm 2025, nhóm ngành Du lịch – Khách sạn – Nhà hàng, ngành nào có điểm chuẩn thấp nhất?",
+      "hint": "Du lịch tiếng Anh: 18.0; Quản trị dịch vụ du lịch tiếng Anh: 18.1; Quản trị khách sạn tiếng Anh: 18.25.",
+      "tags": [
+        "diem_chuan",
+        "du_lich",
+        "thap_nhat",
+        "nam_2025"
+      ],
+      "expected_behavior": "Xác định đúng Du lịch chương trình tiếng Anh với điểm 18.0 là thấp nhất.",
+      "check_keywords": [
+        "18.0"
+      ],
+      "fail_keywords": [
+        "18.25",
+        "18.1"
+      ],
+      "diagnosis_on_fail": "COMPARISON_FAIL",
+      "any_keywords": [
+        "Du lịch",
+        "tiếng Anh"
+      ],
+      "answer": "Năm 2025, trong nhóm ngành Du lịch – Khách sạn – Nhà hàng, ngành Quản trị nhà hàng và dịch vụ ăn uống chương trình đào tạo bằng Tiếng Anh (mã 7810202TA) có điểm chuẩn thấp nhất là 18,6 điểm.",
+      "error": "",
+      "duration_sec": 1.27,
+      "intent_type": "JSON_DIEM_CHUAN",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Điểm chuẩn năm 2025 — Trường du lịch (8 ngành):   - Quản trị dịch vụ du lịch và lữ hành (mã 7810103): 22.25 điểm   - Du lịch (mã 7810101): 21.85 điểm   - Quản trị khách sạn (mã 7810201): 21.75 điểm   - Quản trị nhà hàng và dịch vụ ăn uống (mã 7810202): 20.85 điểm   - Quản trị nhà hàng và dịch vụ ăn uống chương trình đào tạo bằng Tiếng Anh (mã 7810202TA): 18.6 điểm   - Quản trị khách sạn chương trình đào tạo bằng Tiếng Anh (mã 7810201TA): 18.25 điểm   - Quản trị dịch vụ du lịch và lữ hành chương trình đào tạo bằng Tiếng Anh (mã 7810103TA): 18.1 điểm   - Du lịch chương trình đào tạo bằng Tiếng A",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "COMPARISON_FAIL"
+    },
+    {
+      "id": 19,
+      "group": 2,
+      "group_name": "Điểm chuẩn",
+      "difficulty": "trung bình",
+      "question": "Điểm chuẩn ngành Kỹ thuật phần mềm năm 2023 theo phương thức chứng chỉ HSG (PT2) là bao nhiêu?",
+      "hint": "28.45 điểm (PT2 năm 2023).",
+      "tags": [
+        "diem_chuan",
+        "phan_mem",
+        "nam_2023",
+        "PT2"
+      ],
+      "expected_behavior": "Trả lời đúng 28.45 điểm.",
+      "check_keywords": [
+        "28.45"
+      ],
+      "fail_keywords": [
+        "24.54",
+        "24.68",
+        "21.75"
+      ],
+      "diagnosis_on_fail": "WRONG_METHOD",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về điểm chuẩn ngành Kỹ thuật phần mềm năm 2023 theo phương thức chứng chỉ HSG (PT2). Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 1.13,
+      "intent_type": "JSON_DIEM_CHUAN",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Điểm chuẩn ngành Kỹ thuật phần mềm (mã 7480103):   - Năm 2023 | Học bạ / Chứng chỉ quốc tế: 28.45 điểm (thang 30)",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "WRONG_METHOD"
+    },
+    {
+      "id": 20,
+      "group": 2,
+      "group_name": "Điểm chuẩn",
+      "difficulty": "trung bình",
+      "question": "Ngành Công nghệ kỹ thuật môi trường năm 2024 điểm chuẩn PT3 là bao nhiêu?",
+      "hint": "19.0 điểm (PT3 năm 2024).",
+      "tags": [
+        "diem_chuan",
+        "moi_truong",
+        "nam_2024"
+      ],
+      "expected_behavior": "Trả lời đúng 19.0 điểm.",
+      "check_keywords": [
+        "19.0",
+        "19,0"
+      ],
+      "fail_keywords": [
+        "18.75",
+        "20.0"
+      ],
+      "diagnosis_on_fail": "WRONG_YEAR",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về điểm chuẩn PT3 của ngành Công nghệ kỹ thuật môi trường năm 2024. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 4.78,
+      "intent_type": "JSON_DIEM_CHUAN",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[Công nghệ kỹ thuật môi trường — Thông tin tuyển sinh] Khoa Công nghệ Hóa — Ngành Công nghệ kỹ thuật môi trường — Thông tin tuyển sinh # Công nghệ kỹ thuật môi trường — HaUI   ## Thông tin tuyển sinh   - **Mã ngành:** 7510406 - **Khoa:** Khoa Công nghệ Hóa - **Chỉ tiêu:** 50 - **Tổ hợp xét tuyển:** A00 (Toán, Vật lý, Hóa học), B00 (Toán, Hóa học, Sinh học), C02 (Ngữ văn, Toán, Hóa học), D07 (Toán, Hóa học, Tiếng Anh) - **Phương thức xét tuyển:** PT1, PT2, PT3, PT5     [phuong_thuc_tuyen_sinh_2025.md — Phương thức 3: Xét tuyển dựa trên kết quả thi tốt nghiệp THPT 2025] Phương thức 3: Xét tuyển ",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "WRONG_YEAR"
+    },
+    {
+      "id": 21,
+      "group": 3,
+      "group_name": "Phương thức tuyển sinh",
+      "difficulty": "trung bình",
+      "question": "HaUI có bao nhiêu phương thức tuyển sinh năm 2025? Liệt kê tên từng phương thức.",
+      "hint": "5 phương thức: PT1 (xét thẳng), PT2 (HSG/chứng chỉ quốc tế), PT3 (thi THPT), PT4 (ĐGNL ĐHQG HN), PT5 (ĐGTD ĐHBK HN).",
+      "tags": [
+        "phuong_thuc",
+        "tong_quat"
+      ],
+      "expected_behavior": "Liệt kê đủ 5 phương thức với mô tả ngắn.",
+      "check_keywords": [
+        "PT1",
+        "PT2",
+        "PT3",
+        "PT4",
+        "PT5"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "INCOMPLETE",
+      "any_keywords": [],
+      "answer": "Năm 2025, HaUI có 5 phương thức tuyển sinh chính quy:\n\n1. PT1: Xét tuyển thẳng (anh hùng LĐ, giải HSG quốc gia/quốc tế, tay nghề ASEAN/quốc tế, HS dự bị ĐH)\n2. PT2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế kết hợp kết quả học tập THPT\n3. PT3: Xét tuyển dựa trên kết quả thi tốt nghiệp THPT 2025\n4. PT4: Xét tuyển dựa trên kết quả thi Đánh giá năng lực (ĐGNL) do ĐHQG Hà Nội tổ chức (HSA)\n5. PT5: Xét tuyển dựa trên kết quả thi Đánh giá tư duy (ĐGTD) do Đại học Bách Khoa Hà Nội tổ chức (TSA)",
+      "error": "",
+      "duration_sec": 4.1,
+      "intent_type": "JSON_CHI_TIEU_TO_HOP",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": " Các phương thức tuyển sinh đại học chính quy HaUI năm 2025:  HaUI tuyển sinh với 5 phương thức: - PT1: Xét tuyển thẳng — anh hùng LĐ, giải HSG quốc gia/quốc tế, tay nghề ASEAN/quốc tế, HS dự bị ĐH - PT2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế (IELTS, TOEFL, TOPIK, HSK, SAT, JLPT, DELF...) kết hợp kết quả học tập THPT. Điều kiện: điểm TB môn tổ hợp 3 năm ≥ 7,0. - PT3: Xét tuyển dựa trên kết quả thi tốt nghiệp THPT 2025 - PT4: Xét tuyển dựa trên kết quả thi Đánh giá năng lực (ĐGNL) do ĐHQG Hà Nội tổ chức (HSA, thang 150) - PT5: Xét tuyển dựa trên kết quả thi Đánh",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 22,
+      "group": 3,
+      "group_name": "Phương thức tuyển sinh",
+      "difficulty": "trung bình",
+      "question": "Phương thức 2 dành cho đối tượng nào? Điều kiện cụ thể là gì?",
+      "hint": "Thí sinh đoạt giải HSG cấp tỉnh/TP HOẶC có chứng chỉ quốc tế; điểm TB môn tổ hợp lớp 10,11,12 ≥ 7.0.",
+      "tags": [
+        "phuong_thuc",
+        "PT2",
+        "dieu_kien"
+      ],
+      "expected_behavior": "Nêu rõ 2 điều kiện: (1) giải HSG hoặc chứng chỉ QT và (2) TB môn ≥ 7.0.",
+      "check_keywords": [
+        "7.0",
+        "HSG"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "INCOMPLETE",
+      "any_keywords": [
+        "chứng chỉ",
+        "giải"
+      ],
+      "answer": "Phương thức 2 của Đại học Công nghiệp Hà Nội (HaUI) năm 2025 dành cho thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế, được công nhận tốt nghiệp THPT 2025 hoặc tương đương.\n\nĐiều kiện cụ thể bao gồm:\n- Điểm trung bình môn cả năm lớp 10, 11, 12 của từng môn trong tổ hợp xét tuyển ≥ 7,0 điểm.\n- Thỏa mãn một trong hai điều kiện sau:\n    + Đoạt giải Nhất, Nhì, Ba kỳ thi HSG THPT cấp tỉnh/TP các môn: Toán, Vật lý, Hóa học, Sinh học, Ngữ văn, Lịch sử, Địa lý, Tin học, Tiếng Anh, Tiếng Trung, Tiếng Nhật, Tiếng Hàn (không quá 3 năm tính đến thời điểm xét tuyển).\n    + Có chứng chỉ quốc tế còn hiệu lực: SAT ≥ 1000; IELTS Academic ≥ 5.5; TOEFL iBT ≥ 50; TOPIK cấp độ 3 trở lên; HSK cấp độ 3 trở lên; JLPT cấp độ N4 trở lên.\n- Riêng ngành Ngôn ngữ Trung Quốc (LK 2+2 Quảng Tây): TOPIK ≥ cấp 4; HSK ≥ cấp 4; JLPT ≥ N3.",
+      "error": "",
+      "duration_sec": 9.58,
+      "intent_type": "JSON_CHI_TIEU_TO_HOP",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[phuong_thuc_tuyen_sinh_2025.md — Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế] Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế ## Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế   **Đối tượng:** Thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế, được công nhận tốt nghiệp THPT 2025 hoặc tương đương.   **Điều kiện:** - Điểm TB môn cả năm lớp 10, 11, 12 của từng môn trong tổ hợp xét tuyển ≥ 7,0 điểm - Thỏa mãn một trong hai điều kiện: + Đoạt giải Nhất, Nhì, Ba kỳ thi HS",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "INCOMPLETE"
+    },
+    {
+      "id": 23,
+      "group": 3,
+      "group_name": "Phương thức tuyển sinh",
+      "difficulty": "trung bình",
+      "question": "Chứng chỉ IELTS bao nhiêu điểm thì đủ điều kiện xét tuyển theo PT2?",
+      "hint": "IELTS Academic ≥ 5.5.",
+      "tags": [
+        "PT2",
+        "IELTS",
+        "chung_chi"
+      ],
+      "expected_behavior": "Nêu đúng ngưỡng tối thiểu IELTS 5.5.",
+      "check_keywords": [
+        "5.5"
+      ],
+      "fail_keywords": [
+        "6.0",
+        "6.5",
+        "7.0"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Theo phương thức 2 của HaUI năm 2025, thí sinh có chứng chỉ IELTS từ 5.5 trở lên sẽ đủ điều kiện để quy đổi thành điểm và tham gia xét tuyển. Cụ thể:\n\n- IELTS Academic ≥ 5.5  \n- IELTS Academic ≥ 6.0  \n- IELTS Academic từ 6.5 đến 9.0  \n\nNhững chứng chỉ này sẽ được quy đổi thành điểm theo bảng quy định để tính vào tổng điểm xét tuyển.",
+      "error": "",
+      "duration_sec": 6.27,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.85,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[phuong_thuc_tuyen_sinh_2025.md — Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế] Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế ## Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế   **Đối tượng:** Thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế, được công nhận tốt nghiệp THPT 2025 hoặc tương đương.   **Điều kiện:** - Điểm TB môn cả năm lớp 10, 11, 12 của từng môn trong tổ hợp xét tuyển ≥ 7,0 điểm - Thỏa mãn một trong hai điều kiện: + Đoạt giải Nhất, Nhì, Ba kỳ thi HS",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "HALLUCINATION"
+    },
+    {
+      "id": 24,
+      "group": 3,
+      "group_name": "Phương thức tuyển sinh",
+      "difficulty": "trung bình",
+      "question": "Tôi có chứng chỉ TOPIK cấp 3, có đủ điều kiện xét PT2 không?",
+      "hint": "TOPIK cấp 3 đủ điều kiện xét PT2 thường (không đủ cho LK 2+2 cần cấp 4).",
+      "tags": [
+        "PT2",
+        "TOPIK",
+        "dieu_kien"
+      ],
+      "expected_behavior": "Xác nhận đủ điều kiện với PT2 thường, lưu ý LK 2+2 cần cấp 4.",
+      "check_keywords": [
+        "đủ"
+      ],
+      "fail_keywords": [
+        "không đủ",
+        "không được"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "TOPIK 3",
+        "cấp 3"
+      ],
+      "answer": "Dựa theo quy định của Đại học Công nghiệp Hà Nội (HaUI), bạn có chứng chỉ TOPIK cấp 3 sẽ được tính điểm quy đổi là 9,00 trong thang điểm 10. Do đó, bạn đủ điều kiện để xét tuyển theo Phương thức 2 nếu đáp ứng các yêu cầu khác như điểm trung bình môn của từng科目：越南语\n难度：简单\n\n答案：根据大工工业大学（HaUI）的规定，如果你有TOPIK三级证书，可以得到10分制中的9.00分。因此，只要你满足其他要求（如各科平均成绩），你就有资格通过第二招生方式（PT2）进行申请。\n\n翻译成通顺的中文：\n根据大工工业大学（HaUI）的规定，如果你有TOPIK三级证书，可以得到10分制中的9.00分。因此，只要你满足其他要求（如各科平均成绩不低于7.0分），你就有资格通过第二招生方式（PT2）进行申请。",
+      "error": "",
+      "duration_sec": 8.79,
+      "intent_type": "JSON_CHI_TIEU_TO_HOP",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.85,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[phuong_thuc_tuyen_sinh_2025.md — Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế] Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế ## Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế   **Đối tượng:** Thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế, được công nhận tốt nghiệp THPT 2025 hoặc tương đương.   **Điều kiện:** - Điểm TB môn cả năm lớp 10, 11, 12 của từng môn trong tổ hợp xét tuyển ≥ 7,0 điểm - Thỏa mãn một trong hai điều kiện: + Đoạt giải Nhất, Nhì, Ba kỳ thi HS",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 25,
+      "group": 3,
+      "group_name": "Phương thức tuyển sinh",
+      "difficulty": "trung bình",
+      "question": "Công thức tính điểm xét tuyển theo phương thức 2 là gì?",
+      "hint": "ĐXT = ĐKQHT × 2 + ĐQĐCC + Điểm ưu tiên.",
+      "tags": [
+        "PT2",
+        "cong_thuc",
+        "diem_xet_tuyen"
+      ],
+      "expected_behavior": "Trình bày đúng công thức với nhân 2 cho ĐKQHT.",
+      "check_keywords": [
+        "× 2",
+        "x 2",
+        "*2",
+        "nhân 2"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "ĐKQHT",
+        "kết quả học tập"
+      ],
+      "answer": "Công thức tính điểm xét tuyển theo phương thức 2 (thang 30) được quy định như sau:\n\n> ĐXT = ĐKQHT × 2 + ĐQĐCC + Điểm ưu tiên\n\nTrong đó:\n- **ĐKQHT**: Điểm quy đổi từ kết quả học tập lớp 10, 11, 12 (3 môn tổ hợp, thang 10).\n- **ĐQĐCC**: Điểm quy đổi chứng chỉ quốc tế hoặc giải HSG theo bảng quy đổi.\n- **Điểm ưu tiên** được tính dựa trên khu vực và các điều kiện khác.",
+      "error": "",
+      "duration_sec": 7.8,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[phuong_thuc_tuyen_sinh_2025.md — Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế] Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế ## Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế   **Đối tượng:** Thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế, được công nhận tốt nghiệp THPT 2025 hoặc tương đương.   **Điều kiện:** - Điểm TB môn cả năm lớp 10, 11, 12 của từng môn trong tổ hợp xét tuyển ≥ 7,0 điểm - Thỏa mãn một trong hai điều kiện: + Đoạt giải Nhất, Nhì, Ba kỳ thi HS",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 26,
+      "group": 3,
+      "group_name": "Phương thức tuyển sinh",
+      "difficulty": "trung bình",
+      "question": "Thí sinh tốt nghiệp THPT năm 2024 (thí sinh tự do) có được đăng ký PT4, PT5 không?",
+      "hint": "Không. Thí sinh tốt nghiệp trước 2025 không được đăng ký PT2, PT4, PT5.",
+      "tags": [
+        "PT4",
+        "PT5",
+        "thi_sinh_tu_do"
+      ],
+      "expected_behavior": "Trả lời rõ là KHÔNG.",
+      "check_keywords": [
+        "không"
+      ],
+      "fail_keywords": [
+        "được",
+        "có thể"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về thí sinh tốt nghiệp THPT năm 2024 có được đăng ký PT4, PT5 hay không. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 4.93,
+      "intent_type": "RAG_FAQ",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[faq_dang_ky_xet_tuyen.md — Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025] Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025 ---   **Q: Bao giờ có kết quả dự tuyển các phương thức 2, 4, 5?**   Sau khi có kết quả thi tốt nghiệp THPT, Nhà trường sẽ tính toán quy đổi điểm và công bố điểm xét tuyển cho từng ngành thí sinh đã đăng ký (dự kiến trước 17h00 ngày 28/7/2025). Phần mềm sẽ tự động tính và đưa ra điểm cao nhất trong các phương thức tương ứng.   ---   **Q: Em có chứng chỉ IELTS 6.5, có thể quy đổi thành điểm Tiếng Anh để xét tuyển theo phương ",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "HALLUCINATION"
+    },
+    {
+      "id": 27,
+      "group": 3,
+      "group_name": "Phương thức tuyển sinh",
+      "difficulty": "trung bình",
+      "question": "Ngành Ngôn ngữ Anh có xét theo PT4 (ĐGNL) không?",
+      "hint": "Ngành Ngôn ngữ Anh chỉ xét PT1, PT2, PT3 — không có PT4.",
+      "tags": [
+        "PT4",
+        "ngon_ngu_anh",
+        "phuong_thuc"
+      ],
+      "expected_behavior": "Xác nhận đúng là Ngôn ngữ Anh KHÔNG xét PT4.",
+      "check_keywords": [
+        "không"
+      ],
+      "fail_keywords": [
+        "có xét",
+        "được xét"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về ngành Ngôn ngữ Anh xét theo PT4 (ĐGNL). Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 2.09,
+      "intent_type": "JSON_CHI_TIEU_TO_HOP",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Trường/Khoa ngôn ngữ có 7 ngành:    1. Ngôn ngữ Anh (mã 7220201)    2. Ngôn ngữ Hàn Quốc (mã 7220210)    3. Ngôn ngữ Nhật (mã 7220209)    4. Ngôn ngữ Trung Quốc (mã 7220204)    5. Ngôn ngữ Trung Quốc (LK 2+2 Quảng Tây) (mã 7220204LK)    6. Ngôn ngữ học (mã 7229020)    7. Trung Quốc học (mã 7310612)",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 28,
+      "group": 3,
+      "group_name": "Phương thức tuyển sinh",
+      "difficulty": "trung bình",
+      "question": "Phương thức 5 dùng kết quả thi của trường nào?",
+      "hint": "Đại học Bách Khoa Hà Nội (ĐHBK HN) — kỳ thi Đánh giá tư duy (ĐGTD/TSA).",
+      "tags": [
+        "PT5",
+        "DGTD",
+        "Bach_Khoa"
+      ],
+      "expected_behavior": "Nêu đúng ĐHBK Hà Nội.",
+      "check_keywords": [
+        "Bách Khoa"
+      ],
+      "fail_keywords": [
+        "ĐHQG",
+        "Quốc gia"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "ĐHBK",
+        "tư duy"
+      ],
+      "answer": "Tôi chưa có thông tin về Phương thức 5 dùng kết quả thi của trường nào. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 5.51,
+      "intent_type": "JSON_CHI_TIEU_TO_HOP",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[phuong_thuc_tuyen_sinh_2025.md — Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế] Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế ## Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế   **Đối tượng:** Thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế, được công nhận tốt nghiệp THPT 2025 hoặc tương đương.   **Điều kiện:** - Điểm TB môn cả năm lớp 10, 11, 12 của từng môn trong tổ hợp xét tuyển ≥ 7,0 điểm - Thỏa mãn một trong hai điều kiện: + Đoạt giải Nhất, Nhì, Ba kỳ thi HS",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 29,
+      "group": 3,
+      "group_name": "Phương thức tuyển sinh",
+      "difficulty": "trung bình",
+      "question": "Thời gian đăng ký dự tuyển PT2, PT4, PT5 năm 2025 là từ ngày nào đến ngày nào?",
+      "hint": "15/5/2025 đến 05/7/2025 tại xettuyen.haui.edu.vn.",
+      "tags": [
+        "lich_dang_ky",
+        "PT2"
+      ],
+      "expected_behavior": "Nêu đúng 15/5 – 05/7/2025.",
+      "check_keywords": [
+        "15/5",
+        "05/7"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Thời gian đăng ký dự tuyển cho Phương thức 2, 4, 5 năm 2025 diễn ra từ ngày 15/5/2025 đến ngày 05/7/2025 tại https://xettuyen.haui.edu.vn.",
+      "error": "",
+      "duration_sec": 5.8,
+      "intent_type": "RAG_FAQ",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[huong_dan_dang_ky_du_tuyen_2025.md — Hướng dẫn đăng ký dự tuyển đại học chính quy HaUI năm 2025] Hướng dẫn đăng ký dự tuyển đại học chính quy HaUI năm 2025 # Hướng dẫn đăng ký dự tuyển đại học chính quy HaUI năm 2025   Áp dụng cho **Phương thức 2, 4, 5** — dành cho thí sinh tốt nghiệp THPT năm 2025 hoặc tương đương.   - **PT2:** Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế kết hợp kết quả học tập THPT - **PT4:** Xét tuyển dựa trên kết quả thi Đánh giá năng lực (ĐGNL) do ĐHQG Hà Nội tổ chức năm 2025 - **PT5:** Xét tuyển dựa trên kết quả thi Đánh giá tư duy (ĐGTD) do Đ",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 30,
+      "group": 3,
+      "group_name": "Phương thức tuyển sinh",
+      "difficulty": "trung bình",
+      "question": "Nếu muốn xét tuyển tổ hợp có môn Tiếng Anh mà có chứng chỉ IELTS, có được quy đổi thay điểm thi THPT không?",
+      "hint": "KHÔNG. HaUI không quy đổi chứng chỉ ngoại ngữ thay điểm thi THPT trong PT3.",
+      "tags": [
+        "IELTS",
+        "quy_doi",
+        "PT3"
+      ],
+      "expected_behavior": "Trả lời rõ KHÔNG.",
+      "check_keywords": [
+        "không"
+      ],
+      "fail_keywords": [
+        "được quy đổi",
+        "có thể thay"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Không. Nhà trường không quy đổi điểm chứng chỉ ngoại ngữ thay cho môn thi Tiếng Anh trong kỳ thi tốt nghiệp THPT. Nếu muốn xét tổ hợp có môn Tiếng Anh theo phương thức 3, bắt buộc phải dự thi môn Tiếng Anh.",
+      "error": "",
+      "duration_sec": 5.62,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[faq_dang_ky_xet_tuyen.md — Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025] Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025 ---   **Q: Bao giờ có kết quả dự tuyển các phương thức 2, 4, 5?**   Sau khi có kết quả thi tốt nghiệp THPT, Nhà trường sẽ tính toán quy đổi điểm và công bố điểm xét tuyển cho từng ngành thí sinh đã đăng ký (dự kiến trước 17h00 ngày 28/7/2025). Phần mềm sẽ tự động tính và đưa ra điểm cao nhất trong các phương thức tương ứng.   ---   **Q: Em có chứng chỉ IELTS 6.5, có thể quy đổi thành điểm Tiếng Anh để xét tuyển theo phương ",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 31,
+      "group": 4,
+      "group_name": "Điểm ưu tiên",
+      "difficulty": "trung bình",
+      "question": "Thí sinh ở khu vực nông thôn (KV2-NT) được cộng bao nhiêu điểm ưu tiên?",
+      "hint": "KV2-NT: +0.50 điểm.",
+      "tags": [
+        "uu_tien",
+        "khu_vuc",
+        "KV2-NT"
+      ],
+      "expected_behavior": "Trả lời đúng +0.50 điểm.",
+      "check_keywords": [
+        "0.5",
+        "0,5"
+      ],
+      "fail_keywords": [
+        "0.75",
+        "0.25",
+        "1.0"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Thí sinh ở khu vực nông thôn (KV2-NT) được cộng 0,50 điểm ưu tiên.",
+      "error": "",
+      "duration_sec": 5.51,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó khăn, miền núi vùng cao): +0,75 điểm - KV2-NT (nông thôn): +0,50 điểm - KV2 (thị xã, thành phố trực thuộc tỉnh): +0,25 điểm - KV3 (thành phố lớn): +0 điểm (không được cộng)  Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó khăn, miền núi vùng cao): +0,75 điểm - KV2-NT (nông thôn): +0,50 điểm - KV2 (thị xã, thành phố trực thuộc tỉnh): +0,25 điểm - KV3 (thành phố lớn): +0 điểm (không được cộng)  Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 32,
+      "group": 4,
+      "group_name": "Điểm ưu tiên",
+      "difficulty": "trung bình",
+      "question": "Thí sinh là con thương binh suy giảm lao động 85% được cộng bao nhiêu điểm ưu tiên đối tượng?",
+      "hint": "Con thương binh suy giảm ≥81% thuộc nhóm UT1, đối tượng 03: +2.0 điểm.",
+      "tags": [
+        "uu_tien",
+        "doi_tuong",
+        "UT1"
+      ],
+      "expected_behavior": "Xác định đúng UT1 (+2.0 điểm).",
+      "check_keywords": [
+        "2.0",
+        "2,0"
+      ],
+      "fail_keywords": [
+        "1.0",
+        "0.75"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "UT1"
+      ],
+      "answer": "Thí sinh là con thương binh suy giảm lao động từ 81% trở lên thuộc nhóm UT1, được cộng +2,0 điểm ưu tiên đối tượng. Tuy nhiên, thí sinh của bạn có tỷ lệ suy giảm lao động là 85%, nên họ thuộc nhóm UT1 và được cộng **+2,0 điểm**.",
+      "error": "",
+      "duration_sec": 2.76,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó khăn, miền núi vùng cao): +0,75 điểm - KV2-NT (nông thôn): +0,50 điểm - KV2 (thị xã, thành phố trực thuộc tỉnh): +0,25 điểm - KV3 (thành phố lớn): +0 điểm (không được cộng)  Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó khăn, miền núi vùng cao): +0,75 điểm - KV2-NT (nông thôn): +0,50 điểm - KV2 (thị xã, thành phố trực thuộc tỉnh): +0,25 điểm - KV3 (thành phố lớn): +0 điểm (không được cộng)  Bảng điểm ưu tiên đối tượng: - UT1 (nhóm 1): +2,0 điểm — anh hùng LĐ, thương binh ≥",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 33,
+      "group": 4,
+      "group_name": "Điểm ưu tiên",
+      "difficulty": "trung bình",
+      "question": "Khu vực 3 (KV3) được cộng bao nhiêu điểm ưu tiên?",
+      "hint": "KV3: 0 điểm ưu tiên.",
+      "tags": [
+        "uu_tien",
+        "KV3"
+      ],
+      "expected_behavior": "Trả lời đúng 0 điểm.",
+      "check_keywords": [
+        "0"
+      ],
+      "fail_keywords": [
+        "0.25",
+        "0.5",
+        "0.75"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Khu vực 3 (KV3) không được cộng điểm ưu tiên.",
+      "error": "",
+      "duration_sec": 0.73,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó khăn, miền núi vùng cao): +0,75 điểm - KV2-NT (nông thôn): +0,50 điểm - KV2 (thị xã, thành phố trực thuộc tỉnh): +0,25 điểm - KV3 (thành phố lớn): +0 điểm (không được cộng)  Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó khăn, miền núi vùng cao): +0,75 điểm - KV2-NT (nông thôn): +0,50 điểm - KV2 (thị xã, thành phố trực thuộc tỉnh): +0,25 điểm - KV3 (thành phố lớn): +0 điểm (không được cộng)  Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó",
+      "diagnosis_note": "Nếu bot trả đúng KV3 nhưng nói có điểm ưu tiên → đổi thành HALLUCINATION",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 34,
+      "group": 4,
+      "group_name": "Điểm ưu tiên",
+      "difficulty": "khó",
+      "question": "Thí sinh đạt 25 điểm, thuộc KV1, không có đối tượng ưu tiên — điểm xét tuyển là bao nhiêu?",
+      "hint": "25 ≥ 22.5 → giảm dần: [(30-25)/7.5]×0.75=0.50 → ĐXT=25.50.",
+      "tags": [
+        "uu_tien",
+        "tinh_toan",
+        "giam_dan",
+        "KV1"
+      ],
+      "expected_behavior": "Tính đúng 25.50 điểm.",
+      "check_keywords": [
+        "25.5",
+        "25,5"
+      ],
+      "fail_keywords": [
+        "25.75",
+        "26.0"
+      ],
+      "diagnosis_on_fail": "CALC_ERROR",
+      "any_keywords": [],
+      "answer": "Thí sinh đạt 25 điểm, thuộc khu vực KV1 và không có đối tượng ưu tiên sẽ được tính như sau:\n\n- Tổng điểm gốc: 25.0\n- Điểm ưu tiên KV: +0,75\n- Điểm ưu tiên ĐT: +0,0\n- Điểm ưu tiên thực tế: [(30 - 25) / 7,5] × 0,75 = 0,5\n\nDo đó, điểm xét tuyển là:\n25.0 (tổng điểm gốc) + 0,75 (điểm ưu tiên KV) + 0,5 (điểm ưu tiên thực tế) = 26,25 điểm",
+      "error": "",
+      "duration_sec": 2.37,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Tính điểm ưu tiên (Khu vực KV1):   - Tổng điểm gốc        : 25.0   - Điểm ưu tiên KV      : +0.75   - Điểm ưu tiên ĐT      : +0.0   - Điểm ưu tiên thực tế : +0.5   - Điểm xét tuyển       : 25.5 điểm   (Tổng điểm 25.0 ≥ 22.5 → giảm dần: [(30-25.0)/7,5] × 0.75 = 0.5)",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "CALC_ERROR"
+    },
+    {
+      "id": 35,
+      "group": 4,
+      "group_name": "Điểm ưu tiên",
+      "difficulty": "khó",
+      "question": "Thí sinh đạt 20 điểm, thuộc KV2-NT, đối tượng UT2 — điểm xét tuyển là bao nhiêu?",
+      "hint": "20 < 22.5 → cộng thẳng: 20 + 0.50 + 1.0 = 21.50.",
+      "tags": [
+        "uu_tien",
+        "tinh_toan",
+        "cong_thang"
+      ],
+      "expected_behavior": "Tính đúng 21.50 điểm.",
+      "check_keywords": [
+        "21.5",
+        "21,5"
+      ],
+      "fail_keywords": [
+        "21.0",
+        "22.0"
+      ],
+      "diagnosis_on_fail": "CALC_ERROR",
+      "any_keywords": [],
+      "answer": "Thí sinh đạt 20 điểm, thuộc khu vực KV2-NT và đối tượng ưu tiên UT2 sẽ có:\n\n- Điểm ưu tiên KV: +0,5\n- Điểm ưu tiên ĐT: +1,0\n\nDo tổng điểm gốc (20.0) nhỏ hơn 22.5 nên điểm ưu tiên thực tế cộng thêm là +1,5.\n\nVậy điểm xét tuyển của thí sinh sẽ là:\n\\[ 20.0 + 0.5 + 1.0 + 1.5 = 23.0 \\]\n\nĐiểm xét tuyển của thí sinh là 23,0 điểm.",
+      "error": "",
+      "duration_sec": 2.17,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Tính điểm ưu tiên (Khu vực KV2-NT, đối tượng 05):   - Tổng điểm gốc        : 20.0   - Điểm ưu tiên KV      : +0.5   - Điểm ưu tiên ĐT      : +1.0   - Điểm ưu tiên thực tế : +1.5   - Điểm xét tuyển       : 21.5 điểm   (Tổng điểm 20.0 < 22.5 → cộng thẳng 1.5)",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "CALC_ERROR"
+    },
+    {
+      "id": 36,
+      "group": 4,
+      "group_name": "Điểm ưu tiên",
+      "difficulty": "khó",
+      "question": "Thí sinh đạt 23 điểm, thuộc KV2, đối tượng UT1 — điểm xét tuyển là bao nhiêu?",
+      "hint": "23 ≥ 22.5 → giảm dần cho tổng mức=2.25: [(30-23)/7.5]×2.25=2.10 → ĐXT=25.10.",
+      "tags": [
+        "uu_tien",
+        "tinh_toan",
+        "giam_dan",
+        "KV2",
+        "UT1"
+      ],
+      "expected_behavior": "Tính đúng 25.10.",
+      "check_keywords": [
+        "25.1",
+        "25,1"
+      ],
+      "fail_keywords": [
+        "25.25",
+        "25.0"
+      ],
+      "diagnosis_on_fail": "CALC_ERROR",
+      "any_keywords": [],
+      "answer": "Thí sinh đạt 23 điểm, thuộc khu vực KV2 và đối tượng ưu tiên thứ nhất (UT1) sẽ có điểm xét tuyển như sau:\n\n- Điểm ưu tiên KV2: +0,25 điểm.\n- Điểm ưu tiên ĐT UT1: +2,0 điểm.\n- Điểm ưu tiên thực tế: +2,1 điểm.\n\nVậy tổng điểm xét tuyển là 23,0 + 0,25 + 2,1 = **25,1 điểm**.",
+      "error": "",
+      "duration_sec": 1.78,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Tính điểm ưu tiên (Khu vực KV2, đối tượng 01):   - Tổng điểm gốc        : 23.0   - Điểm ưu tiên KV      : +0.25   - Điểm ưu tiên ĐT      : +2.0   - Điểm ưu tiên thực tế : +2.1   - Điểm xét tuyển       : 25.1 điểm   (Tổng điểm 23.0 ≥ 22.5 → giảm dần: [(30-23.0)/7,5] × 2.25 = 2.1)",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "CALC_ERROR"
+    },
+    {
+      "id": 37,
+      "group": 4,
+      "group_name": "Điểm ưu tiên",
+      "difficulty": "trung bình",
+      "question": "Thí sinh học THPT ở Hà Nội nội thành thì thuộc khu vực nào?",
+      "hint": "Các phường của thành phố trực thuộc TW → KV3.",
+      "tags": [
+        "uu_tien",
+        "khu_vuc",
+        "Ha_Noi"
+      ],
+      "expected_behavior": "Xác định đúng KV3.",
+      "check_keywords": [
+        "KV3"
+      ],
+      "fail_keywords": [
+        "KV1",
+        "KV2"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "khu vực 3"
+      ],
+      "answer": "Thí sinh học THPT ở Hà Nội nội thành sẽ thuộc khu vực KV2, được cộng 0,25 điểm ưu tiên.",
+      "error": "",
+      "duration_sec": 2.06,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó khăn, miền núi vùng cao): +0,75 điểm - KV2-NT (nông thôn): +0,50 điểm - KV2 (thị xã, thành phố trực thuộc tỉnh): +0,25 điểm - KV3 (thành phố lớn): +0 điểm (không được cộng)  Bảng điểm ưu tiên đối tượng: - UT1 (nhóm 1): +2,0 điểm — anh hùng LĐ, thương binh ≥81%, AHKT, dân tộc rất ít người, trẻ em mồ côi, con thương binh suy giảm ≥81% - UT2 (nhóm 2): +1,0 điểm — thí sinh khác thuộc diện ưu tiên (HS vùng khó khăn, con thương binh <81%, dân tộc thiểu số vùng thường...)  Công thức tính điểm ưu tiên thực tế: - Tổng ",
+      "diagnosis_note": "Nếu bot trả sai khu vực dù context đúng → đổi thành AMBIGUITY_FAIL (router classify nhầm intent)",
+      "score": "FAIL",
+      "diagnosis_code": "HALLUCINATION"
+    },
+    {
+      "id": 38,
+      "group": 4,
+      "group_name": "Điểm ưu tiên",
+      "difficulty": "khó",
+      "question": "Nếu thí sinh học lớp 10 ở tỉnh (KV2-NT), lớp 11-12 ở Hà Nội nội thành (KV3), thì được xác định là khu vực nào?",
+      "hint": "Theo quy tắc trường học lâu nhất; 11-12 dài hơn (2 năm) ở HN nội thành → KV3.",
+      "tags": [
+        "uu_tien",
+        "khu_vuc",
+        "quy_tac"
+      ],
+      "expected_behavior": "Xác định KV3.",
+      "check_keywords": [
+        "KV3"
+      ],
+      "fail_keywords": [
+        "KV1",
+        "KV2-NT"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "khu vực 3"
+      ],
+      "answer": "Thí sinh sẽ được xác định khu vực tuyển sinh dựa trên trường THPT học lâu nhất. Nếu thời gian tại các khu vực bằng nhau, xác định theo trường học sau cùng.\n\nTrong trường hợp này, thí sinh học lớp 10 ở tỉnh (KV2-NT), và từ lớp 11 đến lớp 12 ở Hà Nội nội thành (KV3). Vì vậy, thí sinh sẽ được xác định là khu vực KV3 vì đó là thời gian học sau cùng.",
+      "error": "",
+      "duration_sec": 2.11,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "Tính điểm ưu tiên (Khu vực KV2-NT):   - Tổng điểm gốc        : 10.0   - Điểm ưu tiên KV      : +0.5   - Điểm ưu tiên ĐT      : +0.0   - Điểm ưu tiên thực tế : +0.5   - Điểm xét tuyển       : 10.5 điểm   (Tổng điểm 10.0 < 22.5 → cộng thẳng 0.5)  Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó khăn, miền núi vùng cao): +0,75 điểm - KV2-NT (nông thôn): +0,50 điểm - KV2 (thị xã, thành phố trực thuộc tỉnh): +0,25 điểm - KV3 (thành phố lớn): +0 điểm (không được cộng)  1. Ưu tiên theo khu vực ## 1. Ưu tiên theo khu vực   Khu vực tuyển sinh xác định theo trường THPT",
+      "diagnosis_note": "Câu này cần chunk về quy tắc chuyển vùng — nếu context_preview trống → RETRIEVAL_MISS đúng. Nếu có context nhưng bot suy luận sai → MULTI_STEP_FAIL",
+      "score": "FAIL",
+      "diagnosis_code": "HALLUCINATION"
+    },
+    {
+      "id": 39,
+      "group": 4,
+      "group_name": "Điểm ưu tiên",
+      "difficulty": "trung bình",
+      "question": "Điểm ưu tiên khu vực được hưởng trong bao nhiêu năm sau tốt nghiệp THPT?",
+      "hint": "Trong năm tốt nghiệp THPT và một năm kế tiếp (2 năm).",
+      "tags": [
+        "uu_tien",
+        "thoi_gian"
+      ],
+      "expected_behavior": "Nêu đúng: năm tốt nghiệp + 1 năm kế tiếp.",
+      "check_keywords": [
+        "1 năm",
+        "một năm"
+      ],
+      "fail_keywords": [
+        "3 năm",
+        "5 năm"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Thí sinh được hưởng ưu tiên khu vực trong **năm tốt nghiệp THPT và một năm kế tiếp**.",
+      "error": "",
+      "duration_sec": 2.05,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó khăn, miền núi vùng cao): +0,75 điểm - KV2-NT (nông thôn): +0,50 điểm - KV2 (thị xã, thành phố trực thuộc tỉnh): +0,25 điểm - KV3 (thành phố lớn): +0 điểm (không được cộng)  Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó khăn, miền núi vùng cao): +0,75 điểm - KV2-NT (nông thôn): +0,50 điểm - KV2 (thị xã, thành phố trực thuộc tỉnh): +0,25 điểm - KV3 (thành phố lớn): +0 điểm (không được cộng)  Công thức tính điểm ưu tiên thực tế: - Tổng điểm 3 môn < 22,5: cộng thẳng (điểm + m",
+      "diagnosis_note": "Nếu bot trả '2 năm' thay vì 'năm TN + 1 năm kế tiếp' → check_keywords chưa bắt được, xem xét thêm '2 năm' vào any_keywords",
+      "score": "PARTIAL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 40,
+      "group": 4,
+      "group_name": "Điểm ưu tiên",
+      "difficulty": "khó",
+      "question": "Một thí sinh vừa thuộc diện con thương binh, vừa là người dân tộc thiểu số KV1 — được hưởng mức ưu tiên nào?",
+      "hint": "Chỉ được hưởng MỘT mức đối tượng cao nhất + khu vực KV1.",
+      "tags": [
+        "uu_tien",
+        "nhieu_dien",
+        "quy_tac"
+      ],
+      "expected_behavior": "Giải thích đúng: chỉ 1 mức đối tượng cao nhất + khu vực.",
+      "check_keywords": [
+        "một",
+        "cao nhất"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "không cộng 2",
+        "chỉ 1"
+      ],
+      "answer": "Thí sinh sẽ được hưởng mức ưu tiên UT2 (nhóm 2) với +1,0 điểm vì mỗi thí sinh chỉ được hưởng một mức đối tượng ưu tiên cao nhất. Mặc dù thí sinh vừa thuộc diện con thương binh vừa là người dân tộc thiểu số nhưng theo quy định, họ không thể cộng dồn các mức ưu tiên mà chỉ được hưởng mức cao nhất trong danh sách ưu tiên đối tượng.",
+      "error": "",
+      "duration_sec": 1.79,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": " Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó khăn, miền núi vùng cao): +0,75 điểm - KV2-NT (nông thôn): +0,50 điểm - KV2 (thị xã, thành phố trực thuộc tỉnh): +0,25 điểm - KV3 (thành phố lớn): +0 điểm (không được cộng)  Bảng điểm ưu tiên đối tượng: - UT1 (nhóm 1): +2,0 điểm — anh hùng LĐ, thương binh ≥81%, AHKT, dân tộc rất ít người, trẻ em mồ côi, con thương binh suy giảm ≥81% - UT2 (nhóm 2): +1,0 điểm — thí sinh khác thuộc diện ưu tiên (HS vùng khó khăn, con thương binh <81%, dân tộc thiểu số vùng thường...)  Quy tắc: Mỗi thí sinh CHỈ hưởng MỘT mức đối ",
+      "diagnosis_note": "Nếu bot cộng 2 lần đối tượng → đổi thành CALC_ERROR. Nếu bot không tìm được quy tắc → RETRIEVAL_MISS đúng",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 41,
+      "group": 5,
+      "group_name": "Học phí & học bổng",
+      "difficulty": "trung bình",
+      "question": "Sinh viên K20 chương trình đại trà học phí bao nhiêu tiền/tín chỉ?",
+      "hint": "700.000 đồng/tín chỉ.",
+      "tags": [
+        "hoc_phi",
+        "K20"
+      ],
+      "expected_behavior": "Trả lời đúng 700.000 đồng/tín chỉ.",
+      "check_keywords": [
+        "700.000",
+        "700000"
+      ],
+      "fail_keywords": [
+        "1.000.000",
+        "550.000",
+        "495.000"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Học phí cho sinh viên K20 chương trình đại trà là 700.000 đồng/tín chỉ.",
+      "error": "",
+      "duration_sec": 0.71,
+      "intent_type": "JSON_HOC_PHI",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Học phí HaUI năm học 2025-2026:   ⚠ LƯU Ý: Đơn vị học phí là đồng/tín chỉ (KHÔNG phải /năm hay /học kỳ).   Mỗi năm học khoảng 30-35 tín chỉ → học phí thực tế = (số tín chỉ) × (mức/tín chỉ).    [Đại học chính quy]     - Cử nhân K20 (CTĐT đại trà): 700.000 đồng/tín chỉ     - Cử nhân K20 (CTĐT bằng tiếng Anh): 1.000.000 đồng/tín chỉ   [Kỹ sư]     - Kỹ sư K3 (CTĐT đại trà): 700.000 đồng/tín chỉ     - Kỹ sư K2: 550.000 đồng/tín chỉ",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 42,
+      "group": 5,
+      "group_name": "Học phí & học bổng",
+      "difficulty": "trung bình",
+      "question": "Chương trình đào tạo bằng tiếng Anh học phí là bao nhiêu?",
+      "hint": "1.000.000 đồng/tín chỉ.",
+      "tags": [
+        "hoc_phi",
+        "tieng_anh"
+      ],
+      "expected_behavior": "Trả lời đúng 1.000.000 đồng/tín chỉ.",
+      "check_keywords": [
+        "1.000.000",
+        "1000000"
+      ],
+      "fail_keywords": [
+        "700.000",
+        "550.000"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Học phí cho chương trình đào tạo bằng tiếng Anh tại HaUI năm học 2025-2026 là 1.000.000 đồng/tín chỉ.",
+      "error": "",
+      "duration_sec": 0.88,
+      "intent_type": "JSON_HOC_PHI",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Học phí HaUI năm học 2025-2026:   ⚠ LƯU Ý: Đơn vị học phí là đồng/tín chỉ (KHÔNG phải /năm hay /học kỳ).   Mỗi năm học khoảng 30-35 tín chỉ → học phí thực tế = (số tín chỉ) × (mức/tín chỉ).    [Đại học chính quy]     - Cử nhân K20 (CTĐT bằng tiếng Anh): 1.000.000 đồng/tín chỉ   [Kỹ sư]     - Kỹ sư K3 (CTĐT bằng tiếng Anh): 1.000.000 đồng/tín chỉ",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 43,
+      "group": 5,
+      "group_name": "Học phí & học bổng",
+      "difficulty": "trung bình",
+      "question": "Học bổng HaUI toàn khóa dành cho đối tượng nào?",
+      "hint": "Thủ khoa từng tổ hợp/phương thức, hoặc đoạt giải HSG/tay nghề quốc gia/quốc tế.",
+      "tags": [
+        "hoc_bong",
+        "HaUI",
+        "toan_khoa"
+      ],
+      "expected_behavior": "Liệt kê các diện.",
+      "check_keywords": [
+        "thủ khoa"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "giải",
+        "HSG"
+      ],
+      "answer": "Tôi chưa có thông tin về học bổng HaUI toàn khóa dành cho đối tượng cụ thể. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 2.04,
+      "intent_type": "RAG_TRUONG_HOC_BONG",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Trường/Khoa hóa có 4 ngành:    1. Công nghệ kỹ thuật hóa học (mã 7510401)    2. Công nghệ kỹ thuật môi trường (mã 7510406)    3. Công nghệ thực phẩm (mã 7540101)    4. Hóa dược (mã 7720203)",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 44,
+      "group": 5,
+      "group_name": "Học phí & học bổng",
+      "difficulty": "trung bình",
+      "question": "Điều kiện để được duy trì học bổng HaUI sau mỗi học kỳ là gì?",
+      "hint": "TBC học kỳ ≥ 2.5 VÀ rèn luyện loại Tốt VÀ tổng tín chỉ xét ≥ 15.",
+      "tags": [
+        "hoc_bong",
+        "dieu_kien_duy_tri"
+      ],
+      "expected_behavior": "Nêu đủ cả 3 điều kiện.",
+      "check_keywords": [
+        "2.5",
+        "15"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "INCOMPLETE",
+      "any_keywords": [
+        "Tốt"
+      ],
+      "answer": "Để duy trì học bổng HaUI sau mỗi học kỳ, sinh viên phải đồng thời đạt các điều kiện sau:\n\n- Điểm trung bình chung (TBC) học kỳ **≥ 2.5**.\n- Rèn luyện loại **Tốt** trở lên.\n- Đủ số tín chỉ xét học bổng trong kỳ là **≥ 15 tín chỉ** (trừ trường hợp nhà trường bố trí không đủ).",
+      "error": "",
+      "duration_sec": 9.94,
+      "intent_type": "RAG_TRUONG_HOC_BONG",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " Học bổng HaUI toàn khóa học (trị giá 100% học phí): Đối tượng: Thủ khoa từng tổ hợp/từng phương thức tuyển sinh, HOẶC thí sinh đoạt giải HSG quốc gia/quốc tế môn học, HOẶC đoạt giải kỳ thi tay nghề ASEAN/quốc tế. Điều kiện duy trì: TBC học kỳ ≥ 2,5 VÀ rèn luyện loại Tốt VÀ đăng ký ≥ 15 tín chỉ mỗi HK. Sinh viên nhận HB toàn khóa bị LOẠI KHỎI diện xét học bổng Nguyễn Thanh Bình trong toàn khóa học.   ---  [hoc_bong.md] 1. Học bổng HaUI (Học bổng đầu vào) ### 1.4. Điều kiện duy trì học bổng HaUI   Cuối mỗi học kỳ chính, sinh viên phải đồng thời đạt: - Điểm TBC học kỳ **≥ 2.5** và rèn luyện loại",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 45,
+      "group": 5,
+      "group_name": "Học phí & học bổng",
+      "difficulty": "trung bình",
+      "question": "Học bổng KKHT loại Xuất sắc cần điều kiện gì?",
+      "hint": "TBC học kỳ ≥ 3.6/4.0 + rèn luyện Xuất sắc hoặc Tốt.",
+      "tags": [
+        "hoc_bong",
+        "KKHT",
+        "xuat_sac"
+      ],
+      "expected_behavior": "Nêu đúng ngưỡng điểm 3.6.",
+      "check_keywords": [
+        "3.6"
+      ],
+      "fail_keywords": [
+        "3.2",
+        "2.5"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "Xuất sắc"
+      ],
+      "answer": "Để được xét học bổng Khuyến khích học tập (KKHT) loại Xuất sắc, sinh viên phải đồng thời đáp ứng các điều kiện sau:\n\n- Điểm trung bình chung học kỳ **≥ 3.60** (đào tạo tín chỉ) hoặc **≥ 9.0** (đào tạo niên chế).\n- Rèn luyện đạt loại **Xuất sắc** (từ 90–100 điểm).\n\nNgoài ra, sinh viên cũng cần đảm bảo không có học phần nào dưới **2.0** (tín chỉ) hoặc **5.0** (niên chế), và tổng số tín chỉ xét học bổng phải **≥ 15 tín chỉ** trong mỗi học kỳ (trừ học kỳ cuối ≥ 7 tín chỉ).",
+      "error": "",
+      "duration_sec": 8.4,
+      "intent_type": "RAG_TRUONG_HOC_BONG",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " Học bổng HaUI toàn khóa học (trị giá 100% học phí): Đối tượng: Thủ khoa từng tổ hợp/từng phương thức tuyển sinh, HOẶC thí sinh đoạt giải HSG quốc gia/quốc tế môn học, HOẶC đoạt giải kỳ thi tay nghề ASEAN/quốc tế. Điều kiện duy trì: TBC học kỳ ≥ 2,5 VÀ rèn luyện loại Tốt VÀ đăng ký ≥ 15 tín chỉ mỗi HK. Sinh viên nhận HB toàn khóa bị LOẠI KHỎI diện xét học bổng Nguyễn Thanh Bình trong toàn khóa học.   ---  [hoc_bong.md] 2. Học bổng Khuyến khích học tập (KKHT) ### 2.2. Điều kiện xét trong học kỳ   Sinh viên phải đồng thời đạt tất cả: - Điểm TBC học kỳ **≥ 2.5** (đào tạo tín chỉ) hoặc **≥ 7.0** (",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 46,
+      "group": 5,
+      "group_name": "Học phí & học bổng",
+      "difficulty": "trung bình",
+      "question": "Học bổng Nguyễn Thanh Bình dành cho ai?",
+      "hint": "Sinh viên có hoàn cảnh khó khăn: bệnh hiểm nghèo, khuyết tật, mồ côi, hộ nghèo/cận nghèo.",
+      "tags": [
+        "hoc_bong",
+        "NTB"
+      ],
+      "expected_behavior": "Liệt kê đúng các diện.",
+      "check_keywords": [
+        "khó khăn"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "mồ côi",
+        "khuyết tật",
+        "hộ nghèo"
+      ],
+      "answer": "Học bổng Nguyễn Thanh Bình ưu tiên xét cho các đối tượng theo thứ tự sau:\n\n1. Sinh viên mắc bệnh hiểm nghèo.\n2. Sinh viên bị khuyết tật.\n3. Sinh viên mồ côi bố hoặc mẹ, không có bố hoặc mẹ.\n4. Sinh viên có bố/mẹ mắc bệnh hiểm nghèo hoặc không có khả năng lao động.\n5. Sinh viên người dân tộc Kinh thuộc hộ nghèo hoặc cận nghèo.\n6. Sinh viên có công trình nghiên cứu khoa học đạt giải Nhất cấp trường trở lên trong năm xét.\n7. Sinh viên đạt trung bình chung năm học ≥ 3,6 (tín chỉ) / ≥ 9,0 (niên chế) + rèn luyện Tốt trở lên.\n\nĐối với sinh viên đã nhận học bổng HaUI toàn khóa hoặc học bổng HaUI năm thứ nhất sẽ không được xét học bổng Nguyễn Thanh Bình trong toàn khóa hoặc năm thứ nhất.",
+      "error": "",
+      "duration_sec": 7.68,
+      "intent_type": "RAG_TRUONG_HOC_BONG",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " Học bổng HaUI toàn khóa học (trị giá 100% học phí): Đối tượng: Thủ khoa từng tổ hợp/từng phương thức tuyển sinh, HOẶC thí sinh đoạt giải HSG quốc gia/quốc tế môn học, HOẶC đoạt giải kỳ thi tay nghề ASEAN/quốc tế. Điều kiện duy trì: TBC học kỳ ≥ 2,5 VÀ rèn luyện loại Tốt VÀ đăng ký ≥ 15 tín chỉ mỗi HK. Sinh viên nhận HB toàn khóa bị LOẠI KHỎI diện xét học bổng Nguyễn Thanh Bình trong toàn khóa học.  [hoc_bong.md] 3. Học bổng Khuyến học Nguyễn Thanh Bình ### 3.1. Đối tượng xét (ưu tiên theo thứ tự)   | Mục | Đối tượng | |---|---| | 2.1.1 | Sinh viên mắc bệnh hiểm nghèo | | 2.1.2 | Sinh viên bị ",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 47,
+      "group": 5,
+      "group_name": "Học phí & học bổng",
+      "difficulty": "trung bình",
+      "question": "Sinh viên đã nhận học bổng HaUI toàn khóa có được xét học bổng Nguyễn Thanh Bình không?",
+      "hint": "KHÔNG. Sinh viên nhận HB HaUI toàn khóa bị loại khỏi diện xét NTB trong toàn khóa.",
+      "tags": [
+        "hoc_bong",
+        "loai_tru"
+      ],
+      "expected_behavior": "Trả lời rõ KHÔNG.",
+      "check_keywords": [
+        "không"
+      ],
+      "fail_keywords": [
+        "được xét",
+        "có thể"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về sinh viên đã nhận học bổng HaUI toàn khóa có được xét học bổng Nguyễn Thanh Bình hay không. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 2.21,
+      "intent_type": "RAG_TRUONG_HOC_BONG",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Trường/Khoa hóa có 4 ngành:    1. Công nghệ kỹ thuật hóa học (mã 7510401)    2. Công nghệ kỹ thuật môi trường (mã 7510406)    3. Công nghệ thực phẩm (mã 7540101)    4. Hóa dược (mã 7720203)",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "HALLUCINATION"
+    },
+    {
+      "id": 48,
+      "group": 5,
+      "group_name": "Học phí & học bổng",
+      "difficulty": "trung bình",
+      "question": "Điều kiện tín chỉ tối thiểu trong học kỳ để xét học bổng KKHT là bao nhiêu?",
+      "hint": "≥ 15 tín chỉ (học kỳ cuối ≥ 7 tín chỉ).",
+      "tags": [
+        "hoc_bong",
+        "KKHT",
+        "tin_chi"
+      ],
+      "expected_behavior": "Nêu đúng ≥15 tín chỉ.",
+      "check_keywords": [
+        "15"
+      ],
+      "fail_keywords": [
+        "10",
+        "12",
+        "20"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Điều kiện tín chỉ tối thiểu trong học kỳ để xét học bổng Khuyến khích học tập (KKHT) là **tổng tín chỉ ≥ 15 tín chỉ**. Trong học kỳ cuối, số tín chỉ này được giảm xuống còn **≥ 7 tín chỉ**.",
+      "error": "",
+      "duration_sec": 5.65,
+      "intent_type": "UNKNOWN",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.85,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " Học bổng HaUI toàn khóa học (trị giá 100% học phí): Đối tượng: Thủ khoa từng tổ hợp/từng phương thức tuyển sinh, HOẶC thí sinh đoạt giải HSG quốc gia/quốc tế môn học, HOẶC đoạt giải kỳ thi tay nghề ASEAN/quốc tế. Điều kiện duy trì: TBC học kỳ ≥ 2,5 VÀ rèn luyện loại Tốt VÀ đăng ký ≥ 15 tín chỉ mỗi HK. Sinh viên nhận HB toàn khóa bị LOẠI KHỎI diện xét học bổng Nguyễn Thanh Bình trong toàn khóa học.   ---  [hoc_bong.md] 2. Học bổng Khuyến khích học tập (KKHT) ### 2.2. Điều kiện xét trong học kỳ   Sinh viên phải đồng thời đạt tất cả: - Điểm TBC học kỳ **≥ 2.5** (đào tạo tín chỉ) hoặc **≥ 7.0** (",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 49,
+      "group": 5,
+      "group_name": "Học phí & học bổng",
+      "difficulty": "trung bình",
+      "question": "Thủ khoa xét theo PT4 (ĐGNL) có được học bổng gì?",
+      "hint": "Học bổng HaUI toàn khóa (100% học phí toàn khóa học).",
+      "tags": [
+        "hoc_bong",
+        "thu_khoa",
+        "PT4"
+      ],
+      "expected_behavior": "Nêu đúng học bổng HaUI toàn khóa = 100% học phí.",
+      "check_keywords": [
+        "100%",
+        "toàn khóa"
+      ],
+      "fail_keywords": [
+        "năm thứ nhất",
+        "5 triệu"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Thủ khoa xét theo phương thức 4 (ĐGNL) sẽ thuộc diện nhận **học bổng toàn khóa học** với trị giá 100% học phí toàn khóa. Điều kiện để duy trì học bổng này là trung bình cộng học kỳ từ 2,5 trở lên, rèn luyện đạt loại Tốt và đăng ký ít nhất 15 tín chỉ mỗi học kỳ.",
+      "error": "",
+      "duration_sec": 7.03,
+      "intent_type": "RAG_FAQ",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.85,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " Học bổng HaUI toàn khóa học (trị giá 100% học phí): Đối tượng: Thủ khoa từng tổ hợp/từng phương thức tuyển sinh, HOẶC thí sinh đoạt giải HSG quốc gia/quốc tế môn học, HOẶC đoạt giải kỳ thi tay nghề ASEAN/quốc tế. Điều kiện duy trì: TBC học kỳ ≥ 2,5 VÀ rèn luyện loại Tốt VÀ đăng ký ≥ 15 tín chỉ mỗi HK. Sinh viên nhận HB toàn khóa bị LOẠI KHỎI diện xét học bổng Nguyễn Thanh Bình trong toàn khóa học.   ---  [hoc_bong.md] 1. Học bổng HaUI (Học bổng đầu vào) ## 1. Học bổng HaUI (Học bổng đầu vào)   ### 1.1. Học bổng toàn khóa học — 100% học phí toàn khóa   Sinh viên đạt **một trong các tiêu chí** ",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 50,
+      "group": 5,
+      "group_name": "Học phí & học bổng",
+      "difficulty": "khó",
+      "question": "Sinh viên năm 4 muốn học trước học phần thạc sĩ được hỗ trợ học bổng như thế nào?",
+      "hint": "30% học phí học phần thạc sĩ, TBC tích lũy ≥ 2.5, tối đa 15 tín chỉ.",
+      "tags": [
+        "hoc_bong",
+        "thac_si",
+        "nam_4"
+      ],
+      "expected_behavior": "Nêu đúng 30% và điều kiện TBC ≥ 2.5.",
+      "check_keywords": [
+        "30%"
+      ],
+      "fail_keywords": [
+        "50%",
+        "100%"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "2.5",
+        "15 tín chỉ"
+      ],
+      "answer": "Sinh viên năm thứ 4 muốn đăng ký học trước các học phần trình độ Thạc sĩ sẽ được nhận học bổng với điều kiện sau:\n\n- Điểm trung bình chung tích lũy đến hết học kỳ 6 ≥ 2,5 (đối với hệ đào tạo tín chỉ).\n- Đạt khối lượng tín chỉ tích lũy theo quy định tại Quy chế đào tạo của Nhà trường.\n\nMức hỗ trợ là 30% học phí các học phần đăng ký học trước (theo đơn giá học phí Thạc sĩ, tối đa không quá 15 tín chỉ).",
+      "error": "",
+      "duration_sec": 7.12,
+      "intent_type": "RAG_TRUONG_HOC_BONG",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.85,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " Học bổng HaUI toàn khóa học (trị giá 100% học phí): Đối tượng: Thủ khoa từng tổ hợp/từng phương thức tuyển sinh, HOẶC thí sinh đoạt giải HSG quốc gia/quốc tế môn học, HOẶC đoạt giải kỳ thi tay nghề ASEAN/quốc tế. Điều kiện duy trì: TBC học kỳ ≥ 2,5 VÀ rèn luyện loại Tốt VÀ đăng ký ≥ 15 tín chỉ mỗi HK. Sinh viên nhận HB toàn khóa bị LOẠI KHỎI diện xét học bổng Nguyễn Thanh Bình trong toàn khóa học.   ---  [hoc_bong.md] 5. Học bổng cho sinh viên định hướng học Thạc sĩ ## 5. Học bổng cho sinh viên định hướng học Thạc sĩ   **Đối tượng:** Sinh viên đại học năm thứ 4 đăng ký học trước các học phần ",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 51,
+      "group": 6,
+      "group_name": "Ký túc xá",
+      "difficulty": "dễ",
+      "question": "Phòng KTX chất lượng cao 4 người giá bao nhiêu/tháng?",
+      "hint": "600.000 đồng/sinh viên/tháng.",
+      "tags": [
+        "KTX",
+        "gia_phong"
+      ],
+      "expected_behavior": "Trả lời đúng 600.000 đồng.",
+      "check_keywords": [
+        "600.000",
+        "600000"
+      ],
+      "fail_keywords": [
+        "800.000",
+        "400.000",
+        "465.000"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Giá phòng ký túc xá chất lượng cao cho 4 người tại Đại học Công nghiệp Hà Nội là **600.000 VNĐ/sinh viên/tháng**.",
+      "error": "",
+      "duration_sec": 6.18,
+      "intent_type": "UNKNOWN",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.85,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[ky_tuc_xa.md — Giá ký túc xá Đại học Công nghiệp Hà Nội là bao nhiêu?] Giá ký túc xá Đại học Công nghiệp Hà Nội là bao nhiêu? # 4. Câu hỏi thường gặp   ### Giá ký túc xá Đại học Công nghiệp Hà Nội là bao nhiêu?   Giá ký túc xá HaUI năm học 2025 - 2026 dao động từ **280.000 VNĐ đến 800.000 VNĐ mỗi sinh viên mỗi tháng**, tùy loại phòng và cơ sở.  ---  [ky_tuc_xa.md — Giá phòng tại Cơ sở 1] Giá phòng tại Cơ sở 1 ## Giá phòng tại Cơ sở 1   - Phòng 4 người: **465.000 VNĐ / sinh viên / tháng** - Phòng 6 người: **310.000 VNĐ / sinh viên / tháng**  ---  [ky_tuc_xa.md — Giá phòng tại Cơ sở 2] Giá phòn",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 52,
+      "group": 6,
+      "group_name": "Ký túc xá",
+      "difficulty": "dễ",
+      "question": "Phòng tiêu chuẩn 6 người tại cơ sở 2 giá bao nhiêu/tháng?",
+      "hint": "280.000 đồng/sinh viên/tháng (CS2, phòng 6 người tiêu chuẩn).",
+      "tags": [
+        "KTX",
+        "co_so_2",
+        "tieu_chuan"
+      ],
+      "expected_behavior": "Trả lời đúng 280.000 đồng.",
+      "check_keywords": [
+        "280.000",
+        "280000"
+      ],
+      "fail_keywords": [
+        "310.000",
+        "400.000"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Xin lỗi, tôi chỉ có thể tư vấn về tuyển sinh HaUI — điểm chuẩn, học phí, ngành học, phương thức xét tuyển và các thông tin liên quan.\n\nBạn có câu hỏi nào về tuyển sinh không?",
+      "error": "",
+      "duration_sec": 0.85,
+      "intent_type": "OFF_TOPIC",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "__OFF_TOPIC__",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 53,
+      "group": 6,
+      "group_name": "Ký túc xá",
+      "difficulty": "dễ",
+      "question": "Phòng KTX có điều hòa không? Loại phòng nào có?",
+      "hint": "Chỉ phòng CLC (chất lượng cao) có điều hòa. Phòng tiêu chuẩn không có.",
+      "tags": [
+        "KTX",
+        "dieu_hoa"
+      ],
+      "expected_behavior": "Nêu rõ chỉ phòng CLC có điều hòa.",
+      "check_keywords": [
+        "chất lượng cao"
+      ],
+      "fail_keywords": [
+        "tiêu chuẩn có"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "CLC"
+      ],
+      "answer": "Phòng ký túc xá chất lượng cao tại Đại học Công nghiệp Hà Nội (HaUI) có điều hòa. Phòng tiêu chuẩn thì không có điều hòa.",
+      "error": "",
+      "duration_sec": 5.51,
+      "intent_type": "RAG_TRUONG_HOC_BONG",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[ky_tuc_xa.md — Phòng ký túc xá có điều hòa không?] Phòng ký túc xá có điều hòa không? ### Phòng ký túc xá có điều hòa không?   - **Phòng chất lượng cao** có điều hòa. - **Phòng tiêu chuẩn** không có điều hòa.  [ky_tuc_xa.md — 1. Phòng ký túc xá chất lượng cao] 1. Phòng ký túc xá chất lượng cao # 1. Phòng ký túc xá chất lượng cao   Phòng chất lượng cao tại ký túc xá HaUI được trang bị đầy đủ tiện nghi:   - Điều hòa - Bình nóng lạnh - Tủ cá nhân - Giường tầng gỗ - Đệm - Quạt trần   Giá phòng áp dụng **cho cả Cơ sở 1 và Cơ sở 2**.   [ky_tuc_xa.md — 2. Phòng ký túc xá tiêu chuẩn] 2. Phòng ký túc ",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 54,
+      "group": 6,
+      "group_name": "Ký túc xá",
+      "difficulty": "dễ",
+      "question": "Điện nước KTX tính theo giá nào?",
+      "hint": "Theo chỉ số đồng hồ thực tế, áp dụng giá nhà nước.",
+      "tags": [
+        "KTX",
+        "dien_nuoc"
+      ],
+      "expected_behavior": "Nêu đúng: tính theo đồng hồ, giá nhà nước.",
+      "check_keywords": [
+        "nhà nước"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "đồng hồ"
+      ],
+      "answer": "Chi phí điện và nước tại ký túc xá Đại học Công nghiệp Hà Nội được tính theo **giá của nhà nước**.",
+      "error": "",
+      "duration_sec": 6.33,
+      "intent_type": "RAG_TRUONG_HOC_BONG",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[ky_tuc_xa.md — Giá ký túc xá Đại học Công nghiệp Hà Nội là bao nhiêu?] Giá ký túc xá Đại học Công nghiệp Hà Nội là bao nhiêu? # 4. Câu hỏi thường gặp   ### Giá ký túc xá Đại học Công nghiệp Hà Nội là bao nhiêu?   Giá ký túc xá HaUI năm học 2025 - 2026 dao động từ **280.000 VNĐ đến 800.000 VNĐ mỗi sinh viên mỗi tháng**, tùy loại phòng và cơ sở.  ---  [ky_tuc_xa.md — Chi phí điện nước] Chi phí điện nước ## Chi phí điện nước   - Tiền **điện và nước** được tính theo **chỉ số đồng hồ thực tế hàng tháng** - Giá điện nước áp dụng theo **giá của nhà nước**  ---  [ky_tuc_xa.md — Ký túc xá Đại học Công",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 55,
+      "group": 6,
+      "group_name": "Ký túc xá",
+      "difficulty": "dễ",
+      "question": "KTX HaUI có những tiện ích gì?",
+      "hint": "Nhà ăn, nhà xe, siêu thị mini, quán cafe, sân thể thao.",
+      "tags": [
+        "KTX",
+        "tien_ich"
+      ],
+      "expected_behavior": "Liệt kê đủ 5 tiện ích.",
+      "check_keywords": [
+        "nhà ăn",
+        "sân thể thao"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "INCOMPLETE",
+      "any_keywords": [
+        "siêu thị",
+        "cafe"
+      ],
+      "answer": "Khu ký túc xá (KTX) của Đại học Công nghiệp Hà Nội (HaUI) cung cấp nhiều tiện ích phục vụ sinh viên như sau:\n\n- Nhà ăn  \n- Nhà xe  \n- Siêu thị mini  \n- Quán cà phê  \n- Sân thể thao",
+      "error": "",
+      "duration_sec": 5.66,
+      "intent_type": "RAG_TRUONG_HOC_BONG",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[ky_tuc_xa.md — Tiện ích trong khu ký túc xá] Tiện ích trong khu ký túc xá ## Tiện ích trong khu ký túc xá   Khu ký túc xá HaUI có đầy đủ tiện ích phục vụ sinh viên:   - Nhà ăn - Nhà xe - Siêu thị mini - Quán cafe - Sân thể thao     [ky_tuc_xa.md — 1. Phòng ký túc xá chất lượng cao] 1. Phòng ký túc xá chất lượng cao # 1. Phòng ký túc xá chất lượng cao   Phòng chất lượng cao tại ký túc xá HaUI được trang bị đầy đủ tiện nghi:   - Điều hòa - Bình nóng lạnh - Tủ cá nhân - Giường tầng gỗ - Đệm - Quạt trần   Giá phòng áp dụng **cho cả Cơ sở 1 và Cơ sở 2**.  [ky_tuc_xa.md — 3. Thông tin chung về ký t",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 56,
+      "group": 7,
+      "group_name": "Quy trình đăng ký & nhập học",
+      "difficulty": "trung bình",
+      "question": "Đăng ký dự tuyển online cần chuẩn bị những tài liệu gì?",
+      "hint": "9 loại: chân dung, 2 mặt CCCD, học bạ, chứng chỉ QT, giải HSG, ĐGNL, ĐGTD, ưu tiên đối tượng.",
+      "tags": [
+        "dang_ky",
+        "ho_so"
+      ],
+      "expected_behavior": "Liệt kê đầy đủ các loại tài liệu.",
+      "check_keywords": [
+        "CCCD",
+        "học bạ"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "INCOMPLETE",
+      "any_keywords": [
+        "chứng chỉ",
+        "ảnh"
+      ],
+      "answer": "Theo thông tin tham khảo cung cấp, việc đăng ký dự tuyển trực tuyến không yêu cầu bạn phải chuẩn bị các tài liệu cụ thể. Tuy nhiên, khi nhập học sau đó, bạn sẽ cần chuẩn bị hồ sơ sinh viên như giấy chứng nhận tốt nghiệp THPT/THBT (hoặc bằng tốt nghiệp nếu đã tốt nghiệp từ năm 2024 trở về trước), học bạ THPT và giấy khai sinh.\n\nĐối với nam sinh viên, bạn cũng cần mang theo giấy giới thiệu di chuyển đăng ký nghĩa vụ quân sự. Chi tiết hướng dẫn cụ thể hơn có tại https://sv.haui.edu.vn.",
+      "error": "",
+      "duration_sec": 7.26,
+      "intent_type": "RAG_FAQ",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " [huong_dan_nhap_hoc_2025_2026.md — Bước 1 — Nhập học trực tuyến] Bước 1 — Nhập học trực tuyến ## Bước 1 — Nhập học trực tuyến   **2 cách thực hiện:**   **Cách 1:** Tải và cài đặt ứng dụng **\"MyHaUI\"** trên App Store hoặc CH Play   **Cách 2:** Truy cập cổng thông tin nhập học trực tuyến tại https://nhaphoc.haui.edu.vn   **Các bước thực hiện:** 1. Chọn chức năng **NHẬP HỌC** 2. Nhập **mã hồ sơ trúng tuyển** (ở mặt trước Giấy mời nhập học) 3. Kiểm tra các khoản thu cần nộp, chọn cổng thanh toán và xác nhận nhập học   **Các khoản thu học kỳ 1 (ví dụ):** - Học phí học kỳ 1 (lần thu): 7.000.000đ - ",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "INCOMPLETE"
+    },
+    {
+      "id": 57,
+      "group": 7,
+      "group_name": "Quy trình đăng ký & nhập học",
+      "difficulty": "trung bình",
+      "question": "Sau khi xác nhận đăng ký, có thể tự sửa nguyện vọng không?",
+      "hint": "Không tự sửa được — hệ thống tự khóa. Phải liên hệ Nhà trường.",
+      "tags": [
+        "dang_ky",
+        "sua_nguyen_vong"
+      ],
+      "expected_behavior": "Xác nhận KHÔNG tự sửa được.",
+      "check_keywords": [
+        "không"
+      ],
+      "fail_keywords": [
+        "có thể sửa",
+        "được sửa"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "khóa",
+        "liên hệ"
+      ],
+      "answer": "Thí sinh có thể sửa đổi nguyện vọng sau khi đã đăng ký và xác nhận. Tuy nhiên, cần lưu ý rằng Nhà trường chỉ tiếp nhận kết quả thi Đánh giá năng lực trước ngày 05/7/2025. Khi tiến hành thay đổi nguyện vọng, thí sinh phải tải lại toàn bộ ảnh chụp kết quả thi và điểm của đợt thi mới lên hệ thống.",
+      "error": "",
+      "duration_sec": 6.14,
+      "intent_type": "RAG_FAQ",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " [faq_dang_ky_xet_tuyen.md — Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025] Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025 Được, nhưng phải liên hệ Nhà trường **trước ngày 05/7/2025**: - Điện thoại: 0834560255 / 0383371290 - Messenger: facebook.com/tuyensinh.haui   Lưu ý: Nhà trường chỉ nhận kết quả thi ĐGTD trước ngày 05/7/2025. Khi sửa phải upload lại cả ảnh kết quả và điểm của đợt thi mới.   ---   **Q: Mỗi thí sinh được đăng ký bao nhiêu ngành dự tuyển? Nên sắp xếp thứ tự nguyện vọng như thế nào?**   Thí sinh có thể đăng ký nhiều ngành/chươ",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "HALLUCINATION"
+    },
+    {
+      "id": 58,
+      "group": 7,
+      "group_name": "Quy trình đăng ký & nhập học",
+      "difficulty": "dễ",
+      "question": "Đăng ký xong rồi, có cần gửi hồ sơ bản cứng về trường không?",
+      "hint": "KHÔNG. Chỉ nộp bản cứng khi trúng tuyển.",
+      "tags": [
+        "dang_ky",
+        "ho_so_cung"
+      ],
+      "expected_behavior": "Trả lời KHÔNG.",
+      "check_keywords": [
+        "không"
+      ],
+      "fail_keywords": [
+        "có",
+        "phải gửi"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Không. Thí sinh chỉ phải nộp hồ sơ bản cứng khi trúng tuyển và nhập học theo Giấy báo nhập học của Trường.",
+      "error": "",
+      "duration_sec": 4.92,
+      "intent_type": "RAG_FAQ",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[faq_dang_ky_xet_tuyen.md — Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025] Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025 # Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025   ---   **Q: Sau khi đăng ký dự tuyển trên hệ thống của Trường có cần gửi hồ sơ bản cứng về trường không?**   Không. Thí sinh chỉ phải nộp hồ sơ bản cứng khi trúng tuyển và nhập học theo Giấy báo nhập học của Trường.   ---   **Q: Đã đăng ký dự tuyển rồi, có thể bổ sung thêm phương thức hoặc nguyện vọng không?**   Sau khi đăng ký xong nguyện vọng, hệ t",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 59,
+      "group": 7,
+      "group_name": "Quy trình đăng ký & nhập học",
+      "difficulty": "dễ",
+      "question": "Sinh viên trúng tuyển nhập học trực tuyến qua đâu?",
+      "hint": "Ứng dụng MyHaUI hoặc nhaphoc.haui.edu.vn.",
+      "tags": [
+        "nhap_hoc",
+        "truc_tuyen"
+      ],
+      "expected_behavior": "Nêu đúng 2 kênh.",
+      "check_keywords": [
+        "MyHaUI",
+        "nhaphoc.haui.edu.vn"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Sinh viên trúng tuyển có thể thực hiện nhập học trực tuyến theo 2 cách:\n\n1. Tải và cài đặt ứng dụng **\"MyHaUI\"** trên App Store hoặc CH Play.\n2. Truy cập cổng thông tin nhập học trực tuyến tại https://nhaphoc.haui.edu.vn\n\nCác bước cụ thể khi thực hiện nhập học trực tuyến bao gồm việc chọn chức năng NHẬP HỌC, nhập mã hồ sơ trúng tuyển (ở mặt trước Giấy mời nhập học), kiểm tra các khoản thu cần nộp và xác nhận nhập học thông qua cổng thanh toán QR Ngân hàng BIDV hoặc QR Ngân hàng Lộc Phát.",
+      "error": "",
+      "duration_sec": 7.54,
+      "intent_type": "RAG_FAQ",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[huong_dan_nhap_hoc_2025_2026.md — Bước 1 — Nhập học trực tuyến] Bước 1 — Nhập học trực tuyến ## Bước 1 — Nhập học trực tuyến   **2 cách thực hiện:**   **Cách 1:** Tải và cài đặt ứng dụng **\"MyHaUI\"** trên App Store hoặc CH Play   **Cách 2:** Truy cập cổng thông tin nhập học trực tuyến tại https://nhaphoc.haui.edu.vn   **Các bước thực hiện:** 1. Chọn chức năng **NHẬP HỌC** 2. Nhập **mã hồ sơ trúng tuyển** (ở mặt trước Giấy mời nhập học) 3. Kiểm tra các khoản thu cần nộp, chọn cổng thanh toán và xác nhận nhập học   **Các khoản thu học kỳ 1 (ví dụ):** - Học phí học kỳ 1 (lần thu): 7.000.000đ - T",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 60,
+      "group": 7,
+      "group_name": "Quy trình đăng ký & nhập học",
+      "difficulty": "trung bình",
+      "question": "Nhập học năm học 2025-2026, học kỳ I bắt đầu khi nào?",
+      "hint": "Học kỳ I: từ 07/9/2026 (theo lịch 2026).",
+      "tags": [
+        "nhap_hoc",
+        "lich"
+      ],
+      "expected_behavior": "Nêu đúng 07/9/2026.",
+      "check_keywords": [
+        "07/9",
+        "7/9"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "tháng 9"
+      ],
+      "answer": "Tôi chưa có thông tin về thời gian nhập học năm học 2025-2026. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 5.81,
+      "intent_type": "RAG_FAQ",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[huong_dan_dang_ky_du_tuyen_2025.md — Hướng dẫn đăng ký dự tuyển đại học chính quy HaUI năm 2025] Hướng dẫn đăng ký dự tuyển đại học chính quy HaUI năm 2025 # Hướng dẫn đăng ký dự tuyển đại học chính quy HaUI năm 2025   Áp dụng cho **Phương thức 2, 4, 5** — dành cho thí sinh tốt nghiệp THPT năm 2025 hoặc tương đương.   - **PT2:** Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế kết hợp kết quả học tập THPT - **PT4:** Xét tuyển dựa trên kết quả thi Đánh giá năng lực (ĐGNL) do ĐHQG Hà Nội tổ chức năm 2025 - **PT5:** Xét tuyển dựa trên kết quả thi Đánh giá tư duy (ĐGTD) do Đ",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 61,
+      "group": 7,
+      "group_name": "Quy trình đăng ký & nhập học",
+      "difficulty": "trung bình",
+      "question": "Thẻ sinh viên HaUI tích hợp với ngân hàng nào?",
+      "hint": "Vietinbank.",
+      "tags": [
+        "the_SV",
+        "ngan_hang"
+      ],
+      "expected_behavior": "Nêu đúng Vietinbank.",
+      "check_keywords": [
+        "Vietinbank"
+      ],
+      "fail_keywords": [
+        "BIDV",
+        "Vietcombank",
+        "MB Bank"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Xin lỗi, tôi chỉ có thể tư vấn về tuyển sinh HaUI — điểm chuẩn, học phí, ngành học, phương thức xét tuyển và các thông tin liên quan.\n\nBạn có câu hỏi nào về tuyển sinh không?",
+      "error": "",
+      "duration_sec": 0.72,
+      "intent_type": "OFF_TOPIC",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "__OFF_TOPIC__",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 62,
+      "group": 7,
+      "group_name": "Quy trình đăng ký & nhập học",
+      "difficulty": "trung bình",
+      "question": "Hồ sơ miễn giảm học phí cho sinh viên dân tộc thiểu số cần giấy tờ gì?",
+      "hint": "Giấy xác nhận vùng ĐBKK hoặc hộ nghèo/cận nghèo + CT07 xác nhận cư trú + bản sao giấy khai sinh.",
+      "tags": [
+        "mien_giam_hoc_phi",
+        "dan_toc"
+      ],
+      "expected_behavior": "Liệt kê đúng 3 loại giấy tờ.",
+      "check_keywords": [
+        "khai sinh"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "INCOMPLETE",
+      "any_keywords": [
+        "CT07",
+        "hộ nghèo"
+      ],
+      "answer": "Hồ sơ miễn giảm học phí cho sinh viên thuộc đối tượng dân tộc thiểu số bao gồm:\n\n- Giấy xác nhận vùng có điều kiện KT-XH đặc biệt khó khăn HOẶC giấy chứng nhận hộ nghèo/cận nghèo năm 2025.\n- Giấy xác nhận thông tin cư trú (mẫu CT07) có xác nhận của Công An Phường/Xã.\n- Bản sao Giấy khai sinh.",
+      "error": "",
+      "duration_sec": 6.04,
+      "intent_type": "JSON_HOC_PHI",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "Bước 3.3 — Hồ sơ sinh viên cần nộp ### 3. Hồ sơ chính sách miễn, giảm học phí (nếu có)   | Đối tượng | Hồ sơ cần nộp | |---|---| | Người có công với cách mạng hoặc cha, mẹ, vợ, chồng, con đẻ, con nuôi người có công | Giấy xác nhận thân nhân người có công (Mẫu số 45 Nghị định 131/2021/NĐ-CP) + bản sao chứng thực Giấy khai sinh | | Dân tộc thiểu số rất ít người (La Hủ, La Ha, Pà Thẻn, Lự, Ngái, Chứt, Lô Lô, Mảng, Cống, Cờ Lao, Bố Y, Si La, Pu Péo, Rơ Măm, BRâu, Ơ Đu) | Giấy xác nhận vùng có điều kiện KTXH khó khăn hoặc đặc biệt khó khăn + Giấy xác nhận thông tin cư trú (mẫu CT07) có xác nhận Côn",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 63,
+      "group": 7,
+      "group_name": "Quy trình đăng ký & nhập học",
+      "difficulty": "dễ",
+      "question": "Muốn ở KTX thì đăng ký ở đâu?",
+      "hint": "ssc.haui.edu.vn.",
+      "tags": [
+        "KTX",
+        "dang_ky"
+      ],
+      "expected_behavior": "Nêu đúng địa chỉ ssc.haui.edu.vn.",
+      "check_keywords": [
+        "ssc.haui.edu.vn"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về Muốn ở KTX thì đăng ký ở đâu. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 6.17,
+      "intent_type": "RAG_TRUONG_HOC_BONG",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " [faq_dang_ky_xet_tuyen.md — Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025] Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025 Được, nhưng phải liên hệ Nhà trường **trước ngày 05/7/2025**: - Điện thoại: 0834560255 / 0383371290 - Messenger: facebook.com/tuyensinh.haui   Lưu ý: Nhà trường chỉ nhận kết quả thi ĐGTD trước ngày 05/7/2025. Khi sửa phải upload lại cả ảnh kết quả và điểm của đợt thi mới.   ---   **Q: Mỗi thí sinh được đăng ký bao nhiêu ngành dự tuyển? Nên sắp xếp thứ tự nguyện vọng như thế nào?**   Thí sinh có thể đăng ký nhiều ngành/chươ",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 64,
+      "group": 7,
+      "group_name": "Quy trình đăng ký & nhập học",
+      "difficulty": "dễ",
+      "question": "Khi đăng nhập hệ thống báo 'Đăng nhập không thành công' thì phải làm gì?",
+      "hint": "Kiểm tra CCCD và mật khẩu; thử copy-paste từ email; bấm 'Quên mật khẩu'; hoặc gọi 0834560255.",
+      "tags": [
+        "dang_ky",
+        "su_co",
+        "FAQ"
+      ],
+      "expected_behavior": "Hướng dẫn đúng.",
+      "check_keywords": [
+        "mật khẩu"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "CCCD",
+        "email",
+        "quên"
+      ],
+      "answer": "Có thể do gõ sai số CCCD hoặc mật khẩu. Thử mở email và copy-paste mật khẩu vào hệ thống. Nếu vẫn không được, bấm \"Quên mật khẩu\" để nhận lại qua email, hoặc liên hệ:\n- Điện thoại: 0834560255 / 0383371290",
+      "error": "",
+      "duration_sec": 5.73,
+      "intent_type": "RAG_FAQ",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.85,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " [lich_tuyen_sinh_2026.md — 4. Đại học từ xa (8 đợt trong năm)] 4. Đại học từ xa (8 đợt trong năm) ## 4. Đại học từ xa (8 đợt trong năm)   | Đợt | Thông báo | Đăng ký | Công bố & Nhập học | Khai giảng | |---|---|---|---|---| | Đợt 1 | 05/01/2026 | 12/01 – 26/02/2026 | 02/3 – 05/3/2026 | 08/3/2026 | | Đợt 2 | 23/02/2026 | 02/3 – 09/4/2026 | 13/4 – 16/4/2026 | 19/4/2026 | | Đợt 3 | 06/4/2026 | 13/4 – 28/5/2026 | 01/6 – 04/6/2026 | 07/6/2026 | | Đợt 4 | 25/5/2026 | 01/6 – 09/7/2026 | 13/7 – 16/7/2026 | 19/7/2026 | | Đợt 5 | 06/7/2026 | 13/7 – 20/8/2026 | 24/8 – 27/8/2026 | 30/8/2026 | | Đợt 6 | 1",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 65,
+      "group": 7,
+      "group_name": "Quy trình đăng ký & nhập học",
+      "difficulty": "trung bình",
+      "question": "Kết quả thi ĐGTD muốn cập nhật lại nếu thi lại điểm cao hơn thì phải làm gì và trước ngày nào?",
+      "hint": "Liên hệ Nhà trường trước ngày 05/7/2025 và upload lại ảnh kết quả.",
+      "tags": [
+        "DGTD",
+        "cap_nhat_ket_qua"
+      ],
+      "expected_behavior": "Nêu đúng deadline 05/7/2025.",
+      "check_keywords": [
+        "05/7",
+        "5/7"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Thí sinh cần liên hệ Nhà trường trước ngày 05/7/2025 để được phép cập nhật kết quả thi Đánh giá Tốt nghiệp mới. Khi sửa đổi, thí sinh phải upload lại cả ảnh kết quả và điểm của đợt thi mới.",
+      "error": "",
+      "duration_sec": 5.57,
+      "intent_type": "RAG_FAQ",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[faq_dang_ky_xet_tuyen.md — Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025] Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025 Được, nhưng phải liên hệ Nhà trường **trước ngày 05/7/2025**: - Điện thoại: 0834560255 / 0383371290 - Messenger: facebook.com/tuyensinh.haui   Lưu ý: Nhà trường chỉ nhận kết quả thi ĐGTD trước ngày 05/7/2025. Khi sửa phải upload lại cả ảnh kết quả và điểm của đợt thi mới.   ---   **Q: Mỗi thí sinh được đăng ký bao nhiêu ngành dự tuyển? Nên sắp xếp thứ tự nguyện vọng như thế nào?**   Thí sinh có thể đăng ký nhiều ngành/chươn",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 66,
+      "group": 8,
+      "group_name": "So sánh & tư vấn chọn ngành",
+      "difficulty": "khó",
+      "question": "Tôi thích lập trình, nên chọn ngành Công nghệ thông tin, Kỹ thuật phần mềm hay Khoa học máy tính? Sự khác biệt là gì?",
+      "hint": "CNTT rộng; KTPM thiên quy trình phần mềm; KHMT thiên lý thuyết AI.",
+      "tags": [
+        "tu_van",
+        "CNTT",
+        "KTPM",
+        "KHMT"
+      ],
+      "expected_behavior": "Phân biệt rõ 3 ngành.",
+      "check_keywords": [
+        "Kỹ thuật phần mềm",
+        "Khoa học máy tính"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "COMPARISON_FAIL",
+      "any_keywords": [
+        "Công nghệ thông tin"
+      ],
+      "answer": "Cả ba ngành Công nghệ thông tin (mã 7480201), Kỹ thuật phần mềm (mã 7480103) và Khoa học máy tính (mã 7480101) đều liên quan đến lập trình nhưng có sự khác biệt về tập trung chuyên môn:\n\n- **Công nghệ thông tin**: Ngành này tập trung vào việc phát triển, quản lý hệ thống thông tin cho các tổ chức và doanh nghiệp. Học viên sẽ học về cả phần mềm lẫn phần cứng máy tính, cũng như kỹ năng lập trình.\n\n- **Kỹ thuật phần mềm**: Tập trung nhiều hơn vào quá trình thiết kế, phát triển, kiểm thử và bảo trì các ứng dụng phần mềm. Học viên sẽ chuyên sâu vào việc tạo ra các giải pháp phần mềm hiệu quả và chất lượng cao.\n\n- **Khoa học máy tính**: Nghiên cứu về lý thuyết và nguyên tắc cơ bản của máy tính, bao gồm cả lập trình nhưng cũng tập trung nhiều hơn vào khía cạnh khoa học như trí tuệ nhân tạo, hệ thống phân tán, v.v.\n\nBạn nên chọn ngành dựa trên sự quan tâm cụ thể và mục tiêu nghề nghiệp của mình.",
+      "error": "",
+      "duration_sec": 5.32,
+      "intent_type": "RAG_MO_TA_NGANH",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Trường/Khoa công nghệ thông tin có 9 ngành:    1. An toàn thông tin (mã 74802021)    2. Công nghệ kỹ thuật máy tính (mã 7480108)    3. Công nghệ thông tin (mã 7480201)    4. Công nghệ đa phương tiện (mã 74802012)    5. Hệ thống thông tin (mã 7480104)    6. Khoa học máy tính (mã 7480101)    7. Khoa học máy tính (Tiếng Anh) (mã 7480101TA)    8. Kỹ thuật phần mềm (mã 7480103)    9. Mạng máy tính và truyền thông dữ liệu (mã 7480102)",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 67,
+      "group": 8,
+      "group_name": "So sánh & tư vấn chọn ngành",
+      "difficulty": "khó",
+      "question": "Ngành Cơ điện tử và ngành Robot & Trí tuệ nhân tạo khác nhau như thế nào?",
+      "hint": "Cơ điện tử: cơ-điện-điều khiển công nghiệp. Robot & TTNT: AI, machine learning, robot thông minh.",
+      "tags": [
+        "tu_van",
+        "co_dien_tu",
+        "robot_AI"
+      ],
+      "expected_behavior": "Phân biệt dựa trên chuẩn đầu ra.",
+      "check_keywords": [
+        "Cơ điện tử",
+        "Robot"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "COMPARISON_FAIL",
+      "any_keywords": [
+        "trí tuệ nhân tạo",
+        "AI"
+      ],
+      "answer": "Tôi chưa có thông tin về sự khác biệt cụ thể giữa ngành Cơ điện tử và ngành Robot & Trí tuệ nhân tạo. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 5.7,
+      "intent_type": "RAG_MO_TA_NGANH",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " [phuong_thuc_tuyen_sinh_2025.md — Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế] Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế ## Phương thức 2: Xét tuyển thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế   **Đối tượng:** Thí sinh đoạt giải HSG cấp tỉnh/TP hoặc có chứng chỉ quốc tế, được công nhận tốt nghiệp THPT 2025 hoặc tương đương.   **Điều kiện:** - Điểm TB môn cả năm lớp 10, 11, 12 của từng môn trong tổ hợp xét tuyển ≥ 7,0 điểm - Thỏa mãn một trong hai điều kiện: + Đoạt giải Nhất, Nhì, Ba kỳ thi H",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 68,
+      "group": 8,
+      "group_name": "So sánh & tư vấn chọn ngành",
+      "difficulty": "khó",
+      "question": "Tôi muốn làm trong ngành ô tô, nên chọn ngành CN kỹ thuật ô tô hay Cơ điện tử ô tô?",
+      "hint": "CN kỹ thuật ô tô: bảo trì, sửa chữa. Cơ điện tử ô tô: hệ thống điện tử, ECU, xe điện.",
+      "tags": [
+        "tu_van",
+        "o_to"
+      ],
+      "expected_behavior": "Phân biệt rõ focus của từng ngành.",
+      "check_keywords": [
+        "ô tô"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "COMPARISON_FAIL",
+      "any_keywords": [
+        "điện tử",
+        "sửa chữa"
+      ],
+      "answer": "Cả hai ngành Công nghệ kỹ thuật ô tô (mã 7510205) và Công nghệ kỹ thuật cơ điện tử ô tô (mã 75102033) đều liên quan đến lĩnh vực ô tô nhưng có chuyên môn khác nhau:\n\n- **Ngành Công nghệ kỹ thuật ô tô** tập trung vào việc thiết kế, sản xuất, bảo dưỡng và sửa chữa các hệ thống cơ khí của xe hơi.\n\n- **Ngành Công nghệ kỹ thuật cơ điện tử ô tô** kết hợp giữa công nghệ cơ khí và điện tử để nghiên cứu về hệ thống điều khiển điện tử trong xe hơi như hệ thống phanh ABS, hệ thống kiểm soát hành trình Cruise Control...\n\nNếu bạn quan tâm đến cả phần cứng (cơ khí) lẫn phần mềm (điện tử), ngành Công nghệ kỹ thuật cơ điện tử ô tô có thể phù hợp hơn. Ngược lại, nếu bạn muốn tập trung vào các khía cạnh cơ khí truyền thống của xe hơi, ngành Công nghệ kỹ thuật ô tô sẽ là lựa chọn tốt.\n\nBạn nên xem xét kỹ lưỡng mục tiêu nghề nghiệp và sở thích cá nhân để quyết định ngành học phù hợp nhất với mình.",
+      "error": "",
+      "duration_sec": 5.17,
+      "intent_type": "RAG_MO_TA_NGANH",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Trường/Khoa ô tô có 22 ngành:    1. Công nghệ kỹ thuật cơ khí (mã 7510201)    2. Công nghệ kỹ thuật cơ khí (Tiếng Anh) (mã 7510201TA)    3. Công nghệ kỹ thuật cơ điện tử (mã 7510203)    4. Công nghệ kỹ thuật cơ điện tử ô tô (mã 75102033)    5. Công nghệ kỹ thuật hóa học (mã 7510401)    6. Công nghệ kỹ thuật khuôn mẫu (mã 75102012)    7. Công nghệ kỹ thuật môi trường (mã 7510406)    8. Công nghệ kỹ thuật nhiệt (mã 7510206)    9. Công nghệ kỹ thuật ô tô (mã 7510205)   10. Công nghệ kỹ thuật ô tô (Tiếng Anh) (mã 7510205TA)   11. Công nghệ kỹ thuật điều khiển và tự động hóa (mã 7510303)   12. Công",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 69,
+      "group": 8,
+      "group_name": "So sánh & tư vấn chọn ngành",
+      "difficulty": "khó",
+      "question": "Ngành Kế toán và ngành Kiểm toán có gì khác nhau về cơ hội việc làm?",
+      "hint": "Kế toán: ghi sổ, báo cáo nội bộ. Kiểm toán: kiểm toán độc lập, Big4.",
+      "tags": [
+        "tu_van",
+        "ke_toan",
+        "kiem_toan"
+      ],
+      "expected_behavior": "Phân biệt rõ.",
+      "check_keywords": [
+        "Kế toán",
+        "Kiểm toán"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "COMPARISON_FAIL",
+      "any_keywords": [
+        "Big4",
+        "nội bộ"
+      ],
+      "answer": "Sinh viên tốt nghiệp ngành Kế toán có thể làm việc tại doanh nghiệp, ngân hàng, tổ chức tài chính, công ty kiểm toán, đơn vị hành chính – sự nghiệp với các vị trí như kế toán viên tổng hợp, kế toán tài sản, kế toán kho, kế toán công nợ, kế toán thuế; nhân viên phân tích tài chính, lập ngân sách, kiểm soát nội bộ; trợ lý Giám đốc tài chính (CFO). Ngoài ra còn có thể làm việc tại tổ chức tài chính – ngân hàng với vị trí như nhân viên kế toán nội bộ và chuyên viên phân tích tài chính – tín dụng.\n\nTrong khi đó, sinh viên tốt nghiệp ngành Kiểm toán có nhiều lựa chọn nghề nghiệp hấp dẫn và thu nhập cạnh tranh. Họ có thể làm việc tại các công ty kiểm toán trong và ngoài nước với vai trò là kiểm toán viên độc lập (Auditor) tại các công ty kiểm toán lớn như PwC, Deloitte, EY, KPMG; trợ lý kiểm toán, trưởng nhóm kiểm toán, kiểm toán viên cao cấp. Ngoài ra còn có thể làm việc tại doanh nghiệp, tập đoàn, ngân hàng, tổ chức tài chính với vị trí chuyên viên kiểm toán nội bộ, kiểm soát nội bộ, kiểm soát tài chính và quản trị rủi ro, phân tích tài chính.",
+      "error": "",
+      "duration_sec": 9.61,
+      "intent_type": "RAG_MO_TA_NGANH",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[Kế toán — Cơ hội việc làm] Trường Kinh tế — Ngành Kế toán — Cơ hội việc làm ## Cơ hội việc làm   Sinh viên tốt nghiệp ngành Kế toán có thể làm việc tại doanh nghiệp, ngân hàng, tổ chức tài chính, công ty kiểm toán, đơn vị hành chính – sự nghiệp... với các vị trí như:   - Làm việc tại doanh nghiệp và tổ chức kinh tế: Kế toán viên tổng hợp, kế toán tài sản, kế toán kho, kế toán công nợ, kế toán thuế; Nhân viên phân tích tài chính, lập ngân sách, kiểm soát nội bộ; Trợ lý Giám đốc tài chính (CFO). - Làm việc tại công ty kế toán – kiểm toán: Trợ lý kiểm toán, kiểm toán viên, tư vấn thuế, tư vấn kế",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 70,
+      "group": 8,
+      "group_name": "So sánh & tư vấn chọn ngành",
+      "difficulty": "khó",
+      "question": "Tôi học tổ hợp D01, muốn học ngành kỹ thuật tại HaUI thì có những ngành nào phù hợp?",
+      "hint": "D01 xét được nhiều ngành kỹ thuật nhận A01 (có Toán+Anh).",
+      "tags": [
+        "tu_van",
+        "D01",
+        "ky_thuat"
+      ],
+      "expected_behavior": "Liệt kê ngành kỹ thuật nhận D01.",
+      "check_keywords": [
+        "D01"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "COMPARISON_FAIL",
+      "any_keywords": [
+        "Công nghệ thông tin",
+        "Cơ khí"
+      ],
+      "answer": "Theo thông tin được cung cấp, không có ngành nào tại Đại học Công nghiệp Hà Nội (HaUI) xét tuyển với tổ hợp D01. Tuy nhiên, bạn có thể tham khảo các tổ hợp tương tự như A00 hoặc B00 để đăng ký xét tuyển vào các ngành kỹ thuật phù hợp như:\n\n- **Công nghệ kỹ thuật điện, điện tử**  \n- **Công nghệ kỹ thuật hóa học**  \n- **Kỹ thuật hệ thống công nghiệp**  \n- **Công nghệ kỹ thuật cơ khí**  \n- **Công nghệ kỹ thuật khuôn mẫu**\n\nNếu bạn muốn biết thêm thông tin chi tiết về các ngành này hoặc có bất kỳ câu hỏi nào khác, vui lòng xem tại website tuyensinh.haui.edu.vn hoặc gọi điện thoại đến số 0243.7655121 để được hỗ trợ tốt nhất.",
+      "error": "",
+      "duration_sec": 8.3,
+      "intent_type": "RAG_MO_TA_NGANH",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.85,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " [Công nghệ kỹ thuật điện, điện tử — Thông tin tuyển sinh] Trường Điện - Điện tử — Ngành Công nghệ kỹ thuật điện, điện tử — Thông tin tuyển sinh # Công nghệ kỹ thuật điện, điện tử — HaUI   ## Thông tin tuyển sinh   - **Mã ngành:** 7510301 - **Khoa/Trường:** Trường Điện - Điện tử - **Chỉ tiêu:** 420 - **Tổ hợp xét tuyển:** A00 (Toán, Vật lí, Hóa học), A01 (Toán, Vật lí, Tiếng Anh), A0C (Toán, Vật lý, Công nghệ), A0T (Toán, Vật lý, Tin học) - **Phương thức xét tuyển:** PT1, PT2, PT3, PT5     [Công nghệ kỹ thuật hóa học — Thông tin tuyển sinh] Khoa Công nghệ Hóa — Ngành Công nghệ kỹ thuật hóa học",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 71,
+      "group": 8,
+      "group_name": "So sánh & tư vấn chọn ngành",
+      "difficulty": "trung bình",
+      "question": "Ngành nào ở HaUI có thể học chương trình tiếng Anh?",
+      "hint": "Các ngành có mã TA: KHMT, Kế toán, Cơ khí, Ô tô, Điện, Điện tử VT, Du lịch, Khách sạn, v.v.",
+      "tags": [
+        "chuong_trinh_TA"
+      ],
+      "expected_behavior": "Liệt kê các ngành có chương trình tiếng Anh.",
+      "check_keywords": [
+        "tiếng Anh"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "COMPARISON_FAIL",
+      "any_keywords": [
+        "Khoa học máy tính",
+        "Kế toán"
+      ],
+      "answer": "Ngành Ngôn ngữ Anh tại Trường Ngoại ngữ - Du lịch của Đại học Công nghiệp Hà Nội (HaUI) là ngành có thể học chương trình tiếng Anh. Mã ngành của ngành này là 7220201.",
+      "error": "",
+      "duration_sec": 6.07,
+      "intent_type": "RAG_MO_TA_NGANH",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[Ngôn ngữ Anh — Thông tin tuyển sinh] Trường Ngoại ngữ - Du lịch — Ngành Ngôn ngữ Anh — Thông tin tuyển sinh # Ngôn ngữ Anh — HaUI   ## Thông tin tuyển sinh   - **Mã ngành:** 7220201 - **Khoa/Trường:** Trường Ngoại ngữ - Du lịch - **Chỉ tiêu:** 200 - **Tổ hợp xét tuyển:** D01 (Ngữ văn, Toán, Tiếng Anh) - **Phương thức xét tuyển:** PT1, PT2, PT3     [Ngôn ngữ Hàn Quốc — Thông tin tuyển sinh] Trường Ngoại ngữ - Du lịch — Ngành Ngôn ngữ Hàn Quốc — Thông tin tuyển sinh # Ngôn ngữ Hàn Quốc — HaUI   ## Thông tin tuyển sinh   - **Mã ngành:** 7220210 - **Khoa/Trường:** Trường Ngoại ngữ - Du lịch - **C",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 72,
+      "group": 8,
+      "group_name": "So sánh & tư vấn chọn ngành",
+      "difficulty": "khó",
+      "question": "So sánh điểm chuẩn các ngành nhóm CNTT năm 2025 — ngành nào cạnh tranh nhất?",
+      "hint": "KHMT: 23.72 là cao nhất. CNTT: 23.09; KTPM: 21.75...",
+      "tags": [
+        "diem_chuan",
+        "CNTT",
+        "so_sanh",
+        "nam_2025"
+      ],
+      "expected_behavior": "Xác định KHMT là cao nhất.",
+      "check_keywords": [
+        "Khoa học máy tính",
+        "23.72"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "COMPARISON_FAIL",
+      "any_keywords": [
+        "cao nhất"
+      ],
+      "answer": "Ngành Khoa học máy tính có điểm chuẩn cao nhất là 23,72 điểm trong năm 2025, do đó đây là ngành cạnh tranh nhất trong nhóm Công nghệ thông tin của Trường Đại học Công nghiệp Hà Nội.",
+      "error": "",
+      "duration_sec": 1.1,
+      "intent_type": "JSON_DIEM_CHUAN",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Điểm chuẩn năm 2025 — Trường cntt (9 ngành):   - Khoa học máy tính: 23.72 điểm → ✅ +1.28 điểm   - An toàn thông tin: 23.43 điểm → ✅ +1.57 điểm   - Công nghệ thông tin: 23.09 điểm → ✅ +1.91 điểm   - Công nghệ đa phương tiện: 22.25 điểm → ✅ +2.75 điểm   - Công nghệ kỹ thuật máy tính: 21.85 điểm → ✅ +3.15 điểm   - Kỹ thuật phần mềm: 21.75 điểm → ✅ +3.25 điểm   - Mạng máy tính và truyền thông dữ liệu: 21.7 điểm → ✅ +3.3 điểm   - Hệ thống thông tin: 21.1 điểm → ✅ +3.9 điểm   - Khoa học máy tính chương trình đào tạo bằng Tiếng Anh: 20.45 điểm → ✅ +4.55 điểm  Điểm tham khảo trên là năm 2025. Điểm chu",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "COMPARISON_FAIL"
+    },
+    {
+      "id": 73,
+      "group": 8,
+      "group_name": "So sánh & tư vấn chọn ngành",
+      "difficulty": "khó",
+      "question": "Tôi điểm thi THPT khoảng 22 điểm tổ hợp A01, đăng ký được những ngành nào ở HaUI?",
+      "hint": "Nhiều ngành có điểm chuẩn 2025 ≤22: KTPM(21.75), Mạng MT(21.7), HTTT(21.1)...",
+      "tags": [
+        "tu_van",
+        "22_diem"
+      ],
+      "expected_behavior": "Đề xuất ngành phù hợp dưới 22 điểm.",
+      "check_keywords": [
+        "21"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "COMPARISON_FAIL",
+      "any_keywords": [
+        "Kỹ thuật phần mềm",
+        "Mạng máy tính"
+      ],
+      "answer": "Theo quy định xét tuyển của Đại học Công nghiệp Hà Nội (HaUI), thí sinh có tổng điểm tổ hợp A01 là 22 sẽ cần so sánh với điểm chuẩn năm trước để biết cơ hội trúng tuyển. Năm 2025, các ngành sử dụng tổ hợp A01 tại HaUI bao gồm:\n\n- An toàn thông tin\n- Công nghệ dệt may\n- Công nghệ kỹ thuật cơ khí và Công nghệ kỹ thuật cơ khí (Tiếng Anh)\n- Công nghệ kỹ thuật cơ điện tử và Công nghệ kỹ thuật cơ điện tử ô tô\n- Công nghệ kỹ thuật khuôn mẫu\n- Công nghệ kỹ thuật máy tính\n- Công nghệ kỹ thuật nhiệt\n- Công nghệ kỹ thuật ô tô và Công nghệ kỹ thuật ô tô (Tiếng Anh)\n- Công nghệ kỹ thuật điều khiển và tự động hóa\n- Công nghệ kỹ thuật điện tử - viễn thông và Công nghệ kỹ thuật điện tử - viễn thông (Tiếng Anh), Công nghệ kỹ thuật điện tử y sinh\n- Công nghệ kỹ thuật điện, điện tử và Công nghệ kỹ thuật điện, điện tử (Tiếng Anh)\n- Công nghệ thông tin\n- Công nghệ vật liệu dệt may\n- Công nghệ đa phương tiện\n- Hệ thống thông tin\n- Khoa học máy tính và Khoa học máy tính (Tiếng Anh)\n- Kinh tế đầu tư\n- Kiểm toán và Kiểm toán (Tiếng Anh)\n- Kế toán và Kế toán (Tiếng Anh)\n- Kỹ thuật cơ khí động lực\n- Kỹ thuật hệ thống công nghiệp\n- Kỹ thuật phần mềm\n- Kỹ thuật sản xuất thông minh\n- Logistics và quản lý chuỗi cung ứng\n- Marketing\n- Mạng máy tính và truyền thông dữ liệu\n- Năng lượng tái tạo\n- Phân tích dữ liệu kinh doanh\n- Quản trị kinh doanh\n\nĐể biết chính xác ngành nào có thể đăng ký, bạn nên tham khảo điểm chuẩn năm 2025 của từng ngành hoặc liên hệ trực tiếp với trường để được tư vấn cụ thể.",
+      "error": "",
+      "duration_sec": 8.44,
+      "intent_type": "JSON_CHI_TIEU_TO_HOP",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Tổ hợp A01 gồm môn: Toán, Vật lý, Tiếng Anh Có 42 ngành xét tuyển bằng tổ hợp này:    1. An toàn thông tin (mã 74802021) — chỉ tiêu: 40    2. Công nghệ dệt, may (mã 7540204) — chỉ tiêu: 180    3. Công nghệ kỹ thuật cơ khí (mã 7510201) — chỉ tiêu: 360    4. Công nghệ kỹ thuật cơ khí (Tiếng Anh) (mã 7510201TA) — chỉ tiêu: 40    5. Công nghệ kỹ thuật cơ điện tử (mã 7510203) — chỉ tiêu: 300    6. Công nghệ kỹ thuật cơ điện tử ô tô (mã 75102033) — chỉ tiêu: 60    7. Công nghệ kỹ thuật khuôn mẫu (mã 75102012) — chỉ tiêu: 60    8. Công nghệ kỹ thuật máy tính (mã 7480108) — chỉ tiêu: 140    9. Công ng",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "COMPARISON_FAIL"
+    },
+    {
+      "id": 74,
+      "group": 8,
+      "group_name": "So sánh & tư vấn chọn ngành",
+      "difficulty": "khó",
+      "question": "Chương trình liên kết 2+2 Ngôn ngữ Trung Quốc có gì đặc biệt so với chương trình thường?",
+      "hint": "2 năm HaUI + 2 năm ĐH KH Kỹ thuật Quảng Tây, nhận 2 bằng, chỉ 30 chỉ tiêu.",
+      "tags": [
+        "lien_ket",
+        "TQ"
+      ],
+      "expected_behavior": "Nêu 2 bằng và học tại Trung Quốc.",
+      "check_keywords": [
+        "2 bằng",
+        "hai bằng"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "Quảng Tây"
+      ],
+      "answer": "Chương trình liên kết 2+2 Ngôn ngữ Trung Quốc (mã 7220204LK) của Đại học Công nghiệp Hà Nội có một số điểm đặc biệt sau:\n\n- Học sinh sẽ được đào tạo trong 2 năm đầu tại HaUI và tiếp tục 2 năm cuối tại trường đối tác ở Quảng Tây, Trung Quốc.\n- Chương trình này giúp sinh viên có cơ hội trải nghiệm môi trường giáo dục quốc tế và nâng cao kỹ năng ngôn ngữ thực tế.",
+      "error": "",
+      "duration_sec": 2.92,
+      "intent_type": "RAG_MO_TA_NGANH",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.85,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Trường/Khoa ngôn ngữ có 7 ngành:    1. Ngôn ngữ Anh (mã 7220201)    2. Ngôn ngữ Hàn Quốc (mã 7220210)    3. Ngôn ngữ Nhật (mã 7220209)    4. Ngôn ngữ Trung Quốc (mã 7220204)    5. Ngôn ngữ Trung Quốc (LK 2+2 Quảng Tây) (mã 7220204LK)    6. Ngôn ngữ học (mã 7229020)    7. Trung Quốc học (mã 7310612)",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 75,
+      "group": 8,
+      "group_name": "So sánh & tư vấn chọn ngành",
+      "difficulty": "khó",
+      "question": "Học ngành Hóa dược ra trường làm được những vị trí gì? Có khác gì so với ngành Công nghệ thực phẩm không?",
+      "hint": "Hóa dược: R&D thuốc, QA/QC dược. Thực phẩm: kỹ sư chế biến, QA/QC thực phẩm.",
+      "tags": [
+        "tu_van",
+        "hoa_duoc",
+        "thuc_pham"
+      ],
+      "expected_behavior": "Nêu việc làm từng ngành và chỉ ra điểm khác.",
+      "check_keywords": [
+        "Hóa dược",
+        "thực phẩm"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "COMPARISON_FAIL",
+      "any_keywords": [
+        "dược phẩm",
+        "chế biến"
+      ],
+      "answer": "Theo thông tin tôi có, sinh viên tốt nghiệp ngành Hóa dược (mã 7720203) có thể làm việc ở các vị trí như:\n\n- Kỹ sư nghiên cứu và phát triển sản phẩm trong lĩnh vực hóa dược.\n- Nhân viên kiểm nghiệm chất lượng thuốc và nguyên liệu dược.\n- Chuyên viên phân tích và đánh giá dược phẩm.\n- Quản lý chất lượng trong nhà máy sản xuất dược phẩm.\n\nNgành Công nghệ thực phẩm (mã 7540101) thì sinh viên sau khi tốt nghiệp có thể làm việc ở các vị trí như:\n\n- Kỹ sư nghiên cứu và phát triển sản phẩm thực phẩm.\n- Nhân viên kiểm nghiệm chất lượng thực phẩm.\n- Chuyên viên phân tích và đánh giá an toàn thực phẩm.\n- Quản lý chất lượng trong nhà máy chế biến thực phẩm.\n\nCó thể thấy, cả hai ngành đều có những vị trí làm việc liên quan đến nghiên cứu phát triển sản phẩm, kiểm tra chất lượng và quản lý chất lượng. Tuy nhiên, ngành Hóa dược tập trung vào lĩnh vực hóa dược như thuốc và nguyên liệu dược, trong khi ngành Công nghệ thực phẩm tập trung vào các sản phẩm từ nguồn gốc thực vật và động vật.",
+      "error": "",
+      "duration_sec": 5.31,
+      "intent_type": "RAG_MO_TA_NGANH",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Trường/Khoa thực phẩm có 4 ngành:    1. Công nghệ kỹ thuật hóa học (mã 7510401)    2. Công nghệ kỹ thuật môi trường (mã 7510406)    3. Công nghệ thực phẩm (mã 7540101)    4. Hóa dược (mã 7720203)",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 76,
+      "group": 9,
+      "group_name": "Quy đổi điểm",
+      "difficulty": "khó",
+      "question": "Điểm ĐGNL (HSA) đạt 95 điểm thì quy đổi được bao nhiêu điểm tương đương thang 30?",
+      "hint": "95 → 23.50 điểm.",
+      "tags": [
+        "quy_doi",
+        "HSA"
+      ],
+      "expected_behavior": "Trả lời 23.50 điểm.",
+      "check_keywords": [
+        "23.5",
+        "23,5"
+      ],
+      "fail_keywords": [
+        "23.0",
+        "24.0"
+      ],
+      "diagnosis_on_fail": "CALC_ERROR",
+      "any_keywords": [],
+      "answer": "Theo quy đổi điểm Đánh giá năng lực ĐHQG Hà Nội, nếu bạn đạt 95 điểm gốc thì sẽ quy đổi được 23,5 điểm trên thang 30.",
+      "error": "",
+      "duration_sec": 0.87,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Quy đổi điểm Đánh giá năng lực ĐHQG Hà Nội:   - Điểm gốc    : 95.0 / 150   - Điểm quy đổi: 23.5 / 30",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "CALC_ERROR"
+    },
+    {
+      "id": 77,
+      "group": 9,
+      "group_name": "Quy đổi điểm",
+      "difficulty": "khó",
+      "question": "Điểm ĐGTD (TSA) đạt 62 điểm thì quy đổi được bao nhiêu điểm?",
+      "hint": "62.00–62.99 → 26.00 điểm.",
+      "tags": [
+        "quy_doi",
+        "TSA"
+      ],
+      "expected_behavior": "Trả lời 26.00 điểm.",
+      "check_keywords": [
+        "26.0",
+        "26,0"
+      ],
+      "fail_keywords": [
+        "25.75",
+        "26.25"
+      ],
+      "diagnosis_on_fail": "CALC_ERROR",
+      "any_keywords": [],
+      "answer": "Theo quy đổi điểm Đánh giá tư duy ĐHBK Hà Nội, khi bạn đạt 62.0 điểm gốc sẽ tương đương với 26.0 điểm quy đổi trên thang điểm 30.",
+      "error": "",
+      "duration_sec": 0.89,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Quy đổi điểm Đánh giá tư duy ĐHBK Hà Nội:   - Điểm gốc    : 62.0 / 100   - Điểm quy đổi: 26.0 / 30",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "CALC_ERROR"
+    },
+    {
+      "id": 78,
+      "group": 9,
+      "group_name": "Quy đổi điểm",
+      "difficulty": "khó",
+      "question": "Điểm ĐGNL đạt 130 điểm thì quy đổi được bao nhiêu?",
+      "hint": "Từ 130 đến 150 → 30.00 điểm.",
+      "tags": [
+        "quy_doi",
+        "HSA",
+        "toi_da"
+      ],
+      "expected_behavior": "Trả lời 30.00 điểm.",
+      "check_keywords": [
+        "30.0",
+        "30,0"
+      ],
+      "fail_keywords": [
+        "29",
+        "27"
+      ],
+      "diagnosis_on_fail": "CALC_ERROR",
+      "any_keywords": [],
+      "answer": "Điểm Đánh giá năng lực (ĐGNL) đạt 130/150 sẽ được quy đổi thành 30,0/30.",
+      "error": "",
+      "duration_sec": 0.8,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Quy đổi điểm Đánh giá năng lực ĐHQG Hà Nội:   - Điểm gốc    : 130.0 / 150   - Điểm quy đổi: 30.0 / 30",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "CALC_ERROR"
+    },
+    {
+      "id": 79,
+      "group": 9,
+      "group_name": "Quy đổi điểm",
+      "difficulty": "khó",
+      "question": "Điểm ĐGTD đạt 85 điểm thì quy đổi được bao nhiêu?",
+      "hint": "85.00–100.00 → 30.00 điểm.",
+      "tags": [
+        "quy_doi",
+        "TSA",
+        "toi_da"
+      ],
+      "expected_behavior": "Trả lời 30.00 điểm.",
+      "check_keywords": [
+        "30.0",
+        "30,0"
+      ],
+      "fail_keywords": [
+        "29",
+        "28"
+      ],
+      "diagnosis_on_fail": "CALC_ERROR",
+      "any_keywords": [],
+      "answer": "Theo quy đổi điểm Đánh giá tư duy Đại học BK Hà Nội, khi đạt 85.0 điểm gốc sẽ quy đổi được 30.0 điểm.",
+      "error": "",
+      "duration_sec": 0.75,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Quy đổi điểm Đánh giá tư duy ĐHBK Hà Nội:   - Điểm gốc    : 85.0 / 100   - Điểm quy đổi: 30.0 / 30",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "CALC_ERROR"
+    },
+    {
+      "id": 80,
+      "group": 9,
+      "group_name": "Quy đổi điểm",
+      "difficulty": "khó",
+      "question": "Điểm trung bình học bạ môn Toán là 9.25, quy đổi sang thang 10 là bao nhiêu?",
+      "hint": "9.20–9.29 → 8.25 điểm.",
+      "tags": [
+        "quy_doi",
+        "hoc_ba"
+      ],
+      "expected_behavior": "Trả lời 8.25 điểm.",
+      "check_keywords": [
+        "8.25"
+      ],
+      "fail_keywords": [
+        "8.75",
+        "7.74"
+      ],
+      "diagnosis_on_fail": "CALC_ERROR",
+      "any_keywords": [],
+      "answer": "Điểm trung bình học bạ môn Toán là 9.25 sẽ được quy đổi thành 8.25 trên thang điểm 10.",
+      "error": "",
+      "duration_sec": 0.78,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Quy đổi điểm Kết quả học bạ THPT:   - Điểm gốc    : 9.25 / 10   - Điểm quy đổi: 8.25 / 10",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 81,
+      "group": 10,
+      "group_name": "Câu bẫy / ngoài dữ liệu",
+      "difficulty": "rất khó",
+      "question": "Điểm chuẩn năm 2026 ngành Công nghệ thông tin là bao nhiêu?",
+      "hint": "Chưa có dữ liệu — chatbot phải từ chối.",
+      "tags": [
+        "bep",
+        "ngoai_du_lieu",
+        "nam_2026"
+      ],
+      "expected_behavior": "Từ chối, giải thích chưa có dữ liệu.",
+      "check_keywords": [],
+      "fail_keywords": [
+        "điểm chuẩn 2026 là",
+        "năm 2026 là"
+      ],
+      "diagnosis_on_fail": "OUT_OF_SCOPE",
+      "any_keywords": [
+        "chưa",
+        "chưa có",
+        "không có thông tin"
+      ],
+      "answer": "Tôi chưa có thông tin về điểm chuẩn năm 2026. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 0.95,
+      "intent_type": "JSON_DIEM_CHUAN",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Điểm chuẩn năm 2025 — Trường công nghệ thông tin (9 ngành):   - Khoa học máy tính: 23.72 điểm → ✅ +2.28 điểm   - An toàn thông tin: 23.43 điểm → ✅ +2.57 điểm   - Công nghệ thông tin: 23.09 điểm → ✅ +2.91 điểm   - Công nghệ đa phương tiện: 22.25 điểm → ✅ +3.75 điểm   - Công nghệ kỹ thuật máy tính: 21.85 điểm → ✅ +4.15 điểm   - Kỹ thuật phần mềm: 21.75 điểm → ✅ +4.25 điểm   - Mạng máy tính và truyền thông dữ liệu: 21.7 điểm → ✅ +4.3 điểm   - Hệ thống thông tin: 21.1 điểm → ✅ +4.9 điểm   - Khoa học máy tính chương trình đào tạo bằng Tiếng Anh: 20.45 điểm → ✅ +5.55 điểm  Điểm tham khảo trên là năm",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 82,
+      "group": 10,
+      "group_name": "Câu bẫy / ngoài dữ liệu",
+      "difficulty": "rất khó",
+      "question": "HaUI có ngành Y khoa không?",
+      "hint": "Không có ngành Y khoa trong dữ liệu.",
+      "tags": [
+        "bep",
+        "ngoai_du_lieu",
+        "y_khoa"
+      ],
+      "expected_behavior": "Trả lời KHÔNG, không bịa.",
+      "check_keywords": [],
+      "fail_keywords": [
+        "có ngành Y khoa",
+        "HaUI có ngành Y"
+      ],
+      "diagnosis_on_fail": "HALLUCINATION",
+      "any_keywords": [
+        "không có",
+        "chưa có",
+        "hiện tại không"
+      ],
+      "answer": "Tôi chưa có thông tin về ngành Y khoa tại HaUI. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 5.55,
+      "intent_type": "RAG_MO_TA_NGANH",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " [faq_dang_ky_xet_tuyen.md — Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025] Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025 Được, nhưng phải liên hệ Nhà trường **trước ngày 05/7/2025**: - Điện thoại: 0834560255 / 0383371290 - Messenger: facebook.com/tuyensinh.haui   Lưu ý: Nhà trường chỉ nhận kết quả thi ĐGTD trước ngày 05/7/2025. Khi sửa phải upload lại cả ảnh kết quả và điểm của đợt thi mới.   ---   **Q: Mỗi thí sinh được đăng ký bao nhiêu ngành dự tuyển? Nên sắp xếp thứ tự nguyện vọng như thế nào?**   Thí sinh có thể đăng ký nhiều ngành/chươ",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 83,
+      "group": 10,
+      "group_name": "Câu bẫy / ngoài dữ liệu",
+      "difficulty": "rất khó",
+      "question": "Học phí năm 2026-2027 là bao nhiêu?",
+      "hint": "Chưa có dữ liệu 2026-2027.",
+      "tags": [
+        "bep",
+        "ngoai_du_lieu",
+        "hoc_phi_tuong_lai"
+      ],
+      "expected_behavior": "Từ chối, cung cấp học phí 2025-2026 hiện có.",
+      "check_keywords": [],
+      "fail_keywords": [
+        "2026-2027 là",
+        "năm học 2026 học phí"
+      ],
+      "diagnosis_on_fail": "OUT_OF_SCOPE",
+      "any_keywords": [
+        "chưa có",
+        "2025-2026",
+        "chưa thông báo"
+      ],
+      "answer": "Tôi chưa có thông tin về học phí năm 2026-2027. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 1.11,
+      "intent_type": "JSON_HOC_PHI",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Học phí HaUI năm học 2025-2026:   ⚠ LƯU Ý: Đơn vị học phí là đồng/tín chỉ (KHÔNG phải /năm hay /học kỳ).   Mỗi năm học khoảng 30-35 tín chỉ → học phí thực tế = (số tín chỉ) × (mức/tín chỉ).    [Đại học chính quy]     - Cử nhân K20 (CTĐT bằng tiếng Anh): 1.000.000 đồng/tín chỉ     - Cử nhân K20 (CTĐT đại trà): 700.000 đồng/tín chỉ     - Cử nhân K19: 550.000 đồng/tín chỉ     - Cử nhân K18 trở về trước: 495.000 đồng/tín chỉ   [Kỹ sư]     - Kỹ sư K3 (CTĐT bằng tiếng Anh): 1.000.000 đồng/tín chỉ     - Kỹ sư K3 (CTĐT đại trà): 700.000 đồng/tín chỉ     - Kỹ sư K2: 550.000 đồng/tín chỉ     - Kỹ sư K1:",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 84,
+      "group": 10,
+      "group_name": "Câu bẫy / ngoài dữ liệu",
+      "difficulty": "rất khó",
+      "question": "Mã ngành 7480202 là ngành gì?",
+      "hint": "Trong dữ liệu mã An toàn thông tin là 74802021 (7 chữ số). Cần xử lý đúng.",
+      "tags": [
+        "bep",
+        "ma_nganh",
+        "an_toan_TT"
+      ],
+      "expected_behavior": "Nhận dạng An toàn thông tin.",
+      "check_keywords": [],
+      "fail_keywords": [
+        "Kỹ thuật phần mềm",
+        "Công nghệ thông tin"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_WRONG",
+      "any_keywords": [
+        "An toàn thông tin"
+      ],
+      "answer": "Tôi chưa có thông tin về mã ngành 7480202. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 44.59,
+      "intent_type": "RAG_MO_TA_NGANH",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[Công nghệ vật liệu dệt, may — Thông tin tuyển sinh] Khoa Công nghệ May và Thiết kế Thời trang — Ngành Công nghệ vật liệu dệt, may — Thông tin tuyển sinh # Công nghệ vật liệu dệt, may — HaUI   ## Thông tin tuyển sinh   - **Mã ngành:** 7540203 - **Khoa:** Khoa Công nghệ May và Thiết kế Thời trang - **Chỉ tiêu:** 50 - **Tổ hợp xét tuyển:** A01 (Toán, Vật lí, Tiếng Anh), D01 (Ngữ văn, Toán, Tiếng Anh), D0C (Toán, Tiếng Anh, Công nghệ) - **Phương thức xét tuyển:** PT1, PT2, PT3, PT4     [Marketing — Thông tin tuyển sinh] Trường Kinh tế — Ngành Marketing — Thông tin tuyển sinh # Marketing — HaUI   ",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "SLOW"
+    },
+    {
+      "id": 85,
+      "group": 10,
+      "group_name": "Câu bẫy / ngoài dữ liệu",
+      "difficulty": "rất khó",
+      "question": "Ngành Công nghệ kỹ thuật nhiệt (7510206) thuộc Khoa nào?",
+      "hint": "Theo dữ liệu: Trường Điện - Điện tử.",
+      "tags": [
+        "bep",
+        "du_lieu_loi",
+        "nhiet"
+      ],
+      "expected_behavior": "Nêu theo dữ liệu: Trường Điện - Điện tử.",
+      "check_keywords": [
+        "Điện"
+      ],
+      "fail_keywords": [
+        "Cơ khí",
+        "Kinh tế"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Ngành Công nghệ kỹ thuật nhiệt (mã ngành 7510206) thuộc Trường Điện - Điện tử.",
+      "error": "",
+      "duration_sec": 4.67,
+      "intent_type": "RAG_MO_TA_NGANH",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[Công nghệ kỹ thuật nhiệt — Thông tin tuyển sinh] Trường Điện - Điện tử — Ngành Công nghệ kỹ thuật nhiệt — Thông tin tuyển sinh ## Thông tin tuyển sinh   - **Mã ngành:** 7510206 - **Khoa/Trường:** Trường Điện - Điện tử - **Chỉ tiêu:** 120 - **Tổ hợp xét tuyển:** A00 (Toán, Vật lí, Hóa học), A01 (Toán, Vật lí, Tiếng Anh), A0C (Toán, Vật lý, Công nghệ), A0T (Toán, Vật lý, Tin học) - **Phương thức xét tuyển:** PT1, PT2, PT3, PT5     [Công nghệ kỹ thuật môi trường — Thông tin tuyển sinh] Khoa Công nghệ Hóa — Ngành Công nghệ kỹ thuật môi trường — Thông tin tuyển sinh # Công nghệ kỹ thuật môi trường",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 86,
+      "group": 10,
+      "group_name": "Câu bẫy / ngoài dữ liệu",
+      "difficulty": "rất khó",
+      "question": "Tổ hợp X06 gồm những môn gì?",
+      "hint": "X06: Toán, Tin học, Công nghệ.",
+      "tags": [
+        "to_hop",
+        "it_pho_bien"
+      ],
+      "expected_behavior": "Trả lời: Toán, Tin học, Công nghệ.",
+      "check_keywords": [
+        "Tin học",
+        "Công nghệ"
+      ],
+      "fail_keywords": [
+        "Vật lý",
+        "Hóa học"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Tổ hợp X06 gồm các môn: Toán, Tin học, và Công nghệ.",
+      "error": "",
+      "duration_sec": 1.96,
+      "intent_type": "JSON_CHI_TIEU_TO_HOP",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Tổ hợp X06 gồm môn: Toán, Tin học, Công nghệ Có 29 ngành xét tuyển bằng tổ hợp này:    1. An toàn thông tin (mã 74802021) — chỉ tiêu: 40    2. Công nghệ kỹ thuật cơ khí (mã 7510201) — chỉ tiêu: 360    3. Công nghệ kỹ thuật cơ khí (Tiếng Anh) (mã 7510201TA) — chỉ tiêu: 40    4. Công nghệ kỹ thuật cơ điện tử (mã 7510203) — chỉ tiêu: 300    5. Công nghệ kỹ thuật cơ điện tử ô tô (mã 75102033) — chỉ tiêu: 60    6. Công nghệ kỹ thuật khuôn mẫu (mã 75102012) — chỉ tiêu: 60    7. Công nghệ kỹ thuật máy tính (mã 7480108) — chỉ tiêu: 140    8. Công nghệ kỹ thuật nhiệt (mã 7510206) — chỉ tiêu: 120    9. ",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 87,
+      "group": 10,
+      "group_name": "Câu bẫy / ngoài dữ liệu",
+      "difficulty": "rất khó",
+      "question": "Tôi có chứng chỉ Tiếng Pháp, học bạ Tiếng Pháp, có xét tuyển ngành Ngôn ngữ Anh được không?",
+      "hint": "Ngôn ngữ Anh chỉ xét D01 (Tiếng Anh). Tiếng Pháp không nằm trong tổ hợp.",
+      "tags": [
+        "bep",
+        "tieng_phap"
+      ],
+      "expected_behavior": "Từ chối rõ ràng.",
+      "check_keywords": [
+        "không"
+      ],
+      "fail_keywords": [
+        "được xét",
+        "có thể"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [
+        "D01",
+        "Tiếng Anh"
+      ],
+      "answer": "Xin lỗi, tôi chỉ có thể tư vấn về tuyển sinh HaUI — điểm chuẩn, học phí, ngành học, phương thức xét tuyển và các thông tin liên quan.\n\nBạn có câu hỏi nào về tuyển sinh không?",
+      "error": "",
+      "duration_sec": 0.86,
+      "intent_type": "OFF_TOPIC",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "__OFF_TOPIC__",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "HALLUCINATION"
+    },
+    {
+      "id": 88,
+      "group": 10,
+      "group_name": "Câu bẫy / ngoài dữ liệu",
+      "difficulty": "rất khó",
+      "question": "Năm 2025 HaUI có tuyển hệ Cao đẳng không?",
+      "hint": "Không thấy chỉ tiêu CĐ trong đề án 2025, nhưng trường có đào tạo CĐ.",
+      "tags": [
+        "bep",
+        "cao_dang"
+      ],
+      "expected_behavior": "Trả lời thận trọng dựa trên dữ liệu.",
+      "check_keywords": [],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "AMBIGUITY_FAIL",
+      "any_keywords": [
+        "không có thông tin",
+        "không thấy",
+        "chưa rõ"
+      ],
+      "answer": "Tôi chưa có thông tin về năm 2025. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 5.66,
+      "intent_type": "RAG_FAQ",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.85,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " [faq_dang_ky_xet_tuyen.md — Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025] Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025 Được, nhưng phải liên hệ Nhà trường **trước ngày 05/7/2025**: - Điện thoại: 0834560255 / 0383371290 - Messenger: facebook.com/tuyensinh.haui   Lưu ý: Nhà trường chỉ nhận kết quả thi ĐGTD trước ngày 05/7/2025. Khi sửa phải upload lại cả ảnh kết quả và điểm của đợt thi mới.   ---   **Q: Mỗi thí sinh được đăng ký bao nhiêu ngành dự tuyển? Nên sắp xếp thứ tự nguyện vọng như thế nào?**   Thí sinh có thể đăng ký nhiều ngành/chươ",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "AMBIGUITY_FAIL"
+    },
+    {
+      "id": 89,
+      "group": 10,
+      "group_name": "Câu bẫy / ngoài dữ liệu",
+      "difficulty": "rất khó",
+      "question": "Học bổng KKHT và học bổng HaUI có thể nhận đồng thời không?",
+      "hint": "KHÔNG. Sinh viên đã nhận HB HaUI không được xét KKHT cùng học kỳ.",
+      "tags": [
+        "hoc_bong",
+        "loai_tru"
+      ],
+      "expected_behavior": "Trả lời đúng KHÔNG.",
+      "check_keywords": [
+        "không"
+      ],
+      "fail_keywords": [
+        "được nhận đồng thời",
+        "có thể kết hợp"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Không xét Học bổng Khuyến khích học tập (KKHT) cho sinh viên đã nhận học bổng HaUI cùng học kỳ.",
+      "error": "",
+      "duration_sec": 4.24,
+      "intent_type": "RAG_TRUONG_HOC_BONG",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " Học bổng HaUI toàn khóa học (trị giá 100% học phí): Đối tượng: Thủ khoa từng tổ hợp/từng phương thức tuyển sinh, HOẶC thí sinh đoạt giải HSG quốc gia/quốc tế môn học, HOẶC đoạt giải kỳ thi tay nghề ASEAN/quốc tế. Điều kiện duy trì: TBC học kỳ ≥ 2,5 VÀ rèn luyện loại Tốt VÀ đăng ký ≥ 15 tín chỉ mỗi HK. Sinh viên nhận HB toàn khóa bị LOẠI KHỎI diện xét học bổng Nguyễn Thanh Bình trong toàn khóa học.  [hoc_bong.md] 2. Học bổng Khuyến khích học tập (KKHT) ## 2. Học bổng Khuyến khích học tập (KKHT)   ### 2.1. Quy định xét   - **Không xét KKHT** cho sinh viên đã nhận học bổng HaUI cùng học kỳ - **K",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    },
+    {
+      "id": 90,
+      "group": 10,
+      "group_name": "Câu bẫy / ngoài dữ liệu",
+      "difficulty": "rất khó",
+      "question": "Ngành Phân tích dữ liệu kinh doanh năm 2023 điểm chuẩn PT3 là bao nhiêu?",
+      "hint": "Năm 2023 mã là 7340125, điểm PT3 = 23.67.",
+      "tags": [
+        "diem_chuan",
+        "PTDLKD",
+        "nam_2023"
+      ],
+      "expected_behavior": "Tra đúng 23.67 điểm (mã 7340125 năm 2023).",
+      "check_keywords": [
+        "23.67"
+      ],
+      "fail_keywords": [
+        "24.25",
+        "20.0"
+      ],
+      "diagnosis_on_fail": "RETRIEVAL_MISS",
+      "any_keywords": [],
+      "answer": "Tôi chưa có thông tin về điểm chuẩn PT3 ngành Phân tích dữ liệu kinh doanh năm 2023. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 6.7,
+      "intent_type": "JSON_DIEM_CHUAN",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": "[Phân tích dữ liệu kinh doanh — Thông tin tuyển sinh] Trường Kinh tế — Ngành Phân tích dữ liệu kinh doanh — Thông tin tuyển sinh # Phân tích dữ liệu kinh doanh — HaUI   ## Thông tin tuyển sinh   - **Mã ngành:** 73401012 - **Khoa/Trường:** Trường Kinh tế - **Chỉ tiêu:** 120 - **Tổ hợp xét tuyển:** A01 (Toán, Vật lí, Tiếng Anh), D01 (Ngữ văn, Toán, Tiếng Anh), D0G (Toán, Tiếng Anh, Giáo dục kinh tế và pháp luật) - **Phương thức xét tuyển:** PT1, PT2, PT3, PT4     [Phân tích dữ liệu kinh doanh — Chuẩn đầu ra — Sinh viên tốt nghiệp có khả năng] Trường Kinh tế — Ngành Phân tích dữ liệu kinh doanh —",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "RETRIEVAL_MISS"
+    },
+    {
+      "id": 91,
+      "group": 11,
+      "group_name": "Câu hỏi tổng hợp đa bước",
+      "difficulty": "rất khó",
+      "question": "Tôi đạt 24 điểm tổ hợp A01, KV2-NT, muốn học ngành Kỹ thuật phần mềm — tôi có đỗ không? Tính cả điểm ưu tiên.",
+      "hint": "24 > 22.5 → giảm dần: [(30-24)/7.5]×0.50=0.40 → ĐXT=24.40. ĐC 2025: 21.75 → Đủ.",
+      "tags": [
+        "tinh_toan",
+        "da_buoc",
+        "KTPM"
+      ],
+      "expected_behavior": "Tính đúng ĐXT=24.40, kết luận đủ tham chiếu.",
+      "check_keywords": [
+        "24.4",
+        "24,4"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "MULTI_STEP_FAIL",
+      "any_keywords": [
+        "21.75"
+      ],
+      "answer": "Theo quy định của Đại học Công nghiệp Hà Nội (HaUI), bạn thuộc khu vực KV2-NT nên được cộng 0,5 điểm ưu tiên khu vực. Tuy nhiên, vì tổng điểm gốc của bạn là 24.0 ≥ 22.5 nên điểm ưu tiên thực tế sẽ được tính theo công thức: [(30 - 24.0) / 7,5] × 0.5 = 0.4.\n\nVậy điểm xét tuyển của bạn là:\n- Tổng điểm gốc: 24.0\n- Điểm ưu tiên thực tế: +0.4\n\nĐiểm xét tuyển của bạn sẽ là 24.4 điểm.\n\nĐể xác định có đỗ hay không, cần so sánh với điểm chuẩn ngành Kỹ thuật phần mềm năm trước (năm 2025). Nếu điểm chuẩn năm 2025 của ngành này thấp hơn hoặc bằng 24.4 thì bạn đủ điều kiện trúng tuyển. Nếu không có thông tin cụ thể về điểm chuẩn năm 2025, vui lòng xem tại tuyensinh.haui.edu.vn hoặc gọi điện thoại tới số 0243.7655121 để được tư vấn thêm.",
+      "error": "",
+      "duration_sec": 4.22,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": " Bảng điểm ưu tiên khu vực (áp dụng cho xét tuyển đại học): - KV1 (vùng đặc biệt khó khăn, miền núi vùng cao): +0,75 điểm - KV2-NT (nông thôn): +0,50 điểm - KV2 (thị xã, thành phố trực thuộc tỉnh): +0,25 điểm - KV3 (thành phố lớn): +0 điểm (không được cộng)  Bảng điểm ưu tiên đối tượng: - UT1 (nhóm 1): +2,0 điểm — anh hùng LĐ, thương binh ≥81%, AHKT, dân tộc rất ít người, trẻ em mồ côi, con thương binh suy giảm ≥81% - UT2 (nhóm 2): +1,0 điểm — thí sinh khác thuộc diện ưu tiên (HS vùng khó khăn, con thương binh <81%, dân tộc thiểu số vùng thường...)  Quy tắc: Mỗi thí sinh CHỈ hưởng MỘT mức đối ",
+      "diagnosis_note": "",
+      "score": "PARTIAL",
+      "diagnosis_code": "MULTI_STEP_FAIL"
+    },
+    {
+      "id": 92,
+      "group": 11,
+      "group_name": "Câu hỏi tổng hợp đa bước",
+      "difficulty": "rất khó",
+      "question": "Tôi có IELTS 6.5 và điểm TB học bạ 3 môn A01 là 8.5 — tính điểm xét tuyển PT2 là bao nhiêu?",
+      "hint": "IELTS 6.5→10.0; HB 8.5→8.50–8.59→6.55; ĐXT=6.55×2+10.0=23.10.",
+      "tags": [
+        "PT2",
+        "IELTS",
+        "hoc_ba",
+        "tinh_toan"
+      ],
+      "expected_behavior": "Tính đúng ĐXT=23.10.",
+      "check_keywords": [
+        "23.1",
+        "23,1"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "MULTI_STEP_FAIL",
+      "any_keywords": [],
+      "answer": "Để tính điểm xét tuyển Phương thức 2 (PT2), bạn cần thực hiện các bước sau:\n\n- Điểm trung bình học bạ 3 môn A01 của bạn là 8.5, nhưng trong thông tin tham khảo đã quy đổi điểm này thành ĐKQHT (điểm học bạ đã quy đổi) là 6.5.\n- IELTS 6.5 được quy đổi thành 10.0 điểm.\n\nCông thức tính điểm xét tuyển PT2:\n\\[ \\text{ĐXT} = \\text{ĐKQHT} \\times 2 + \\text{ĐQĐCC} \\]\n\nThay số vào công thức:\n\\[ \\text{ĐXT} = 6,5 \\times 2 + 10,0 = 23,0 \\text{ điểm} \\]\n\nVậy, điểm xét tuyển PT2 của bạn là 23.0 điểm (chưa tính ưu tiên khu vực).",
+      "error": "",
+      "duration_sec": 4.32,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 1.0,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Tính điểm xét tuyển Phương thức 2 (PT2):   Công thức: ĐXT = ĐKQHT × 2 + ĐQĐCC + Điểm ưu tiên    ĐKQHT (điểm học bạ đã quy đổi)  : 6.5 điểm   ĐQĐCC (IELTS 6.5 → quy đổi)     : 10.0 điểm   ĐXT (chưa ưu tiên) = 6.5 × 2 + 10.0 = 23.0 điểm   → Điểm xét tuyển PT2              : 23.0 điểm",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "MULTI_STEP_FAIL"
+    },
+    {
+      "id": 93,
+      "group": 11,
+      "group_name": "Câu hỏi tổng hợp đa bước",
+      "difficulty": "rất khó",
+      "question": "Thí sinh đạt HSA 100 điểm, KV1, muốn xét vào ngành Điều khiển và Tự động hóa — có đủ điểm chuẩn 2025 không?",
+      "hint": "HSA 100→24.25; KV1 giảm dần: [(30-24.25)/7.5]×0.75≈0.575→ĐXT≈24.83. ĐC 2025: 26.27 → Không đủ.",
+      "tags": [
+        "quy_doi",
+        "HSA",
+        "uu_tien",
+        "da_buoc"
+      ],
+      "expected_behavior": "Tính đúng ~24.83, kết luận không đủ so với 26.27.",
+      "check_keywords": [
+        "không đủ",
+        "chưa đủ"
+      ],
+      "fail_keywords": [
+        "đủ điều kiện"
+      ],
+      "diagnosis_on_fail": "MULTI_STEP_FAIL",
+      "any_keywords": [
+        "24.8",
+        "26.27"
+      ],
+      "answer": "Tôi chưa có thông tin về điểm chuẩn năm 2025. Vui lòng xem tuyensinh.haui.edu.vn hoặc gọi 0243.7655121.",
+      "error": "",
+      "duration_sec": 5.24,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "rule",
+      "retrieval_tier": 1,
+      "confidence": 0.88,
+      "cache_hit": false,
+      "hyde_used": true,
+      "context_preview": " [faq_dang_ky_xet_tuyen.md — Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025] Giải đáp thắc mắc khi đăng ký xét tuyển đại học chính quy HaUI năm 2025 Được, nhưng phải liên hệ Nhà trường **trước ngày 05/7/2025**: - Điện thoại: 0834560255 / 0383371290 - Messenger: facebook.com/tuyensinh.haui   Lưu ý: Nhà trường chỉ nhận kết quả thi ĐGTD trước ngày 05/7/2025. Khi sửa phải upload lại cả ảnh kết quả và điểm của đợt thi mới.   ---   **Q: Mỗi thí sinh được đăng ký bao nhiêu ngành dự tuyển? Nên sắp xếp thứ tự nguyện vọng như thế nào?**   Thí sinh có thể đăng ký nhiều ngành/chươ",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "MULTI_STEP_FAIL"
+    },
+    {
+      "id": 94,
+      "group": 11,
+      "group_name": "Câu hỏi tổng hợp đa bước",
+      "difficulty": "rất khó",
+      "question": "Một thí sinh có TOPIK 4 và học bạ các môn D01 trung bình 8.0 — điểm xét tuyển PT2 là bao nhiêu?",
+      "hint": "TOPIK 4→9.5; HB 8.0→8.00–8.09→6.27; ĐXT=6.27×2+9.5=22.04.",
+      "tags": [
+        "PT2",
+        "TOPIK",
+        "han_quoc",
+        "da_buoc"
+      ],
+      "expected_behavior": "Tính đúng ĐXT~22.04.",
+      "check_keywords": [
+        "22.0",
+        "22,0"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "MULTI_STEP_FAIL",
+      "any_keywords": [
+        "22.04"
+      ],
+      "answer": "Thí sinh có ĐKQHT (điểm học bạ đã quy đổi) là 1,0 điểm và ĐQĐCC (TOPIK 4 quy đổi) là 9,5 điểm. Do đó, công thức tính điểm xét tuyển PT2 như sau:\n\nĐXT = ĐKQHT × 2 + ĐQĐCC\n= 1,0 × 2 + 9,5 \n= 11,5 điểm\n\nVậy điểm xét tuyển PT2 của thí sinh là 11,5 điểm.",
+      "error": "",
+      "duration_sec": 3.08,
+      "intent_type": "JSON_QUY_DOI_DIEM",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.95,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Tính điểm xét tuyển Phương thức 2 (PT2):   Công thức: ĐXT = ĐKQHT × 2 + ĐQĐCC + Điểm ưu tiên    ĐKQHT (điểm học bạ đã quy đổi)  : 1.0 điểm   ĐQĐCC (TOPIK 4 → quy đổi)     : 9.5 điểm   ĐXT (chưa ưu tiên) = 1.0 × 2 + 9.5 = 11.5 điểm   → Điểm xét tuyển PT2              : 11.5 điểm",
+      "diagnosis_note": "",
+      "score": "FAIL",
+      "diagnosis_code": "MULTI_STEP_FAIL"
+    },
+    {
+      "id": 95,
+      "group": 11,
+      "group_name": "Câu hỏi tổng hợp đa bước",
+      "difficulty": "rất khó",
+      "question": "Nếu tôi muốn học ngành Logistics và ở KTX, chi phí 1 tháng khoảng bao nhiêu tiền?",
+      "hint": "Logistics K20: 700.000đ/TC; ~15TC/HK → 10.5tr/HK ≈ 2.1tr/tháng. KTX CLC 4 người: 600.000đ. Tổng ≈ 2.7tr/tháng.",
+      "tags": [
+        "hoc_phi",
+        "KTX",
+        "chi_phi",
+        "da_buoc"
+      ],
+      "expected_behavior": "Ước tính hợp lý, nêu giả định.",
+      "check_keywords": [
+        "700.000",
+        "600.000"
+      ],
+      "fail_keywords": [],
+      "diagnosis_on_fail": "MULTI_STEP_FAIL",
+      "any_keywords": [
+        "tháng",
+        "tín chỉ"
+      ],
+      "answer": "Chi phí một tháng cho việc học ngành Logistics tại HaUI và ở ký túc xá phụ thuộc vào loại phòng bạn chọn. Giả sử bạn là sinh viên năm đầu tiên (K20) theo chương trình đại trà, chi phí học phí cho 1 tín chỉ là 700.000 đồng.\n\nNếu bạn ở trong phòng tiêu chuẩn 6 người (CS2), chi phí một tháng sẽ bao gồm:\n- Học phí: Giả định bạn cần hoàn thành khoảng 3 tín chỉ mỗi tháng thì tổng học phí là 3 x 700.000 = 2.100.000 đồng.\n- Chi phí ở ký túc xá: 280.000 đồng.\n\nTổng chi phí một tháng sẽ là:\n2.100.000 + 280.000 = 2.380.000 đồng\n\nNếu bạn chọn phòng chất lượng cao 4 người, tổng chi phí một tháng sẽ là:\n- Học phí: Giả định tương tự như trên là 2.100.000 đồng.\n- Chi phí ở ký túc xá: 600.000 đồng.\n\nTổng chi phí một tháng sẽ là:\n2.100.000 + 600.000 = 2.700.000 đồng",
+      "error": "",
+      "duration_sec": 5.85,
+      "intent_type": "JSON_HOC_PHI",
+      "router_method": "llm",
+      "retrieval_tier": 1,
+      "confidence": 0.85,
+      "cache_hit": false,
+      "hyde_used": false,
+      "context_preview": "Học phí HaUI năm học 2025-2026:   ⚠ LƯU Ý: Đơn vị học phí là đồng/tín chỉ (KHÔNG phải /năm hay /học kỳ).   Mỗi năm học khoảng 30-35 tín chỉ → học phí thực tế = (số tín chỉ) × (mức/tín chỉ).    [Đại học chính quy]     - Cử nhân K20 (CTĐT bằng tiếng Anh): 1.000.000 đồng/tín chỉ     - Cử nhân K20 (CTĐT đại trà): 700.000 đồng/tín chỉ     - Cử nhân K19: 550.000 đồng/tín chỉ     - Cử nhân K18 trở về trước: 495.000 đồng/tín chỉ   [Kỹ sư]     - Kỹ sư K3 (CTĐT bằng tiếng Anh): 1.000.000 đồng/tín chỉ     - Kỹ sư K3 (CTĐT đại trà): 700.000 đồng/tín chỉ     - Kỹ sư K2: 550.000 đồng/tín chỉ     - Kỹ sư K1:",
+      "diagnosis_note": "",
+      "score": "PASS",
+      "diagnosis_code": ""
+    }
+  ]
+}

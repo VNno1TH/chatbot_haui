@@ -93,3 +93,5 @@ class LatencyProfiler:
     def reset(self) -> None:
         self._marks.clear()
         self._order.clear()
+        
+        

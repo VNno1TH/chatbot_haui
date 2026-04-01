@@ -41,21 +41,82 @@ MD_DIRS = [
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 def collect_md_files(dirs: list[Path]) -> list[Path]:
+    """
+    Thu thập tất cả file .md, quét đệ quy mọi thư mục.
+    Dùng **/*.md thay vì *.md để không bỏ sót file trong subdir.
+    """
     seen, files = set(), []
     for d in dirs:
         if not d.exists():
-            print(f"  ⚠ Thư mục không tồn tại: {d}")
+            print(f"  ⚠ Thư mục không tồn tại: {d} — bỏ qua")
             continue
-        pattern = "**/*.md" if d.name == "nganh" else "*.md"
-        for f in sorted(d.glob(pattern)):
-            if f.resolve() not in seen:
-                seen.add(f.resolve())
+        for f in sorted(d.glob("**/*.md")):
+            resolved = f.resolve()
+            if resolved not in seen:
+                seen.add(resolved)
                 files.append(f)
     return files
 
 
 def print_section(title: str):
     print(f"\n{'─'*60}\n  {title}\n{'─'*60}")
+
+
+# Các chunk quan trọng phải luôn có trong DB
+# Tuple: (query_text, [từ_khoá_phải_có_trong_top_3_kết_quả])
+CRITICAL_QUERIES = [
+    (
+        "trường trực thuộc HaUI gồm những gì",
+        ["trường", "khoa"],
+    ),
+    (
+        "cơ cấu tổ chức Đại học Công nghiệp Hà Nội",
+        ["ngoại ngữ", "kinh tế", "cơ khí"],
+    ),
+    (
+        "HaUI có bao nhiêu cơ sở đào tạo",
+        ["cơ sở", "minh khai"],
+    ),
+    (
+        "lịch sử thành lập HaUI",
+        ["1898", "2005"],
+    ),
+]
+
+
+def verify_critical_chunks(embedder) -> bool:
+    """
+    Sau khi build xong, kiểm tra các chunk quan trọng có trong DB không.
+    Báo lỗi nếu thiếu — giúp phát hiện sớm file bị bỏ sót khi index.
+    Trả True nếu tất cả OK, False nếu có chunk bị thiếu.
+    """
+    print_section("6. Kiểm tra critical chunks")
+    all_ok = True
+    for query, expected_keywords in CRITICAL_QUERIES:
+        results = embedder.query(query, n_results=3)
+        top_text = " ".join(r["text"].lower() for r in results)
+        missing  = [kw for kw in expected_keywords if kw.lower() not in top_text]
+
+        if missing:
+            print(f"  ✗ MISS — '{query}'")
+            print(f"       Thiếu từ khoá: {missing}")
+            if results:
+                src = results[0]["metadata"].get("source", "?")
+                print(f"       Kết quả tốt nhất: [{results[0]['score']:.3f}] {src}: "
+                      f"{results[0]['text'][:80].strip()}...")
+            all_ok = False
+        else:
+            top_score = results[0]["score"] if results else 0.0
+            src = results[0]["metadata"].get("source", "?")
+            print(f"  ✓ OK  [{top_score:.3f}] '{query[:50]}' → {src}")
+
+    if not all_ok:
+        print("\n  ⚠ MỘT SỐ CHUNK QUAN TRỌNG BỊ THIẾU!")
+        print("    Kiểm tra file .md đã nằm đúng trong PROCESSED_DIR chưa,")
+        print("    sau đó chạy lại: python src/indexing/build_index.py --reset")
+    else:
+        print("\n  ✓ Tất cả critical chunks đều có trong DB!")
+    return all_ok
 
 
 # ── Main pipeline ─────────────────────────────────────────────────────────────
@@ -117,6 +178,8 @@ def build(reset: bool = False):
     print(f"  Tổng ngành    : {stats['total_nganh']}")
     print(f"  Loại tài liệu : {stats['loai_types']}")
     print(f"\n✅ Build xong! VectorDB: {VECTORSTORE_DIR}")
+
+    verify_critical_chunks(embedder)
 
 
 def test_query():

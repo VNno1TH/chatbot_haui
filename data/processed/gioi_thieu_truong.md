@@ -72,10 +72,11 @@ cap_nhat: 2025
 
 ---
 
-## Cơ cấu tổ chức đào tạo
-
+## Cơ cấu tổ chức đào tạo 
+### trường trực thuộc, trường thành viên , khoa
 - **5 Trường:** Ngoại ngữ - Du lịch; Kinh tế; Cơ khí - Ô tô; CNTT & Truyền thông; Điện - Điện tử
 - **4 Khoa:** Công nghệ Hóa; Công nghệ May & Thiết kế thời trang; Lý luận Chính trị & Pháp luật; Khoa học cơ bản
+### Khác
 - **11 Trung tâm** (6 đào tạo + 5 dịch vụ)
 - **1 Viện** Công nghệ HaUI
 - **1 Công ty** TNHH Đào tạo và Cung ứng nhân lực HaUI (LETCO)

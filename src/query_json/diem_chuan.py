@@ -78,7 +78,10 @@ def get_diem_chuan(
             if d["phuong_thuc_code"].upper() == pt
             or pt in [p.upper() for p in d.get("cac_phuong_thuc_ap_dung", [])]
         ]
-        if filtered:
+        # Nếu không tìm thấy với PT cụ thể → trả TẤT CẢ (không filter)
+        if not filtered:
+            pass  # results vẫn là toàn bộ, không gán filtered
+        else:
             results = filtered
 
     # Format kết quả
@@ -127,3 +130,106 @@ def get_lich_su_diem_chuan(ten_nganh: str) -> dict:
     Tiện dùng để phân tích xu hướng tăng/giảm.
     """
     return get_diem_chuan(ten_nganh)
+
+
+def get_diem_chuan_theo_khoa(
+    ten_khoa    : str,
+    nam         : int = 2025,
+    phuong_thuc : str | None = None,
+) -> dict:
+    """
+    Lấy điểm chuẩn TẤT CẢ ngành trong một khoa — phục vụ câu hỏi multi-hop.
+
+    Ví dụ: "26 điểm có đậu ngành nào trong trường CNTT?"
+    → traverse: khoa CNTT → [9 ngành] → điểm chuẩn từng ngành → so sánh
+
+    Args:
+        ten_khoa    : Tên khoa. VD: "CNTT", "Kinh tế"
+        nam         : Năm xét tuyển (mặc định 2025)
+        phuong_thuc : Lọc theo PT cụ thể. None = lấy tất cả
+
+    Returns:
+        {
+            "found"     : True,
+            "ten_khoa"  : str,
+            "nam"       : int,
+            "so_nganh"  : int,
+            "ket_qua"   : [{
+                "ma_nganh", "ten_nganh",
+                "diem_chuan", "phuong_thuc", "thang_diem"
+            }]
+        }
+    """
+    from ._utils import normalize as _norm
+
+    data = load("diem_chuan")
+
+    # Chuẩn hóa tên khoa → nhom_nganh
+    # Import tại đây để tránh circular import
+    from .nganh import _resolve_khoa
+    nhom = _resolve_khoa(ten_khoa)
+
+    if nhom is None:
+        # Thử tìm trực tiếp theo nhom_nganh trong diem_chuan JSON
+        q    = _norm(ten_khoa)
+        nhom_candidates = set(
+            d["nhom_nganh"] for d in data
+            if q in _norm(d.get("nhom_nganh", ""))
+        )
+        if not nhom_candidates:
+            return not_found(
+                f"Không nhận ra khoa '{ten_khoa}'. "
+                f"Thử: CNTT, Cơ khí, Kinh tế, Du lịch, Dệt may, Ngôn ngữ, Thực phẩm."
+            )
+        nhom = next(iter(nhom_candidates))
+
+    # Lọc theo khoa + năm
+    results = [
+        d for d in data
+        if d.get("nhom_nganh") == nhom and d["nam"] == nam
+    ]
+
+    if not results:
+        return not_found(
+            f"Không có dữ liệu điểm chuẩn năm {nam} cho khoa '{ten_khoa}'."
+        )
+
+    # Lọc theo phương thức nếu có
+    if phuong_thuc:
+        pt = phuong_thuc.upper()
+        filtered = [
+            r for r in results
+            if r["phuong_thuc_code"].upper() == pt
+            or pt in [p.upper() for p in r.get("cac_phuong_thuc_ap_dung", [])]
+        ]
+        if filtered:
+            results = filtered
+
+    # Deduplicate: mỗi ngành chỉ lấy 1 record (ưu tiên PT3/chung)
+    seen: dict[str, dict] = {}
+    for r in sorted(results, key=lambda x: (
+        0 if x["phuong_thuc_code"] in ("chung", "PT3") else 1,
+        x["phuong_thuc_code"]
+    )):
+        ma = r["ma_nganh"]
+        if ma not in seen:
+            seen[ma] = r
+
+    ket_qua = sorted(seen.values(), key=lambda x: x["diem_chuan"], reverse=True)
+
+    return ok(
+        ten_khoa  = ten_khoa,
+        nhom_nganh= nhom,
+        nam       = nam,
+        so_nganh  = len(ket_qua),
+        ket_qua   = [
+            {
+                "ma_nganh"   : r["ma_nganh"],
+                "ten_nganh"  : r["ten_nganh"],
+                "diem_chuan" : r["diem_chuan"],
+                "phuong_thuc": r["phuong_thuc_code"],
+                "thang_diem" : r.get("thang_diem", 30),
+            }
+            for r in ket_qua
+        ],
+    )
